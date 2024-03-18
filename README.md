@@ -44,8 +44,6 @@ _Data Input_
 
 _Layout_
 
-- [ ] ~~Layout~~
-- [ ] ~~Grid (Flex)~~
 - [ ] Divider
 - [ ] Space (Flex)
 
