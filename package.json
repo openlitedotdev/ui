@@ -1,0 +1,20 @@
+{
+  "name": "desing-system",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "author": "",
+  "license": "MIT",
+  "keywords": [],
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint --fix"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "2.8.3",
+    "@types/node": "20.11.28",
+    "eslint": "8.57.0",
+    "eslint-plugin-format": "^0.1.0",
+    "typescript": "5.4.2"
+  }
+}
