@@ -94,4 +94,3 @@ If you want to know more about this design system visit
 Design System is licensed under either of
 
 - MIT license (LICENSE-MIT or https://opensource.org/licenses/MIT)
-
