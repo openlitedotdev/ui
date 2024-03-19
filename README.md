@@ -17,8 +17,9 @@ This is the source code for https://desing-system.dev by Open Land
 ## Getting Started
 
 <img src="./resources/preview.png" alt="Open Land logo" align="right"  width="300">
-This design system is totally easy to use with the aim of facilitating upcoming new projects. The design system is a challenge for our team. You can gladly contribute and guide us with ideas to improve.
+This design system is totally easy to use with the aim of facilitating upcoming new projects. The design system is a challenge for our team. You can gladly contribute and guide us with ideas to improve... We would be keen to hear any feedback on this project.
 
+<br>
 <br>
 <br>
 <br>
@@ -30,13 +31,13 @@ _General_
 - [ ] Button
 - [ ] Typography
 - [ ] Icon
-- [ ] Image (work in progress)
+- [ ] Image
 
 _Data Input_
 
 - [ ] Input
 - [ ] InputNumber
-- [ ] Select (custom select wip)
+- [ ] Select
 - [ ] Checkbox
 - [ ] Radio
 - [ ] Toggle
@@ -49,7 +50,6 @@ _Data Input_
 _Layout_
 
 - [ ] Divider
-- [ ] Space (Flex)
 
 _Display_
 
@@ -95,4 +95,3 @@ Design System is licensed under either of
 
 - MIT license (LICENSE-MIT or https://opensource.org/licenses/MIT)
 
-We would be keen to hear any feedback on this project.
