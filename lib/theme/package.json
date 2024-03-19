@@ -1,12 +1,27 @@
 {
-  "name": "theme",
+  "name": "@design-system/theme",
+  "type": "module",
   "version": "1.0.0",
   "description": "",
-  "author": "",
-  "license": "ISC",
+  "author": "Open Land",
+  "license": "MIT",
   "keywords": [],
-  "main": "index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs"
+    }
+  },
+  "main": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": ["dist"],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "unbuild"
+  },
+  "peerDependencies": {
+    "tailwindcss": "*"
+  },
+  "devDependencies": {
+    "tailwindcss": "3.4.1",
+    "unbuild": "2.0.0"
   }
 }
