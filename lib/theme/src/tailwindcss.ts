@@ -1,7 +1,16 @@
 import createPlugin from 'tailwindcss/plugin.js'
+import { colors } from './colors'
+import { defaultTheme } from './default-theme'
 
-function defineSystem() {
+function designSystem() {}
 
+const defineConfig = {
+  theme: {
+    extend: {
+      colors,
+      ...defaultTheme,
+    },
+  },
 }
 
-export default createPlugin(defineSystem, {})
+export default createPlugin(designSystem, defineConfig)
