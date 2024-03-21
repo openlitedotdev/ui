@@ -9,8 +9,10 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint .",
-    "build": "pnpm -r --filter=./lib/* build",
-    "prepare": "husky"
+    "build-lib": "pnpm -r --filter=./lib/* build",
+    "build": "pnpm -r --filter=./src/* build && pnpm run build-lib",
+    "prepare": "husky",
+    "playground": "pnpm -r --filter=./playground/* dev"
   },
   "devDependencies": {
     "@antfu/eslint-config": "2.8.3",
