@@ -5,7 +5,4 @@ export default defineBuildConfig({
   declaration: true,
   peerDependencies: ['tailwindcss'],
   clean: true,
-  rollup: {
-    inlineDependencies: true,
-  },
 })
