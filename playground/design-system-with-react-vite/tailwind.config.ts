@@ -1,4 +1,5 @@
 import type { Config } from 'tailwindcss'
+import { designSystem } from '@design-system/react'
 
 const config: Config = {
   content: [
@@ -6,6 +7,6 @@ const config: Config = {
     './src/**/*.{js,ts,jsx,tsx}',
   ],
   theme: { },
-  plugins: [],
+  plugins: [designSystem()],
 }
 export default config

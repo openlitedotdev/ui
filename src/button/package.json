@@ -16,11 +16,13 @@
     "build": "unbuild"
   },
   "peerDependencies": {
+    "@design-system/theme": "*",
     "react": ">=18",
     "react-dom": ">=18"
   },
   "devDependencies": {
     "@design-system/theme": "workspace:*",
+
     "@types/react": "18.2.67",
     "@types/react-dom": "18.2.22",
     "react": "^18.0.0",

@@ -9,8 +9,10 @@ function App() {
   return (
     <>
       <div>
-        <Button />
-        <a href="https://vitejs.dev" target="_blank">
+        <Button>
+          My component
+        </Button>
+        <a href="https://vitejs.dev" target="_blank" className="text-5xl">
           <img src={viteLogo} className="object-cover" alt="Vite logo" />
         </a>
         <a href="https://react.dev" target="_blank">

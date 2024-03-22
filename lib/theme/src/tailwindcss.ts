@@ -2,8 +2,6 @@ import createPlugin from 'tailwindcss/plugin.js'
 import { colors } from './colors'
 import { defaultTheme } from './default-theme'
 
-function designSystem() {}
-
 const defineConfig = {
   theme: {
     extend: {
@@ -13,4 +11,6 @@ const defineConfig = {
   },
 }
 
-export default createPlugin(designSystem, defineConfig)
+export function designSystem() {
+  return createPlugin(designSystem, defineConfig)
+}

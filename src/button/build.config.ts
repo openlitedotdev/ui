@@ -10,7 +10,6 @@ export default defineBuildConfig({
       format: 'esm',
       target: 'es2019',
       jsxFragment: 'Fragment',
-      jsxFactory: 'h',
     },
   },
 })
