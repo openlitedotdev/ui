@@ -3,9 +3,14 @@ import { defineBuildConfig } from 'unbuild'
 export default defineBuildConfig({
   entries: ['./src/index'],
   declaration: true,
-  peerDependencies: ['tailwindcss'],
   clean: true,
   rollup: {
-    inlineDependencies: true,
+    esbuild: {
+      jsx: 'automatic',
+      format: 'esm',
+      target: 'es2019',
+      jsxFragment: 'Fragment',
+      jsxFactory: 'h',
+    },
   },
 })

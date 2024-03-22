@@ -5,11 +5,28 @@
   "author": "",
   "license": "ISC",
   "keywords": [],
-  "main": "index.js",
+  "sideEffects": false,
+  "main": "./dist/index.mjs",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "unbuild"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "dependencies": {
+    "@design-system/button": "workspace:*",
     "@design-system/theme": "workspace:*"
+  },
+  "devDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "unbuild": "2.0.0"
   }
 }

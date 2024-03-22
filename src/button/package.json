@@ -1,16 +1,30 @@
 {
-  "name": "button",
+  "name": "@design-system/button",
   "version": "1.0.0",
   "description": "",
   "author": "",
   "license": "ISC",
   "keywords": [],
-  "main": "index.js",
+  "main": "./dist/index.mjs",
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "unbuild"
   },
   "peerDependencies": {
     "react": ">=18",
     "react-dom": ">=18"
+  },
+  "devDependencies": {
+    "@design-system/theme": "workspace:*",
+    "@types/react": "18.2.67",
+    "@types/react-dom": "18.2.22",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "unbuild": "2.0.0"
   }
 }

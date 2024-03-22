@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Button } from '@design-system/react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 
@@ -8,6 +9,7 @@ function App() {
   return (
     <>
       <div>
+        <Button />
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="object-cover" alt="Vite logo" />
         </a>
