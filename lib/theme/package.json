@@ -20,6 +20,9 @@
   "peerDependencies": {
     "tailwindcss": "*"
   },
+  "dependencies": {
+    "tailwind-variants": "0.2.1"
+  },
   "devDependencies": {
     "tailwindcss": "3.4.1",
     "unbuild": "2.0.0"
