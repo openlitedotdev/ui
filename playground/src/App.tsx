@@ -7,7 +7,7 @@ function App() {
 
   return (
     <>
-      <Button variant="success" className="bg-success-50">
+      <Button variant="success">
         First component
       </Button>
       <div>

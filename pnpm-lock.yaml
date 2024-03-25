@@ -32,14 +32,20 @@ importers:
       lint-staged:
         specifier: 15.2.2
         version: 15.2.2
+      tsup:
+        specifier: 8.0.2
+        version: 8.0.2(postcss@8.4.38)(typescript@5.4.2)
       typescript:
         specifier: 5.4.2
         version: 5.4.2
 
   lib/react:
     dependencies:
+      '@desing-system/theme':
+        specifier: workspace:*
+        version: link:../..
       '@radix-ui/react-slot':
-        specifier: ^1.0.2
+        specifier: 1.0.2
         version: 1.0.2(@types/react@18.2.69)(react@18.2.0)
       class-variance-authority:
         specifier: 0.7.0
