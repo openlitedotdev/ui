@@ -1,4 +1,4 @@
 export * from './plugin'
 
 // Components
-export * from './button'
+export * from './components/button'
