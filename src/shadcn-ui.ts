@@ -1,12 +1,6 @@
 export const cssBase = {
   ':root': {
-    '--card': '0 0% 100%',
-    '--popover': '0 0% 100%',
-    '--input': '0 0% 89.8%',
-    '--ring': '0 0% 3.9%',
-    '--border': '0 0% 89.8%',
-    '--radius': '0.5rem',
-
+    /* Colors */
     /* -- Color success -- */
     '--success-50': '140 92 95',
     '--success-100': '141 88 84',
@@ -31,19 +25,27 @@ export const cssBase = {
     '--primary-800': '64 100 26',
     '--primary-900': '64 100 20',
 
-    '--warn': '38 92% 50%',
-    '--secondary': '0 0% 96.1%',
+    /* Box Sahdow */
+    '--shadow-sm': '0 1px 2px 0 rgb(0 0 0 / 0.05)',
+    '--shadow': '0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1)',
+    '--shadow-md': '0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)',
+    '--shadow-lg': '0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1)',
+    '--shadow-xl': '0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)',
+    '--shadow-2xl': '0 25px 50px -12px rgb(0 0 0 / 0.25)',
+    '--shadow-inner': 'inset 0 2px 4px 0 rgb(0 0 0 / 0.05)',
+    '--shadow-none': '0 0 rgb(0, 0 / 0, 0)',
+
+    /** Border raidus */
+    '--radius': '0.5rem',
+    '--radius-sm': '0.8rem',
+    '--radius-md': '0.75rem',
+    '--radius-lg': '0.875rem',
+    '--radius-full': '50%',
   },
 }
 
 export const cssBaseDark = {
   '.dark': {
-    '--card': '0 0% 3.9%',
-    '--border': '0 0% 14.9%',
-    '--input': '0 0% 14.9%',
-    '--popover': '0 0% 3.9%',
-    '--ring': '0 0% 83.1%',
-
     /* Color success dark */
     '--success-50': '140 92 95',
     '--success-100': '141 88 84',
@@ -68,7 +70,21 @@ export const cssBaseDark = {
     '--primary-800': '141 100 26',
     '--primary-900': '141 100 20',
 
-    '--warn': '48 96% 89%',
-    '--secondary': '0 0% 14.9%',
+    /* Box Sahdow */
+    '--shadow-sm': '0 1px 2px 0 rgb(0 0 0 / 0.05)',
+    '--shadow': '0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1)',
+    '--shadow-md': '0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)',
+    '--shadow-lg': '0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1)',
+    '--shadow-xl': '0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)',
+    '--shadow-2xl': '0 25px 50px -12px rgb(0 0 0 / 0.25)',
+    '--shadow-inner': 'inset 0 2px 4px 0 rgb(0 0 0 / 0.05)',
+    '--shadow-none': '0 0 rgb(0, 0 / 0, 0)',
+
+    /** Border raidus */
+    '--radius': '0.5rem',
+    '--radius-sm': '0.8rem',
+    '--radius-md': '0.75rem',
+    '--radius-lg': '0.875rem',
+    '--radius-full': '50%',
   },
 }
