@@ -6,13 +6,11 @@
   "author": "",
   "license": "MIT",
   "keywords": [],
-  "main": "index.js",
   "scripts": {
     "lint": "eslint .",
-    "build-lib": "pnpm -r --filter=./lib/* build",
-    "build": "pnpm -r --filter=./src/* build && pnpm run build-lib",
+    "build": "pnpm -r --filter=./lib/* build",
     "prepare": "husky",
-    "playground": "pnpm -r --filter=./playground/* dev"
+    "playground": "pnpm -r --filter=./playground dev"
   },
   "devDependencies": {
     "@antfu/eslint-config": "2.8.3",

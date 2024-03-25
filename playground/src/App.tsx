@@ -1,19 +1,18 @@
 import { useState } from 'react'
 import { Button } from '@design-system/react'
 import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
+      <Button variant="success" className="bg-success-50">
+        First component
+      </Button>
       <div>
-        <Button>
-          My component
-        </Button>
-        <a href="https://vitejs.dev" target="_blank" className="text-5xl">
-          <img src={viteLogo} className="object-cover" alt="Vite logo" />
+        <a href="https://vitejs.dev" target="_blank" className="text-red-500">
+          JAJAJAJ
         </a>
         <a href="https://react.dev" target="_blank">
           <img src={reactLogo} className="logo react" alt="React logo" />

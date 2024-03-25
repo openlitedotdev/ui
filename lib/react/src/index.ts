@@ -1,2 +1,2 @@
-export * from '@design-system/theme'
-export * from '@design-system/button'
+export * from './components'
+export * from './create-plugin'
