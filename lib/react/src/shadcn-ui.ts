@@ -69,7 +69,6 @@ export const cssBaseDark = {
     '--primary-900': '141 100 20',
 
     '--warn': '48 96% 89%',
-    '--primary': '0 0% 98%',
     '--secondary': '0 0% 14.9%',
   },
 }
