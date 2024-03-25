@@ -1,6 +1,6 @@
 import plugin from 'tailwindcss/plugin'
-import { config, cssBase, cssBaseDark } from '@desing-system/theme'
+import { config, cssBase } from '@desing-system/theme'
 
 export const react = plugin(({ addBase }) => {
-  addBase({ ...cssBase, ...cssBaseDark })
+  addBase({ ...cssBase })
 }, config)

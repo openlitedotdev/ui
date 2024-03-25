@@ -12,7 +12,11 @@
   "types": "./dist/index.d.ts",
   "scripts": {
     "lint": "eslint .",
-    "build": "tsup src/index.ts --dts --format esm,cjs && pnpm -r --filter=./lib/* build",
+    "build-lib": "pnpm -r --filter=./lib/* build",
+    "build-theme": "tsup",
+    "dev-lib": "pnpm install && pnpm -r --filter=./lib/* dev",
+    "dev": "pnpm install && tsup --watch",
+    "build": "pnpm run build-theme && pnpm run build-lib",
     "prepare": "husky",
     "playground": "pnpm -r --filter=./playground dev"
   },

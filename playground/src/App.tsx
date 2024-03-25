@@ -7,11 +7,11 @@ function App() {
 
   return (
     <>
-      <Button variant="success">
+      <Button variant="danger">
         First component
       </Button>
       <div>
-        <a href="https://vitejs.dev" target="_blank" className="text-red-500">
+        <a href="https://vitejs.dev" target="_blank" className="text-danger-500">
           JAJAJAJ
         </a>
         <a href="https://react.dev" target="_blank">

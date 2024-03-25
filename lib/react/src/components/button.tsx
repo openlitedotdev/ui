@@ -13,7 +13,7 @@ const buttonVariants = cva(
         success: 'bg-success-400 text-white hover:bg-success-400/80',
         primary: 'bg-primary-400 text-black shadow hover:bg-primary-400/80',
         secondary: 'bg-secondary text-secondary-foreground shadow-sm hover:bg-secondary/80',
-        destructive: 'bg-destructive text-destructive-foreground shadow-sm hover:bg-destructive/90',
+        danger: 'bg-error-400 text-white shadow-sm hover:bg-error-400/90',
       },
       size: {
         default: 'h-9 px-4 py-2',

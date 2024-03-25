@@ -1,4 +1,4 @@
-import { primary, success } from './colors'
+import { dark, error, primary, secondary, success, warn } from './colors'
 import { boxShadow } from './box-shadows'
 import { borderRadius } from './radius'
 
@@ -15,6 +15,10 @@ export const config = {
       colors: {
         success,
         primary,
+        secondary,
+        warn,
+        dark,
+        error,
       },
       boxShadow,
       borderRadius,
