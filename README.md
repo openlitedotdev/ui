@@ -57,7 +57,7 @@ _Display_
 - [ ] Avatar
 - [ ] Accordion
 - [x] Alert
-- [ ] Badge
+- [x] Badge
 - [ ] Menu
 - [ ] Tooltips
 - [ ] Tables
