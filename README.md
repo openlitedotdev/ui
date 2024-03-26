@@ -28,7 +28,7 @@ This design system is totally easy to use with the aim of facilitating upcoming 
 
 _General_
 
-- [*] Button
+- [x] Button
 - [ ] Typography
 - [ ] Icon
 - [ ] Image
@@ -56,7 +56,7 @@ _Display_
 - [ ] Card
 - [ ] Avatar
 - [ ] Accordion
-- [ ] Alert
+- [x] Alert
 - [ ] Badge
 - [ ] Menu
 - [ ] Tooltips
