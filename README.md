@@ -56,7 +56,7 @@ _Display_
 - [ ] Card
 - [ ] Avatar
 - [ ] Accordion
-- [ ] Alert
+- [x] Alert
 - [ ] Badge
 - [ ] Menu
 - [ ] Tooltips
