@@ -11,7 +11,8 @@
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
-    "build": "tsup src/index.ts --dts --format esm,cjs"
+    "build": "tsup",
+    "dev": "tsup --watch"
   },
   "peerDependencies": {
     "react": ">=18",
@@ -19,10 +20,10 @@
     "tailwindcss": "^3.0.0"
   },
   "dependencies": {
-    "@radix-ui/react-slot": "^1.0.2",
+    "@desing-system/theme": "workspace:*",
+    "@radix-ui/react-slot": "1.0.2",
     "class-variance-authority": "0.7.0",
     "clsx": "2.1.0",
-    "lucide-react": "0.363.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "tailwind-merge": "2.2.2",

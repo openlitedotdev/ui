@@ -32,14 +32,23 @@ importers:
       lint-staged:
         specifier: 15.2.2
         version: 15.2.2
+      tailwindcss:
+        specifier: 3.4.1
+        version: 3.4.1
+      tsup:
+        specifier: 8.0.2
+        version: 8.0.2(postcss@8.4.38)(typescript@5.4.2)
       typescript:
         specifier: 5.4.2
         version: 5.4.2
 
   lib/react:
     dependencies:
+      '@desing-system/theme':
+        specifier: workspace:*
+        version: link:../..
       '@radix-ui/react-slot':
-        specifier: ^1.0.2
+        specifier: 1.0.2
         version: 1.0.2(@types/react@18.2.69)(react@18.2.0)
       class-variance-authority:
         specifier: 0.7.0
@@ -47,9 +56,6 @@ importers:
       clsx:
         specifier: 2.1.0
         version: 2.1.0
-      lucide-react:
-        specifier: 0.363.0
-        version: 0.363.0(react@18.2.0)
       react:
         specifier: 18.2.0
         version: 18.2.0
@@ -81,6 +87,9 @@ importers:
 
   playground:
     dependencies:
+      lucide-react:
+        specifier: 0.363.0
+        version: 0.363.0(react@18.2.0)
       react:
         specifier: ^18.2.0
         version: 18.2.0

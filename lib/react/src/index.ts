@@ -1,2 +1,5 @@
-export * from './components'
-export * from './create-plugin'
+export * from './plugin'
+
+// Components
+export * from './components/button'
+export * from './components/alert'

@@ -1,41 +1,60 @@
-import { useState } from 'react'
-import { Button } from '@design-system/react'
-import reactLogo from './assets/react.svg'
+import { Alert, AlertDescription, AlertTitle, Button } from '@design-system/react'
+import { CircleAlert, MailCheck, TriangleAlert } from 'lucide-react'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <Button variant="success" className="bg-success-50">
-        First component
-      </Button>
-      <div>
-        <a href="https://vitejs.dev" target="_blank" className="text-red-500">
-          JAJAJAJ
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount(count => count + 1)}>
-          count is
-          {' '}
-          {count}
-        </button>
-        <p>
-          Edit
-          {' '}
-          <code>src/App.tsx</code>
-          {' '}
-          and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <main className="container mx-auto bg-purple-400/80 text-white h-screen flex justify-center items-center gap-6 mt-10 rounded flex-col">
+        <Button variant="success" size="lg">
+          Examples UI
+        </Button>
+        <Button variant="primary" size="lg">
+          Examples UI
+        </Button>
+        <Button variant="secondary" size="lg">
+          Examples UI
+        </Button>
+        <Button variant="error" size="lg">
+          Examples UI
+        </Button>
+        <Button>
+          Examples UI
+        </Button>
+        <Button variant="warn">
+          Examples UI
+        </Button>
+        <Button>
+          <TriangleAlert className="size-6" />
+          Examples UI
+        </Button>
+        <Alert variant="error">
+          <TriangleAlert className="size-6" />
+          <AlertTitle>
+            Hi Teams Open Land
+          </AlertTitle>
+          <AlertDescription>
+            This example component alert by Open Land
+          </AlertDescription>
+        </Alert>
+        <Alert variant="success">
+          <MailCheck className="size-6" />
+          <AlertTitle>
+            Hi Teams Open Land
+          </AlertTitle>
+          <AlertDescription>
+            This example component alert by Open Land
+          </AlertDescription>
+        </Alert>
+        <Alert variant="warn">
+          <CircleAlert className="size-6" />
+          <AlertTitle>
+            Hi Teams Open Land
+          </AlertTitle>
+          <AlertDescription>
+            This example component alert by Open Land
+          </AlertDescription>
+        </Alert>
+      </main>
     </>
   )
 }

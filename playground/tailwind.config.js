@@ -1,4 +1,4 @@
-import { useDesign } from '@design-system/react'
+import { react } from '@design-system/react'
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -10,5 +10,5 @@ export default {
   theme: {
     extend: {},
   },
-  plugins: [useDesign],
+  plugins: [react],
 }
