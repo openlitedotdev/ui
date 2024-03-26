@@ -1,0 +1,22 @@
+{
+  "name": "@desing-system/theme",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "author": "",
+  "license": "MIT",
+  "keywords": [],
+  "sideEffects": false,
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "dev": "tsup --watch",
+    "build": "tsup"
+  },
+  "devDependencies": {
+    "tailwindcss": "3.4.1",
+    "tsup": "8.0.2",
+    "typescript": "5.4.2"
+  }
+}
