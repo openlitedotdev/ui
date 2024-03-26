@@ -1,16 +1,15 @@
+import type { Config } from 'tailwindcss'
+import { fontFamily } from 'tailwindcss/defaultTheme'
 import { dark, error, primary, secondary, success, warn } from './colors'
 import { boxShadow } from './box-shadows'
 import { borderRadius } from './radius'
+import { container } from './screens'
 
-export const config = {
+export const config: Config = {
+  content: [],
+  darkMode: ['class'],
   theme: {
-    container: {
-      center: true,
-      padding: '2rem',
-      screens: {
-        '2xl': '1400px',
-      },
-    },
+    container,
     extend: {
       colors: {
         success,
@@ -22,7 +21,9 @@ export const config = {
       },
       boxShadow,
       borderRadius,
-
+      fontFamily: {
+        archivo: ['var(--font-archivo)', ...fontFamily.sans],
+      },
       keyframes: {
         'accordion-down': {
           from: { height: '0' },
@@ -39,4 +40,5 @@ export const config = {
       },
     },
   },
+  plugins: [],
 }

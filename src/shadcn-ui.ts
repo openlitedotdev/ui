@@ -1,4 +1,7 @@
 export const cssBase = {
+  '*': {
+    'font-family': 'var(--font-archivo)',
+  },
   ':root': {
     /* Colors */
     /* -- Color success -- */
@@ -89,5 +92,8 @@ export const cssBase = {
     '--radius-md': '0.75rem',
     '--radius-lg': '0.875rem',
     '--radius-full': '50%',
+
+    /** Font family */
+    '--font-archivo': '"Archivo", sans-serif',
   },
 }
