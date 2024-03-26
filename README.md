@@ -6,13 +6,12 @@ This is the source code for https://desing-system.dev by Open Land
 
 <br>
 
-## Project Information
+## Features
 
-**Goals**
-
-- Open Sources
-- Improve the design
-- Easy to use
+- Built with [Shadcn UI](https://https://ui.shadcn.com//) and [Tailwind CSS](https://tailwindcss.com/)
+- Customizable
+- Dark mode support
+- [Figma Kit](https://www.figma.com/community/file/1354464067434498042)
 
 ## Getting Started
 
@@ -32,6 +31,7 @@ _General_
 - [ ] Typography
 - [ ] Icon
 - [ ] Image
+- [x] Carousel
 
 _Data Input_
 
