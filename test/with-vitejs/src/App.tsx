@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Button } from '@design-system/react'
+import { Badge, Button } from '@design-system/react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 
@@ -11,6 +11,9 @@ function App() {
       <Button>
         Examples UI
       </Button>
+      <Badge>
+        Examples
+      </Badge>
       <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
