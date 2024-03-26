@@ -1,5 +1,5 @@
-import { Alert, AlertDescription, AlertTitle, Button } from '@design-system/react'
-import { CircleAlert, MailCheck, TriangleAlert } from 'lucide-react'
+import { Alert, AlertDescription, AlertTitle, Button, Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@design-system/react'
+import { ArrowLeft, ArrowRight, CircleAlert, MailCheck, TriangleAlert } from 'lucide-react'
 
 function App() {
   return (
@@ -54,6 +54,27 @@ function App() {
             This example component alert by Open Land
           </AlertDescription>
         </Alert>
+
+        <Carousel opts={{ align: 'start' }} className="w-full max-w-sm">
+          <CarouselContent>
+            {Array.from({ length: 5 }).map((_, index) => (
+              <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+                <div className="p-1">
+                  <div className="flex aspect-square items-center justify-center p-6">
+                    <span className="text-3xl font-semibold">{index + 1}</span>
+                  </div>
+                </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious>
+            <ArrowLeft className="size-6" />
+          </CarouselPrevious>
+          <CarouselNext>
+            <ArrowRight className="size-6" />
+          </CarouselNext>
+        </Carousel>
+
       </main>
     </>
   )
