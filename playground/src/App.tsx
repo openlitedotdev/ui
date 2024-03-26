@@ -23,6 +23,10 @@ function App() {
         <Button variant="warn">
           Examples UI
         </Button>
+        <Button>
+          <TriangleAlert className="size-6" />
+          Examples UI
+        </Button>
         <Alert variant="error">
           <TriangleAlert className="size-6" />
           <AlertTitle>
