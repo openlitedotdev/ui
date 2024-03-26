@@ -28,7 +28,7 @@ This design system is totally easy to use with the aim of facilitating upcoming 
 
 _General_
 
-- [ ] Button
+- [*] Button
 - [ ] Typography
 - [ ] Icon
 - [ ] Image
