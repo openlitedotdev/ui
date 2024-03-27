@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { AlertDialog, AlertDialogAction, AlertDialogCancel, AlertDialogContent, AlertDialogDescription, AlertDialogFooter, AlertDialogHeader, AlertDialogTitle, AlertDialogTrigger, Badge, Button } from '@design-system/react'
+import { AlertDialog, AlertDialogAction, AlertDialogCancel, AlertDialogContent, AlertDialogDescription, AlertDialogFooter, AlertDialogHeader, AlertDialogTitle, AlertDialogTrigger, Avatar, AvatarFallback, AvatarImage, Badge, Button } from '@design-system/react'
 
 export default function Home() {
   return (
@@ -21,6 +21,12 @@ export default function Home() {
         <Badge variant="success">
           Examples UI
         </Badge>
+        <Avatar>
+          <AvatarImage src="https://raw.githubusercontent.com/castrogarciajs/castrogarciajs/master/public/sebastian.jpg" />
+          <AvatarFallback>
+            JS
+          </AvatarFallback>
+        </Avatar>
         <AlertDialog>
           <AlertDialogTrigger>Open</AlertDialogTrigger>
           <AlertDialogContent>
