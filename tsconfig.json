@@ -16,5 +16,7 @@
     "esModuleInterop": true,
     "isolatedModules": true,
     "skipLibCheck": true
-  }
+  },
+  "include": ["packages"],
+  "exclude": ["**/node_modules", "**/dist", "**/.turbo"]
 }
