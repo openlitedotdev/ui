@@ -1,5 +1,4 @@
 import type { Config } from 'tailwindcss'
-import { fontFamily } from 'tailwindcss/defaultTheme'
 import { dark, error, primary, secondary, success, warn } from './colors'
 import { boxShadow } from './box-shadows'
 import { borderRadius } from './radius'
@@ -21,9 +20,6 @@ export const config: Config = {
       },
       boxShadow,
       borderRadius,
-      fontFamily: {
-        archivo: ['var(--font-archivo)', ...fontFamily.sans],
-      },
       keyframes: {
         'accordion-down': {
           from: { height: '0' },

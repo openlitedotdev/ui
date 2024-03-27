@@ -14,6 +14,9 @@
     "dev": "tsup --watch",
     "build": "tsup"
   },
+  "dependencies": {
+    "@fontsource-variable/archivo": "5.0.18"
+  },
   "devDependencies": {
     "tailwindcss": "3.4.1",
     "tsup": "8.0.2",
