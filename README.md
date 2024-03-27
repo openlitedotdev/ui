@@ -33,7 +33,7 @@ _General_
 
 _Data Input_
 
-- [ ] Input
+- [x] Input
 - [ ] InputNumber
 - [ ] Select
 - [ ] Checkbox
