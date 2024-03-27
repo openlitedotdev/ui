@@ -1,7 +1,8 @@
 import { useState } from 'react'
-import { AlertDialog, AlertDialogAction, AlertDialogCancel, AlertDialogContent, AlertDialogDescription, AlertDialogFooter, AlertDialogHeader, AlertDialogTitle, AlertDialogTrigger, Badge, Button, Input, Label, Select, SelectContent, SelectItem, SelectTrigger, SelectValue, Table, TableBody, TableCaption, TableCell, TableHead, TableHeader, TableRow } from '@design-system/react'
+import { AlertDialog, AlertDialogAction, AlertDialogCancel, AlertDialogContent, AlertDialogDescription, AlertDialogFooter, AlertDialogHeader, AlertDialogTitle, AlertDialogTrigger, Badge, Button, Card, CardContent, CardDescription, CardHeader, CardTitle, Input, Label, Select, SelectContent, SelectItem, SelectTrigger, SelectValue, Table, TableBody, TableCaption, TableCell, TableHead, TableHeader, TableRow } from '@design-system/react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
+import imgPrueba from '/bghome.png'
 import { DialogCloseButton } from './test-dialog'
 
 function App() {
@@ -32,6 +33,22 @@ function App() {
       <Badge>
         Examples
       </Badge>
+
+      <Card className="w-96">
+        <CardHeader>
+          <img src={imgPrueba} alt="" className="shadow-md rounded" />
+        </CardHeader>
+        <CardContent className="flex justify-between  w-full mt-2">
+          <CardTitle>Apple Iphone</CardTitle>
+          <span className="text-dark-400">$120.00</span>
+        </CardContent>
+        <CardDescription className="text-pretty text-dark-400  m">
+          iPhone 12 combines elegant design with cutting-edge technology, giving you the best mobile experience. With its A14 Bionic chip, the fastest in a smartphone, intense games and professional applications run effortlessly.
+
+        </CardDescription>
+        <Button className="w-full">Add To Cart</Button>
+      </Card>
+
       <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />

@@ -51,7 +51,7 @@ _Layout_
 
 _Display_
 
-- [ ] Card
+- [x] Card
 - [x] Avatar
 - [ ] Accordion
 - [x] Alert
