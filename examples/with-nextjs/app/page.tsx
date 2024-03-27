@@ -17,6 +17,9 @@ export default function Home() {
         <Badge variant="primary">
           Examples UI
         </Badge>
+        <Badge variant="secondary">
+          Examples UI
+        </Badge>
         <Badge variant="error">
           Examples UI
         </Badge>
