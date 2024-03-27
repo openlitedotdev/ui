@@ -35,7 +35,7 @@ _Data Input_
 
 - [x] Input
 - [x] Label
-- [ ] Select
+- [x] Select
 - [ ] Checkbox
 - [ ] Radio
 - [ ] Toggle
