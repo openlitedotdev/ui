@@ -34,7 +34,7 @@ _General_
 _Data Input_
 
 - [x] Input
-- [ ] InputNumber
+- [x] Label
 - [ ] Select
 - [ ] Checkbox
 - [ ] Radio
