@@ -59,7 +59,7 @@ _Display_
 - [x] Badge
 - [ ] Menu
 - [ ] Tooltips
-- [ ] Tables
+- [x] Tables
 - [ ] Code block
 
 _Navigation_
