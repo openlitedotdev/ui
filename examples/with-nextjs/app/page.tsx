@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { AlertDialog, AlertDialogAction, AlertDialogCancel, AlertDialogContent, AlertDialogDescription, AlertDialogFooter, AlertDialogHeader, AlertDialogTitle, AlertDialogTrigger, Avatar, AvatarFallback, AvatarImage, Badge, Button, Input, Label, Table, TableBody, TableCaption, TableCell, TableHead, TableHeader, TableRow } from '@design-system/react'
+import { AlertDialog, AlertDialogAction, AlertDialogCancel, AlertDialogContent, AlertDialogDescription, AlertDialogFooter, AlertDialogHeader, AlertDialogTitle, AlertDialogTrigger, Avatar, AvatarFallback, AvatarImage, Badge, Button, Input, Label, Select, SelectContent, SelectItem, SelectTrigger, SelectValue, Table, TableBody, TableCaption, TableCell, TableHead, TableHeader, TableRow } from '@design-system/react'
 import { DialogDemo } from '@/components/test-dialog'
 
 export default function Home() {
@@ -181,6 +181,17 @@ export default function Home() {
           </TableRow>
         </TableBody>
       </Table>
+
+      <Select>
+        <SelectTrigger>
+          <SelectValue placeholder="select" />
+        </SelectTrigger>
+        <SelectContent>
+          <SelectItem value="light">Light</SelectItem>
+          <SelectItem value="dark">Dark</SelectItem>
+          <SelectItem value="system">System</SelectItem>
+        </SelectContent>
+      </Select>
     </main>
   )
 }
