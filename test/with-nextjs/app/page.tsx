@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { AlertDialog, AlertDialogAction, AlertDialogCancel, AlertDialogContent, AlertDialogDescription, AlertDialogFooter, AlertDialogHeader, AlertDialogTitle, AlertDialogTrigger, Avatar, AvatarFallback, AvatarImage, Badge, Button, Input, Label } from '@design-system/react'
+import { AlertDialog, AlertDialogAction, AlertDialogCancel, AlertDialogContent, AlertDialogDescription, AlertDialogFooter, AlertDialogHeader, AlertDialogTitle, AlertDialogTrigger, Avatar, AvatarFallback, AvatarImage, Badge, Button, Input, Label, Table, TableBody, TableCaption, TableCell, TableHead, TableHeader, TableRow } from '@design-system/react'
 
 export default function Home() {
   return (
@@ -152,6 +152,33 @@ export default function Home() {
           </p>
         </a>
       </div>
+      <Table>
+        <TableCaption>A list of your recent invoices.</TableCaption>
+        <TableHeader>
+          <TableRow>
+            <TableHead className="w-[100px]">Invoice</TableHead>
+            <TableHead>Status</TableHead>
+            <TableHead>Method</TableHead>
+            <TableHead className="text-right">Amount</TableHead>
+          </TableRow>
+        </TableHeader>
+        <TableBody>
+          <TableRow>
+            <TableCell className="font-medium">INV001</TableCell>
+            <TableCell>Paid</TableCell>
+            <TableCell>Credit Card</TableCell>
+            <TableCell className="text-right">$250.00</TableCell>
+          </TableRow>
+        </TableBody>
+        <TableBody>
+          <TableRow>
+            <TableCell className="font-medium">INV001</TableCell>
+            <TableCell>Paid</TableCell>
+            <TableCell>Credit Card</TableCell>
+            <TableCell className="text-right">$250.00</TableCell>
+          </TableRow>
+        </TableBody>
+      </Table>
     </main>
   )
 }
