@@ -23,3 +23,5 @@ turbo dev
 ```shell
 turbo build
 ```
+
+Your ready for worker and add components 🎉
