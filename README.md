@@ -30,6 +30,7 @@ _General_
 - [x] Button
 - [x] Aspect Ratio
 - [x] Carousel
+- [x] Dialog
 
 _Data Input_
 
