@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { AlertDialog, AlertDialogAction, AlertDialogCancel, AlertDialogContent, AlertDialogDescription, AlertDialogFooter, AlertDialogHeader, AlertDialogTitle, AlertDialogTrigger, Badge, Button, Input } from '@design-system/react'
+import { AlertDialog, AlertDialogAction, AlertDialogCancel, AlertDialogContent, AlertDialogDescription, AlertDialogFooter, AlertDialogHeader, AlertDialogTitle, AlertDialogTrigger, Badge, Button, Input, Label } from '@design-system/react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 
@@ -39,6 +39,9 @@ function App() {
         </a>
       </div>
       <div className="container">
+        <Label size="lg">
+          Example UI
+        </Label>
         <Input />
       </div>
       <h1>Vite + React</h1>
