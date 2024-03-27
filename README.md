@@ -28,9 +28,7 @@ This design system is totally easy to use with the aim of facilitating upcoming 
 _General_
 
 - [x] Button
-- [ ] Typography
-- [ ] Icon
-- [ ] Image
+- [x] Aspect Ratio
 - [x] Carousel
 
 _Data Input_
