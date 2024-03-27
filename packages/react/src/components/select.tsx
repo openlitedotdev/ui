@@ -1,10 +1,4 @@
 import * as React from 'react'
-// import {
-//   CaretSortIcon,
-//   CheckIcon,
-//   ChevronDownIcon,
-//   ChevronUpIcon,
-// } from '@radix-ui/react-icons'
 import * as SelectPrimitive from '@radix-ui/react-select'
 
 import { cn } from '../lib/cn'
@@ -29,7 +23,7 @@ const SelectTrigger = React.forwardRef<
   >
     {children}
     <SelectPrimitive.Icon asChild>
-      {/* <CaretSortIcon className="h-4 w-4 opacity-50" /> */}
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6" /></svg>
     </SelectPrimitive.Icon>
   </SelectPrimitive.Trigger>
 ))
@@ -47,7 +41,6 @@ const SelectScrollUpButton = React.forwardRef<
     )}
     {...props}
   >
-    {/* <ChevronUpIcon /> */}
   </SelectPrimitive.ScrollUpButton>
 ))
 SelectScrollUpButton.displayName = SelectPrimitive.ScrollUpButton.displayName
@@ -64,7 +57,10 @@ const SelectScrollDownButton = React.forwardRef<
     )}
     {...props}
   >
-    {/* <ChevronDownIcon /> */}
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevrons-down-up">
+      <path d="m7 20 5-5 5 5" />
+      <path d="m7 4 5 5 5-5" />
+    </svg>
   </SelectPrimitive.ScrollDownButton>
 ))
 SelectScrollDownButton.displayName
@@ -128,7 +124,6 @@ const SelectItem = React.forwardRef<
   >
     <span className="absolute right-2 flex h-3.5 w-3.5 items-center justify-center">
       <SelectPrimitive.ItemIndicator>
-        {/* <CheckIcon className="h-4 w-4" /> */}
       </SelectPrimitive.ItemIndicator>
     </span>
     <SelectPrimitive.ItemText>{children}</SelectPrimitive.ItemText>
