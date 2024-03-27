@@ -30,7 +30,6 @@ _General_
 - [x] Button
 - [x] Aspect Ratio
 - [x] Carousel
-- [x] Dialog
 
 _Data Input_
 
@@ -76,7 +75,7 @@ _Navigation_
 
 _Overlay_
 
-- [ ] Modal
+- [x] Dialog
 - [ ] Context Menu
 - [ ] Drawer / SidePanel
 - [ ] Toast messages / Notification
