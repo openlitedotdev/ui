@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { AlertDialog, AlertDialogAction, AlertDialogCancel, AlertDialogContent, AlertDialogDescription, AlertDialogFooter, AlertDialogHeader, AlertDialogTitle, AlertDialogTrigger, Badge, Button, Input, Label, Table, TableBody, TableCaption, TableCell, TableHead, TableHeader, TableRow } from '@design-system/react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
+import { DialogCloseButton } from './test-dialog'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -11,6 +12,7 @@ function App() {
       <Button>
         Examples UI
       </Button>
+      <DialogCloseButton />
       <AlertDialog>
         <AlertDialogTrigger>Open</AlertDialogTrigger>
         <AlertDialogContent>
