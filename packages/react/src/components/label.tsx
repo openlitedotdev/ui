@@ -12,7 +12,7 @@ const labelVariants = cva(
         success: 'text-success-500 hover:text-success-400/90',
         primary: 'text-primary-500 hover:text-primary-500/90',
         secondary: 'text-secondary-500 hover:text-secondary-500/90',
-        dark: 'text-dark-500 hover:text-dark-500/90',
+        dark: 'text-dark-900 hover:text-dark-900/90',
         warn: 'text-warn-500 hover:text-warn-500/90',
         error: 'text-error-500 hover:text-error-500/90',
       },

@@ -11,7 +11,7 @@ const badgeVariants = cva(
         success: 'bg-success-500 hover:bg-success-400/90',
         primary: 'bg-primary-500 hover:bg-primary-500/90 text-black',
         secondary: 'bg-secondary-500 hover:bg-secondary/90',
-        dark: 'bg-dark-500 hover:bg-dark-500/90',
+        dark: 'bg-dark-900 hover:bg-dark-900/90',
         warn: 'bg-warn-500 hover:bg-warn-500/90',
         error: 'bg-error-500 hover:bg-error-500/90',
       },
