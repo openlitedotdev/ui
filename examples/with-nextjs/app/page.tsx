@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import { AlertDialog, AlertDialogAction, AlertDialogCancel, AlertDialogContent, AlertDialogDescription, AlertDialogFooter, AlertDialogHeader, AlertDialogTitle, AlertDialogTrigger, Avatar, AvatarFallback, AvatarImage, Badge, Button, Input, Label, Table, TableBody, TableCaption, TableCell, TableHead, TableHeader, TableRow } from '@design-system/react'
+import { DialogDemo } from '@/components/test-dialog'
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
           Get started by editing&nbsp;
           <code className="font-mono font-bold">app/page.tsx</code>
         </p>
+        <DialogDemo />
         <Button>
           Examples UI
         </Button>

@@ -12,8 +12,6 @@
   "types": "./dist/index.d.ts",
   "scripts": {
     "lint": "eslint .",
-    "test-dev": "pnpm -r --filter=./test/* dev",
-    "build": "pnpm -r --filter=./lib/* build",
     "prepare": "husky"
   },
   "devDependencies": {
