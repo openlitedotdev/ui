@@ -29,16 +29,16 @@ export const cssBase = {
     '--primary-900': '64 100 20',
 
     /* -- Color secondary */
-    '--secondary-50': '85 92 95',
-    '--secondary-100': '85 88 84',
-    '--secondary-200': '85 89 76',
-    '--secondary-300': '85 89 65',
-    '--secondary-400': '85 89 58',
-    '--secondary-500': '85 100 47',
-    '--secondary-600': '85 100 43',
-    '--secondary-700': '85 100 33',
-    '--secondary-800': '85 100 26',
-    '--secondary-900': '85 100 20',
+    '--secondary-50': '204 100 97',
+    '--secondary-100': '204 94 94',
+    '--secondary-200': '201 94 86',
+    '--secondary-300': '199 95 74',
+    '--secondary-400': '198 93 60',
+    '--secondary-500': '199 89 48',
+    '--secondary-600': '201 96 32',
+    '--secondary-700': '201 90 27',
+    '--secondary-800': '202 80 24',
+    '--secondary-900': '204 80 16',
 
     /* -- Color danger */
     '--error-50': '0 92 95',

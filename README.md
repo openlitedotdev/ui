@@ -35,7 +35,7 @@ _Data Input_
 
 - [x] Input
 - [x] Label
-- [ ] Select
+- [x] Select
 - [ ] Checkbox
 - [ ] Radio
 - [ ] Toggle
@@ -51,7 +51,7 @@ _Layout_
 
 _Display_
 
-- [ ] Card
+- [x] Card
 - [x] Avatar
 - [ ] Accordion
 - [x] Alert
