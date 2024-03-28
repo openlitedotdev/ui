@@ -1,5 +1,18 @@
 # @openui-org/react
 
+## 0.9.0
+
+### Minor Changes
+
+- Add component divider
+- Add component Card
+- Add component Carousel
+
+### Patch Changes
+
+- Updated dependencies
+  - @openui-org/theme@0.6.0
+
 ## 0.8.3
 
 ### Patch Changes
