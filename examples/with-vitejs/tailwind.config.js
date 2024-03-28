@@ -5,7 +5,7 @@ export default {
   content: [
     './index.html',
     './src/**/*.{js,ts,jsx,tsx}',
-    './node_modules/@design-system/react/dist/**/*.{js,ts,jsx,tsx}',
+    './node_modules/@openui-org/react/dist/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
     extend: {},

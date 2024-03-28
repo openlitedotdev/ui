@@ -1,11 +1,23 @@
 {
-  "name": "desing-system",
+  "name": "openui-org",
   "type": "module",
-  "version": "1.0.0",
-  "description": "",
-  "author": "",
+  "version": "0.7.0",
+  "description": "Design System. OpenLand's official framework design system 🎨",
+  "author": "Open Land",
   "license": "MIT",
-  "keywords": [],
+  "homepage": "https://github.com/open-land/design-system#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/open-land/design-system.git"
+  },
+  "bugs": {
+    "url": "https://github.com/open-land/design-system/issues"
+  },
+  "keywords": [
+    "ui",
+    "design system",
+    "open"
+  ],
   "sideEffects": false,
   "main": "./dist/index.js",
   "module": "./dist/index.js",

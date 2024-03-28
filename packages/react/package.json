@@ -1,10 +1,10 @@
 {
-  "name": "@design-system/react",
+  "name": "@openui-org/react",
   "type": "module",
-  "version": "1.0.0",
+  "version": "0.8.3",
   "description": "",
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "keywords": [],
   "sideEffects": false,
   "main": "./dist/index.js",
@@ -20,7 +20,7 @@
     "tailwindcss": "^3.0.0"
   },
   "dependencies": {
-    "@desing-system/theme": "workspace:*",
+    "@openui-org/theme": "workspace:*",
     "@radix-ui/react-alert-dialog": "1.0.5",
     "@radix-ui/react-aspect-ratio": "1.0.3",
     "@radix-ui/react-avatar": "1.0.4",
