@@ -50,7 +50,7 @@ importers:
 
   examples/with-nextjs:
     dependencies:
-      '@design-system/react':
+      '@openui-org/react':
         specifier: workspace:*
         version: link:../../packages/react
       next:
@@ -93,7 +93,7 @@ importers:
 
   examples/with-vitejs:
     dependencies:
-      '@design-system/react':
+      '@openui-org/react':
         specifier: workspace:*
         version: link:../../packages/react
       lucide-react:
@@ -148,7 +148,7 @@ importers:
 
   packages/react:
     dependencies:
-      '@desing-system/theme':
+      '@openui-org/theme':
         specifier: workspace:*
         version: link:../theme
       '@radix-ui/react-alert-dialog':
