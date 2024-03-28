@@ -1,6 +1,6 @@
 # Open UI
 
-<img src="./docs/OpenLand.jpeg" alt="Open Land logo" align="right"  width="100">
+<img src="./OpenLand.jpeg" alt="Open Land logo" align="right"  width="100">
 
 This is the source code for https://openui.org by Open Land
 
@@ -15,7 +15,7 @@ This is the source code for https://openui.org by Open Land
 
 ## Getting Started
 
-<img src="./docs/preview.png" alt="Open Land logo" align="right"  width="300">
+<img src="./preview.png" alt="Open Land logo" align="right"  width="300">
 This design system is totally easy to use with the aim of facilitating upcoming new projects. The design system is a challenge for our team. You can gladly contribute and guide us with ideas to improve... We would be keen to hear any feedback on this project.
 
 <br>
