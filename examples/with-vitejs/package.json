@@ -1,5 +1,5 @@
 {
-  "name": "with-vitejs",
+  "name": "@openui-org/with-vitejs",
   "type": "module",
   "version": "0.0.1",
   "private": true,

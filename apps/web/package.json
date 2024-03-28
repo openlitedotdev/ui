@@ -1,5 +1,5 @@
 {
-  "name": "web",
+  "name": "@openui-org/web",
   "type": "module",
   "version": "0.0.2",
   "scripts": {
