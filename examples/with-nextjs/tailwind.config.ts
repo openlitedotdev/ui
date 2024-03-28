@@ -1,5 +1,5 @@
 import type { Config } from 'tailwindcss'
-import { react } from '@design-system/react'
+import { react } from '@openui-org/react'
 
 const config: Config = {
   content: [

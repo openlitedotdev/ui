@@ -12,7 +12,7 @@ import {
   DialogTrigger,
   Input,
   Label,
-} from '@design-system/react'
+} from '@openui-org/react'
 
 export function DialogCloseButton() {
   return (

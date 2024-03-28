@@ -7,5 +7,9 @@
   "access": "public",
   "baseBranch": "main",
   "updateInternalDependencies": "patch",
-  "ignore": []
+  "ignore": [
+    "@openui-org/web",
+    "@openui-org/with-nextjs",
+    "@openui-org/with-vitejs"
+  ]
 }
