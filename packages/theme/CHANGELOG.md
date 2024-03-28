@@ -1,5 +1,11 @@
 # @openui-org/theme
 
+## 0.6.0
+
+### Minor Changes
+
+- New colors secondary
+
 ## 0.5.2
 
 ### Patch Changes
