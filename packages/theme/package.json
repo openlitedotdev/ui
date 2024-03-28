@@ -1,7 +1,7 @@
 {
-  "name": "@desing-system/theme",
+  "name": "@openui-org/theme",
   "type": "module",
-  "version": "1.0.0",
+  "version": "0.5.2",
   "description": "",
   "author": "",
   "license": "MIT",
@@ -10,6 +10,9 @@
   "main": "./dist/index.js",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "tsup src/index.ts --format esm,cjs --dts --watch",
     "build": "tsup src/index.ts --format esm,cjs --dts"

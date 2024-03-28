@@ -1,8 +1,8 @@
-# Desing System
+# Open UI
 
 <img src="./docs/OpenLand.jpeg" alt="Open Land logo" align="right"  width="100">
 
-This is the source code for https://desing-system.dev by Open Land
+This is the source code for https://openui.org by Open Land
 
 <br>
 
