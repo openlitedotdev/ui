@@ -1,5 +1,11 @@
 # @openui-org/react
 
+## 0.10.3
+
+### Patch Changes
+
+- Remove p-6 in component card
+
 ## 0.10.2
 
 ### Patch Changes
