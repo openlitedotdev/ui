@@ -1,5 +1,11 @@
 # @openui-org/react
 
+## 0.10.2
+
+### Patch Changes
+
+- Add utility important class p-6
+
 ## 0.10.1
 
 ### Patch Changes
