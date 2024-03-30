@@ -1,5 +1,11 @@
 # @openui-org/react
 
+## 0.10.1
+
+### Patch Changes
+
+- Modify styles in component Card
+
 ## 0.10.0
 
 ### Minor Changes
