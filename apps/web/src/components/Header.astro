@@ -1,0 +1,26 @@
+---
+import { Image } from "astro:assets";
+import {Github} from 'lucide-astro'
+import Link from "./Link.astro";
+---
+
+<header class="py-4 px-8 flex justify-between items-center">
+    <figure class="m-0 flex items-center justify-center gap-2">
+        <Image src='/openui-logo.svg' alt='Logo de open UI design system' title='Logo de open ui' width='50' height='50' /> 
+        <h2 class="text-2xl font-medium">
+            Open UI
+        </h2>
+    </figure>
+    <div class="flex justify-center gap-8">
+        <nav class="flex justify-center items-center gap-6">
+            <a href="https://docs.openui.org" class="hover:text-white/90" target="_blank">Docs</a>
+            <a href="https://www.figma.com/community/file/1354464067434498042" class="hover:text-white/90" target="_blank">Figma</a>
+        </nav>
+        <nav class="flex justify-center gap-4 items-center">
+            <Link href="https://github.com/open-land/open-ui" target="_blank">
+                <Github class="size-6" />
+                Github
+            </Link>
+        </nav>
+    </div>
+</header>

@@ -1,11 +1,35 @@
 ---
-import { Button } from '@openui-org/react'
+import {ArrowUpRight} from 'lucide-astro'
 import Layout from '../layouts/Layout.astro';
+import Link from '../components/Link.astro';
 ---
 
 <Layout title="Welcome to Open UI.">
-	<main>
-		<h1>Hello Open Land</h1>
-		<Button> Get Started </Button>
-	</main>
+	<img src="/gradient.png" alt="" class="absolute -top-8 left-2/4 -translate-x-1/2" width="800">
+	<section class="py-24 sm:py-32 md:py-40 relative dark:bg-gradient-to-b from-gray-950 to-gray-900">
+		<div class="mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl gap-16 sm:gap-y-24 flex flex-col">
+			<div class="text-center relative z-[1]">
+				<h1 class="text-6xl font-bold tracking-tight text-white text-balance">
+					<b class="text-secondary-500">
+						Open UI
+					</b>. A modern design system built with  <b class="text-secondary-500">
+					Shadcn UI</b> and 
+					<b class="text-secondary-500">
+						Tailwind CSS
+					</b>
+				</h1>
+				<p class="mt-6 text-lg tracking-tight text-dark-500 text-pretty">
+					Open UI is an open source design system with a completely cutting-edge system. <br> Fully customizable and modifiable you will make UI development much faster with fully stylized components.
+				</p>
+				<div class="mt-10 flex flex-wrap gap-x-6 gap-y-3 justify-center">
+					
+					<Link href="https://docs.openui.org">
+						<ArrowUpRight class="size-6"/>
+						Get Started 
+					</Link>
+					
+				</div>
+			</div>
+		</div>
+	</section>
 </Layout>
