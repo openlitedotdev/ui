@@ -15,6 +15,7 @@ const labelVariants = cva(
         dark: 'text-dark-900 hover:text-dark-900/90',
         warn: 'text-warn-500 hover:text-warn-500/90',
         error: 'text-error-500 hover:text-error-500/90',
+        ligth: 'text-white hover:text-white/90',
       },
       size: {
         sm: 'text-sm',
