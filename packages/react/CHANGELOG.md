@@ -1,5 +1,11 @@
 # @openui-org/react
 
+## 0.10.0
+
+### Minor Changes
+
+- New component `checkbox`
+
 ## 0.9.0
 
 ### Minor Changes
