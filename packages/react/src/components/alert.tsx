@@ -8,10 +8,11 @@ const alertVariants = cva(
   {
     variants: {
       variant: {
-        dark: 'bg-dark-900 text-white',
-        error: 'bg-error-500 dark:bg-error-500',
-        success: 'bg-success-500 dark:bg-success-500',
-        warn: 'bg-warn-500 dark:bg-warn-500',
+        dark: 'bg-dark-900 text-white hover:bg-dark-900/90',
+        error: 'bg-error-500 dark:bg-error-500 hover:bg-error-500/90',
+        success: 'bg-success-500 dark:bg-success-500 hover:bg-success-500/90',
+        warn: 'bg-warn-500 dark:bg-warn-500 hover:bg-warn-500/90',
+        ligth: 'bg-white dark:bg-white hover:bg-white/90',
       },
     },
     defaultVariants: {
