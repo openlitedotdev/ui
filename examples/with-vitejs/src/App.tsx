@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { AlertDialog, AlertDialogAction, AlertDialogCancel, AlertDialogContent, AlertDialogDescription, AlertDialogFooter, AlertDialogHeader, AlertDialogTitle, AlertDialogTrigger, Badge, Button, Card, CardContent, CardDescription, CardHeader, CardTitle, Input, Label, Select, SelectContent, SelectItem, SelectTrigger, SelectValue, Separator, Table, TableBody, TableCaption, TableCell, TableHead, TableHeader, TableRow } from '@openui-org/react'
+import { AlertDialog, AlertDialogAction, AlertDialogCancel, AlertDialogContent, AlertDialogDescription, AlertDialogFooter, AlertDialogHeader, AlertDialogTitle, AlertDialogTrigger, Badge, Button, Card, CardContent, CardDescription, CardHeader, CardTitle, Input, Label, ScrollArea, Select, SelectContent, SelectItem, SelectTrigger, SelectValue, Separator, Table, TableBody, TableCaption, TableCell, TableFooter, TableHead, TableHeader, TableRow } from '@openui-org/react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import imgPrueba from '/bghome.png'
@@ -10,9 +10,19 @@ function App() {
 
   return (
     <>
-      <Button>
+      <Button variant="ligth">
         Examples UI
       </Button>
+      <Select>
+        <SelectTrigger>
+          <SelectValue placeholder="Theme" />
+        </SelectTrigger>
+        <SelectContent>
+          <SelectItem value="light">Light</SelectItem>
+          <SelectItem value="dark">Dark</SelectItem>
+          <SelectItem value="system">System</SelectItem>
+        </SelectContent>
+      </Select>
       <DialogCloseButton />
       <AlertDialog>
         <AlertDialogTrigger>Open</AlertDialogTrigger>
@@ -30,11 +40,11 @@ function App() {
           </AlertDialogFooter>
         </AlertDialogContent>
       </AlertDialog>
-      <Badge>
+      <Badge variant="ligth">
         Examples
       </Badge>
 
-      <Card className="w-96">
+      <Card className="w-96 p-2">
         <CardHeader>
           <img src={imgPrueba} alt="" className="shadow-md rounded" />
         </CardHeader>
@@ -44,9 +54,8 @@ function App() {
         </CardContent>
         <CardDescription className="text-pretty text-dark-400  m">
           iPhone 12 combines elegant design with cutting-edge technology, giving you the best mobile experience. With its A14 Bionic chip, the fastest in a smartphone, intense games and professional applications run effortlessly.
-
         </CardDescription>
-        <Button className="w-full">Add To Cart</Button>
+        <Button variant="ligth" className="w-full">Add To Cart</Button>
       </Card>
       <div className="w-60">
         <div className="space-y-1">
@@ -55,6 +64,14 @@ function App() {
             An open-source UI component library.
           </p>
         </div>
+        <ScrollArea className="h-[200px] w-[350px] rounded-md">
+          Jokester began sneaking into the castle in the middle of the night and leaving
+          jokes all over the place: under the king's pillow, in his soup, even in the
+          royal toilet. The king was furious, but he couldn't seem to stop Jokester. And
+          then, one day, the people of the kingdom discovered that the jokes left by
+          Jokester were so funny that they couldn't help but laugh. And once they
+          started laughing, they couldn't stop.
+        </ScrollArea>
         <Separator className="my-4" />
         <div className="flex h-5 items-center space-x-4 text-sm">
           <div>Blog</div>
@@ -122,18 +139,13 @@ function App() {
             <TableCell className="text-right">$250.00</TableCell>
           </TableRow>
         </TableBody>
+        <TableFooter>
+          <TableRow>
+            <TableCell colSpan={3}>Total</TableCell>
+            <TableCell className="text-right">$2,500.00</TableCell>
+          </TableRow>
+        </TableFooter>
       </Table>
-
-      <Select>
-        <SelectTrigger>
-          <SelectValue placeholder="Theme" />
-        </SelectTrigger>
-        <SelectContent>
-          <SelectItem value="light">Light</SelectItem>
-          <SelectItem value="dark">Dark</SelectItem>
-          <SelectItem value="system">System</SelectItem>
-        </SelectContent>
-      </Select>
 
     </>
   )
