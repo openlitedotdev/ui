@@ -1,5 +1,11 @@
 # @openui-org/react
 
+## 0.11.0
+
+### Minor Changes
+
+- New component scroll-area
+
 ## 0.10.3
 
 ### Patch Changes
