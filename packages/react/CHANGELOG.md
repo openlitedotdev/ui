@@ -1,5 +1,11 @@
 # @openui-org/react
 
+## 0.12.0
+
+### Minor Changes
+
+- New component tooltip
+
 ## 0.11.0
 
 ### Minor Changes
