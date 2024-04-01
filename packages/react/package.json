@@ -1,8 +1,8 @@
 {
   "name": "@openui-org/react",
   "type": "module",
-  "version": "0.10.3",
-  "description": "",
+  "version": "0.11.0",
+  "description": "Open UI. A modern design system built with Shadcn UI and Tailwindcss",
   "author": "",
   "license": "MIT",
   "keywords": [],
