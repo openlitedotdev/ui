@@ -1,5 +1,11 @@
 # @openui-org/react
 
+## 0.12.1
+
+### Patch Changes
+
+- Remove space unnecessary in component menu.tsx
+
 ## 0.12.0
 
 ### Minor Changes
