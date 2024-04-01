@@ -58,7 +58,7 @@ _Display_
 - [x] Alert Dialog
 - [x] Badge
 - [ ] Menu
-- [ ] Tooltips
+- [x] Tooltips
 - [x] Tables
 - [ ] Code block
 
