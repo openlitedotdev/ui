@@ -67,7 +67,7 @@ _Navigation_
 - [ ] Tabs
 - [ ] Breadcrumb
 - [ ] Dropdown
-- [ ] Menu
+- [x] Menu
 - [ ] Page Header
 - [ ] Sidebar
 - [ ] Flyout menu
