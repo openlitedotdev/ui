@@ -36,7 +36,7 @@ _Data Input_
 - [x] Input
 - [x] Label
 - [x] Select
-- [ ] Checkbox
+- [x] Checkbox
 - [ ] Radio
 - [ ] Toggle
 - [ ] Upload
@@ -57,7 +57,6 @@ _Display_
 - [x] Alert
 - [x] Alert Dialog
 - [x] Badge
-- [ ] Menu
 - [x] Tooltips
 - [x] Tables
 - [ ] Code block
