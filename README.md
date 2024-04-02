@@ -68,7 +68,7 @@ _Navigation_
 - [ ] Dropdown
 - [x] Menu
 - [ ] Page Header
-- [ ] Sidebar
+- [x] Sheet
 - [ ] Flyout menu
 - [ ] Steps
 
