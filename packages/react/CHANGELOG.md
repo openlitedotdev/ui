@@ -1,5 +1,11 @@
 # @openui-org/react
 
+## 0.13.0
+
+### Minor Changes
+
+- Add new component Sheet
+
 ## 0.12.1
 
 ### Patch Changes
