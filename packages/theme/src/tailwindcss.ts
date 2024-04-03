@@ -27,6 +27,10 @@ export const config: Config = {
           DEFAULT: 'hsl(var(--error))',
           foreground: 'hsl(var(--error-foreground))',
         },
+        sky: {
+          DEFAULT: 'hsl(var(--sky))',
+          foreground: 'hsl(var(--sky-foregorund))',
+        },
         muted: {
           DEFAULT: 'hsl(var(--muted))',
           foreground: 'hsl(var(--muted-foreground))',
