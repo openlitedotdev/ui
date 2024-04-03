@@ -1,22 +1,5 @@
-export const cssBase = {
+export const base = {
   ':root': {
-    /* Colors */
-    '--background': '0 0% 100%',
-    '--foreground': '222.2 47.4% 11.2%',
-    '--muted': '210 40% 96.1%',
-    '--muted-foreground': '215.4 16.3% 46.9%',
-    '--card': '0 0% 100%',
-    '--card-foreground': '222.2 47.4% 11.2%',
-    '--popover': '0 0% 100%',
-    '--popover-foreground': '222.2 47.4% 11.2%',
-    '--border': '214.3 31.8% 91.4%',
-    '--input': '214.3 31.8% 91.4%',
-    '--primary': '222.2 47.4% 11.2%',
-    '--primary-foreground': '210 40% 98%',
-    '--ring': '215 20.2% 65.1%',
-    '--error': '0 100% 50%',
-    '--error-foreground': '210 40% 98%',
-
     /* Box Sahdow */
     '--shadow-sm': '0 1px 2px 0 rgb(0 0 0 / 0.05)',
     '--shadow': '0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1)',
@@ -29,9 +12,53 @@ export const cssBase = {
 
     /** Border raidus */
     '--radius': '0.5rem',
-    '--radius-sm': '0.8rem',
-    '--radius-md': '0.75rem',
-    '--radius-lg': '0.875rem',
-    '--radius-full': '50%',
+  },
+}
+
+export const ligth = {
+  ':root': {
+    '--background': '0 0% 100%',
+    '--foreground': '222.2 47.4% 11.2%',
+    '--muted': '210 40% 96.1%',
+    '--muted-foreground': '215.4 16.3% 46.9%',
+    '--popover': '0 0% 100%',
+    '--popover-foreground': '222.2 47.4% 11.2%',
+    '--border': '214.3 31.8% 91.4%',
+    '--input': '214.3 31.8% 91.4%',
+    '--card': '0 0% 100%',
+    '--card-foreground': '222.2 47.4% 11.2%',
+    '--primary': '222.2 47.4% 11.2%',
+    '--primary-foreground': '210 40% 98%',
+    '--secondary': '210 40% 96.1%',
+    '--secondary-foreground': '222.2 47.4% 11.2%',
+    '--accent': '210 40% 96.1%',
+    '--accent-foreground': '222.2 47.4% 11.2%',
+    '--error': '0 100% 50%',
+    '--error-foreground': '210 40% 98%',
+    '--ring': '215 20.2% 65.1%',
+  },
+}
+
+export const dark = {
+  '.dark': {
+    '--background': '224 71% 4%',
+    '--foreground': '213 31% 91%',
+    '--muted': '223 47% 11%',
+    '--muted-foreground': '215.4 16.3% 56.9%',
+    '--accent': '216 34% 17%',
+    '--accent-foreground': '210 40% 98%',
+    '--popover': '224 71% 4%',
+    '--popover-foreground': '215 20.2% 65.1%',
+    '--border': '216 34% 17%',
+    '--input': '216 34% 17%',
+    '--card': '224 71% 4%',
+    '--card-foreground': '213 31% 91%',
+    '--primary': '210 40% 98%',
+    '--primary-foreground': '222.2 47.4% 1.2%',
+    '--secondary': '222.2 47.4% 11.2%',
+    '--secondary-foreground': '210 40% 98%',
+    '--error': '0 63% 31%',
+    '--error-foreground': '210 40% 98%',
+    '--ring': '216 34% 17%',
   },
 }

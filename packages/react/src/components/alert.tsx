@@ -4,24 +4,24 @@ import { type VariantProps, cva } from 'class-variance-authority'
 import { cn } from '../lib/cn'
 
 const alertVariants = cva(
-  'relative w-full rounded-lg px-4 py-3 text-sm [&>svg+div]:translate-y-[-3px] [&>svg]:absolute [&>svg]:left-4 [&>svg]:top-4 [&>svg]:text-white [&>svg~*]:pl-7',
+  'relative w-full rounded-lg border p-4 [&>svg~*]:pl-7 [&>svg+div]:translate-y-[-3px] [&>svg]:absolute [&>svg]:left-4 [&>svg]:top-4 [&>svg]:text-foreground',
   {
     variants: {
       variant: {
-        dark: 'bg-dark-900 text-white hover:bg-dark-900/90',
-        error: 'bg-error-500 dark:bg-error-500 hover:bg-error-500/90',
-        success: 'bg-success-500 dark:bg-success-500 hover:bg-success-500/90',
-        warn: 'bg-warn-500 dark:bg-warn-500 hover:bg-warn-500/90',
-        ligth: 'bg-white dark:bg-white hover:bg-white/90',
+        default: 'bg-background text-foreground',
+        error: 'border-error/50 text-error dark:border-error [&>svg]:text-error',
       },
     },
     defaultVariants: {
-      variant: 'dark',
+      variant: 'default',
     },
   },
 )
 
-const Alert = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivElement> & VariantProps<typeof alertVariants>>(({ className, variant, ...props }, ref) => (
+const Alert = React.forwardRef<
+  HTMLDivElement,
+  React.HTMLAttributes<HTMLDivElement> & VariantProps<typeof alertVariants>
+>(({ className, variant, ...props }, ref) => (
   <div
     ref={ref}
     role="alert"
@@ -29,13 +29,15 @@ const Alert = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivEleme
     {...props}
   />
 ))
-
 Alert.displayName = 'Alert'
 
-const AlertTitle = React.forwardRef<HTMLParagraphElement, React.HTMLAttributes<HTMLHeadingElement>>(({ className, ...props }, ref) => (
+const AlertTitle = React.forwardRef<
+  HTMLParagraphElement,
+  React.HTMLAttributes<HTMLHeadingElement>
+>(({ className, ...props }, ref) => (
   <h5
     ref={ref}
-    className={cn('mb-1 text-lg font-medium leading-none tracking-tight', className)}
+    className={cn('mb-1 font-medium leading-none tracking-tight', className)}
     {...props}
   />
 ))
@@ -48,7 +50,7 @@ const AlertDescription = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <div
     ref={ref}
-    className={cn('text-base [&_p]:leading-relaxed', className)}
+    className={cn('text-sm [&_p]:leading-relaxed', className)}
     {...props}
   />
 ))
