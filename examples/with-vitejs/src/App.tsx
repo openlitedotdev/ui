@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { AlertDialog, AlertDialogAction, AlertDialogCancel, AlertDialogContent, AlertDialogDescription, AlertDialogFooter, AlertDialogHeader, AlertDialogTitle, AlertDialogTrigger, Badge, Button, Card, CardContent, CardDescription, CardHeader, CardTitle, DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuTrigger, Input, Label, Menubar, MenubarCheckboxItem, MenubarContent, MenubarItem, MenubarMenu, MenubarRadioGroup, MenubarRadioItem, MenubarSeparator, MenubarShortcut, MenubarSub, MenubarSubContent, MenubarSubTrigger, MenubarTrigger, ScrollArea, Select, SelectContent, SelectItem, SelectTrigger, SelectValue, Separator, Table, TableBody, TableCaption, TableCell, TableFooter, TableHead, TableHeader, TableRow, Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@openui-org/react'
+import { Alert, AlertDescription, AlertDialog, AlertDialogAction, AlertDialogCancel, AlertDialogContent, AlertDialogDescription, AlertDialogFooter, AlertDialogHeader, AlertDialogTitle, AlertDialogTrigger, AlertTitle, Badge, Button, Card, CardContent, CardDescription, CardHeader, CardTitle, DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuTrigger, Input, Label, Menubar, MenubarCheckboxItem, MenubarContent, MenubarItem, MenubarMenu, MenubarRadioGroup, MenubarRadioItem, MenubarSeparator, MenubarShortcut, MenubarSub, MenubarSubContent, MenubarSubTrigger, MenubarTrigger, ScrollArea, Select, SelectContent, SelectItem, SelectTrigger, SelectValue, Separator, Table, TableBody, TableCaption, TableCell, TableFooter, TableHead, TableHeader, TableRow, Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@openui-org/react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import imgPrueba from '/bghome.png'
@@ -10,9 +10,15 @@ function App() {
 
   return (
     <>
-      <Button variant="ligth">
+      <Button variant="ghost">
         Examples UI
       </Button>
+      <Alert>
+        <AlertTitle>Hola</AlertTitle>
+        <AlertDescription>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem, tenetur?
+        </AlertDescription>
+      </Alert>
       <Select>
         <SelectTrigger>
           <SelectValue placeholder="Theme" />
@@ -40,7 +46,7 @@ function App() {
           </AlertDialogFooter>
         </AlertDialogContent>
       </AlertDialog>
-      <Badge variant="ligth">
+      <Badge variant="error">
         Examples
       </Badge>
 
@@ -55,7 +61,7 @@ function App() {
         <CardDescription className="text-pretty text-dark-400  m">
           iPhone 12 combines elegant design with cutting-edge technology, giving you the best mobile experience. With its A14 Bionic chip, the fastest in a smartphone, intense games and professional applications run effortlessly.
         </CardDescription>
-        <Button variant="ligth" className="w-full">Add To Cart</Button>
+        <Button className="w-full">Add To Cart</Button>
       </Card>
       <div className="w-60">
         <div className="space-y-1">

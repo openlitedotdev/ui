@@ -47,7 +47,7 @@ _Data Input_
 
 _Layout_
 
-- [ ] Divider
+- [x] Divider
 
 _Display_
 
