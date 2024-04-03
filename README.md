@@ -65,7 +65,7 @@ _Navigation_
 
 - [ ] Tabs
 - [ ] Breadcrumb
-- [ ] Dropdown
+- [x] Dropdown
 - [x] Menu
 - [ ] Page Header
 - [x] Sheet
