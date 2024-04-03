@@ -1,5 +1,16 @@
 # @openui-org/react
 
+## 1.0.0
+
+### Major Changes
+
+- New Components with design of theme
+
+### Patch Changes
+
+- Updated dependencies
+  - @openui-org/theme@1.0.0
+
 ## 0.13.0
 
 ### Minor Changes
