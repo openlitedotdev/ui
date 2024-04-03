@@ -35,6 +35,8 @@ export const ligth = {
     '--accent-foreground': '222.2 47.4% 11.2%',
     '--error': '0 100% 50%',
     '--error-foreground': '210 40% 98%',
+    '--sky': '198 93 60',
+    '--sky-foreground': '210 40% 98%',
     '--ring': '215 20.2% 65.1%',
   },
 }
