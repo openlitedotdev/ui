@@ -1,11 +1,19 @@
 # @openui-org/react
 
+
 ## 1.0.1
 
 ### Patch Changes
 
 - Updated dependencies
   - @openui-org/theme@1.1.0
+
+## 1.1.0
+
+### Minor Changes
+
+- new component dropdown for library react
+
 
 ## 1.0.0
 
