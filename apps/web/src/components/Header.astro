@@ -2,6 +2,7 @@
 import { Image } from "astro:assets";
 import {Github} from 'lucide-astro'
 import Link from "./Link.astro";
+import { Button } from "@openui-org/react";
 ---
 
 <header class="py-4 px-8 flex justify-between items-center">
@@ -13,14 +14,14 @@ import Link from "./Link.astro";
     </figure>
     <div class="flex justify-center gap-8">
         <nav class="flex justify-center items-center gap-6">
-            <a href="https://docs.openui.org" class="hover:text-white/90" target="_blank">Docs</a>
-            <a href="https://www.figma.com/community/file/1354464067434498042" class="hover:text-white/90" target="_blank">Figma</a>
+            <a href="https://docs.openui.org" target="_blank">Docs</a>
+            <a href="https://www.figma.com/community/file/1354464067434498042" target="_blank">Figma</a>
         </nav>
         <nav class="flex justify-center gap-4 items-center">
-            <Link href="https://github.com/open-land/open-ui" target="_blank">
+            <Button target="_blank">
                 <Github class="size-6" />
                 Github
-            </Link>
+            </Button>
         </nav>
     </div>
 </header>
