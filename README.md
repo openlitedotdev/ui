@@ -37,17 +37,13 @@ _Data Input_
 - [x] Label
 - [x] Select
 - [x] Checkbox
-- [ ] Radio
-- [ ] Toggle
-- [ ] Upload
 - [ ] Slider
 - [ ] Date picker
-- [ ] Time picker
-- [ ] Form
 
 _Layout_
 
 - [x] Divider
+- [ ] Page Header
 
 _Display_
 
@@ -59,7 +55,6 @@ _Display_
 - [x] Badge
 - [x] Tooltips
 - [x] Tables
-- [ ] Code block
 
 _Navigation_
 
@@ -67,19 +62,13 @@ _Navigation_
 - [ ] Breadcrumb
 - [x] Dropdown
 - [x] Menu
-- [ ] Page Header
 - [x] Sheet
-- [ ] Flyout menu
 - [ ] Steps
 
-_Overlay_
+_Loading_
 
 - [x] Dialog
-- [ ] Context Menu
-- [ ] Drawer / SidePanel
-- [ ] Toast messages / Notification
 - [ ] Progress
-- [ ] Feeds / Timeline
 - [x] Skeleton
 
 ## Documentation
