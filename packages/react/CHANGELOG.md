@@ -1,5 +1,10 @@
 # @openui-org/react
 
+## 1.1.1
+
+### Patch Changes
+
+- Semver nomenclature fixed
 
 ## 1.0.1
 
@@ -13,7 +18,6 @@
 ### Minor Changes
 
 - new component dropdown for library react
-
 
 ## 1.0.0
 
