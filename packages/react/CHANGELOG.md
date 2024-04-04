@@ -1,5 +1,18 @@
 # @openui-org/react
 
+## 1.1.1
+
+### Patch Changes
+
+- Semver nomenclature fixed
+
+## 1.0.1
+
+### Patch Changes
+
+- Updated dependencies
+  - @openui-org/theme@1.1.0
+
 ## 1.1.0
 
 ### Minor Changes

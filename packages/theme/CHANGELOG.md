@@ -1,5 +1,11 @@
 # @openui-org/theme
 
+## 1.1.0
+
+### Minor Changes
+
+- A new color was added to the theme library
+
 ## 1.0.0
 
 ### Major Changes
