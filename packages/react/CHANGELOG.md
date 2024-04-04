@@ -1,5 +1,11 @@
 # @openui-org/react
 
+## 1.2.0
+
+### Minor Changes
+
+- new component skeleton for library react
+
 ## 1.1.1
 
 ### Patch Changes
