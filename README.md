@@ -80,6 +80,7 @@ _Overlay_
 - [ ] Toast messages / Notification
 - [ ] Progress
 - [ ] Feeds / Timeline
+- [x] Skeleton
 
 ## Documentation
 
