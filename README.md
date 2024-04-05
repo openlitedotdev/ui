@@ -64,7 +64,7 @@ _Display_
 _Navigation_
 
 - [ ] Tabs
-- [ ] Breadcrumb
+- [x] Breadcrumb
 - [x] Dropdown
 - [x] Menu
 - [ ] Page Header
