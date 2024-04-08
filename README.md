@@ -70,6 +70,7 @@ _Loading_
 - [x] Dialog
 - [x] Progress
 - [x] Skeleton
+- [x] Popover
 
 ## Documentation
 
