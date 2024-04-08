@@ -15,6 +15,7 @@
     "build": "tsup src/index.ts --format esm,cjs --dts"
   },
   "peerDependencies": {
+    "@openui-org/theme": "*",
     "react": ">=18",
     "react-dom": ">=18",
     "tailwindcss": "^3.0.0"
