@@ -68,7 +68,7 @@ _Navigation_
 _Loading_
 
 - [x] Dialog
-- [ ] Progress
+- [x] Progress
 - [x] Skeleton
 
 ## Documentation
