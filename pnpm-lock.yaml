@@ -176,7 +176,7 @@ importers:
   packages/react:
     dependencies:
       '@openui-org/theme':
-        specifier: workspace:*
+        specifier: 1.1.0
         version: link:../theme
       '@radix-ui/react-alert-dialog':
         specifier: 1.0.5

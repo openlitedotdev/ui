@@ -1,6 +1,6 @@
 'use client'
 
-import { Button } from '@design-system/react'
+import { Button } from '@openui-org/react'
 
 export default function ButtonTest() {
   return (
