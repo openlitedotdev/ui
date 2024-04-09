@@ -55,6 +55,7 @@ _Display_
 - [x] Badge
 - [x] Tooltips
 - [x] Tables
+- [x] Calendar
 
 _Navigation_
 
