@@ -1,4 +1,5 @@
 {
-  "extends": "../../tsconfig.json",
-  "include": ["."]
+  "extends": "@openui-org/tsconfig/react-app.json",
+  "include": ["."],
+  "exclude": ["dist", "build", "node_modules"]
 }

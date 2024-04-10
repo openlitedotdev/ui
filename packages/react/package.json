@@ -11,7 +11,7 @@
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
-    "dev": "tsup src/index.ts --format esm,cjs --dts --watch",
+    "compile": "tsup src/index.ts --format esm,cjs --dts --watch",
     "build": "tsup src/index.ts --format esm,cjs --dts"
   },
   "peerDependencies": {
@@ -49,10 +49,9 @@
     "tailwindcss-animate": "1.0.7"
   },
   "devDependencies": {
+    "@openui-org/tsconfig": "workspace:*",
     "@types/react": "18.2.69",
     "@types/react-dom": "18.2.22",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0",
     "tailwindcss": "3.4.1",
     "tsup": "8.0.2",
     "typescript": "5.4.2"

@@ -9,6 +9,9 @@
       "cache": false,
       "outputs": []
     },
+    "compile": {
+      "outputs": ["dist/**"]
+    },
     "lint": {
       "outputs": []
     },
