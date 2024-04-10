@@ -6,7 +6,7 @@ export default function Home() {
     <section className="py-24 sm:py-32 md:py-40 relative">
       <div className="mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl gap-16 sm:gap-y-24 flex flex-col">
         <div className="text-center relative z-[1]">
-          <h1 className="text-6xl font-bold tracking-tight text-balance">
+          <h1 className="text-4xl sm:text-6xl font-bold tracking-tight text-balance">
             <b className="text-sky"> Open UI </b>
             . A modern design system
             built with

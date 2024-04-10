@@ -1,17 +1,18 @@
 import Image from 'next/image'
 import { Button } from '@openui-org/react'
+import openUiLogo from '../public/openui-logo.svg'
 
 export default function Header() {
   return (
     <header className="py-4 px-8 flex justify-between items-center">
       <figure className="m-0 flex items-center justify-center gap-2">
-        <Image src="/openui-logo.svg" alt="Logo de open UI design system" title="Logo de open ui" width="50" height="50" />
-        <h2 className="text-2xl font-medium">
+        <Image src={openUiLogo} alt="Logo de open UI design system" title="Logo de open ui" width="40" height="40" />
+        <h2 className="hidden sm:block text-2xl font-medium">
           Open UI
         </h2>
       </figure>
-      <div className="flex justify-center gap-8">
-        <nav className="flex justify-center items-center gap-6">
+      <div className="flex justify-center gap-4 sm:gap-8">
+        <nav className="flex justify-center items-center gap-2 sm:gap-6">
           <a href="https://docs.openui.org" target="_blank">Docs</a>
           <a href="https://www.figma.com/community/file/1354464067434498042" target="_blank">Figma</a>
         </nav>
