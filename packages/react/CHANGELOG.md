@@ -1,5 +1,11 @@
 # @openui-org/react
 
+## 1.4.0
+
+### Minor Changes
+
+- New components for library react
+
 ## 1.3.0
 
 ### Minor Changes
