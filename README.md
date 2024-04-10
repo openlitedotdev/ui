@@ -38,7 +38,7 @@ _Data Input_
 - [x] Select
 - [x] Checkbox
 - [ ] Slider
-- [ ] Date picker
+- [x] Date picker
 
 _Layout_
 
