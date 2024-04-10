@@ -8,8 +8,6 @@
   "baseBranch": "main",
   "updateInternalDependencies": "patch",
   "ignore": [
-    "@openui-org/web",
-    "@openui-org/with-nextjs",
-    "@openui-org/with-vitejs"
+    "@openui-org/web"
   ]
 }
