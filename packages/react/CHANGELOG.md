@@ -1,5 +1,11 @@
 # @openui-org/react
 
+## 1.3.0
+
+### Minor Changes
+
+- new components progress, popover, calendar for library react
+
 ## 1.2.0
 
 ### Minor Changes
