@@ -49,7 +49,7 @@ _Display_
 
 - [x] Card
 - [x] Avatar
-- [ ] Accordion
+- [x] Accordion
 - [x] Alert
 - [x] Alert Dialog
 - [x] Badge
