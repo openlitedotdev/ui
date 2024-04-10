@@ -11,7 +11,7 @@
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
-    "dev": "tsup src/index.ts --format esm,cjs --dts --watch",
+    "compile": "tsup src/index.ts --format esm,cjs --dts --watch",
     "build": "tsup src/index.ts --format esm,cjs --dts"
   },
   "devDependencies": {
