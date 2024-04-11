@@ -1,4 +1,4 @@
-import { react } from '@openui-org/react'
+import { react } from '@openui-org/react/plugin'
 
 /** @type {import('tailwindcss').Config} */
 export default {

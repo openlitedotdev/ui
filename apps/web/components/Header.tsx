@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { Button } from '@openui-org/react'
+import { Button } from '@openui-org/react/components'
 import openUiLogo from '../public/openui-logo.svg'
 
 export default function Header() {
