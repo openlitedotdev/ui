@@ -1,5 +1,11 @@
 # @openui-org/react
 
+## 1.5.0
+
+### Minor Changes
+
+- New components Data Picker and Tabs for library react
+
 ## 1.4.0
 
 ### Minor Changes
