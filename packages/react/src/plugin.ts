@@ -1,4 +1,4 @@
-import plugin from 'tailwindcss/plugin.js'
+import plugin from 'tailwindcss/plugin'
 import { base, config, dark, ligth } from '@openui-org/theme'
 
 export const react = plugin(({ addBase }) => {
