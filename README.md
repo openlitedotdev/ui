@@ -59,7 +59,7 @@ _Display_
 
 _Navigation_
 
-- [ ] Tabs
+- [x] Tabs
 - [x] Breadcrumb
 - [x] Dropdown
 - [x] Menu
