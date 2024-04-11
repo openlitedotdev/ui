@@ -9,11 +9,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "storybook dev -p 6006",
-    "compile": "pnpm tailwindcss -i ./main.css -o ./tailwindcss/index.css --watch",
     "build": "storybook build"
   },
   "dependencies": {
-    "@openui-org/react": "1.4.0",
+    "@openui-org/react": "workspace:*",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
