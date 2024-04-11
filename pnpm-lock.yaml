@@ -39,7 +39,7 @@ importers:
   apps/docs:
     dependencies:
       '@openui-org/react':
-        specifier: 1.4.0
+        specifier: workspace:*
         version: link:../../packages/react
       react:
         specifier: 18.2.0
@@ -103,7 +103,7 @@ importers:
   apps/web:
     dependencies:
       '@openui-org/react':
-        specifier: 1.4.0
+        specifier: workspace:*
         version: link:../../packages/react
       lucide-react:
         specifier: 0.363.0

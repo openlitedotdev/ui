@@ -1,4 +1,4 @@
-import { Button } from '@openui-org/react'
+import { Button } from '@openui-org/react/components'
 import { ArrowUpRight } from 'lucide-react'
 
 export default function Home() {
