@@ -37,7 +37,7 @@ _Data Input_
 - [x] Label
 - [x] Select
 - [x] Checkbox
-- [ ] Slider
+- [x] Slider
 - [x] Date picker
 
 _Layout_
@@ -59,7 +59,7 @@ _Display_
 
 _Navigation_
 
-- [ ] Tabs
+- [x] Tabs
 - [x] Breadcrumb
 - [x] Dropdown
 - [x] Menu
