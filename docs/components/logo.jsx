@@ -1,5 +1,5 @@
 export default function logo() {
   return (
-    <h2>Open Ui</h2>
+    <h2 className="text-3xl font-bold tracking-tight">Open UI</h2>
   )
 }

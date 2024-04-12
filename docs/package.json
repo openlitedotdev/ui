@@ -14,6 +14,7 @@
   },
   "dependencies": {
     "@openui-org/react": "workspace:*",
+    "lucide-react": "0.368.0",
     "next": "14.2.0",
     "nextra": "2.13.4",
     "nextra-theme-docs": "2.13.4",

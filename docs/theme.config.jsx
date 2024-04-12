@@ -1,5 +1,7 @@
+import Logo from './components/logo'
+
 export default {
-  logo: <b>Open UI</b>,
+  logo: <Logo />,
   project: {
     link: 'https://github.com/open-land/ui',
   },
