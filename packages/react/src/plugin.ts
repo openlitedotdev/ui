@@ -1,5 +1,6 @@
 import plugin from 'tailwindcss/plugin'
 import { base, config, dark, ligth } from '@openui-org/theme'
+import animate from 'tailwindcss-animate'
 
 export const react = plugin(({ addBase }) => {
   addBase({
@@ -14,4 +15,4 @@ export const react = plugin(({ addBase }) => {
   addBase({ ...base })
   addBase({ ...ligth })
   addBase({ ...dark })
-}, config)
+}, { ...config, plugin: [animate] })
