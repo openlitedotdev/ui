@@ -6,7 +6,6 @@ export default function Page() {
   return (
     <>
       <Home />
-      <Demo />
       <Info />
     </>
   )
