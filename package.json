@@ -24,6 +24,7 @@
   "types": "./dist/index.d.ts",
   "scripts": {
     "lint": "eslint .",
+    "npm": "pnpm changeset version && pnpm changeset publish",
     "prepare": "husky"
   },
   "devDependencies": {

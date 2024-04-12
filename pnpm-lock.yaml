@@ -143,7 +143,7 @@ importers:
   packages/react:
     dependencies:
       '@openui-org/theme':
-        specifier: 1.1.0
+        specifier: workspace:*
         version: link:../theme
       '@radix-ui/react-accordion':
         specifier: 1.1.2
