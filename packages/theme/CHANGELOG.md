@@ -1,5 +1,11 @@
 # @openui-org/theme
 
+## 1.1.1
+
+### Patch Changes
+
+- Remove components unnecessary
+
 ## 1.1.0
 
 ### Minor Changes

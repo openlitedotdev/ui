@@ -1,5 +1,13 @@
 # @openui-org/react
 
+## 1.5.1
+
+### Patch Changes
+
+- Remove components unnecessary
+- Updated dependencies
+  - @openui-org/theme@1.1.1
+
 ## 1.5.0
 
 ### Minor Changes
