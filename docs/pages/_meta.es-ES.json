@@ -1,0 +1,17 @@
+{
+  "index": {
+    "title": "Introduction",
+    "type": "page",
+    "display": "hidden"
+  },
+  "docs": {
+    "title": "Docs",
+    "type": "page"
+  },
+  "examples": {
+    "title": "Figma",
+    "type": "page",
+    "href": "https://www.figma.com/community/file/1354464067434498042",
+    "newWindow": true
+  }
+}
