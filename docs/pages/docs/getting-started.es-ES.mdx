@@ -2,15 +2,14 @@ import { Callout, Tabs, Tab } from 'nextra-theme-docs'
 
 # Comienza
 
-## Instalación [#instalación]
-
+## Instalación
 
 Requisitos:
 
 - [React 18](https://reactjs.org/) o posterior
 - [Tailwind CSS 3](https://tailwindcss.com/) o posterior
 
-Inside your React project directory, run the following:
+Dentro del directorio de su proyecto React, ejecute lo siguiente:
 
 <Tabs items={['pnpm', 'npm', 'yarn']}>
   <Tab>
@@ -32,3 +31,43 @@ Inside your React project directory, run the following:
 
 
 ## Tailwind CSS Configuración
+
+Open UI está construida sobre Tailwind CSS, por lo que primero debe instalar Tailwind CSS. Puede seguir la guía de instalación oficial para instalar Tailwind CSS. Luego debe agregar el siguiente código a su archivo `tailwind.config.js`:
+
+
+```jsx
+// tailwind.config.js
+import { react } from '@openui-org/react'
+
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    //...
+    './node_modules/@openui-org/react/dist/**/*.{js,ts,jsx,tsx}',
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [react],
+}
+
+```
+
+## Example
+
+Ahora puede utilizar el componente que instaló en su aplicación:
+
+<br/>
+
+<Button>Press me</Button>
+
+```jsx
+import * as React from "react";
+import { Button } from "@openui-org/react/components";
+
+function App() {
+  return (
+    <Button>Press me</Button>
+  );
+}
+```

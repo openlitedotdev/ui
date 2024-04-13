@@ -2,13 +2,13 @@
 
 <img src="./assets/OpenLand.jpeg" alt="Open Land logo" align="right"  width="100">
 
-This is the source code for https://openui.org by Open Land
+This is the source code for [openui](https://openui.up.railway.app/) by Open Land
 
 <br>
 
 ## Features
 
-- Built with [Shadcn UI](https://https://ui.shadcn.com//) and [Tailwind CSS](https://tailwindcss.com/)
+- Built with [Shadcn UI](https://https://ui.shadcn.com/) and [Tailwind CSS](https://tailwindcss.com/)
 - Customizable
 - Dark mode support
 - [Figma Kit](https://www.figma.com/community/file/1354464067434498042)
@@ -38,12 +38,10 @@ _Data Input_
 - [x] Select
 - [x] Checkbox
 - [x] Slider
-- [x] Date picker
 
 _Layout_
 
 - [x] Divider
-- [ ] Page Header
 
 _Display_
 
@@ -55,7 +53,6 @@ _Display_
 - [x] Badge
 - [x] Tooltips
 - [x] Tables
-- [x] Calendar
 
 _Navigation_
 
@@ -64,7 +61,6 @@ _Navigation_
 - [x] Dropdown
 - [x] Menu
 - [x] Sheet
-- [ ] Steps
 
 _Loading_
 
@@ -77,7 +73,7 @@ _Loading_
 
 If you want to know more about this design system visit
 
-- https://design-system/docs/
+- [Documentation](https://openui.up.railway.app/docs/getting-started)
 
 ## License
 
