@@ -1,11 +1,11 @@
 {
   "index": {
-    "title": "Introduction",
+    "title": "Introducción",
     "type": "page",
     "display": "hidden"
   },
   "docs": {
-    "title": "Docs",
+    "title": "Documentación",
     "type": "page"
   },
   "examples": {

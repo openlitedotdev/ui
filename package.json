@@ -5,13 +5,13 @@
   "description": "Open UI. OpenLand's official framework design system 🎨",
   "author": "Open Land",
   "license": "MIT",
-  "homepage": "https://github.com/open-land/design-system#readme",
+  "homepage": "https://github.com/open-land/ui#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/open-land/design-system.git"
+    "url": "git+https://github.com/open-land/ui.git"
   },
   "bugs": {
-    "url": "https://github.com/open-land/design-system/issues"
+    "url": "https://github.com/open-land/ui/issues"
   },
   "keywords": [
     "ui",
@@ -19,12 +19,8 @@
     "open"
   ],
   "sideEffects": false,
-  "main": "./dist/index.js",
-  "module": "./dist/index.js",
-  "types": "./dist/index.d.ts",
   "scripts": {
     "lint": "eslint .",
-    "npm": "pnpm changeset version && pnpm changeset publish",
     "prepare": "husky"
   },
   "devDependencies": {

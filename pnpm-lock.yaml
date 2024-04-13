@@ -39,7 +39,7 @@ importers:
   docs:
     dependencies:
       '@openui-org/react':
-        specifier: workspace:*
+        specifier: 1.5.1
         version: link:../packages/react
       lucide-react:
         specifier: 0.368.0
