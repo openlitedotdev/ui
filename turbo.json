@@ -13,6 +13,7 @@
       "outputs": ["dist/**"]
     },
     "lint": {
+      "dependsOn": ["^lint"],
       "outputs": []
     },
     "dev": {
