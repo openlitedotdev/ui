@@ -1,3 +1,13 @@
 {
-  "getting-started": "Getting Started"
+  "-- 1": {
+    "type": "separator",
+    "title": "Getting Started"
+  },
+  "introduction": "Introduction",
+  "installation": "Installation",
+  "-- 2": {
+    "type": "separator",
+    "title": "Components"
+  },
+  "accordion": ""
 }
