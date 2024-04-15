@@ -1,6 +1,6 @@
 # Open UI
 
-<img src="./assets/OpenLand.jpeg" alt="Open Land logo" align="right"  width="100">
+<img src="./.github/OpenLand.jpeg" alt="Open Land logo" align="right"  width="100">
 
 This is the source code for [openui](https://openui.up.railway.app/) by Open Land
 
@@ -15,13 +15,36 @@ This is the source code for [openui](https://openui.up.railway.app/) by Open Lan
 
 ## Getting Started
 
-<img src="./assets/preview.png" alt="Open Land logo" align="right"  width="300">
+<img src="./.github/preview.png" alt="Open Land logo" align="right"  width="300">
 This design system is totally easy to use with the aim of facilitating upcoming new projects. The design system is a challenge for our team. You can gladly contribute and guide us with ideas to improve... We would be keen to hear any feedback on this project.
 
-<br>
-<br>
-<br>
-<br>
+## Configure workspaces
+
+### Install turbo
+
+Install turbo globally.
+
+```shell
+pnpm install turbo --global
+```
+
+For more details about installation, see Installing Turborepo
+
+### Scripts
+
+1. Run mode dev.
+
+```shell
+turbo dev
+```
+
+2. Run build packages
+
+```shell
+turbo build
+```
+
+Your ready for worker and add components.
 
 ## Components
 
