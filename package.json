@@ -1,6 +1,7 @@
 {
   "name": "openui-org",
   "private": true,
+  "type": "module",
   "scripts": {
     "lint": "eslint .",
     "prepare": "husky"
