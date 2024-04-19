@@ -1,7 +1,7 @@
 {
   "name": "@openui-org/react",
   "type": "module",
-  "version": "1.5.3",
+  "version": "1.5.4",
   "description": "Open UI. OpenLand's official framework design system 🎨",
   "author": "Open Land",
   "license": "MIT",
