@@ -1,5 +1,9 @@
 # @openui-org/react
 
+## 1.5.4
+
+### Patch Changes
+
 ## 1.5.3
 
 ### Patch Changes
