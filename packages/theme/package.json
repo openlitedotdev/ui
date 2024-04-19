@@ -29,9 +29,11 @@
   },
   "scripts": {
     "compile": "tsup --watch",
-    "build": "tsup"
+    "build": "tsup",
+    "clean": "rm -rf .turbo node_modules"
   },
   "devDependencies": {
+    "@openui-org/tsconfig": "workspace:*",
     "tailwindcss": "3.4.1",
     "tsup": "8.0.2",
     "typescript": "5.4.2"

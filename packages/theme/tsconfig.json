@@ -1,5 +1,5 @@
 {
-  "extends": "../../tsconfig.json",
-  "include": ["src/index.ts"],
-  "exclude": ["**/*.js"]
+  "extends": "@openui-org/tsconfig/base.json",
+  "include": ["."],
+  "exclude": ["dist", "build", "node_modules"]
 }

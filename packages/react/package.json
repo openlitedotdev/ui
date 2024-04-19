@@ -1,7 +1,7 @@
 {
   "name": "@openui-org/react",
   "type": "module",
-  "version": "1.5.2",
+  "version": "1.5.3",
   "description": "Open UI. OpenLand's official framework design system 🎨",
   "author": "Open Land",
   "license": "MIT",
@@ -38,7 +38,8 @@
   },
   "scripts": {
     "compile": "tsup --watch",
-    "build": "tsup"
+    "build": "tsup",
+    "clean": "rm -rf .turbo node_modules"
   },
   "peerDependencies": {
     "react": ">=18",

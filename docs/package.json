@@ -10,10 +10,11 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "clean": "rm -rf .turbo node_modules"
   },
   "dependencies": {
-    "@openui-org/react": "1.5.2",
+    "@openui-org/react": "1.5.3",
     "lucide-react": "0.368.0",
     "next": "14.2.0",
     "nextra": "2.13.4",

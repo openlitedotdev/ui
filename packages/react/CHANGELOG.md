@@ -1,5 +1,11 @@
 # @openui-org/react
 
+## 1.5.3
+
+### Patch Changes
+
+- Add components
+
 ## 1.5.2
 
 ### Patch Changes
