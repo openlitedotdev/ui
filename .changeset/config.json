@@ -6,5 +6,6 @@
   "linked": [],
   "access": "public",
   "baseBranch": "main",
+  "ignore": ["@openui-org/docs"],
   "updateInternalDependencies": "patch"
 }

@@ -1,5 +1,11 @@
 # @openui-org/react
 
+## 1.5.2
+
+### Patch Changes
+
+- Fix color text-white a component sheet
+
 ## 1.5.1
 
 ### Patch Changes

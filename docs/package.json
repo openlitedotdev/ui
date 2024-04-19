@@ -1,6 +1,6 @@
 {
   "name": "@openui-org/docs",
-  "version": "1.0.1",
+  "version": "0.1.0",
   "private": true,
   "description": "",
   "author": "",
@@ -13,7 +13,7 @@
     "start": "next start"
   },
   "dependencies": {
-    "@openui-org/react": "1.5.1",
+    "@openui-org/react": "1.5.2",
     "lucide-react": "0.368.0",
     "next": "14.2.0",
     "nextra": "2.13.4",
