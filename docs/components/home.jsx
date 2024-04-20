@@ -21,7 +21,7 @@ export default function Home() {
             <p className="max-w-[600px] text-sm">{description}</p>
             <div className="flex flex-col gap-2 min-[400px]:flex-row">
               <Button asChild>
-                <Link href="#">{buttonPresentation}</Link>
+                <Link href="/docs/introduction">{buttonPresentation}</Link>
               </Button>
             </div>
           </div>
@@ -29,7 +29,7 @@ export default function Home() {
             alt="Hero"
             className="mx-auto aspect-video overflow-hidden rounded-xl object-cover sm:w-full lg:aspect-square"
             height="550"
-            src="/dashboard-demo.png"
+            src="/demo-commerce.png"
             width="550"
           />
         </div>
