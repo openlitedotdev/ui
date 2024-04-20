@@ -1,12 +1,12 @@
 {
   "-- 1": {
-    "type": "separator",
+    "type": "separador",
     "title": "Comienza"
   },
   "introduction": "Introducción",
   "installation": "Instalación",
   "-- 2": {
-    "type": "separator",
+    "type": "separador",
     "title": "Components"
   },
   "accordion": "Acordeón"
