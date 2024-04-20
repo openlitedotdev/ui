@@ -4,10 +4,10 @@
     "title": "Comienza"
   },
   "introduction": "Introducción",
-  "installation": "Instalacion",
+  "installation": "Instalación",
   "-- 2": {
     "type": "separator",
     "title": "Components"
   },
-  "accordion": "Accordeón"
+  "accordion": "Acordeón"
 }
