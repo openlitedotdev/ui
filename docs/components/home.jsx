@@ -1,30 +1,37 @@
-import { Button } from "@openui-org/react/components";
-import Link from "next/link";
+import { Button } from '@openui-org/react/components'
+import Link from 'next/link'
 import useLocalesMap from './use-locales'
-import {titleMap, descriptionMap, buttonPresentationMap} from '../i18n/translate'
+import {
+  titleMap,
+  descriptionMap,
+  buttonPresentationMap,
+} from '../i18n/translate'
 
 export default function Home() {
-  const title =  useLocalesMap(titleMap)
+  const title = useLocalesMap(titleMap)
   const description = useLocalesMap(descriptionMap)
   const buttonPresentation = useLocalesMap(buttonPresentationMap)
 
   return (
-    <section className="py-20 sm:py-24 relative">
-      <div className="mx-auto px-4 sm:px-6 max-w-7xl gap-16 sm:gap-y-24 flex flex-col">
-        <div className="text-center relative z-[1]">
-          <h1 className="text-6xl font-bold tracking-tight text-balance">
-           {title}
-          </h1>
-          <p className="mt-6 opacity-90 text-sm tracking-tight text-pretty">
-           {description}
-          </p>
-          <div className="mt-10 flex flex-wrap gap-x-6 gap-y-3 justify-center">
-            <Button asChild>
-              <Link href="/docs/introduction">
-                {buttonPresentation}
-              </Link>
-            </Button>
+    <section className="w-full pt-12 md:pt-24 lg:pt-32 xl:pt-40">
+      <div className="container px-4 md:px-6">
+        <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 xl:gap-16">
+          <div className="space-y-4 md:space-y-6 lg:space-y-8">
+            <h1 className="text-3xl font-bold tracking-tighter">{title}</h1>
+            <p className="max-w-[600px] text-sm">{description}</p>
+            <div className="flex flex-col gap-2 min-[400px]:flex-row">
+              <Button asChild>
+                <Link href="#">{buttonPresentation}</Link>
+              </Button>
+            </div>
           </div>
+          <img
+            alt="Hero"
+            className="mx-auto aspect-video overflow-hidden rounded-xl object-cover sm:w-full lg:aspect-square"
+            height="550"
+            src="/dashboard-demo.png"
+            width="550"
+          />
         </div>
       </div>
     </section>

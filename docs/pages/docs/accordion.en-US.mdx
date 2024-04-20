@@ -1,7 +1,13 @@
 ---
 title: Accordion
 ---
-import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from '@openui-org/react/components'
+
+import {
+  Accordion,
+  AccordionItem,
+  AccordionTrigger,
+  AccordionContent,
+} from '@openui-org/react/components'
 
 # Accordion
 
@@ -10,33 +16,36 @@ A vertically stacked set of interactive headings that each reveal a section of c
 ## Usage
 
 ```jsx
-import * as React from "react";
-import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from '@openui-org/react/components'
+import * as React from 'react'
+import {
+  Accordion,
+  AccordionItem,
+  AccordionTrigger,
+  AccordionContent,
+} from '@openui-org/react/components'
 
 function App() {
-  return (  
+  return (
     <Accordion type="multiple">
-        <AccordionItem value="example">
-            <AccordionTrigger>
-                Use accordion?
-            </AccordionTrigger>
-            <AccordionContent>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, voluptatum?
-            </AccordionContent>
-        </AccordionItem>
+      <AccordionItem value="example">
+        <AccordionTrigger>Use accordion?</AccordionTrigger>
+        <AccordionContent>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
+          voluptatum?
+        </AccordionContent>
+      </AccordionItem>
     </Accordion>
-  );
+  )
 }
 ```
 
 ### Preview
 
-<br/>
+<br />
 
 <div className='mt-2 ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 relative rounded-md border'>
 
 <div className='theme-zinc w-full'>
-
 
 <div className='preview flex min-h-[350px] w-full justify-center p-20 items-center'>
  <div className="w-full">

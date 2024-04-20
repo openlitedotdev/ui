@@ -2,13 +2,20 @@
   "index": {
     "title": "Introduction",
     "type": "page",
-    "display": "hidden"
+    "display": "hidden",
+    "theme": {
+      "layout": "raw"
+    }
   },
   "docs": {
     "title": "Docs",
     "type": "page"
   },
-  "examples": {
+  "showcase": {
+    "title": "Showcase",
+    "type": "page"
+  },
+  "ui": {
     "title": "Figma",
     "type": "page",
     "href": "https://www.figma.com/community/file/1354464067434498042",

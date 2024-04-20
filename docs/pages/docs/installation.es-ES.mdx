@@ -13,28 +13,14 @@ Requisitos:
 Dentro del directorio de su proyecto React, ejecute lo siguiente:
 
 <Tabs items={['pnpm', 'npm', 'yarn']}>
-  <Tab>
-    ```bash
-    pnpm add @openui-org/react
-    ```
-  </Tab>
-  <Tab>
-    ```bash
-    npm i @openui-org/react
-    ```
-  </Tab>
-  <Tab>
-    ```bash
-    yarn add @openui-org/react
-    ```
-  </Tab>
+  <Tab>```bash pnpm add @openui-org/react ```</Tab>
+  <Tab>```bash npm i @openui-org/react ```</Tab>
+  <Tab>```bash yarn add @openui-org/react ```</Tab>
 </Tabs>
-
 
 ## Tailwind CSS Configuración
 
 Open UI está construida sobre Tailwind CSS, por lo que primero debe instalar Tailwind CSS. Puede seguir la guía de instalación oficial para instalar Tailwind CSS. Luego debe agregar el siguiente código a su archivo `tailwind.config.js`:
-
 
 ```jsx
 // tailwind.config.js
@@ -51,24 +37,21 @@ export default {
   },
   plugins: [react],
 }
-
 ```
 
 ## Example
 
 Ahora puede utilizar el componente que instaló en su aplicación:
 
-<br/>
+<br />
 
 <Button>Press me</Button>
 
 ```jsx
-import * as React from "react";
-import { Button } from "@openui-org/react/components";
+import * as React from 'react'
+import { Button } from '@openui-org/react/components'
 
 function App() {
-  return (
-    <Button>Press me</Button>
-  );
+  return <Button>Press me</Button>
 }
 ```

@@ -11,23 +11,10 @@ Requirements:
 Inside your React project directory, run the following:
 
 <Tabs items={['pnpm', 'npm', 'yarn']}>
-  <Tab>
-    ```bash
-    pnpm add @openui-org/react
-    ```
-  </Tab>
-  <Tab>
-    ```bash
-    npm i @openui-org/react
-    ```
-  </Tab>
-  <Tab>
-    ```bash
-    yarn add @openui-org/react
-    ```
-  </Tab>
+  <Tab>```bash pnpm add @openui-org/react ```</Tab>
+  <Tab>```bash npm i @openui-org/react ```</Tab>
+  <Tab>```bash yarn add @openui-org/react ```</Tab>
 </Tabs>
-
 
 ## Tailwind CSS Setup
 
@@ -48,24 +35,21 @@ export default {
   },
   plugins: [react],
 }
-
 ```
 
 ## Example
 
 Now, you can use the component you installed in your application:
 
-<br/>
+<br />
 
 <Button>Press me</Button>
 
 ```jsx
-import * as React from "react";
-import { Button } from "@openui-org/react/components";
+import * as React from 'react'
+import { Button } from '@openui-org/react/components'
 
 function App() {
-  return (
-    <Button>Press me</Button>
-  );
+  return <Button>Press me</Button>
 }
 ```
