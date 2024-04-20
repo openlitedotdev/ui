@@ -1,3 +1,6 @@
+import { Button } from "@openui-org/react/components";
+import Link from "next/link";
+
 export default function Home() {
   return (
     <section className="py-20 sm:py-24 relative">
@@ -12,7 +15,7 @@ export default function Home() {
             and
             <b className="text-sky"> Tailwind CSS </b>
           </h1>
-          <p className="mt-6 text-lg tracking-tight text-foreground text-pretty">
+          <p className="mt-6 text-base tracking-tight text-foreground text-pretty">
             Open UI is an open source design system with a completely
             cutting-edge system.
             {' '}
@@ -21,6 +24,13 @@ export default function Home() {
             Fully customizable and modifiable you
             will make UI development much faster with fully stylized components.
           </p>
+          <div className="mt-10 flex flex-wrap gap-x-6 gap-y-3 justify-center">
+            <Button asChild>
+              <Link href="/docs/introduction">
+                Getting Started
+              </Link>
+            </Button>
+          </div>
         </div>
       </div>
     </section>
