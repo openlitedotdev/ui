@@ -1,11 +1,11 @@
 {
-  "-- 1": {
+  "-- Getting Started": {
     "type": "separator",
     "title": "Getting Started"
   },
   "introduction": "Introduction",
   "installation": "Installation",
-  "-- 2": {
+  "-- Components": {
     "type": "separator",
     "title": "Components"
   },
