@@ -1,7 +1,7 @@
 {
   "name": "@openui-org/theme",
   "type": "module",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "Open UI. OpenLand's official framework design system 🎨",
   "author": "Open Land",
   "license": "MIT",
