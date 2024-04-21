@@ -1,5 +1,16 @@
 # @openui-org/react
 
+## 1.7.0
+
+### Minor Changes
+
+- 4aeaebf: New color Gray
+
+### Patch Changes
+
+- Updated dependencies [4aeaebf]
+  - @openui-org/theme@1.5.0
+
 ## 1.6.0
 
 ### Minor Changes
