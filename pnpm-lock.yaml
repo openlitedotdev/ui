@@ -36,8 +36,8 @@ importers:
   docs:
     dependencies:
       '@openui-org/react':
-        specifier: 1.5.3
-        version: 1.5.3(@types/react-dom@18.2.22)(@types/react@18.2.69)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(tailwindcss@3.4.1)
+        specifier: 1.6.0
+        version: 1.6.0(@types/react-dom@18.2.22)(@types/react@18.2.69)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(tailwindcss@3.4.1)
       lucide-react:
         specifier: 0.368.0
         version: 0.368.0(react@18.2.0)
@@ -719,15 +719,15 @@ packages:
     resolution: {integrity: sha512-oGB+UxlgWcgQkgwo8GcEGwemoTFt3FIO9ababBmaGwXIoBKZ+GTy0pP185beGg7Llih/NSHSV2XAs1lnznocSg==}
     engines: {node: '>= 8'}
 
-  '@openui-org/react@1.5.3':
-    resolution: {integrity: sha512-YE/mV7Zb9XfYvkVl5pm3QFmamoX69k7gELgKHV7cLZicK2dQTSYwGk+B6ot2qQSnISpOdvjEqLUIPg6Wdl/ogA==}
+  '@openui-org/react@1.6.0':
+    resolution: {integrity: sha512-oA3zFCyPZgmgkPuihS6d6h/XsbrHgnhaOkjWAPxyqjWpyso1lctIygf71LaxxzyU7isNuXKbAKdnFgqBWTX5lw==}
     peerDependencies:
       react: '>=18'
       react-dom: '>=18'
       tailwindcss: ^3.0.0
 
-  '@openui-org/theme@1.1.1':
-    resolution: {integrity: sha512-KGFFGxROUd+KRwiNiaUHPMtL8B56hJTZppFhTK4gc9cFu35yGOGlZhd1YlL7AnGsAc23ZGoTYi7O+k21bt6cpg==}
+  '@openui-org/theme@1.4.0':
+    resolution: {integrity: sha512-1Fqle26JoiTPv9Mbi9oukCNTZ7sNlAG2btGctPVVpXnmOcP7wTs86UFfliRqqZjY8sc9+ctAUumiIk4/szhETw==}
 
   '@pkgjs/parseargs@0.11.0':
     resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==}
@@ -5285,9 +5285,9 @@ snapshots:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.17.1
 
-  '@openui-org/react@1.5.3(@types/react-dom@18.2.22)(@types/react@18.2.69)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(tailwindcss@3.4.1)':
+  '@openui-org/react@1.6.0(@types/react-dom@18.2.22)(@types/react@18.2.69)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(tailwindcss@3.4.1)':
     dependencies:
-      '@openui-org/theme': 1.1.1
+      '@openui-org/theme': 1.4.0
       '@radix-ui/react-accordion': 1.1.2(@types/react-dom@18.2.22)(@types/react@18.2.69)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       '@radix-ui/react-alert-dialog': 1.0.5(@types/react-dom@18.2.22)(@types/react@18.2.69)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       '@radix-ui/react-aspect-ratio': 1.0.3(@types/react-dom@18.2.22)(@types/react@18.2.69)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
@@ -5318,7 +5318,7 @@ snapshots:
       - '@types/react'
       - '@types/react-dom'
 
-  '@openui-org/theme@1.1.1': {}
+  '@openui-org/theme@1.4.0': {}
 
   '@pkgjs/parseargs@0.11.0':
     optional: true
