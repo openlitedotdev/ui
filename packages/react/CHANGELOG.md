@@ -1,5 +1,16 @@
 # @openui-org/react
 
+## 1.6.0
+
+### Minor Changes
+
+- 8c98e2e: Add new color blue
+
+### Patch Changes
+
+- Updated dependencies [8c98e2e]
+  - @openui-org/theme@1.4.0
+
 ## 1.5.5
 
 ### Patch Changes
