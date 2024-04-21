@@ -1,5 +1,11 @@
 # @openui-org/theme
 
+## 1.5.0
+
+### Minor Changes
+
+- 4aeaebf: New color Gray
+
 ## 1.4.0
 
 ### Minor Changes
