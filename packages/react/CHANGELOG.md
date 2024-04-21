@@ -1,5 +1,12 @@
 # @openui-org/react
 
+## 1.5.5
+
+### Patch Changes
+
+- Updated dependencies
+  - @openui-org/theme@1.3.0
+
 ## 1.5.4
 
 ### Patch Changes

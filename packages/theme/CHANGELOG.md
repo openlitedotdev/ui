@@ -1,5 +1,11 @@
 # @openui-org/theme
 
+## 1.3.0
+
+### Minor Changes
+
+- New color blue
+
 ## 1.2.0
 
 - refactor(theme): change color red by @castrogarciajs in #150
