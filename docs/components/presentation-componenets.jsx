@@ -13,37 +13,44 @@ import {
   keyMapComponents,
   titleMapComponents,
 } from 'i18n/translate'
+import Link from 'next/link'
 
 const cards = [
   {
     Icon: KeyIcon,
     title: 'Buttons',
     description: 'Customizable buttons with various styles and sizes.',
+    path: '/docs/button'
   },
   {
     Icon: FileInputIcon,
     title: 'Inputs',
     description: 'Accessible and stylish form inputs.',
+    path: '/docs/input'
   },
   {
     Icon: CreditCardIcon,
     title: 'Cards',
     description: 'Versatile card components for displaying content.',
+    path: '/docs/card'
   },
   {
     Icon: MenuIcon,
     title: 'Dropdowns',
     description: 'Accessible and customizable dropdown menus.',
+    path: '/docs/dropdown'
   },
   {
     Icon: NavigationIcon,
     title: 'Navigation',
     description: ' Intuitive navigation components for your app.',
+    path: '/docs/sheet'
   },
   {
     Icon: MinimizeIcon,
     title: 'Modals',
     description: 'Lightweight and responsive modal components.',
+    path: '/docs/dialog'
   },
 ]
 
@@ -68,8 +75,8 @@ export default function PresentationComponenets() {
           </div>
           <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:gap-8">
             {cards.map((card, i) => (
+              <Link key={i} href={card.path}>
               <Card
-                key={i}
                 className="dark:bg-zinc-800 border-0 shadow-md cursor-pointer hover:scale-105 transition-transform"
               >
                 <CardHeader>
@@ -80,6 +87,7 @@ export default function PresentationComponenets() {
                   <p className="text-sm">{card.description}</p>
                 </CardContent>
               </Card>
+              </Link>
             ))}
           </div>
         </div>
