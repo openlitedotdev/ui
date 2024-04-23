@@ -20,37 +20,37 @@ const cards = [
     Icon: KeyIcon,
     title: 'Buttons',
     description: 'Customizable buttons with various styles and sizes.',
-    path: '/docs/button'
+    path: '/docs/button',
   },
   {
     Icon: FileInputIcon,
     title: 'Inputs',
     description: 'Accessible and stylish form inputs.',
-    path: '/docs/input'
+    path: '/docs/input',
   },
   {
     Icon: CreditCardIcon,
     title: 'Cards',
     description: 'Versatile card components for displaying content.',
-    path: '/docs/card'
+    path: '/docs/card',
   },
   {
     Icon: MenuIcon,
     title: 'Dropdowns',
     description: 'Accessible and customizable dropdown menus.',
-    path: '/docs/dropdown'
+    path: '/docs/dropdown',
   },
   {
     Icon: NavigationIcon,
     title: 'Navigation',
     description: ' Intuitive navigation components for your app.',
-    path: '/docs/sheet'
+    path: '/docs/sheet',
   },
   {
     Icon: MinimizeIcon,
     title: 'Modals',
     description: 'Lightweight and responsive modal components.',
-    path: '/docs/dialog'
+    path: '/docs/dialog',
   },
 ]
 
@@ -76,17 +76,15 @@ export default function PresentationComponenets() {
           <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:gap-8">
             {cards.map((card, i) => (
               <Link key={i} href={card.path}>
-              <Card
-                className="dark:bg-zinc-800 border-0 shadow-md cursor-pointer hover:scale-105 transition-transform h-full"
-              >
-                <CardHeader>
-                  <card.Icon className="size-8" />
-                </CardHeader>
-                <CardContent>
-                  <h3 className="text-lg font-semibold">{card.title}</h3>
-                  <p className="text-sm">{card.description}</p>
-                </CardContent>
-              </Card>
+                <Card className="dark:bg-zinc-800 border-0 shadow-md cursor-pointer hover:scale-105 transition-transform h-full">
+                  <CardHeader>
+                    <card.Icon className="size-8" />
+                  </CardHeader>
+                  <CardContent>
+                    <h3 className="text-lg font-semibold">{card.title}</h3>
+                    <p className="text-sm">{card.description}</p>
+                  </CardContent>
+                </Card>
               </Link>
             ))}
           </div>
