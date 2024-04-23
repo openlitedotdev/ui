@@ -1,0 +1,138 @@
+---
+title: Menu
+---
+
+import {
+  Menubar,
+  MenubarContent,
+  MenubarItem,
+  MenubarMenu,
+  MenubarRadioGroup,
+  MenubarRadioItem,
+  MenubarCheckboxItem,
+  MenubarShortcut,
+  MenubarTrigger,
+} from '@openui-org/react/components'
+
+# Menu
+
+A visually persistent menu common in desktop applications that provides quick access to a consistent set of commands.
+
+## Usage
+
+```jsx
+import * as React from 'react'
+import {
+  Menubar,
+  MenubarContent,
+  MenubarItem,
+  MenubarMenu,
+  MenubarRadioGroup,
+  MenubarRadioItem,
+  MenubarCheckboxItem,
+  MenubarShortcut,
+  MenubarTrigger,
+} from '@openui-org/react/components'
+
+function App() {
+  return (
+    <Menubar>
+      <MenubarMenu>
+        <MenubarTrigger>File</MenubarTrigger>
+        <MenubarContent>
+          <MenubarItem>
+            New Tab <MenubarShortcut>⌘T</MenubarShortcut>
+          </MenubarItem>
+          <MenubarItem>
+            New Window <MenubarShortcut>⌘N</MenubarShortcut>
+          </MenubarItem>
+        </MenubarContent>
+      </MenubarMenu>
+      <MenubarMenu>
+        <MenubarTrigger>Edit</MenubarTrigger>
+        <MenubarContent>
+          <MenubarItem>
+            Undo <MenubarShortcut>⌘Z</MenubarShortcut>
+          </MenubarItem>
+          <MenubarItem>
+            Redo <MenubarShortcut>⇧⌘Z</MenubarShortcut>
+          </MenubarItem>
+        </MenubarContent>
+      </MenubarMenu>
+      <MenubarMenu>
+        <MenubarTrigger>View</MenubarTrigger>
+        <MenubarContent>
+          <MenubarCheckboxItem>Always Show Bookmarks Bar</MenubarCheckboxItem>
+          <MenubarCheckboxItem>Always Show Full URLs</MenubarCheckboxItem>
+        </MenubarContent>
+      </MenubarMenu>
+      <MenubarMenu>
+        <MenubarTrigger>Profiles</MenubarTrigger>
+        <MenubarContent>
+          <MenubarRadioGroup value="benoit">
+            <MenubarRadioItem value="andy">Andy</MenubarRadioItem>
+            <MenubarRadioItem value="benoit">Benoit</MenubarRadioItem>
+            <MenubarRadioItem value="Luis">Luis</MenubarRadioItem>
+          </MenubarRadioGroup>
+        </MenubarContent>
+      </MenubarMenu>
+    </Menubar>
+  )
+}
+```
+
+### Preview
+
+<br />
+
+<div className='mt-2 ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 relative rounded-md border'>
+    <div className='theme-zinc w-full'>
+
+        <div className='preview flex min-h-[350px] w-full justify-center p-20 items-center'>
+            <div className="w-full flex justify-center">
+                <Menubar>
+                    <MenubarMenu>
+                        <MenubarTrigger>File</MenubarTrigger>
+                            <MenubarContent>
+                                <MenubarItem>
+                                    New Tab <MenubarShortcut>⌘T</MenubarShortcut>
+                                </MenubarItem>
+                                <MenubarItem>
+                                    New Window <MenubarShortcut>⌘N</MenubarShortcut>
+                                </MenubarItem>
+                        </MenubarContent>
+                    </MenubarMenu>
+                    <MenubarMenu>
+                        <MenubarTrigger>Edit</MenubarTrigger>
+                        <MenubarContent>
+                            <MenubarItem>
+                                Undo <MenubarShortcut>⌘Z</MenubarShortcut>
+                            </MenubarItem>
+                            <MenubarItem>
+                                Redo <MenubarShortcut>⇧⌘Z</MenubarShortcut>
+                            </MenubarItem>
+                        </MenubarContent>
+                    </MenubarMenu>
+                    <MenubarMenu>
+                        <MenubarTrigger>View</MenubarTrigger>
+                        <MenubarContent>
+                          <MenubarCheckboxItem>Always Show Bookmarks Bar</MenubarCheckboxItem>
+                          <MenubarCheckboxItem>Always Show Full URLs</MenubarCheckboxItem>
+                        </MenubarContent>
+                    </MenubarMenu>
+                    <MenubarMenu>
+                        <MenubarTrigger>Profiles</MenubarTrigger>
+                        <MenubarContent>
+                          <MenubarRadioGroup value="benoit">
+                              <MenubarRadioItem value="andy">Andy</MenubarRadioItem>
+                              <MenubarRadioItem value="benoit">Benoit</MenubarRadioItem>
+                              <MenubarRadioItem value="Luis">Luis</MenubarRadioItem>
+                          </MenubarRadioGroup>
+                        </MenubarContent>
+                    </MenubarMenu>
+                </Menubar>
+            </div>
+        </div>
+    </div>
+
+</div>
