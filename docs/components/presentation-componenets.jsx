@@ -77,7 +77,7 @@ export default function PresentationComponenets() {
             {cards.map((card, i) => (
               <Link key={i} href={card.path}>
               <Card
-                className="dark:bg-zinc-800 border-0 shadow-md cursor-pointer hover:scale-105 transition-transform"
+                className="dark:bg-zinc-800 border-0 shadow-md cursor-pointer hover:scale-105 transition-transform h-full"
               >
                 <CardHeader>
                   <card.Icon className="size-8" />
