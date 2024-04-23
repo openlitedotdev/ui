@@ -2,4 +2,99 @@
 title: Table
 ---
 
+import {
+  Table,
+  TableBody,
+  TableCaption,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from '@openui-org/react/components'
+
 # Table
+
+Un componente de tabla adaptado a versiones moviles.
+
+## Uso
+
+```jsx
+import * as React from 'react'
+import {
+  Table,
+  TableBody,
+  TableCaption,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from '@openui-org/react/components'
+
+function App() {
+  return (
+    <Table>
+      <TableCaption>Una lista de sus facturas recientes.</TableCaption>
+      <TableHeader>
+        <TableRow>
+          <TableHead className="w-[100px]">Factura</TableHead>
+          <TableHead>Estado</TableHead>
+          <TableHead>Método</TableHead>
+          <TableHead className="text-right">Cantidad</TableHead>
+        </TableRow>
+      </TableHeader>
+      <TableBody>
+        <TableRow>
+          <TableCell className="font-medium">INV001</TableCell>
+          <TableCell>Pagado</TableCell>
+          <TableCell>Tarjeta de Credito</TableCell>
+          <TableCell className="text-right">$250.00</TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell className="font-medium">INV001</TableCell>
+          <TableCell>Pagado</TableCell>
+          <TableCell>Tarjeta de Credito</TableCell>
+          <TableCell className="text-right">$250.00</TableCell>
+        </TableRow>
+      </TableBody>
+    </Table>
+  )
+}
+```
+
+### Vista previa
+
+<br />
+
+<div className="mt-2 ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 relative rounded-md border">
+  <div className="theme-zinc w-full">
+    <div className="preview flex min-h-[350px] w-full justify-center p-20 items-center">
+      <div className="w-full flex justify-center">
+        <Table>
+          <TableCaption>Una lista de sus facturas recientes.</TableCaption>
+          <TableHeader>
+            <TableRow>
+              <TableHead className="w-[100px]">Factura</TableHead>
+              <TableHead>Estado</TableHead>
+              <TableHead>Método</TableHead>
+              <TableHead className="text-right">Cantidad</TableHead>
+            </TableRow>
+          </TableHeader>
+          <TableBody>
+            <TableRow>
+              <TableCell className="font-medium">INV001</TableCell>
+              <TableCell>Pagado</TableCell>
+              <TableCell>Tarjeta de Credito</TableCell>
+              <TableCell className="text-right">$250.00</TableCell>
+            </TableRow>
+            <TableRow>
+              <TableCell className="font-medium">INV001</TableCell>
+              <TableCell>Pagado</TableCell>
+              <TableCell>Tarjeta de Credito</TableCell>
+              <TableCell className="text-right">$250.00</TableCell>
+            </TableRow>
+          </TableBody>
+        </Table>
+      </div>
+    </div>
+  </div>
+</div>
