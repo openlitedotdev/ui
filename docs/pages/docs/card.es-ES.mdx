@@ -11,8 +11,9 @@ import {
   CardTitle,
   Button,
 } from '@openui-org/react/components'
+import Preview from 'components/preview'
 
-# Carta
+# Card
 
 Muestra una tarjeta con cabecera, contenido y pie de página.
 
@@ -27,19 +28,21 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-  Button,
 } from '@openui-org/react/components'
 
 function App() {
   return (
     <Card className="w-96">
       <CardHeader>
-        <div className="w-full h-72 bg-muted/80 rounded-sm"></div>
+        <img
+          src="https://github.com/castrogarciajs.png"
+          className="w-full h-72 rounded-sm"
+        />
       </CardHeader>
       <CardContent>
         <div className="text-xl font-medium pb-4 flex justify-between w-full">
-          <CardTitle className="w-fill">Titulo</CardTitle>
-          <span>$95.00</span>
+          <CardTitle className="w-fill">Sebastián García</CardTitle>
+          <span>Github</span>
         </div>
         <span className="text-sm font-extralight">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
@@ -47,7 +50,7 @@ function App() {
         </span>
       </CardContent>
       <CardFooter className="flex justify-between">
-        <Button className="w-full">Añadir al Carrito</Button>
+        <Button className="w-full">Follow</Button>
       </CardFooter>
     </Card>
   )
@@ -56,31 +59,26 @@ function App() {
 
 ### Vista previa
 
-<br />
-
-<div className="mt-2 ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 relative rounded-md border">
-  <div className="theme-zinc w-full">
-    <div className="preview flex min-h-[350px] w-full justify-center p-20 items-center">
-      <div className="md:w-fit flex justify-center">
-        <Card className="w-96">
-          <CardHeader>
-            <div className="w-full h-72 bg-muted/80 rounded-sm"></div>
-          </CardHeader>
-          <CardContent>
-            <div className="text-xl font-medium pb-4 flex justify-between w-full">
-              <CardTitle className="w-fill">Titulo</CardTitle>
-              <span>$95.00</span>
-            </div>
-            <span className="text-sm font-extralight">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Explicabo, voluptatum?
-            </span>
-          </CardContent>
-          <CardFooter className="flex justify-between">
-            <Button className="w-full">Añadir al Carrito</Button>
-          </CardFooter>
-        </Card>
+<Preview>
+  <Card className="w-96">
+    <CardHeader>
+      <img
+        src="https://github.com/castrogarciajs.png"
+        className="w-full h-72 rounded-sm"
+      />
+    </CardHeader>
+    <CardContent>
+      <div className="text-xl font-medium pb-4 flex justify-between w-full">
+        <CardTitle className="w-fill">Sebastián García</CardTitle>
+        <span>Github</span>
       </div>
-    </div>
-  </div>
-</div>
+      <span className="text-sm font-extralight">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
+        voluptatum?
+      </span>
+    </CardContent>
+    <CardFooter className="flex justify-between">
+      <Button className="w-full">Follow</Button>
+    </CardFooter>
+  </Card>
+</Preview>

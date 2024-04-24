@@ -11,6 +11,7 @@ import {
   TableHeader,
   TableRow,
 } from '@openui-org/react/components'
+import Preview from 'components/preview'
 
 # Table
 
@@ -30,7 +31,7 @@ import {
   TableRow,
 } from '@openui-org/react/components'
 
-function App() {
+function TableExample() {
   return (
     <Table>
       <TableCaption>A list of your recent invoices.</TableCaption>
@@ -65,36 +66,30 @@ function App() {
 
 <br />
 
-<div className="mt-2 ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 relative rounded-md border">
-  <div className="theme-zinc w-full">
-    <div className="preview flex min-h-[350px] w-full justify-center p-20 items-center">
-      <div className="w-full flex justify-center">
-        <Table>
-          <TableCaption>A list of your recent invoices.</TableCaption>
-          <TableHeader>
-            <TableRow>
-              <TableHead className="w-[100px]">Invoice</TableHead>
-              <TableHead>Status</TableHead>
-              <TableHead>Method</TableHead>
-              <TableHead className="text-right">Amount</TableHead>
-            </TableRow>
-          </TableHeader>
-          <TableBody>
-            <TableRow>
-              <TableCell className="font-medium">INV001</TableCell>
-              <TableCell>Paid</TableCell>
-              <TableCell>Credit Card</TableCell>
-              <TableCell className="text-right">$250.00</TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell className="font-medium">INV001</TableCell>
-              <TableCell>Paid</TableCell>
-              <TableCell>Credit Card</TableCell>
-              <TableCell className="text-right">$250.00</TableCell>
-            </TableRow>
-          </TableBody>
-        </Table>
-      </div>
-    </div>
-  </div>
-</div>
+<Preview>
+  <Table>
+    <TableCaption>A list of your recent invoices.</TableCaption>
+    <TableHeader>
+      <TableRow>
+        <TableHead className="w-[100px]">Invoice</TableHead>
+        <TableHead>Status</TableHead>
+        <TableHead>Method</TableHead>
+        <TableHead className="text-right">Amount</TableHead>
+      </TableRow>
+    </TableHeader>
+    <TableBody>
+      <TableRow>
+        <TableCell className="font-medium">INV001</TableCell>
+        <TableCell>Paid</TableCell>
+        <TableCell>Credit Card</TableCell>
+        <TableCell className="text-right">$250.00</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableCell className="font-medium">INV001</TableCell>
+        <TableCell>Paid</TableCell>
+        <TableCell>Credit Card</TableCell>
+        <TableCell className="text-right">$250.00</TableCell>
+      </TableRow>
+    </TableBody>
+  </Table>
+</Preview>

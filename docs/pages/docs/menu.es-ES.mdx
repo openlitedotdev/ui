@@ -33,8 +33,9 @@ import {
   MenubarCheckboxItem,
   MenubarTrigger,
 } from '@openui-org/react/components'
+import Preview from 'components/preview'
 
-function App() {
+function MenuExample() {
   return (
     <Menubar>
       <MenubarMenu>
@@ -87,56 +88,50 @@ function App() {
 
 ### Vista previa
 
-<br />
-
-<div className='mt-2 ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 relative rounded-md border'>
-    <div className='theme-zinc w-full'>
-
-        <div className='preview flex min-h-[350px] w-full justify-center p-20 items-center'>
-            <div className="w-full flex justify-center">
-                <Menubar>
-                    <MenubarMenu>
-                        <MenubarTrigger>Archivo</MenubarTrigger>
-                            <MenubarContent>
-                                <MenubarItem>
-                                    Nueva pestaña <MenubarShortcut>⌘T</MenubarShortcut>
-                                </MenubarItem>
-                                <MenubarItem>
-                                    Nueva Ventana <MenubarShortcut>⌘N</MenubarShortcut>
-                                </MenubarItem>
-                        </MenubarContent>
-                    </MenubarMenu>
-                    <MenubarMenu>
-                        <MenubarTrigger>Editar</MenubarTrigger>
-                        <MenubarContent>
-                            <MenubarItem>
-                                Deshacer <MenubarShortcut>⌘Z</MenubarShortcut>
-                            </MenubarItem>
-                            <MenubarItem>
-                                Rehacer <MenubarShortcut>⇧⌘Z</MenubarShortcut>
-                            </MenubarItem>
-                        </MenubarContent>
-                    </MenubarMenu>
-                    <MenubarMenu>
-                        <MenubarTrigger>Ver</MenubarTrigger>
-                        <MenubarContent>
-                          <MenubarCheckboxItem>Mostrar siempre la barra de marcadores</MenubarCheckboxItem>
-                          <MenubarCheckboxItem>Mostrar siempre las URL completas</MenubarCheckboxItem>
-                        </MenubarContent>
-                    </MenubarMenu>
-                    <MenubarMenu>
-                        <MenubarTrigger>Perfiles</MenubarTrigger>
-                        <MenubarContent>
-                          <MenubarRadioGroup value="benoit">
-                              <MenubarRadioItem value="andy">Andy</MenubarRadioItem>
-                              <MenubarRadioItem value="benoit">Benoit</MenubarRadioItem>
-                              <MenubarRadioItem value="Luis">Luis</MenubarRadioItem>
-                          </MenubarRadioGroup>
-                        </MenubarContent>
-                    </MenubarMenu>
-                </Menubar>
-            </div>
-        </div>
-    </div>
-
-</div>
+<Preview>
+  <Menubar>
+    <MenubarMenu>
+      <MenubarTrigger>Archivo</MenubarTrigger>
+      <MenubarContent>
+        <MenubarItem>
+          Nueva pestaña <MenubarShortcut>⌘T</MenubarShortcut>
+        </MenubarItem>
+        <MenubarItem>
+          Nueva Ventana <MenubarShortcut>⌘N</MenubarShortcut>
+        </MenubarItem>
+      </MenubarContent>
+    </MenubarMenu>
+    <MenubarMenu>
+      <MenubarTrigger>Editar</MenubarTrigger>
+      <MenubarContent>
+        <MenubarItem>
+          Deshacer <MenubarShortcut>⌘Z</MenubarShortcut>
+        </MenubarItem>
+        <MenubarItem>
+          Rehacer <MenubarShortcut>⇧⌘Z</MenubarShortcut>
+        </MenubarItem>
+      </MenubarContent>
+    </MenubarMenu>
+    <MenubarMenu>
+      <MenubarTrigger>Ver</MenubarTrigger>
+      <MenubarContent>
+        <MenubarCheckboxItem>
+          Mostrar siempre la barra de marcadores
+        </MenubarCheckboxItem>
+        <MenubarCheckboxItem>
+          Mostrar siempre las URL completas
+        </MenubarCheckboxItem>
+      </MenubarContent>
+    </MenubarMenu>
+    <MenubarMenu>
+      <MenubarTrigger>Perfiles</MenubarTrigger>
+      <MenubarContent>
+        <MenubarRadioGroup value="benoit">
+          <MenubarRadioItem value="andy">Andy</MenubarRadioItem>
+          <MenubarRadioItem value="benoit">Benoit</MenubarRadioItem>
+          <MenubarRadioItem value="Luis">Luis</MenubarRadioItem>
+        </MenubarRadioGroup>
+      </MenubarContent>
+    </MenubarMenu>
+  </Menubar>
+</Preview>

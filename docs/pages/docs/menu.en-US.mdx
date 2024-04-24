@@ -13,6 +13,7 @@ import {
   MenubarShortcut,
   MenubarTrigger,
 } from '@openui-org/react/components'
+import Preview from 'components/preview'
 
 # Menu
 
@@ -34,7 +35,7 @@ import {
   MenubarTrigger,
 } from '@openui-org/react/components'
 
-function App() {
+function MenuExample() {
   return (
     <Menubar>
       <MenubarMenu>
@@ -83,13 +84,8 @@ function App() {
 
 ### Preview
 
-<br />
+<Preview>
 
-<div className='mt-2 ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 relative rounded-md border'>
-    <div className='theme-zinc w-full'>
-
-        <div className='preview flex min-h-[350px] w-full justify-center p-20 items-center'>
-            <div className="w-full flex justify-center">
                 <Menubar>
                     <MenubarMenu>
                         <MenubarTrigger>File</MenubarTrigger>
@@ -131,8 +127,5 @@ function App() {
                         </MenubarContent>
                     </MenubarMenu>
                 </Menubar>
-            </div>
-        </div>
-    </div>
 
-</div>
+</Preview>
