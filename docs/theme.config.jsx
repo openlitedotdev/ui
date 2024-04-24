@@ -40,7 +40,11 @@ export default {
           </a>
         </div>
         <p className="mt-6 text-xs">
-          © {new Date().getFullYear()} The Open UI Project.
+          ©
+          {' '}
+          {new Date().getFullYear()}
+          {' '}
+          The Open UI Project.
         </p>
       </div>
     ),
