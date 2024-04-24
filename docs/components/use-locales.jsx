@@ -16,8 +16,7 @@ export default function useLocalesMap(localesMap) {
   if (!localesMap)
     throw new Error('Pass a locales map as argument to useLocalesMap')
 
-  if (!isObject(localesMap))
-    throw new Error('Locales map must be an object')
+  if (!isObject(localesMap)) throw new Error('Locales map must be an object')
 
   if (!localesMap.hasOwnProperty(defaultLocale)) {
     throw new Error(
@@ -26,17 +25,15 @@ export default function useLocalesMap(localesMap) {
   }
 
   if (
-    localesMap.hasOwnProperty(locale)
-    && typeof localesMap[locale] !== typeof localesMap[defaultLocale]
+    localesMap.hasOwnProperty(locale) &&
+    typeof localesMap[locale] !== typeof localesMap[defaultLocale]
   ) {
     throw new Error(
       `Invalid locales map: Shape of "${locale}" must be the same as "${defaultLocale}"`,
     )
   }
 
-  if (
-    ['string', 'number', 'symbol'].includes(typeof localesMap[defaultLocale])
-  )
+  if (['string', 'number', 'symbol'].includes(typeof localesMap[defaultLocale]))
     return localesMap[locale] || localesMap[defaultLocale]
 
   const target = JSON.parse(JSON.stringify(localesMap[defaultLocale]))
@@ -60,18 +57,15 @@ function isObject(item) {
  * @returns {Record<string, T>} Merged object
  */
 function mergeDeep(target, ...sources) {
-  if (!sources.length)
-    return target
+  if (!sources.length) return target
   const source = sources.shift()
 
   if (isObject(target) && isObject(source)) {
     for (const key in source) {
       if (isObject(source[key])) {
-        if (!target[key])
-          Object.assign(target, { [key]: {} })
+        if (!target[key]) Object.assign(target, { [key]: {} })
         mergeDeep(target[key], source[key])
-      }
-      else {
+      } else {
         Object.assign(target, { [key]: source[key] })
       }
     }
