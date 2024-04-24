@@ -1,11 +1,11 @@
 import { Button } from '@openui-org/react/components'
 import {
-  titleMapPresentation,
   buttonPresentationMap,
   descriptionMapPresentation,
+  titleMapPresentation,
 } from 'i18n/translate'
-import useLocalesMap from './use-locales'
 import Link from 'next/link'
+import useLocalesMap from './use-locales'
 
 export default function Description() {
   const titlePresentation = useLocalesMap(titleMapPresentation)

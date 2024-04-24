@@ -1,19 +1,19 @@
-import { Card, CardHeader, CardContent } from '@openui-org/react/components'
+import { Card, CardContent, CardHeader } from '@openui-org/react/components'
 import {
-  KeyIcon,
-  FileInputIcon,
   CreditCardIcon,
-  NavigationIcon,
+  FileInputIcon,
+  KeyIcon,
   MenuIcon,
   MinimizeIcon,
+  NavigationIcon,
 } from 'lucide-react'
-import useLocalesMap from './use-locales'
 import {
   descriptionMapComponents,
   keyMapComponents,
   titleMapComponents,
 } from 'i18n/translate'
 import Link from 'next/link'
+import useLocalesMap from './use-locales'
 
 const cards = [
   {

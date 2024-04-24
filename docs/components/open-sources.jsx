@@ -1,5 +1,4 @@
-import { Input, Button } from '@openui-org/react/components'
-import useLocalesMap from './use-locales'
+import { Button, Input } from '@openui-org/react/components'
 import Link from 'next/link'
 import {
   buttonMapOpenSources,
@@ -8,6 +7,7 @@ import {
   placeHolderMapOpenSources,
   titleMapOpenSources,
 } from 'i18n/translate'
+import useLocalesMap from './use-locales'
 
 export default function OpenSources() {
   const titleOpenSource = useLocalesMap(titleMapOpenSources)
