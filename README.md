@@ -1,11 +1,5 @@
 # Open UI
 
-<img src="./.github/OpenLand.jpeg" alt="Open Land logo" align="right"  width="100">
-
-This is the source code for [openui](https://openui.up.railway.app/) by Open Land
-
-<br>
-
 ## Features
 
 - Built with [Shadcn UI](https://https://ui.shadcn.com/) and [Tailwind CSS](https://tailwindcss.com/)
@@ -15,7 +9,6 @@ This is the source code for [openui](https://openui.up.railway.app/) by Open Lan
 
 ## Getting Started
 
-<img src="./.github/preview.png" alt="Open Land logo" align="right"  width="300">
 This design system is totally easy to use with the aim of facilitating upcoming new projects. The design system is a challenge for our team. You can gladly contribute and guide us with ideas to improve... We would be keen to hear any feedback on this project.
 
 ## Configure workspaces
