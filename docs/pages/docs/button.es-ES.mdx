@@ -2,4 +2,39 @@
 title: Button
 ---
 
+import { Button } from '@openui-org/react/components'
+import Preview from 'components/preview'
+
 # Button
+
+Muestra un botón o un componente que parece un botón.
+
+## Usar
+
+```jsx
+import { Button } from '@openui-org/react/components'
+
+export default function ButtonExample() {
+  return (
+    <>
+      <Button>Button</Button>
+      <Button variant="primary">Button</Button>
+      <Button variant="secondary">Button</Button>
+      <Button variant="outline">Button</Button>
+      <Button variant="ghost">Button</Button>
+      <Button variant="error">Button</Button>
+    </>
+  )
+}
+```
+
+### Vista previa
+
+<Preview>
+  <Button>Button</Button>
+  <Button variant="primary">Button</Button>
+  <Button variant="secondary">Button</Button>
+  <Button variant="outline">Button</Button>
+  <Button variant="ghost">Button</Button>
+  <Button variant="error">Button</Button>
+</Preview>
