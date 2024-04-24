@@ -2,4 +2,46 @@
 title: Tooltip
 ---
 
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger, Button } from '@openui-org/react/components'
+import Preview from 'components/preview'
+
 # Tooltip
+
+Una ventana emergente que muestra información relacionada con un elemento cuando éste recibe el foco del teclado o el ratón pasa por encima.
+
+## Usar
+
+```jsx
+import * as React from 'react'
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger, Button } from '@openui-org/react/components'
+
+function TooltipExample() {
+  return (
+    <TooltipProvider>
+        <Tooltip>
+            <TooltipTrigger asChild>
+                <Button>Hover</Button>
+            </TooltipTrigger>
+            <TooltipContent>
+                <p>Añadir a la biblioteca</p>
+            </TooltipContent>
+        </Tooltip>
+    </TooltipProvider>
+  )
+}
+```
+
+### Vista previa
+
+<Preview>
+    <TooltipProvider>
+        <Tooltip>
+            <TooltipTrigger asChild>
+                <Button>Hover</Button>
+            </TooltipTrigger>
+            <TooltipContent>
+                <p>Añadir a la biblioteca</p>
+            </TooltipContent>
+        </Tooltip>
+    </TooltipProvider>
+</Preview>
