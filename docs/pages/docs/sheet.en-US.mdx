@@ -2,4 +2,73 @@
 title: Sheet
 ---
 
+import {
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+  Button,
+} from '@openui-org/react/components'
+import Preview from 'components/preview'
+
 # Sheet
+
+Extiende el componente Diálogo para mostrar contenido que complementa el contenido principal de la pantalla.
+
+## Usage
+
+```jsx
+import {
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+  Button,
+} from '@openui-org/react/components'
+
+export default function SheetExample() {
+  return (
+    <Sheet>
+      <SheetTrigger asChild>
+        <Button>Open</Button>
+      </SheetTrigger>
+      <SheetContent>
+        <SheetHeader>
+          <SheetTitle>Are you absolutely sure?</SheetTitle>
+          <SheetDescription>
+            This action cannot be undone. This will permanently delete your
+            account and remove your data from our servers.
+          </SheetDescription>
+        </SheetHeader>
+      </SheetContent>
+    </Sheet>
+  )
+}
+```
+
+### Preview
+
+<Preview>
+
+{' '}
+
+<Sheet>
+  <SheetTrigger asChild>
+    <Button>Open</Button>
+  </SheetTrigger>
+  <SheetContent>
+    <SheetHeader>
+      <SheetTitle>Are you absolutely sure?</SheetTitle>
+      <SheetDescription>
+        This action cannot be undone. This will permanently delete your account
+        and remove your data from our servers.
+      </SheetDescription>
+    </SheetHeader>
+  </SheetContent>
+</Sheet>
+
+</Preview>
