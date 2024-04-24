@@ -2,9 +2,9 @@ import { useRouter } from 'next/router'
 import Logo from './components/logo'
 import useLocalesMap from './components/use-locales'
 import {
-  tableOfContentsTitleMap,
-  searchPlaceholderMap,
   languageMap,
+  searchPlaceholderMap,
+  tableOfContentsTitleMap,
 } from './i18n/translate'
 
 /** @type {import('nextra-theme-docs').DocsThemeConfig} */
@@ -40,7 +40,11 @@ export default {
           </a>
         </div>
         <p className="mt-6 text-xs">
-          © {new Date().getFullYear()} The Open UI Project.
+          ©
+          {' '}
+          {new Date().getFullYear()}
+          {' '}
+          The Open UI Project.
         </p>
       </div>
     ),
