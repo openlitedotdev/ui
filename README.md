@@ -1,5 +1,7 @@
 # Open UI
 
+This design system is totally easy to use with the aim of facilitating upcoming new projects. The design system is a challenge for our team. You can gladly contribute and guide us with ideas to improve... We would be keen to hear any feedback on this project.
+
 ## Features
 
 - Built with [Shadcn UI](https://https://ui.shadcn.com/) and [Tailwind CSS](https://tailwindcss.com/)
@@ -9,11 +11,9 @@
 
 ## Getting Started
 
-This design system is totally easy to use with the aim of facilitating upcoming new projects. The design system is a challenge for our team. You can gladly contribute and guide us with ideas to improve... We would be keen to hear any feedback on this project.
+### Configure workspaces
 
-## Configure workspaces
-
-### Install turbo
+#### Install turbo
 
 Install turbo globally.
 
@@ -23,7 +23,7 @@ pnpm install turbo --global
 
 For more details about installation, see Installing Turborepo
 
-### Scripts
+#### Scripts
 
 1. Run mode dev.
 
