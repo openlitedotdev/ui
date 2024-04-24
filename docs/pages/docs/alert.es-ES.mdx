@@ -2,4 +2,58 @@
 title: Alert
 ---
 
+import {
+  Alert,
+  AlertDescription,
+  AlertTitle,
+} from '@openui-org/react/components'
+import { Terminal, CircleX } from 'lucide-react'
+import Preview from 'components/preview'
+
 # Alert
+
+Muestra una llamada de atención al usuario.
+
+## Usar
+
+```js
+import { Terminal, CircleX } from 'lucide-react'
+import * as React from 'react'
+import {
+  Alert,
+  AlertDescription,
+  AlertTitle,
+} from '@openui-org/react/components'
+
+function AlertExample() {
+  return (
+    <>
+      <Alert>
+        <Terminal className="size-4" />
+        <AlertTitle>Heads up!</AlertTitle>
+        <AlertDescription>Example of component `Alert`</AlertDescription>
+      </Alert>
+      <Alert variant="error">
+        <CircleX className="size-4" />
+        <AlertTitle>Heads up!</AlertTitle>
+        <AlertDescription>Example of component `Alert`</AlertDescription>
+      </Alert>
+    </>
+  )
+}
+```
+
+### Vista previa
+
+<Preview className="flex-col">
+  <Alert>
+    <Terminal className="size-4" />
+    <AlertTitle>Heads up!</AlertTitle>
+    <AlertDescription>Example of component `Alert`</AlertDescription>
+  </Alert>
+  <Alert variant="error">
+    <CircleX className="size-4" />
+    <AlertTitle>Heads up!</AlertTitle>
+    <AlertDescription>Example of component `Alert`</AlertDescription>
+  </Alert>
+</Preview>

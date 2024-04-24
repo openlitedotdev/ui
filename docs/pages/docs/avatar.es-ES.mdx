@@ -2,4 +2,44 @@
 title: Avatar
 ---
 
+import {
+  Avatar,
+  AvatarFallback,
+  AvatarImage,
+} from '@openui-org/react/components'
+import Preview from 'components/preview'
+
 # Avatar
+
+Un elemento de imagen con un fallback para representar al usuario.
+
+## Usar
+
+```jsx
+import * as React from 'react'
+import {
+  Avatar,
+  AvatarFallback,
+  AvatarImage,
+} from '@openui-org/react/components'
+
+export default function AvatarExample() {
+  return (
+    <>
+      <Avatar>
+        <AvatarImage src="https://github.com/castrogarciajs.png" />
+        <AvatarFallback>CN</AvatarFallback>
+      </Avatar>
+    </>
+  )
+}
+```
+
+### Vista previa
+
+<Preview>
+  <Avatar>
+    <AvatarImage src="https://github.com/castrogarciajs.png" />
+    <AvatarFallback>CN</AvatarFallback>
+  </Avatar>
+</Preview>
