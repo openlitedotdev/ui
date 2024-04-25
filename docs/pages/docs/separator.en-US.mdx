@@ -2,4 +2,58 @@
 title: Separator
 ---
 
+import { Separator } from '@openui-org/react/components';
+import Preview from 'components/preview';
+
 # Separator
+
+Visually or semantically separates content.
+
+## Usage
+
+```jsx
+import * as React from 'react'
+import { Separator } from '@openui-org/react/components'
+
+function SeparatorExample() {
+  return (
+    <div>
+      <div className="space-y-1">
+        <h4 className="text-sm font-medium leading-none">Content separator</h4>
+        <p className="text-sm text-muted-foreground">
+          Component of the openui-org open source library.
+        </p>
+      </div>
+      <Separator className="my-4" />
+      <div className="flex h-5 items-center space-x-4 text-sm">
+        <div>Blog</div>
+            <Separator orientation="vertical" />
+        <div>Docs</div>
+            <Separator orientation="vertical" />
+        <div>Source</div>
+      </div>
+    </div>
+  )
+}
+```
+
+### Preview
+
+<Preview>
+    <div>
+      <div className="space-y-1">
+        <h4 className="text-sm font-medium leading-none">Radix Primitives</h4>
+        <span className="text-sm text-muted-foreground">
+          An open-source UI component library.
+        </span>
+      </div>
+      <Separator className="my-4" />
+      <div className="flex h-5 items-center space-x-4 text-sm">
+        <div>Blog</div>
+            <Separator orientation="vertical" />
+        <div>Docs</div>
+            <Separator orientation="vertical" />
+        <div>Source</div>
+      </div>
+    </div>
+</Preview>
