@@ -2,7 +2,13 @@
 title: Tooltip
 ---
 
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger, Button } from '@openui-org/react/components'
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+  Button,
+} from '@openui-org/react/components'
 import Preview from 'components/preview'
 
 # Tooltip
@@ -13,34 +19,41 @@ A popup that displays information related to an element when the element receive
 
 ```jsx
 import * as React from 'react'
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger, Button } from '@openui-org/react/components'
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+  Button,
+} from '@openui-org/react/components'
 
 function TooltipExample() {
   return (
     <TooltipProvider>
-        <Tooltip>
-            <TooltipTrigger asChild>
-                <Button>Hover</Button>
-            </TooltipTrigger>
-            <TooltipContent>
-                <p>Add to library</p>
-            </TooltipContent>
-        </Tooltip>
+      <Tooltip>
+        <TooltipTrigger asChild>
+          <Button>Hover</Button>
+        </TooltipTrigger>
+        <TooltipContent>
+          <p>Add to library</p>
+        </TooltipContent>
+      </Tooltip>
     </TooltipProvider>
   )
 }
 ```
+
 ### Preview
 
 <Preview>
-    <TooltipProvider>
-        <Tooltip>
-            <TooltipTrigger asChild>
-                <Button>Hover</Button>
-            </TooltipTrigger>
-            <TooltipContent>
-                <p>Add to library</p>
-            </TooltipContent>
-        </Tooltip>
-    </TooltipProvider>
+  <TooltipProvider>
+    <Tooltip>
+      <TooltipTrigger asChild>
+        <Button>Hover</Button>
+      </TooltipTrigger>
+      <TooltipContent>
+        <p>Add to library</p>
+      </TooltipContent>
+    </Tooltip>
+  </TooltipProvider>
 </Preview>
