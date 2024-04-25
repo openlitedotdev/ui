@@ -2,4 +2,48 @@
 title: Popover
 ---
 
+import {
+  Popover,
+  PopoverTrigger,
+  PopoverContent,
+  Button,
+} from '@openui-org/react/components'
+import Preview from 'components/preview'
+
 # Popover
+
+Displays rich content in a portal, triggered by a button.
+
+## Usage
+
+```jsx
+import * as React from 'react'
+import {
+  Popover,
+  PopoverTrigger,
+  PopoverContent,
+  Button,
+} from '@openui-org/react/components'
+
+function PopoverExample() {
+  return (
+    <Popover>
+      <PopoverTrigger asChild className="text-black-light">
+        <Button>Open popover</Button>
+      </PopoverTrigger>
+      <PopoverContent>Place content for the popover here.</PopoverContent>
+    </Popover>
+  )
+}
+```
+
+### Preview
+
+<Preview>
+  <Popover>
+    <PopoverTrigger asChild className="text-black-light">
+      <Button>Open popover</Button>
+    </PopoverTrigger>
+    <PopoverContent>Place content for the popover here.</PopoverContent>
+  </Popover>
+</Preview>
