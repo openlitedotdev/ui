@@ -2,4 +2,28 @@
 title: Progress
 ---
 
+import { Progress } from "@openui-org/react/components"
+import Preview from 'components/preview'
+
 # Progress
+
+Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.
+
+## Usage
+
+```jsx
+import * as React from 'react'
+import { Progress } from '@openui-org/react/components'
+
+function ProgressExample() {
+  return (
+    <Progress value={50} />
+  )
+}
+```
+
+### Preview
+
+<Preview>
+  <Progress value={50} />
+</Preview>
