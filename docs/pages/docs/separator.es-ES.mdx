@@ -2,8 +2,8 @@
 title: Separator
 ---
 
-import { Separator } from '@openui-org/react/components';
-import Preview from 'components/preview';
+import { Separator } from '@openui-org/react/components'
+import Preview from 'components/preview'
 
 # Separator
 
@@ -19,7 +19,9 @@ function SeparatorExample() {
   return (
     <div>
       <div className="space-y-1">
-        <h4 className="text-sm font-medium leading-none">Separador de Contenido</h4>
+        <h4 className="text-sm font-medium leading-none">
+          Separador de Contenido
+        </h4>
         <p className="text-sm text-muted-foreground">
           Componente de la libreria openui-org de código abierto.
         </p>
@@ -27,9 +29,9 @@ function SeparatorExample() {
       <Separator className="my-4" />
       <div className="flex h-5 items-center space-x-4 text-sm">
         <div>Blog</div>
-            <Separator orientation="vertical" />
+        <Separator orientation="vertical" />
         <div>Documentos</div>
-            <Separator orientation="vertical" />
+        <Separator orientation="vertical" />
         <div>Fuente</div>
       </div>
     </div>
@@ -40,20 +42,22 @@ function SeparatorExample() {
 ### Vista previa
 
 <Preview>
-    <div>
-      <div className="space-y-1">
-        <h4 className="text-sm font-medium leading-none">Separador de Contenido</h4>
-        <span className="text-sm text-muted-foreground">
-          Componente de la libreria openui-org de código abierto.
-        </span>
-      </div>
-      <Separator className="my-4" />
-      <div className="flex h-5 items-center space-x-4 text-sm">
-        <div>Blog</div>
-            <Separator orientation="vertical" />
-        <div>Documentos</div>
-            <Separator orientation="vertical" />
-        <div>Fuente</div>
-      </div>
+  <div>
+    <div className="space-y-1">
+      <h4 className="text-sm font-medium leading-none">
+        Separador de Contenido
+      </h4>
+      <span className="text-sm text-muted-foreground">
+        Componente de la libreria openui-org de código abierto.
+      </span>
     </div>
+    <Separator className="my-4" />
+    <div className="flex h-5 items-center space-x-4 text-sm">
+      <div>Blog</div>
+      <Separator orientation="vertical" />
+      <div>Documentos</div>
+      <Separator orientation="vertical" />
+      <div>Fuente</div>
+    </div>
+  </div>
 </Preview>
