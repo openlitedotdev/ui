@@ -2,7 +2,15 @@
 title: Tabs
 ---
 
-import { Button, Input, Label, TabsContent, Tabs, TabsList, TabsTrigger } from '@openui-org/react/components'
+import {
+  Button,
+  Input,
+  Label,
+  TabsContent,
+  Tabs,
+  TabsList,
+  TabsTrigger,
+} from '@openui-org/react/components'
 import Preview from 'components/preview'
 
 # Tabs
@@ -13,49 +21,61 @@ A set of layered sections of content—known as tab panels—that are displayed 
 
 ```jsx
 import * as React from 'react'
-import { Button, Input, Label, TabsContent, Tabs, TabsList, TabsTrigger } from '@openui-org/react/components'
+import {
+  Button,
+  Input,
+  Label,
+  TabsContent,
+  Tabs,
+  TabsList,
+  TabsTrigger,
+} from '@openui-org/react/components'
 
 function TabsExample() {
   return (
     <Tabs defaultValue="Login" className="w-[400px]">
-        <TabsList>
-            <TabsTrigger value="Login">Login</TabsTrigger>
-            <TabsTrigger value="Register">Register</TabsTrigger>
-        </TabsList>
-        <TabsContent value="Login">
-            <form className="flex flex-col gap-4 text-start">
-                <div>
-                    <Label>Email</Label>
-                    <Input type="email" placeholder="jondoe@gmail.com" />
-                </div>
-                <div>
-                    <Label>password</Label>
-                    <Input type="password" placeholder="*******" />
-                </div>
-                <Button className="w-full" variant="default">Login</Button>
-            </form>
-        </TabsContent>
-        <TabsContent value="Register">
-            <form className="flex flex-col gap-2 text-start">
-                <div>
-                    <Label>User</Label>
-                    <Input type="text" placeholder="John Abraham" />
-                </div>
-                <div>
-                    <Label>Email</Label>
-                    <Input type="email" placeholder="jondoe@gmail.com" />
-                </div>
-                <div>
-                    <Label>password</Label>
-                    <Input type="password" placeholder="*******" />
-                </div>
-                <div>
-                    <Label>Phone Number</Label>
-                    <Input type="text" placeholder="Enter your phone number" />
-                </div>
-                <Button className="w-full mt-5" variant="default">Register</Button>
-            </form>
-        </TabsContent>
+      <TabsList>
+        <TabsTrigger value="Login">Login</TabsTrigger>
+        <TabsTrigger value="Register">Register</TabsTrigger>
+      </TabsList>
+      <TabsContent value="Login">
+        <form className="flex flex-col gap-4 text-start">
+          <div>
+            <Label>Email</Label>
+            <Input type="email" placeholder="jondoe@gmail.com" />
+          </div>
+          <div>
+            <Label>password</Label>
+            <Input type="password" placeholder="*******" />
+          </div>
+          <Button className="w-full" variant="default">
+            Login
+          </Button>
+        </form>
+      </TabsContent>
+      <TabsContent value="Register">
+        <form className="flex flex-col gap-2 text-start">
+          <div>
+            <Label>User</Label>
+            <Input type="text" placeholder="John Abraham" />
+          </div>
+          <div>
+            <Label>Email</Label>
+            <Input type="email" placeholder="jondoe@gmail.com" />
+          </div>
+          <div>
+            <Label>password</Label>
+            <Input type="password" placeholder="*******" />
+          </div>
+          <div>
+            <Label>Phone Number</Label>
+            <Input type="text" placeholder="Enter your phone number" />
+          </div>
+          <Button className="w-full mt-5" variant="default">
+            Register
+          </Button>
+        </form>
+      </TabsContent>
     </Tabs>
   )
 }
@@ -64,44 +84,44 @@ function TabsExample() {
 ### Preview
 
 <Preview>
-    <Tabs defaultValue="Login" className="w-[400px]">
-        <TabsList>
-            <TabsTrigger value="Login">Login</TabsTrigger>
-            <TabsTrigger value="Register">Register</TabsTrigger>
-        </TabsList>
-        <TabsContent value="Login">
-            <form className="flex flex-col gap-4 text-start">
-                <div>
-                    <Label>Email</Label>
-                    <Input type="email" placeholder="jondoe@gmail.com" />
-                </div>
-                <div>
-                    <Label>password</Label>
-                    <Input type="password" placeholder="*******" />
-                </div>
-                <Button className="w-full">Login</Button>
-            </form>
-        </TabsContent>
-        <TabsContent value="Register">
-            <form className="flex flex-col gap-2 text-start">
-                <div>
-                    <Label>User</Label>
-                    <Input type="text" placeholder="John Abraham" />
-                </div>
-                <div>
-                    <Label>Email</Label>
-                    <Input type="email" placeholder="jondoe@gmail.com" />
-                </div>
-                <div>
-                    <Label>password</Label>
-                    <Input type="password" placeholder="*******" />
-                </div>
-                <div>
-                    <Label>Phone Number</Label>
-                    <Input type="text" placeholder="Enter your phone number" />
-                </div>
-                <Button className="w-full mt-5">Register</Button>
-            </form>
-        </TabsContent>
-    </Tabs>
+  <Tabs defaultValue="Login" className="w-[400px]">
+    <TabsList>
+      <TabsTrigger value="Login">Login</TabsTrigger>
+      <TabsTrigger value="Register">Register</TabsTrigger>
+    </TabsList>
+    <TabsContent value="Login">
+      <form className="flex flex-col gap-4 text-start">
+        <div>
+          <Label>Email</Label>
+          <Input type="email" placeholder="jondoe@gmail.com" />
+        </div>
+        <div>
+          <Label>password</Label>
+          <Input type="password" placeholder="*******" />
+        </div>
+        <Button className="w-full">Login</Button>
+      </form>
+    </TabsContent>
+    <TabsContent value="Register">
+      <form className="flex flex-col gap-2 text-start">
+        <div>
+          <Label>User</Label>
+          <Input type="text" placeholder="John Abraham" />
+        </div>
+        <div>
+          <Label>Email</Label>
+          <Input type="email" placeholder="jondoe@gmail.com" />
+        </div>
+        <div>
+          <Label>password</Label>
+          <Input type="password" placeholder="*******" />
+        </div>
+        <div>
+          <Label>Phone Number</Label>
+          <Input type="text" placeholder="Enter your phone number" />
+        </div>
+        <Button className="w-full mt-5">Register</Button>
+      </form>
+    </TabsContent>
+  </Tabs>
 </Preview>
