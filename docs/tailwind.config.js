@@ -1,4 +1,4 @@
-import { openui } from '@openui-org/react'
+import { react } from '@openui-org/react'
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -6,10 +6,10 @@ export default {
     './components/**/*.{js,jsx}',
     './pages/**/*.{md,mdx}',
     './theme.config.js',
-    './node_modules/@openui-org/theme/dist/**/*.{js,ts,jsx,tsx}',
+    './node_modules/@openui-org/react/dist/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
     extend: { },
   },
-  plugins: [openui()],
+  plugins: [react],
 }
