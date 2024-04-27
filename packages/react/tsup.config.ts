@@ -6,5 +6,7 @@ export default defineConfig(options => ({
   dts: true,
   sourcemap: true,
   external: ['react'],
+  clean: true,
+  target: 'es2019',
   ...options,
 }))

@@ -32,6 +32,12 @@
     "build": "tsup",
     "clean": "rm -rf .turbo node_modules dist"
   },
+  "peerDependencies": {
+    "tailwindcss": ">=3.4.0"
+  },
+  "dependencies": {
+    "tailwind-variants": "^0.2.1"
+  },
   "devDependencies": {
     "@openui-org/tsconfig": "workspace:*",
     "tailwindcss": "3.4.1",

@@ -1,70 +1,48 @@
-import type { Config } from 'tailwindcss'
-import { boxShadow } from './box-shadows'
-import { borderRadius } from './radius'
-import { container } from './screens'
+import plugin from 'tailwindcss/plugin.js'
+import type { OpenUIPluginConfig } from './interfaces/config'
+import type { DefaultThemeType } from './interfaces/utils'
+import type { ConfigTheme } from './interfaces/theme'
+import { baseStyles, utilities } from './styles'
+import { config } from './config'
 
-export const config: Config = {
-  content: [],
-  darkMode: ['class'],
-  theme: {
-    container,
-    extend: {
-      colors: {
-        border: 'hsl(var(--border))',
-        input: 'hsl(var(--input))',
-        ring: 'hsl(var(--ring))',
-        background: 'hsl(var(--background))',
-        foreground: 'hsl(var(--foreground))',
-        primary: {
-          DEFAULT: 'hsl(var(--primary))',
-          foreground: 'hsl(var(--primary-foreground))',
-        },
-        secondary: {
-          DEFAULT: 'hsl(var(--secondary))',
-          foreground: 'hsl(var(--secondary-foreground))',
-        },
-        error: {
-          DEFAULT: 'hsl(var(--error))',
-          foreground: 'hsl(var(--error-foreground))',
-        },
-        sky: {
-          DEFAULT: 'hsl(var(--sky))',
-          foreground: 'hsl(var(--sky-foregorund))',
-        },
-        muted: {
-          DEFAULT: 'hsl(var(--muted))',
-          foreground: 'hsl(var(--muted-foreground))',
-        },
-        accent: {
-          DEFAULT: 'hsl(var(--accent))',
-          foreground: 'hsl(var(--accent-foreground))',
-        },
-        popover: {
-          DEFAULT: 'hsl(var(--popover))',
-          foreground: 'hsl(var(--popover-foreground))',
-        },
-        card: {
-          DEFAULT: 'hsl(var(--card))',
-          foreground: 'hsl(var(--card-foreground))',
-        },
+const DEFAULT_PREFIX = 'openui'
+
+function createPlugin(themes: ConfigTheme = {}, defaultTheme: DefaultThemeType, prefix: string) {
+  const resolved = config(themes, defaultTheme, prefix)
+
+  return plugin(({ addBase, addUtilities, addVariant }) => {
+    addBase({
+      ':root, [data-theme]': {
+        ...baseStyles(prefix),
       },
-      boxShadow,
-      borderRadius,
-      keyframes: {
-        'accordion-down': {
-          from: { height: '0' },
-          to: { height: 'var(--radix-accordion-content-height)' },
-        },
-        'accordion-up': {
-          from: { height: 'var(--radix-accordion-content-height)' },
-          to: { height: '0' },
-        },
-      },
-      animation: {
-        'accordion-down': 'accordion-down 0.2s ease-out',
-        'accordion-up': 'accordion-up 0.2s ease-out',
+    })
+
+    addUtilities({ ...resolved?.utilities, ...utilities })
+
+    resolved.variants.forEach((variant) => {
+      addVariant(variant.name, variant.definition)
+    })
+  }, {
+    theme: {
+      extend: {
+        ...resolved.colors,
       },
     },
-  },
-  plugins: [],
+  })
+}
+
+export function openui(config: OpenUIPluginConfig = {}): ReturnType<typeof plugin> {
+  const {
+    themes: themeObject = {},
+    defaultTheme = 'light',
+    layout: userLayout,
+    defaultExtendTheme = 'light',
+    prefix: defaultPrefix = DEFAULT_PREFIX,
+  } = config
+
+  // logic
+
+  const themes = {}
+
+  return createPlugin(themes, defaultTheme, defaultPrefix)
 }

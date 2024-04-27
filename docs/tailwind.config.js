@@ -9,7 +9,7 @@ export default {
     './node_modules/@openui-org/react/dist/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    extend: {},
+    extend: { },
   },
   plugins: [react],
 }
