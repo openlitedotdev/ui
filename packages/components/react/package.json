@@ -24,16 +24,6 @@
       "types": "./dist/index.d.ts",
       "import": "./dist/index.js",
       "require": "./dist/index.cjs"
-    },
-    "./components": {
-      "types": "./dist/components.d.ts",
-      "import": "./dist/components.js",
-      "require": "./dist/components.cjs"
-    },
-    "./plugin": {
-      "types": "./dist/plugin.d.ts",
-      "import": "./dist/plugin.js",
-      "require": "./dist/plugin.cjs"
     }
   },
   "scripts": {
@@ -43,8 +33,7 @@
   },
   "peerDependencies": {
     "react": ">=18",
-    "react-dom": ">=18",
-    "tailwindcss": "^3.0.0"
+    "react-dom": ">=18"
   },
   "dependencies": {
     "@openui-org/theme": "workspace:*",
@@ -66,19 +55,14 @@
     "@radix-ui/react-slot": "1.0.2",
     "@radix-ui/react-tabs": "1.0.4",
     "@radix-ui/react-tooltip": "1.0.7",
-    "class-variance-authority": "0.7.0",
-    "clsx": "2.1.0",
     "embla-carousel-react": "8.0.0",
     "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "tailwind-merge": "2.2.2",
-    "tailwindcss-animate": "1.0.7"
+    "react-dom": "18.2.0"
   },
   "devDependencies": {
     "@openui-org/tsconfig": "workspace:*",
     "@types/react": "18.2.69",
     "@types/react-dom": "18.2.22",
-    "tailwindcss": "3.4.1",
     "tsup": "8.0.2",
     "typescript": "5.4.2"
   }

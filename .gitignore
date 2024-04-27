@@ -133,3 +133,4 @@ dist
 .pnp.*
 *storybook.log
 storybook-static
+tailwind.config.js
