@@ -14,6 +14,7 @@
     "turbo-graph": "pnpm build --graph=dependency-graph.png",
     "clean-jest": "jest --clearCache",
     "clean-lock": "rimraf ./pnpm-lock.yaml",
+    "compile": "turbo compile --filter=!@openui-org/docs --filter=!@openui-org/storybook",
     "build": "turbo build --filter=!@openui-org/docs --filter=!@openui-org/storybook",
     "test": "jest --verbose --config ./jest.config.js",
     "postinstall": "husky install && pnpm --filter @openui-org/theme build",
@@ -37,6 +38,7 @@
     "lint-staged": "15.2.2",
     "prettier": "3.2.5",
     "rimraf": "^5.0.5",
+    "ts-jest": "^29.1.2",
     "turbo": "^1.13.3"
   },
   "lint-staged": {

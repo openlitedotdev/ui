@@ -37,12 +37,17 @@
   "dependencies": {
     "@types/color": "^3.0.6",
     "@types/lodash": "^4.17.0",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.0",
     "color": "^4.2.3",
+    "deepmerge": "^4.3.1",
+    "flat": "^5.0.2",
     "lodash": "^4.17.21",
-    "tailwind-variants": "^0.2.1"
+    "tailwind-merge": "^2.2.2"
   },
   "devDependencies": {
     "@openui-org/tsconfig": "workspace:*",
+    "@types/flat": "^5.0.5",
     "tailwindcss": "3.4.1",
     "tsup": "8.0.2",
     "typescript": "5.4.2"

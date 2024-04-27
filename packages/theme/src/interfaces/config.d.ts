@@ -1,3 +1,4 @@
+import type { ConfigThemes } from '../tailwindcss'
 import type { ConfigTheme, LayoutTheme } from './theme'
 import type { DefaultThemeType } from './utils'
 
@@ -14,7 +15,7 @@ export interface OpenUIPluginConfig {
   /**
    * The theme definitions.
    */
-  themes?: ConfigTheme
+  themes?: ConfigThemes
   /**
    * The default theme to use is light
    * @default "light"

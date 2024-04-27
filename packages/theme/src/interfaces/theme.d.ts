@@ -1,9 +1,9 @@
-import type { BaseUnit, ThemeColors } from './utils'
+import type { BaseUnit, Colors } from './utils'
 
 export interface ConfigTheme {
   extend?: 'light' | 'dark'
   layout?: LayoutTheme
-  colors?: Partial<ThemeColors>
+  colors?: Partial<Colors>
 }
 
 export interface LayoutTheme {
@@ -18,6 +18,18 @@ export interface LayoutTheme {
    * }
    */
   fontSize?: BaseUnit
+  /**
+   * The default line height applied across the components.
+   *
+   * @default
+   * {
+   *    small: "1.25rem",
+   *    medium: "1.5rem",
+   *    large: "1.75rem",
+   *    DEFAULT: "1.5rem",
+   * }
+   */
+  lineHeight?: FontThemeUnit
   /**
    * The default radius applied across the components.
    * we recommend to use `rem` units.
