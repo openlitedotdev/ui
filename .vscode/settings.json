@@ -1,0 +1,27 @@
+{
+  "eslint.experimental.useFlatConfig": true,
+  "editor.formatOnSave": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "never"
+  },
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "html",
+    "markdown",
+    "json",
+    "jsonc",
+    "yaml",
+    "toml"
+  ],
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "tailwindCSS.experimental.classRegex": ["cva`(.*?)`", "cva\\('(.*?)'\\)", "cva\\(\\s*('(.*?)'|\"(.*?)\")\\s*\\)"],
+  "editor.quickSuggestions": {
+    "strings": true
+  }
+}
