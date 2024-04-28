@@ -2,7 +2,8 @@ export type DefaultThemeType = 'light' | 'dark'
 export type Color = | Partial<{ foreground: string, DEFAULT: string }> | string
 
 export interface Colors {
-  dark: Color
+  background: Color
+  foreground: Color
   primary: Color
   secondary: Color
   success: Color
