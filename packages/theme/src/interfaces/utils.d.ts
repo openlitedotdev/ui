@@ -20,3 +20,13 @@ export interface BaseUnit {
   medium?: string
   large?: string
 }
+
+export interface OpacityValue { opacityValue: string, opacityVariable: string }
+
+export type OpacityColor = ({ opacityValue, opacityVariable }: OpacityValue) => string
+
+export interface Resolved {
+  variants: { name: string, definition: string[] }[]
+  utilities: Record<string, Record<string, any>>
+  colors: Record<string, OpacityColor>
+}

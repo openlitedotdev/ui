@@ -1,18 +1,8 @@
-import { kebabCase, mapKeys } from 'lodash'
+import _ from 'lodash'
 import Color from 'color'
 import type { ConfigTheme } from './interfaces/theme'
-import type { DefaultThemeType } from './interfaces/utils'
+import type { DefaultThemeType, Resolved } from './interfaces/utils'
 import { flattenThemeObject } from './utils/functions'
-
-export interface OpacityValue { opacityValue: string, opacityVariable: string }
-
-export type OpacityColor = ({ opacityValue, opacityVariable }: OpacityValue) => string
-
-export interface Resolved {
-  variants: { name: string, definition: string[] }[]
-  utilities: Record<string, Record<string, any>>
-  colors: Record<string, OpacityColor>
-}
 
 const parsedColorsCache: Record<string, number[]> = {}
 
@@ -23,6 +13,11 @@ export function config(themes: ConfigTheme = {}, defaultTheme: DefaultThemeType,
     colors: {},
   }
 
+  // ! Colors Generate
+  // ! [`openui`](https://github.com/open-ss-lab/ui).
+  // !
+  // ! This loop generate color scheme
+  // ! Inspired by [`nextui`](https://github.com/nextui-org/nextui)
   for (const [themeName, { extend, layout, colors }] of Object.entries(themes)) {
     let selector = `.${themeName},[data-theme="${themeName}"]`
     const scheme = themeName === 'light' || themeName === 'dark' ? themeName : extend
@@ -33,7 +28,7 @@ export function config(themes: ConfigTheme = {}, defaultTheme: DefaultThemeType,
     resolved.utilities[selector] = scheme ? { 'color-scheme': scheme } : {}
 
     const flatColors = flattenThemeObject(colors) as Record<string, string>
-    const flatLayout = layout ? mapKeys(layout, (value, key) => kebabCase(key)) : {}
+    const flatLayout = layout ? _.mapKeys(layout, (_, key) => _.kebabCase(key)) : {}
 
     resolved.variants.push({
       name: themeName,
@@ -69,12 +64,16 @@ export function config(themes: ConfigTheme = {}, defaultTheme: DefaultThemeType,
           return `hsl(var(${openuiColorVariable}) / var(${openuiOpacityVariable}, 1))`
         }
       }
-      catch (error: any) {
-        // eslint-disable-next-line no-console
-        console.log('error', error?.message)
+      catch (error) {
+        console.error('error', (error as Error).message)
       }
     }
 
+    // ! Layout Generate
+    // ! [`openui`](https://github.com/open-ss-lab/ui).
+    // !
+    // ! This loop generate layout standard
+    // ! Inspired by [`nextui`](https://github.com/nextui-org/nextui)
     for (const [key, value] of Object.entries(flatLayout)) {
       if (!value)
         return
