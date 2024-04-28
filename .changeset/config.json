@@ -6,6 +6,6 @@
   "linked": [],
   "access": "public",
   "baseBranch": "main",
-  "ignore": ["@openui-org/docs"],
+  "ignore": ["@openui-org/docs", "@openui-org/playground", "@openui-org/storybook"],
   "updateInternalDependencies": "patch"
 }
