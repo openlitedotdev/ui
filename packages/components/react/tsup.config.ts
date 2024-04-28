@@ -1,12 +1,10 @@
 import { defineConfig } from 'tsup'
 
 export default defineConfig(options => ({
-  entryPoints: ['src/index.ts', 'src/components.ts', 'src/plugin.ts'],
+  entryPoints: ['src/index.ts'],
   format: ['cjs', 'esm'],
   dts: true,
   sourcemap: true,
   external: ['react'],
-  clean: true,
-  target: 'es2019',
   ...options,
 }))

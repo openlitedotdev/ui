@@ -1,8 +1,10 @@
+import { openui } from '@openui-org/react'
+
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+export default {
   content: [
     './.storybook/welcome.stories.mdx',
   ],
   darkMode: 'class',
-  plugins: [],
+  plugins: [openui()],
 }

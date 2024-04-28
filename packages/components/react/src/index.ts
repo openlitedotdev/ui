@@ -1,4 +1,4 @@
 'use client'
 
-export * from '@openui-org/theme'
 export * from './components/accordion'
+export * from './components/alert'

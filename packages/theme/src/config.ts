@@ -35,16 +35,11 @@ export function config(themes: ConfigTheme = {}, defaultTheme: DefaultThemeType,
     const flatColors = flattenThemeObject(colors) as Record<string, string>
     const flatLayout = layout ? mapKeys(layout, (value, key) => kebabCase(key)) : {}
 
-    console.warn(flatColors, flatLayout)
-
     resolved.variants.push({
       name: themeName,
       definition: [`&.${themeName}`, `&[data-theme='${themeName}']`],
     })
 
-    /**
-     * Colors OpenUI
-     */
     for (const [colorName, colorValue] of Object.entries(flatColors)) {
       if (!colorValue)
         return
@@ -55,25 +50,19 @@ export function config(themes: ConfigTheme = {}, defaultTheme: DefaultThemeType,
         parsedColorsCache[colorValue] = parsedColor
 
         const [h, s, l, defaultAlphaValue] = parsedColor
+
         const openuiColorVariable = `--${prefix}-${colorName}`
         const openuiOpacityVariable = `--${prefix}-${colorName}-opacity`
 
-        // set the css variable in "@layer utilities"
         resolved.utilities[selector]![openuiColorVariable] = `${h} ${s}% ${l}%`
-        // if an alpha value was provided in the color definition, store it in a css variable
+
         if (typeof defaultAlphaValue === 'number')
           resolved.utilities[selector]![openuiOpacityVariable] = defaultAlphaValue.toFixed(2)
 
-        // set the dynamic color in tailwind config theme.colors
         resolved.colors[colorName] = ({ opacityVariable, opacityValue }) => {
-          // if the opacity is set  with a slash (e.g. bg-primary/90), use the provided value
           if (!Number.isNaN(+opacityValue))
             return `hsl(var(${openuiColorVariable}) / ${opacityValue})`
 
-          // if no opacityValue was provided (=it is not parsable to a number)
-          // the nextuiOpacityVariable (opacity defined in the color definition rgb(0, 0, 0, 0.5)) should have the priority
-          // over the tw class based opacity(e.g. "bg-opacity-90")
-          // This is how tailwind behaves as for v3.2.4
           if (opacityVariable)
             return `hsl(var(${openuiColorVariable}) / var(${openuiOpacityVariable}, var(${opacityVariable})))`
 
@@ -83,6 +72,28 @@ export function config(themes: ConfigTheme = {}, defaultTheme: DefaultThemeType,
       catch (error: any) {
         // eslint-disable-next-line no-console
         console.log('error', error?.message)
+      }
+    }
+
+    for (const [key, value] of Object.entries(flatLayout)) {
+      if (!value)
+        return
+
+      const layoutVariablePrefix = `--${prefix}-${key}`
+
+      if (typeof value === 'object') {
+        for (const [nestedKey, nestedValue] of Object.entries(value)) {
+          const nestedLayoutVariable = `${layoutVariablePrefix}-${nestedKey}`
+
+          resolved.utilities[selector]![nestedLayoutVariable] = nestedValue
+        }
+      }
+      else {
+        const formattedValue = layoutVariablePrefix.includes('opacity') && typeof value === 'number'
+          ? value.toString().replace(/^0\./, '.')
+          : value
+
+        resolved.utilities[selector]![layoutVariablePrefix] = formattedValue
       }
     }
   }
