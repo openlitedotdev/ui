@@ -5,13 +5,13 @@
   "description": "Open UI. OpenLand's official framework design system 🎨",
   "author": "Open Land",
   "license": "MIT",
-  "homepage": "https://github.com/open-land/ui#readme",
+  "homepage": "https://github.com/open-land/openui#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/open-land/ui.git"
+    "url": "git+https://github.com/open-land/openui.git"
   },
   "bugs": {
-    "url": "https://github.com/open-land/ui/issues"
+    "url": "https://github.com/open-land/openui/issues"
   },
   "keywords": [
     "ui",
@@ -19,9 +19,9 @@
     "open"
   ],
   "sideEffects": false,
-  "main": "./dist/index.js",
-  "module": "./dist/index.js",
-  "types": "./dist/index.d.ts",
+  "main": "./dist/main.js",
+  "module": "./dist/main.js",
+  "types": "./dist/main.d.ts",
   "scripts": {
     "compile": "tsup --watch",
     "build": "tsup",
