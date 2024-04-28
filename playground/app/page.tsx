@@ -4,11 +4,11 @@ export default function Home() {
   return (
     <>
       <div className="p-44">
-        <button className="bg-dark  py-2 px-6 rounded-small shadow-large">
+        <button className="py-2 px-6 rounded-small shadow-large">
           Example
         </button>
 
-        <Alert>
+        <Alert variant="error">
           <AlertTitle>
             Hola
           </AlertTitle>

@@ -11,6 +11,6 @@ const config: Config = {
   theme: {
     extend: {},
   },
-  plugins: [openui({})],
+  plugins: [openui()],
 }
 export default config

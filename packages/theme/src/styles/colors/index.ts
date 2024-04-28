@@ -2,9 +2,11 @@ import type { BaseColors } from '../../interfaces/utils'
 
 export const colors: BaseColors = {
   light: {
-    dark: {
-      DEFAULT: '#202020',
-      foreground: '#ffffff',
+    background: {
+      DEFAULT: '#ffffff',
+    },
+    foreground: {
+      DEFAULT: '#000000',
     },
     error: {
       DEFAULT: '#f31260',
@@ -28,9 +30,11 @@ export const colors: BaseColors = {
     },
   },
   dark: {
-    dark: {
+    background: {
+      DEFAULT: '#000000',
+    },
+    foreground: {
       DEFAULT: '#ffffff',
-      foreground: '#00000',
     },
     error: {
       DEFAULT: '#f31260',
