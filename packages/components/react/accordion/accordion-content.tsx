@@ -2,8 +2,8 @@ import * as React from 'react'
 import * as AccordionPrimitive from '@radix-ui/react-accordion'
 import { accordionContent, cn } from '@openui-org/theme'
 
-interface Comp extends React.ElementRef<typeof AccordionPrimitive.Content> {}
-interface Props extends React.ComponentPropsWithoutRef<typeof AccordionPrimitive.Content> {}
+export interface Comp extends React.ElementRef<typeof AccordionPrimitive.Content> {}
+export interface Props extends React.ComponentPropsWithoutRef<typeof AccordionPrimitive.Content> {}
 
 const AccordionContent = React.forwardRef<Comp, Props>(({ className, children, ...props }, ref) => {
   return (
@@ -18,3 +18,5 @@ const AccordionContent = React.forwardRef<Comp, Props>(({ className, children, .
 })
 
 AccordionContent.displayName = AccordionPrimitive.Content.displayName
+
+export default AccordionContent
