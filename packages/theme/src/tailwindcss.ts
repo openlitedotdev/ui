@@ -1,6 +1,6 @@
 import plugin from 'tailwindcss/plugin.js'
-import _ from 'lodash'
 import deepMerge from 'deepmerge'
+import { forEach, get, omit } from 'lodash'
 import type { OpenUIPluginConfig } from './interfaces/config'
 import type { DefaultThemeType } from './interfaces/utils'
 import type { ConfigTheme } from './interfaces/theme'
@@ -73,8 +73,8 @@ export function openui(config: OpenUIPluginConfig = {}): ReturnType<typeof plugi
     prefix: defaultPrefix = DEFAULT_PREFIX,
   } = config
 
-  const userLightColors = _.get(themeObject, 'light.colors', {})
-  const userDarkColors = _.get(themeObject, 'dark.colors', {})
+  const userLightColors = get(themeObject, 'light.colors', {})
+  const userDarkColors = get(themeObject, 'dark.colors', {})
 
   const defaultLayoutObj = userLayout && typeof userLayout === 'object'
     ? deepMerge(defatulTheme, userLayout)
@@ -91,9 +91,9 @@ export function openui(config: OpenUIPluginConfig = {}): ReturnType<typeof plugi
     },
   }
 
-  const otherThemes = _.omit(themeObject, ['light', 'dark']) || {}
+  const otherThemes = omit(themeObject, ['light', 'dark']) || {}
 
-  _.forEach(otherThemes, ({ extend, colors, layout }, themeName) => {
+  forEach(otherThemes, ({ extend, colors, layout }, themeName) => {
     const baseTheme = extend && isBaseTheme(extend) ? extend : defaultExtendTheme
 
     if (colors && typeof colors === 'object')
@@ -104,12 +104,12 @@ export function openui(config: OpenUIPluginConfig = {}): ReturnType<typeof plugi
   })
 
   const light: ConfigTheme = {
-    layout: deepMerge(baseLayouts.light, _.get(themeObject, 'light.layout', {})),
+    layout: deepMerge(baseLayouts.light, get(themeObject, 'light.layout', {})),
     colors: deepMerge(semanticColors.light, userLightColors),
   }
 
   const dark = {
-    layout: deepMerge(baseLayouts.dark, _.get(themeObject, 'dark.layout', {})),
+    layout: deepMerge(baseLayouts.dark, get(themeObject, 'dark.layout', {})),
     colors: deepMerge(semanticColors.dark, userDarkColors),
   }
 

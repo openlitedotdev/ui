@@ -1,5 +1,5 @@
-import _ from 'lodash'
 import Color from 'color'
+import { kebabCase, mapKeys } from 'lodash'
 import type { ConfigTheme } from './interfaces/theme'
 import type { DefaultThemeType, Resolved } from './interfaces/utils'
 import { flattenThemeObject } from './utils/functions'
@@ -28,7 +28,7 @@ export function config(themes: ConfigTheme = {}, defaultTheme: DefaultThemeType,
     resolved.utilities[selector] = scheme ? { 'color-scheme': scheme } : {}
 
     const flatColors = flattenThemeObject(colors) as Record<string, string>
-    const flatLayout = layout ? _.mapKeys(layout, (_, key) => _.kebabCase(key)) : {}
+    const flatLayout = layout ? mapKeys(layout, (_, key) => kebabCase(key)) : {}
 
     resolved.variants.push({
       name: themeName,

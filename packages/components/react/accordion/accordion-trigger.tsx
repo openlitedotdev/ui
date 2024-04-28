@@ -2,8 +2,8 @@ import * as React from 'react'
 import * as AccordionPrimitive from '@radix-ui/react-accordion'
 import { accordionTrigger, cn } from '@openui-org/theme'
 
-interface Comp extends React.ElementRef<typeof AccordionPrimitive.Trigger> {}
-interface Props extends React.ComponentPropsWithoutRef<typeof AccordionPrimitive.Trigger> {}
+export interface Comp extends React.ElementRef<typeof AccordionPrimitive.Trigger> {}
+export interface Props extends React.ComponentPropsWithoutRef<typeof AccordionPrimitive.Trigger> {}
 
 const AccordionTrigger = React.forwardRef<Comp, Props>(({ className, children, ...props }, ref) => {
   return (
@@ -21,3 +21,5 @@ const AccordionTrigger = React.forwardRef<Comp, Props>(({ className, children, .
 })
 
 AccordionTrigger.displayName = AccordionPrimitive.Trigger.displayName
+
+export default AccordionTrigger
