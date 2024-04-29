@@ -19,7 +19,7 @@ const jestConfig = {
     ],
   },
   transformIgnorePatterns: ['[/\\\\]node_modules[/\\\\].+\\.(js|jsx)$'],
-  setupFilesAfterEnv: ['@testing-library/jest-dom', './tools/jest.ts'],
+  setupFilesAfterEnv: ['@testing-library/jest-dom', './jest/custom-matchers.ts'],
   globals: {
     'ts-jest': {
       tsconfig: 'tsconfig.json',
