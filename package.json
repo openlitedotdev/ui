@@ -37,11 +37,8 @@
     "jest-environment-jsdom": "^29.7.0",
     "jest-watch-typeahead": "^2.2.2",
     "lint-staged": "15.2.2",
-    "minimist": "^1.2.8",
     "prettier": "3.2.5",
     "rimraf": "^5.0.5",
-    "svgson": "^5.3.1",
-    "ts-jest": "^29.1.2",
     "turbo": "^1.13.3"
   },
   "lint-staged": {
