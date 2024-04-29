@@ -1,4 +1,4 @@
-export * from './tailwindcss'
+export * from './tailwind'
 export * from './components'
 export * from './styles'
 
