@@ -1,12 +1,43 @@
 {
   "name": "@openui-org/vue",
-  "version": "1.0.0",
-  "description": "",
-  "author": "",
-  "license": "ISC",
-  "keywords": [],
-  "main": "index.js",
+  "version": "0.1.0",
+  "description": "Open UI. OpenLand's official framework design system 🎨",
+  "author": "Open Lab",
+  "license": "MIT",
+  "homepage": "https://github.com/open-land/openui#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/open-land/openui.git"
+  },
+  "bugs": {
+    "url": "https://github.com/open-land/openui/issues"
+  },
+  "keywords": [
+    "ui",
+    "design system",
+    "open"
+  ],
+  "sideEffects": false,
+  "main": "./dist/main.js",
+  "module": "./dist/main.js",
+  "types": "./dist/main.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "vue-tsc && vite build",
+    "clean": "rm -rf .turbo node_modules dist"
+  },
+  "peerDependecies": {
+    "vue": "^3.4.21"
+  },
+  "dependecies": {
+    "@openui-org/theme": "workspace:*",
+    "vue": "^3.4.21",
+    "radix-vue": "^1.7.2"
+  },
+  "devDependencies": {
+    "@openui-org/tsconfig": "workspace:*",
+    "@vitejs/plugin-vue": "^5.0.4",
+    "typescript": "5.4.2",
+    "vite": "^4.4.7",
+    "vue-tsc": "^2.0.14"
   }
 }
