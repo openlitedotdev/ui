@@ -3,7 +3,7 @@ const jestConfig = {
   testEnvironment: 'jsdom',
   collectCoverageFrom: ['packages/**/*.{ts,tsx}'],
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
-  modulePathIgnorePatterns: ['<rootDir>/examples', '<rootDir>/tooling/cra-template*'],
+  modulePathIgnorePatterns: ['<rootDir>/docs', '<rootDir>/tooling/cra-template*'],
   transform: {
     '^.+\\.(t|j)sx?$': [
       '@swc/jest',
@@ -20,11 +20,6 @@ const jestConfig = {
   },
   transformIgnorePatterns: ['[/\\\\]node_modules[/\\\\].+\\.(js|jsx)$'],
   setupFilesAfterEnv: ['@testing-library/jest-dom', './jest/custom-matchers.ts'],
-  globals: {
-    'ts-jest': {
-      tsconfig: 'tsconfig.json',
-    },
-  },
   watchPlugins: ['jest-watch-typeahead/filename', 'jest-watch-typeahead/testname'],
 }
 
