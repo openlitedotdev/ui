@@ -1,4 +1,4 @@
-import type { ConfigThemes } from '../tailwindcss'
+import type { ConfigThemes } from '../tailwind'
 import type { LayoutTheme } from './theme'
 import type { DefaultThemeType } from './utils'
 
