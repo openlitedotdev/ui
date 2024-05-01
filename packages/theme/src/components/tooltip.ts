@@ -10,7 +10,7 @@ import { cva } from 'class-variance-authority'
  *   // Tooltip elements
  * </Tooltip>
  */
-export const tooltip = ''
+export const tooltip = cva('')
 
 /**
  * Tooltip wrapper **Class Variants** component
@@ -22,7 +22,7 @@ export const tooltip = ''
  *   // Tooltip elements
  * </TooltipTrigger>
  */
-export const tooltipTrigger = ''
+export const tooltipTrigger = cva('')
 
 /**
  * Tooltip wrapper **Class Variants** component
@@ -34,7 +34,7 @@ export const tooltipTrigger = ''
  *   // Tooltip elements
  * </TooltipProvider>
  */
-export const tooltipProvider = ''
+export const tooltipProvider = cva('')
 /**
  * Tooltip wrapper **Class Variants** component
  *
