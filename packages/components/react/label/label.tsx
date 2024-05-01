@@ -1,17 +1,25 @@
 import React from 'react'
-import * as LabelPrimitive from '@radix-ui/react-label'
+import type * as LabelPrimitive from '@radix-ui/react-label'
 import { cn, label } from '@openui-org/theme'
+import type { VariantProps } from '@openui-org/theme'
+import { Slot } from '@radix-ui/react-slot'
 
-export interface Comp extends React.ElementRef<typeof LabelPrimitive.Root> {}
-export interface Props extends React.ComponentPropsWithoutRef<typeof LabelPrimitive.Root> {}
+interface Comp extends React.ElementRef<typeof LabelPrimitive.Root> {}
+export interface Props extends React.ComponentPropsWithoutRef<typeof LabelPrimitive.Root>,
+  VariantProps<typeof label> {
+  asChild?: boolean
+}
 
-const Label = React.forwardRef<Comp, Props>(({ className, ...props }, ref) => (
-  <LabelPrimitive.Root
-    ref={ref}
-    className={cn(label(), className)}
-    {...props}
-  />
-))
+const Label = React.forwardRef<Comp, Props>(({ className, size, asChild = false, ...props }, ref) => {
+  const Comp = asChild ? Slot : 'label'
+  return (
+    <Comp
+      className={cn(label({ size, className }))}
+      ref={ref}
+      {...props}
+    />
+  )
+})
 
 Label.displayName = 'Label'
 
