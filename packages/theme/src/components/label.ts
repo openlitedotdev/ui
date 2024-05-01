@@ -1,5 +1,4 @@
 import { cva } from 'class-variance-authority'
-import { size } from 'lodash'
 
 /**
  * Label wrapper **Class Variants** component
