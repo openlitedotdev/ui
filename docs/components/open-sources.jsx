@@ -1,4 +1,4 @@
-import { Button, Input } from '@openui-org/react/components'
+import { Button, Input } from '@openui-org/react'
 import Link from 'next/link'
 import {
   buttonMapOpenSources,
