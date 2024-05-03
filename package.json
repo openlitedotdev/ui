@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "pnpm sb",
-    "lint": "eslint .",
+    "lint": "eslint . --fix",
     "clean-node-modules": "rimraf ./docs/**/node_modules && rimraf ./packages/**/**/node_modules && rimraf ./node_modules",
     "prepare": "husky",
     "dev-playground": "turbo dev --filter=@openui-org/playground",
