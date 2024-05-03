@@ -1,12 +1,38 @@
 {
   "name": "@openui-org/vue",
-  "version": "1.0.0",
-  "description": "",
-  "author": "",
-  "license": "ISC",
-  "keywords": [],
-  "main": "index.js",
+  "type": "module",
+  "version": "0.1.0",
+  "description": "Open UI. OpenLand's official framework design system 🎨",
+  "author": "Open Lab",
+  "license": "MIT",
+  "homepage": "https://github.com/open-land/openui#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/open-land/openui.git"
+  },
+  "bugs": {
+    "url": "https://github.com/open-land/openui/issues"
+  },
+  "keywords": [
+    "ui",
+    "design system",
+    "open"
+  ],
+  "sideEffects": false,
+  "main": "./dist/index.es.js",
+  "module": "./dist/index.es.js",
+  "types": "./dist/types/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "vue-tsc && vite build",
+    "clean": "rm -rf .turbo node_modules dist"
+  },
+  "dependencies": {
+    "@openui-org/theme": "workspace:*",
+    "vue": "^3.4.26"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.4",
+    "vite": "^4.4.7",
+    "vue-tsc": "^2.0.16"
   }
 }
