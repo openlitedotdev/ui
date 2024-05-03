@@ -1,4 +1,4 @@
-import { Card, CardContent, CardHeader } from '@openui-org/react/components'
+import { Card, CardContent, CardHeader } from '@openui-org/react'
 import {
   CreditCardIcon,
   FileInputIcon,
