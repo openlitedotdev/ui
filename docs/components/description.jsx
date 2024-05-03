@@ -1,4 +1,4 @@
-import { Button } from '@openui-org/react/components'
+import { Button } from '@openui-org/react'
 import {
   buttonPresentationMap,
   descriptionMapPresentation,
