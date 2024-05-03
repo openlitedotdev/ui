@@ -3,7 +3,7 @@
   "type": "module",
   "version": "1.7.0",
   "description": "Open UI. OpenLand's official framework design system 🎨",
-  "author": "Open Land",
+  "author": "Open Lab",
   "license": "MIT",
   "homepage": "https://github.com/open-land/openui#readme",
   "repository": {
@@ -19,9 +19,9 @@
     "open"
   ],
   "sideEffects": false,
-  "main": "./dist/main.js",
-  "module": "./dist/main.js",
-  "types": "./dist/main.d.ts",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "compile": "tsup --watch",
     "build": "tsup",
