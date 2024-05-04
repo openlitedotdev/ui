@@ -9,12 +9,12 @@
 * [How updates work](introduction/how-updates-work.md)
 * [Accessibility](introduction/accessibility.md)
 
-## identity
+## Integrations
 
-* [Logos](identity/logos.md)
-* [Colors](identity/colors.md)
-* [Typography](identity/typography.md)
-* [Imagery](identity/imagery.md)
+* [Nuxt.js](integrations/nuxt.js.md)
+* [Next.js](integrations/next.js.md)
+* [Astro](integrations/astro.md)
+* [Remix](integrations/remix.md)
 
 ## Components
 
