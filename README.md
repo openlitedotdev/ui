@@ -75,7 +75,6 @@ _Navigation_
 - [x] Tabs
 - [x] Breadcrumb
 - [x] Dropdown
-- [x] Menu
 - [x] Sheet
 
 _Loading_
