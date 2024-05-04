@@ -6,6 +6,6 @@
   "linked": [],
   "access": "public",
   "baseBranch": "main",
-  "ignore": ["@openui-org/docs", "@openui-org/playground-next", "@openui-org/storybook", "@openui-org/playground-vue"],
+  "ignore": ["@openui-org/playground-next", "@openui-org/storybook", "@openui-org/playground-vue"],
   "updateInternalDependencies": "patch"
 }
