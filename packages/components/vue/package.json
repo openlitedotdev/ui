@@ -24,7 +24,7 @@
   "types": "./dist/types/index.d.ts",
   "scripts": {
     "build": "vue-tsc && vite build",
-    "clean": "rm -rf .turbo node_modules dist"
+    "compile": "vite build --watch"
   },
   "dependencies": {
     "@openui-org/theme": "workspace:*",
