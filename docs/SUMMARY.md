@@ -15,6 +15,10 @@
 * [Astro](integrations/astro.md)
 * [Remix](integrations/remix.md)
 
+## Components
+
+* [Storybook](components/storybook.md)
+
 ***
 
-* [Storybook](storybook.md)
+* [Page 1](page-1.md)
