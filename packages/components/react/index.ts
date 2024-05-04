@@ -18,3 +18,4 @@ export * from './sheet'
 export * from './separator'
 
 export * from './checkbox'
+export * from './dialog'
