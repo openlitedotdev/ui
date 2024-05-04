@@ -10,9 +10,9 @@
     "dev-playground-next": "turbo dev --filter=@openui-org/playground-next",
     "dev-playground-vue": "turbo dev --filter=@openui-org/playground-vue",
     "dev-docs": "turbo dev --filter=@openui-org/docs",
+    "dev-web": "turbo dev --filter=@openui-org/web",
     "sb": "pnpm --filter @openui-org/storybook dev",
     "clean": "rm -rf .turbo node_modules pnpm-lock.yaml",
-    "fmt": "prettier . --write --cache",
     "turbo-graph": "pnpm build --graph=dependency-graph.png",
     "clean-jest": "jest --clearCache",
     "clean-lock": "rimraf ./pnpm-lock.yaml",
@@ -38,7 +38,6 @@
     "jest-environment-jsdom": "^29.7.0",
     "jest-watch-typeahead": "^2.2.2",
     "lint-staged": "15.2.2",
-    "prettier": "3.2.5",
     "rimraf": "^5.0.5",
     "turbo": "^1.13.3"
   },
