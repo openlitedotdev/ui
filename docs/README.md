@@ -2,4 +2,8 @@
 
 ## Welcome to Open UI 👋!
 
-A design system is a product, and similar best practices to product docs apply when documenting a design system. Offering succinct ways to get started is a great way to introduce the concepts of your design system, while empowering folks to use it for their needs.
+Open UI. Open Lab's official framework design system. This is a non-profit library developed with existing standard concepts.
+
+**What is the reason for creating a new component library??**
+
+Thanks to existing libraries like [shadcn](https://ui.shadcn.com), it allows us the ease of creating a completely easy and customizable design system, our team wanted to take a step forward.
