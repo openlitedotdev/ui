@@ -19,3 +19,4 @@ export * from './separator'
 
 export * from './checkbox'
 export * from './dialog'
+export * from './input'
