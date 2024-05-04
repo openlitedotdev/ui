@@ -16,7 +16,7 @@ export * from './table'
 export * from './skeleton'
 export * from './sheet'
 export * from './separator'
-
+export * from './select'
 export * from './checkbox'
 export * from './dialog'
 export * from './input'
