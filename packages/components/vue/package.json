@@ -28,6 +28,7 @@
   },
   "dependencies": {
     "@openui-org/theme": "workspace:*",
+    "radix-vue": "^1.7.3",
     "vue": "^3.4.26"
   },
   "devDependencies": {
