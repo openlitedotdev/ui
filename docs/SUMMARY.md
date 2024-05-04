@@ -1,13 +1,12 @@
 # Table of contents
 
-* [🖌️ Getting started](README.md)
-
 ## INTRODUCTION
 
-* [Design Principles](introduction/design-principles.md)
-* [Brand Guidelines](introduction/brand-guidelines.md)
+* [Getting started](README.md)
 * [How updates work](introduction/how-updates-work.md)
+* [Design Principles](introduction/design-principles.md)
 * [Accessibility](introduction/accessibility.md)
+* [Brand Guidelines](introduction/brand-guidelines.md)
 
 ## Integrations
 
