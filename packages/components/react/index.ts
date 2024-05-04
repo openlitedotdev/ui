@@ -16,3 +16,5 @@ export * from './table'
 export * from './skeleton'
 export * from './sheet'
 export * from './separator'
+
+export * from './checkbox'

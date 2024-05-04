@@ -17,7 +17,7 @@
     "clean-jest": "jest --clearCache",
     "clean-lock": "rimraf ./pnpm-lock.yaml",
     "compile": "turbo compile --filter=!@openui-org/docs --filter=!@openui-org/storybook",
-    "build": "turbo build --filter=!@openui-org/docs --filter=!@openui-org/storybook --filter=!@openui-org/playground-next --filter=!@openui-org/playground-vue",
+    "build": "turbo build --filter=!@openui-org/docs --filter=!@openui-org/storybook --filter=!@openui-org/playground-next --filter=!@openui-org/playground-vue --filter=!@openui-org/web",
     "test": "jest --verbose --config ./jest.config.js",
     "postinstall": "husky install && pnpm --filter @openui-org/theme build",
     "release": "pnpm build && pnpm changeset version && pnpm changeset publish"
