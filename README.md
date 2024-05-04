@@ -6,6 +6,7 @@ This design system is totally easy to use with the aim of facilitating upcoming 
 
 - Built with [Shadcn UI](https://https://ui.shadcn.com/) and [Tailwind CSS](https://tailwindcss.com/)
 - Customizable
+- Support vue
 - Dark mode support
 - [Figma Kit](https://www.figma.com/community/file/1354464067434498042)
 
@@ -18,7 +19,7 @@ This design system is totally easy to use with the aim of facilitating upcoming 
 Install turbo globally.
 
 ```shell
-pnpm install turbo --global
+pnpm install --frozen-lockfile
 ```
 
 For more details about installation, see Installing Turborepo
