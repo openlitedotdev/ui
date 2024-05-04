@@ -33,7 +33,7 @@
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.4",
-    "vite": "^4.4.7",
+    "vite": "^5.2.11",
     "vue-tsc": "^2.0.16"
   }
 }

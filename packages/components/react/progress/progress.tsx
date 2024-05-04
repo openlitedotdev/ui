@@ -1,18 +1,14 @@
 import * as React from 'react'
 import * as ProgressPrimitive from '@radix-ui/react-progress'
+import { cn, progress } from '@openui-org/theme'
 
-import { cn } from '../lib/cn'
+export interface Comp extends React.ElementRef<typeof ProgressPrimitive.Root> {}
+export interface Props extends React.ComponentPropsWithoutRef<typeof ProgressPrimitive.Root> {}
 
-const Progress = React.forwardRef<
-  React.ElementRef<typeof ProgressPrimitive.Root>,
-  React.ComponentPropsWithoutRef<typeof ProgressPrimitive.Root>
->(({ className, value, ...props }, ref) => (
+const Progress = React.forwardRef<Comp, Props>(({ className, value, ...props }, ref) => (
   <ProgressPrimitive.Root
     ref={ref}
-    className={cn(
-      'relative h-4 w-full overflow-hidden rounded-full bg-secondary',
-      className,
-    )}
+    className={cn(progress(), className)}
     {...props}
   >
     <ProgressPrimitive.Indicator
@@ -21,6 +17,7 @@ const Progress = React.forwardRef<
     />
   </ProgressPrimitive.Root>
 ))
+
 Progress.displayName = ProgressPrimitive.Root.displayName
 
-export { Progress }
+export default Progress
