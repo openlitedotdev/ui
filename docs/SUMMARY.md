@@ -17,6 +17,6 @@
 
 ## Components
 
-* [Icons](components/icons.md)
+* [Accordion](components/accordion.md)
 * [Buttons](components/buttons.md)
 * [Inputs](components/inputs.md)
