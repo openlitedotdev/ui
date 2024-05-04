@@ -2,7 +2,7 @@ import { Button } from '@openui-org/react'
 import Link from 'next/link'
 
 const links = [
-  { name: 'Docs', path: '/' },
+  { name: 'Docs', path: 'https://openui-org.gitbook.io/openui/' },
   { name: 'Components', path: '/' },
   { name: 'FAQ', path: '/' },
 ]
