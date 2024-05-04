@@ -15,8 +15,6 @@
 * [Astro](integrations/astro.md)
 * [Remix](integrations/remix.md)
 
-## Components
+***
 
-* [Accordion](components/accordion.md)
-* [Buttons](components/buttons.md)
-* [Inputs](components/inputs.md)
+* [Storybook](storybook.md)
