@@ -18,7 +18,7 @@ This design system is totally easy to use with the aim of facilitating upcoming 
 Install turbo globally.
 
 ```shell
-pnpm install turbo --global
+pnpm install --frozen-lockfile
 ```
 
 For more details about installation, see Installing Turborepo
