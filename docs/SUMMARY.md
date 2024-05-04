@@ -15,10 +15,7 @@
 * [Astro](integrations/astro.md)
 * [Remix](integrations/remix.md)
 
-## Components
+## API
 
-* [Storybook](components/storybook.md)
-
-***
-
-* [Page 1](page-1.md)
+* [Storybook](api/storybook.md)
+* [CLI](api/cli.md)
