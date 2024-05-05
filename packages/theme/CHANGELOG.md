@@ -1,5 +1,11 @@
 # @openui-org/theme
 
+## 2.0.0
+
+### Major Changes
+
+- c09b8b4: New version in open UI
+
 ## 1.5.0
 
 ### Minor Changes
