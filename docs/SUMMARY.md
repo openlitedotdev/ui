@@ -2,20 +2,20 @@
 
 ## INTRODUCTION
 
-* [Getting started](README.md)
-* [Installation](introduction/installation.md)
-* [Design Principles](introduction/design-principles.md)
-* [Accessibility](introduction/accessibility.md)
-* [Brand Guidelines](introduction/brand-guidelines.md)
+- [Getting started](README.md)
+- [Installation](introduction/installation.md)
+- [Design Principles](introduction/design-principles.md)
+- [Accessibility](introduction/accessibility.md)
+- [Brand Guidelines](introduction/brand-guidelines.md)
 
 ## Integrations
 
-* [Nuxt.js](integrations/nuxt.js.md)
-* [Next.js](integrations/next.js.md)
-* [Astro](integrations/astro.md)
-* [Remix](integrations/remix.md)
+- [Nuxt.js](integrations/nuxt.js.md)
+- [Next.js](integrations/next.js.md)
+- [Astro](integrations/astro.md)
+- [Remix](integrations/remix.md)
 
 ## API
 
-* [Storybook](api/storybook.md)
-* [CLI](api/cli.md)
+- [Storybook](api/storybook.md)
+- [CLI](api/cli.md)
