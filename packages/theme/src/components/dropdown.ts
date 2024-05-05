@@ -1,0 +1,181 @@
+import { cva } from 'class-variance-authority'
+
+/**
+ * Dropdown wrapper **Class Variants** component
+ *
+ * const styles = dropdown({...})
+ *
+ * @example
+ * <Dropdown className={styles())}>
+ *   // accordion elements
+ * </Dropdown>
+ */
+export const dropdown = cva('')
+
+/**
+ * Dropdown trigger **Class Variants** component
+ *
+ * const styles = dropdownTrigger({...})
+ *
+ * @example
+ * <DropdownTrigger className={styles())}>
+ *   // accordion elements
+ * </DropdownTrigger>
+ */
+export const dropdownTrigger = cva('')
+
+/**
+ * Dropdown Group **Class Variants** component
+ *
+ * const styles = dropdownGroup({...})
+ *
+ * @example
+ * <DropdownGroup className={styles())}>
+ *   // accordion elements
+ * </DropdownGroup>
+ */
+export const dropdownGroup = cva('')
+
+/**
+ * Dropdown Portal **Class Variants** component
+ *
+ * const styles = dropdownPortal({...})
+ *
+ * @example
+ * <DropdownPortal className={styles())}>
+ *   // accordion elements
+ * </DropdownPortal>
+ */
+export const dropdownPortal = cva('')
+
+/**
+ * Dropdown Sub **Class Variants** component
+ *
+ * const styles = dropdownSub({...})
+ *
+ * @example
+ * <DropdownSub className={styles())}>
+ *   // accordion elements
+ * </DropdownSub>
+ */
+export const dropdownSub = cva('')
+
+/**
+ * Dropdown RadioGroup **Class Variants** component
+ *
+ * const styles = dropdownRadioGroup({...})
+ *
+ * @example
+ * <DropdownRadioGroup className={styles())}>
+ *   // accordion elements
+ * </DropdownRadioGroup>
+ */
+export const dropdownRadioGroup = cva('')
+
+/**
+ * Dropdown SubTrigger **Class Variants** component
+ *
+ * const styles = dropdownSubTrigger({...})
+ *
+ * @example
+ * <DropdownSubTrigger className={styles())}>
+ *   // accordion elements
+ * </DropdownSubTrigger>
+ */
+export const dropdownSubTrigger = cva('flex cursor-default select-none items-center rounded-small px-2 py-1.5 text-small outline-none')
+
+/**
+ * Dropdown SubContent **Class Variants** component
+ *
+ * const styles = dropdownSubContent({...})
+ *
+ * @example
+ * <DropdownSubContent className={styles())}>
+ *   // accordion elements
+ * </DropdownSubContent>
+ */
+export const dropdownSubContent = cva('z-50 min-w-[8rem] overflow-hidden rounded-medium shadow-large data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2')
+
+/**
+ * Dropdown Content **Class Variants** component
+ *
+ * const styles = dropdownContent({...})
+ *
+ * @example
+ * <DropdownContent className={styles())}>
+ *   // accordion elements
+ * </DropdownContent>
+ */
+export const dropdownContent = cva('z-50 min-w-[12rem] overflow-hidden rounded-medium shadow-medium data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2')
+
+/**
+ * Dropdown Item **Class Variants** component
+ *
+ * const styles = dropdownItem({...})
+ *
+ * @example
+ * <DropdownItem className={styles())}>
+ *   // accordion elements
+ * </DropdownItem>
+ */
+export const dropdownItem = cva('relative flex gap-2 cursor-default select-none items-center rounded-medium px-2 py-1.5 text-small outline-none transition-colors focus:bg-accent focus:text-accent-foreground data-[disabled]:pointer-events-none data-[disabled]:opacity-50')
+
+/**
+ * Dropdown CheckboxItem **Class Variants** component
+ *
+ * const styles = dropdownCheckboxItem({...})
+ *
+ * @example
+ * <DropdownCheckboxItem className={styles())}>
+ *   // accordion elements
+ * </DropdownCheckboxItem>
+ */
+export const dropdownCheckboxItem = cva('relative flex gap-2 cursor-default select-none items-center rounded-medium px-2 py-1.5 text-small outline-none transition-colors data-[disabled]:pointer-events-none data-[disabled]:opacity-50')
+
+/**
+ * Dropdown RadioItem **Class Variants** component
+ *
+ * const styles = dropdownRadioItem({...})
+ *
+ * @example
+ * <DropdownRadioItem className={styles())}>
+ *   // accordion elements
+ * </DropdownRadioItem>
+ */
+export const dropdownRadioItem = cva('relative flex gap-2 cursor-default select-none items-center rounded-medium px-2 py-1.5 text-small outline-none transition-colors data-[disabled]:pointer-events-none data-[disabled]:opacity-50')
+
+/**
+ * Dropdown Separator **Class Variants** component
+ *
+ * const styles = dropdownSeparator({...})
+ *
+ * @example
+ * <DropdownSeparator className={styles())}>
+ *   // accordion elements
+ * </DropdownSeparator>
+ */
+export const dropdownSeparator = cva('-mx-1 my-1 h-px bg-muted border-b border-primary/80')
+
+/**
+ * Dropdown Label **Class Variants** component
+ *
+ * const styles = dropdownLabel({...})
+ *
+ * @example
+ * <DropdownLabel className={styles())}>
+ *   // accordion elements
+ * </DropdownLabel>
+ */
+export const dropdownLabel = cva('px-2 py-1.5 text-small font-semibold')
+
+/**
+ * Dropdown Shortcut **Class Variants** component
+ *
+ * const styles = dropdownShortcut({...})
+ *
+ * @example
+ * <DropdownShortcut className={styles())}>
+ *   // accordion elements
+ * </DropdownShortcut>
+ */
+export const dropdownShortcut = cva('ml-auto text-small tracking-widest opacity-60')
