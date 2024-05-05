@@ -1,3 +1,5 @@
+import { Slider } from '@openui-org/react'
+
 export default function Home() {
   return (
     <>
@@ -5,6 +7,7 @@ export default function Home() {
         <button className="py-2 px-6 rounded-small shadow-large bg-primary text-primary-foreground">
           Example
         </button>
+        <Slider defaultValue={[33]} max={100} step={1} />
       </div>
     </>
   )
