@@ -7,7 +7,7 @@ export interface Props extends React.ComponentPropsWithoutRef<'a'> {
   asChild?: boolean
 }
 
-const BreadcrumbLink = React.forwardRef<Comp, Props>(({ asChild, className, ...props }, ref) => {
+const BreadcrumbLink = React.forwardRef<Comp, Props>(({ asChild = false, className, ...props }, ref) => {
   const Comp = asChild ? Slot : 'a'
 
   return (
