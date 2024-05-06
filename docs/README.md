@@ -6,4 +6,4 @@ Open UI. Open Lab's official framework design system. This is a non-profit libra
 
 **What is the reason for creating a new component library??**
 
-Thanks to existing libraries like [shadcn](https://ui.shadcn.com), it allows us the ease of creating a completely easy and customizable design system, our team wanted to take a step forward.
+Thanks to existing libraries like Shadcn, it allows us the ease of creating a completely easy and customizable design system, our team wanted to take a step forward.
