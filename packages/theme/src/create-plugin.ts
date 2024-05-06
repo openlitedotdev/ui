@@ -2,7 +2,7 @@ import plugin from 'tailwindcss/plugin.js'
 import type { DefaultThemeType } from './interfaces/utils'
 import type { ConfigThemes } from './tailwind'
 import { config } from './config'
-import { baseStyles, tailwind, utilities } from './styles'
+import { animations, baseStyles, tailwind, utilities } from './styles'
 
 export function definePlugin(themes: ConfigThemes = {}, defaultTheme: DefaultThemeType, prefix: string) {
   const resolved = config(themes, defaultTheme, prefix)
@@ -32,6 +32,7 @@ export function definePlugin(themes: ConfigThemes = {}, defaultTheme: DefaultThe
           85: '0.85',
         },
         ...tailwind(prefix),
+        ...animations,
       },
     },
   })

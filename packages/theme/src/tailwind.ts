@@ -3,7 +3,12 @@ import deepMerge from 'deepmerge'
 import { forEach, get, omit } from 'lodash'
 import type { OpenUIPluginConfig } from './interfaces/config'
 import type { ConfigTheme } from './interfaces/theme'
-import { darkTheme, defatulTheme, lightTheme, colors as semanticColors } from './styles'
+import {
+  darkTheme,
+  defatulTheme,
+  lightTheme,
+  colors as semanticColors,
+} from './styles'
 import { definePlugin } from './create-plugin'
 import { isBaseTheme } from './utils/functions'
 
