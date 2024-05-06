@@ -5,6 +5,7 @@ export default {
   content: [
     './.storybook/welcome.stories.mdx',
     './node_modules/@openui-org/theme/dist/**/*.{js,ts,jsx,tsx}',
+    './stories/**/*.{js,ts,jsx,tsx}',
   ],
   plugins: [openui()],
 }
