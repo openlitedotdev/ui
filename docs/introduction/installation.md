@@ -2,8 +2,8 @@
 
 Requirements:
 
-* [React 18](https://reactjs.org/) or later
-* [Tailwind CSS 3](https://tailwindcss.com/) or later
+- [React 18](https://reactjs.org/) or later
+- [Tailwind CSS 3](https://tailwindcss.com/) or later
 
 ### Install
 
@@ -11,15 +11,19 @@ Inside your React project directory, run the following:
 
 {% tabs %}
 {% tab title="npm" %}
+
 ```sh
 npm install @openui-org/theme @openui-org/react
 ```
+
 {% endtab %}
 
 {% tab title="pnpm" %}
+
 ```sh
 pnpm install @openui-org/theme @openui-org/react
 ```
+
 {% endtab %}
 {% endtabs %}
 
