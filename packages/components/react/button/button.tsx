@@ -31,7 +31,6 @@ const Button = React.forwardRef<Comp, Props>(
       const onMouseDown = props?.onMouseDown
 
       if (ripple && rippleEffect)
-
         rippleEffect.create(e, rippleColor)
 
       return typeof onMouseDown === 'function' && onMouseDown(e)
@@ -40,7 +39,7 @@ const Button = React.forwardRef<Comp, Props>(
       <Comp
         className={cn(button({ variant, size, rounded, shadow, className }))}
         ref={ref}
-        onMouseDown={e => handleMouseDown(e)}
+        onMouseDown={handleMouseDown}
         {...props}
       />
     )
