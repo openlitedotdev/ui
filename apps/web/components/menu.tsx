@@ -30,17 +30,17 @@ export default function Menu() {
             </nav>
           </div>
           <div className="flex items-center gap-x-1">
-            <Button asChild variant="link">
+            <Button className="bg-black hover:bg-black/80" rippleColor="light" asChild>
               <a href="https://github/com/OpenLab-dev/openui">
                 Github
               </a>
             </Button>
           </div>
-          <Button size="icon" type="button">
-            <span className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+          <Button variant="ghost" size="icon" className="relative lg:hidden ml-auto">
+            <span className=" absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="w-6 h-6"
+                className="size-6"
                 fill="none"
                 stroke="currentColor"
                 strokeWidth={2}
