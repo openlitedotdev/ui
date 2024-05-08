@@ -11,7 +11,7 @@ export default function Home() {
             <p className="max-w-[600px] text-sm">Open UI is an open source design system with a completely cutting-edge system.  Fully customizable and modifiable you will make UI development much faster with fully stylized components.</p>
             <div className="flex flex-col gap-2 min-[400px]:flex-row">
               <Button asChild>
-                <Link href="https://openui-org.gitbook.io/openui/">Explore Documentation</Link>
+                <Link href="/">Explore Documentation</Link>
               </Button>
             </div>
           </div>

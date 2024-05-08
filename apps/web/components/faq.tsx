@@ -26,7 +26,7 @@ export default function FAQ() {
             Send us your ideas to build a better design system.
             <Link
               className="underline underline-offset-2 pl-1"
-              href="/docs/introduction#faq"
+              href="/faq"
             >
               FAQ
             </Link>

@@ -2,7 +2,7 @@ import { Button } from '@openui-org/react'
 import Link from 'next/link'
 
 const links = [
-  { name: 'Docs', path: 'https://openui-org.gitbook.io/openui/' },
+  { name: 'Docs', path: '/docs' },
   { name: 'Components', path: '/' },
   { name: 'FAQ', path: '/' },
 ]
@@ -31,7 +31,7 @@ export default function Menu() {
           </div>
           <div className="flex items-center gap-x-1">
             <Button className="bg-black hover:bg-black/80" rippleColor="light" asChild>
-              <a href="https://github/com/OpenLab-dev/openui">
+              <a href="https://github.com/OpenLab-dev/openui">
                 Github
               </a>
             </Button>

@@ -5,4 +5,6 @@ export default eslint({
   markdown: true,
   typescript: true,
   vue: true,
+
+  ignores: ['./apps/web/.contentlayer/*'],
 })
