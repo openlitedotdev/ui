@@ -16,6 +16,6 @@ const TooltipContent = React.forwardRef<Comp, Props>(({ className, sideOffset = 
   )
 })
 
-TooltipContent.displayName = 'TooltipContent'
+TooltipContent.displayName = TooltipPrimitive.Content.displayName
 
 export default TooltipContent
