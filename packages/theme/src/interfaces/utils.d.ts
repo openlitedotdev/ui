@@ -5,7 +5,6 @@ export interface Colors {
   background: Color
   foreground: Color
   primary: Color
-  secondary: Color
   success: Color
   warn: Color
   error: Color

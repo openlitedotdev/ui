@@ -12,7 +12,7 @@ export default function Menu() {
     <nav className="sticky top-0 z-10 block w-full max-w-full px-4 py-2 rounded-none shadow-medium h-max bg-opacity-80 backdrop-blur-2xl backdrop-saturate-200 lg:px-8 lg:py-4">
       <div className="flex items-center justify-between">
         <Link
-          href="#"
+          href="/"
           className="mr-4 block cursor-pointer font-bold leading-relaxed antialiased text-xl"
         >
           Open
@@ -30,14 +30,13 @@ export default function Menu() {
             </nav>
           </div>
           <div className="flex items-center gap-x-1">
-            <Button>
-              Github
+            <Button asChild variant="link">
+              <a href="https://github/com/OpenLab-dev/openui">
+                Github
+              </a>
             </Button>
           </div>
-          <button
-            className="relative ml-auto h-6 max-h-[40px] w-6 max-w-[40px] select-none rounded-lg text-center align-middle font-sans text-xs font-medium uppercase text-inherit transition-all hover:bg-transparent focus:bg-transparent active:bg-transparent disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none lg:hidden"
-            type="button"
-          >
+          <Button size="icon" type="button">
             <span className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -53,7 +52,7 @@ export default function Menu() {
                 />
               </svg>
             </span>
-          </button>
+          </Button>
         </div>
       </div>
     </nav>
