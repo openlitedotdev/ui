@@ -25,7 +25,6 @@ export const tooltip = cva('')
 export const tooltipTrigger = cva('px-2 py-1 rounded-large text-white hover:animate-pop', {
   variants: {
     variant: {
-      default: 'bg-black',
       primary: 'bg-primary animation-pulse',
       success: 'bg-success animation-pulse',
       error: 'bg-error animation-pulse',
@@ -33,7 +32,7 @@ export const tooltipTrigger = cva('px-2 py-1 rounded-large text-white hover:anim
     },
   },
   defaultVariants: {
-    variant: 'default',
+    variant: 'primary',
   },
 })
 
