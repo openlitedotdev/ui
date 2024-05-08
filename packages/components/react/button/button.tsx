@@ -27,7 +27,7 @@ const Button = React.forwardRef<Comp, Props>(
     const Comp = asChild ? Slot : 'button'
     const rippleEffect = ripple !== undefined && new Ripple()
 
-    const handleMouseDown = (e: React.MouseEvent<HTMLButtonElement>) => {
+    const handleMouseDown = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
       const onMouseDown = props?.onMouseDown
 
       if (ripple && rippleEffect)
