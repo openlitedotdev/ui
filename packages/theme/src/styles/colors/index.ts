@@ -9,19 +9,15 @@ export const colors: BaseColors = {
       DEFAULT: '#000000',
     },
     error: {
-      DEFAULT: '#f31260',
+      DEFAULT: '#ff4757',
       foreground: '#ffffff',
     },
     primary: {
-      DEFAULT: '#6750A4',
-      foreground: '#ffffff',
-    },
-    secondary: {
-      DEFAULT: '#625B71',
+      DEFAULT: '#1a5cff',
       foreground: '#ffffff',
     },
     success: {
-      DEFAULT: '#46C93A',
+      DEFAULT: '#46c93a',
       foreground: '#ffffff',
     },
     warn: {
@@ -37,19 +33,15 @@ export const colors: BaseColors = {
       DEFAULT: '#ffffff',
     },
     error: {
-      DEFAULT: '#EFB8C8',
+      DEFAULT: '#ff4757',
       foreground: '#ffffff',
     },
     primary: {
-      DEFAULT: '#D0BCFF',
-      foreground: '#ffffff',
-    },
-    secondary: {
-      DEFAULT: '#CCC2DC',
+      DEFAULT: '#1a5cff',
       foreground: '#ffffff',
     },
     success: {
-      DEFAULT: '#46C93A',
+      DEFAULT: '#46c93a',
       foreground: '#ffffff',
     },
     warn: {
