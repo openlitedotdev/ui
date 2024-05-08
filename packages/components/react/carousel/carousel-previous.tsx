@@ -6,7 +6,7 @@ import { useCarousel } from './use-carousel'
 export interface Comp extends HTMLButtonElement {}
 export interface Props extends React.ComponentProps<typeof Button> {}
 
-const CarouselPrevious = React.forwardRef<Comp, Props>(({ className, variant = 'outline', size = 'icon', ...props }, ref) => {
+const CarouselPrevious = React.forwardRef<Comp, Props>(({ className, variant = 'ghost', size = 'icon', ...props }, ref) => {
   const { orientation, scrollPrev, canScrollPrev } = useCarousel()
 
   return (
