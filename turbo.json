@@ -5,10 +5,6 @@
       "dependsOn": ["^build"],
       "outputs": [".next/**", "!.next/cache/**", "dist/**", "storybook-static/**"]
     },
-    "test": {
-      "dependsOn": ["build"],
-      "outputs": []
-    },
     "clean": {
       "cache": false,
       "outputs": []
