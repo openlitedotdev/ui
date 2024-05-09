@@ -25,10 +25,10 @@ export const tooltip = cva('')
 export const tooltipTrigger = cva('px-2 py-1 rounded-large text-white hover:animate-pop', {
   variants: {
     variant: {
-      primary: 'bg-primary animation-pulse',
-      success: 'bg-success animation-pulse',
-      error: 'bg-error animation-pulse',
-      warn: 'bg-warn animation-pulse',
+      primary: 'bg-primary/70 animation-pulse hover:bg-primary',
+      success: 'bg-success/70 animation-pulse hover:bg-success',
+      error: 'bg-error/70 animation-pulse hover:bg-error',
+      warn: 'bg-warn/70 animation-pulse hover:bg-warn',
     },
   },
   defaultVariants: {
