@@ -15,7 +15,7 @@ export default function ExploreDocs() {
         </div>
         <div className="flex flex-col gap-2 min-[400px]:flex-row lg:justify-end">
           <Button asChild>
-            <Link href="https://openui-org.gitbook.io/openui/">Explore Documentation</Link>
+            <Link href="#">Explore Documentation</Link>
           </Button>
         </div>
       </div>
