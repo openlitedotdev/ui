@@ -10,7 +10,7 @@ import { cva } from 'class-variance-authority'
  *   // Table elements
  * </Table>
  */
-export const table = cva('w-full caption-bottom text-sm')
+export const table = cva('w-full caption-bottom text-sm rounded-large overflow-hidden')
 
 /**
  * Table wrapper **Class Variants** component
@@ -22,7 +22,7 @@ export const table = cva('w-full caption-bottom text-sm')
  *   // TableHeader elements
  * </tableHeader>
  */
-export const tableHeader = cva('[&_tr]:border-b')
+export const tableHeader = cva('[&_th]:bg-foreground/20')
 
 /**
  * Table wrapper **Class Variants** component
@@ -34,7 +34,7 @@ export const tableHeader = cva('[&_tr]:border-b')
  *   // TableBody elements
  * </tableBody>
  */
-export const tableBody = cva('[&_tr]:border-b')
+export const tableBody = cva('hover:[&_tr]:bg-foreground/10')
 
 /**
  * Table wrapper **Class Variants** component
@@ -46,7 +46,7 @@ export const tableBody = cva('[&_tr]:border-b')
  *   // TableFooter elements
  * </TableFooter>
  */
-export const tableFooter = cva('border-t bg-muted/50 font-medium [&>tr]:last:border-b-0')
+export const tableFooter = cva('[&_tr]:bg-foreground/20')
 
 /**
  * Table wrapper **Class Variants** component
@@ -58,7 +58,7 @@ export const tableFooter = cva('border-t bg-muted/50 font-medium [&>tr]:last:bor
  *   // TableRow elements
  * </TableRow>
  */
-export const tableRow = cva('border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted')
+export const tableRow = cva('transition-colors')
 
 /**
  * Table wrapper **Class Variants** component
@@ -70,7 +70,7 @@ export const tableRow = cva('border-b transition-colors hover:bg-muted/50 data-[
  *   // TableHead elements
  * </TableHead>
  */
-export const tableHead = cva('h-12 px-4 text-left align-middle font-medium text-muted-foreground [&:has([role=checkbox])]:pr-0')
+export const tableHead = cva('h-12 px-4 text-left align-middle font-medium text-background-foreground [&:has([role=checkbox])]:pr-0')
 
 /**
  * Table wrapper **Class Variants** component
@@ -82,7 +82,7 @@ export const tableHead = cva('h-12 px-4 text-left align-middle font-medium text-
  *   // TableCell elements
  * </TableCell>
  */
-export const tableCell = cva('h-12 px-4 text-left align-middle font-medium text-muted-foreground [&:has([role=checkbox])]:pr-0')
+export const tableCell = cva('h-12 px-4 text-left align-middle font-medium text-background-foreground [&:has([role=checkbox])]:pr-0')
 
 /**
  * Table wrapper **Class Variants** component
@@ -94,4 +94,4 @@ export const tableCell = cva('h-12 px-4 text-left align-middle font-medium text-
  *   // TableCaption elements
  * </TableCaption>
  */
-export const tableCaption = cva('mt-4 text-sm text-muted-foreground')
+export const tableCaption = cva('mt-4 text-sm text-background-foreground')
