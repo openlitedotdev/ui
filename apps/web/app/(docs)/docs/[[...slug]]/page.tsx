@@ -15,6 +15,8 @@ interface DocPageProps {
   }
 }
 
+export const runtime = 'edge'
+
 // eslint-disable-next-line ts/ban-ts-comment
 // @ts-expect-error
 async function getDocFromParams(params) {
@@ -27,20 +29,11 @@ async function getDocFromParams(params) {
   return doc
 }
 
-export async function generateMetadata({
-  params,
-}: DocPageProps): Promise<Metadata> {
+export async function generateMetadata({ params }: DocPageProps): Promise<Metadata> {
   const doc = await getDocFromParams(params)
 
   if (!doc)
     return {}
-
-  const url = 'https://openui-dd0.pages.dev/docs'
-
-  const ogUrl = new URL(`${url}/api/og`)
-  ogUrl.searchParams.set('heading', doc.description ?? doc.title)
-  ogUrl.searchParams.set('type', 'Documentation')
-  ogUrl.searchParams.set('mode', 'dark')
 
   return {
     title: doc.title,
@@ -50,20 +43,11 @@ export async function generateMetadata({
       description: doc.description,
       type: 'article',
       url: doc.slug,
-      images: [
-        {
-          url: ogUrl.toString(),
-          width: 1200,
-          height: 630,
-          alt: doc.title,
-        },
-      ],
     },
     twitter: {
       card: 'summary_large_image',
       title: doc.title,
       description: doc.description,
-      images: [ogUrl.toString()],
     },
   }
 }
