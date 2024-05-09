@@ -2,6 +2,8 @@
 // @ts-nocheck
 // TODO: Fix this when we turn strict mode on.
 
+'use client'
+
 import * as React from 'react'
 import Image from 'next/image'
 import { useMDXComponent } from 'next-contentlayer/hooks'
