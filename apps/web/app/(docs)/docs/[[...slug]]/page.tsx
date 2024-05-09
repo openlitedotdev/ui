@@ -7,7 +7,7 @@ import { DocsPageHeader } from '@/components/page-header'
 import { DocsPager } from '@/components/pager'
 import { DashboardTableOfContents } from '@/components/toc'
 
-import '@/app/mdx.css'
+import '../../../mdx.css'
 
 interface DocPageProps {
   params: {
