@@ -24,7 +24,7 @@ export const input = cva('h-10 w-full peer transition-colors rounded-medium bord
       warn: 'bg-warn/30',
       error: 'bg-error/30',
     },
-    text: {
+    textsize: {
       small: 'text-sm',
       medium: 'text-medium',
       large: 'text-lg',
@@ -33,6 +33,6 @@ export const input = cva('h-10 w-full peer transition-colors rounded-medium bord
   defaultVariants: {
     border: 'none',
     background: 'none',
-    text: 'medium',
+    textsize: 'medium',
   },
 })
