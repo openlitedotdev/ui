@@ -10,7 +10,7 @@ import { cva } from 'class-variance-authority'
  */
 export const input = cva('h-10 w-full peer transition-colors rounded-medium border-2 bg-transparent px-4 py-2 text-medium ring-offset-background file:border-0 focus-visible:outline-none focus-visible:ring-0 focus-visible:ring-offset-0', {
   variants: {
-    borderColor: {
+    border: {
       none: 'border-foreground/30 focus-visible:border-foreground/60',
       primary: 'border-primary/50 focus-visible:border-primary',
       success: 'border-success/50 focus-visible:border-success',
@@ -24,15 +24,15 @@ export const input = cva('h-10 w-full peer transition-colors rounded-medium bord
       warn: 'bg-warn/30',
       error: 'bg-error/30',
     },
-    size: {
-      small: 'text-small',
+    text: {
+      small: 'text-sm',
       medium: 'text-medium',
-      large: 'text-large',
+      large: 'text-lg',
     },
   },
   defaultVariants: {
-    borderColor: 'none',
+    border: 'none',
     background: 'none',
-    size: 'medium',
+    text: 'medium',
   },
 })
