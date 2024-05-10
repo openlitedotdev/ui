@@ -8,4 +8,31 @@ import { cva } from 'class-variance-authority'
  * @example
  * <Input className={styles())} />
  */
-export const input = cva('flex h-10 w-full rounded-medium px-3 py-2 text-small file:border-0 file:bg-transparent file:text-small file:font-medium disabled:cursor-not-allowed disabled:opacity-50')
+export const input = cva('h-10 w-full peer transition-colors rounded-medium border-2 bg-transparent px-4 py-2 text-medium ring-offset-background file:border-0 focus-visible:outline-none focus-visible:ring-0 focus-visible:ring-offset-0', {
+  variants: {
+    borderColor: {
+      none: 'border-foreground/30 focus-visible:border-foreground/60',
+      primary: 'border-primary/50 focus-visible:border-primary',
+      success: 'border-success/50 focus-visible:border-success',
+      warn: 'border-warn/50 focus-visible:border-warn',
+      error: 'border-error/50 focus-visible:border-error',
+    },
+    background: {
+      none: 'bg-transparent',
+      primary: 'bg-primary/30',
+      success: 'bg-success/30',
+      warn: 'bg-warn/30',
+      error: 'bg-error/30',
+    },
+    size: {
+      small: 'text-small',
+      medium: 'text-medium',
+      large: 'text-large',
+    },
+  },
+  defaultVariants: {
+    borderColor: 'none',
+    background: 'none',
+    size: 'medium',
+  },
+})

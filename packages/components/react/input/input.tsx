@@ -1,17 +1,27 @@
 import { cn, input } from '@openui-org/theme'
+import type { VariantProps } from '@openui-org/theme'
 import * as React from 'react'
 
 export interface Comp extends HTMLInputElement {}
-export interface Props extends React.InputHTMLAttributes<HTMLInputElement> {}
+export interface Props extends React.InputHTMLAttributes<HTMLInputElement>,
+  VariantProps <typeof input> {
+  Label?: string
+  Icon?: React.ReactNode
+}
 
-const Input = React.forwardRef<Comp, Props>(({ className, type, ...props }, ref) => {
+const Input = React.forwardRef<Comp, Props>(({ className, size, Icon, Label, background, borderColor, type, ...props }, ref) => {
   return (
-    <input
-      type={type}
-      className={cn(input(), className)}
-      ref={ref}
-      {...props}
-    />
+    <div className="relative flex flex-col-reverse">
+      <input
+        type={type}
+        className={cn(input({ borderColor, background, size }), className)}
+        ref={ref}
+        {...props}
+      />
+      <label className="text-foreground/60 absolute top-1/2 -translate-y-1/2 left-4 px-1 bg-background pointer-events-none text-medium peer-focus-within:text-small peer-focus-within:top-0 transition-all">{Label}</label>
+      <i className="absolute top-1/2 -translate-y-1/2 right-3">{Icon}</i>
+    </div>
+
   )
 },
 )
