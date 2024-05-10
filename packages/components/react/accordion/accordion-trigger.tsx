@@ -1,16 +1,17 @@
+import type { VariantProps } from '@openui-org/theme'
 import * as React from 'react'
 import * as AccordionPrimitive from '@radix-ui/react-accordion'
 import { accordionTrigger, cn } from '@openui-org/theme'
 
 export interface Comp extends React.ElementRef<typeof AccordionPrimitive.Trigger> {}
-export interface Props extends React.ComponentPropsWithoutRef<typeof AccordionPrimitive.Trigger> {}
+export type Props = React.ComponentPropsWithoutRef<typeof AccordionPrimitive.Trigger> & VariantProps<typeof accordionTrigger>
 
-const AccordionTrigger = React.forwardRef<Comp, Props>(({ className, children, ...props }, ref) => {
+const AccordionTrigger = React.forwardRef<Comp, Props>(({ className, text, children, ...props }, ref) => {
   return (
     <AccordionPrimitive.Header className="flex">
       <AccordionPrimitive.Trigger
         ref={ref}
-        className={cn(accordionTrigger(), className)}
+        className={cn(accordionTrigger({ text }), className)}
         {...props}
       >
         {children}
