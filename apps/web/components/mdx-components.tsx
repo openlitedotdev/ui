@@ -9,6 +9,7 @@ import Image from 'next/image'
 import { useMDXComponent } from 'next-contentlayer/hooks'
 
 import { cn } from '@openui-org/theme'
+import { PackageManagers } from './package-manager'
 import { Callout } from '@/components/callout'
 import { MdxCard } from '@/components/mdx-card'
 
@@ -137,7 +138,7 @@ const components = {
   pre: ({ className, ...props }) => (
     <pre
       className={cn(
-        'mb-4 mt-6 overflow-x-auto rounded-lg border bg-black py-4',
+        'mb-4 mt-6 overflow-x-auto rounded-lg border bg-black py-4 px-2',
         className,
       )}
       {...props}
@@ -155,6 +156,7 @@ const components = {
   Image,
   Callout,
   Card: MdxCard,
+  PackageManagers,
 }
 
 interface MdxProps {

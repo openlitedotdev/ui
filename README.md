@@ -1,6 +1,6 @@
 # Open UI
 
-This design system is totally easy to use with the aim of facilitating upcoming new projects. The design system is a challenge for our team. You can gladly contribute and guide us with ideas to improve... We would be keen to hear any feedback on this project.
+Open UI is a powerful design system created with Shadcn UI and Tailwind CSS. It is designed to make it easy to use and facilitate the development of new projects. Our team has put in a lot of effort to create this design system, and we welcome contributions and ideas for improvement. We value your feedback and would love to hear from you.
 
 ## Features
 
@@ -9,50 +9,8 @@ This design system is totally easy to use with the aim of facilitating upcoming 
 - Dark mode support
 - [Figma Kit](https://www.figma.com/community/file/1354464067434498042)
 
-## Getting Started
-
-### Configure workspaces
-
-#### Install turbo
-
-Install turbo globally.
-
-```shell
-pnpm install --frozen-lockfile
-```
-
-For more details about installation, see Installing Turborepo
-
-#### Scripts
-
-1. Run mode dev.
-
-```shell
-turbo dev
-```
-
-2. Run build packages
-
-```shell
-turbo build
-```
-
-Your ready for worker and add components.
-
 ## Components
 
-_General_
-
-- [x] Button
-- [x] Aspect Ratio
-- [x] Carousel
-
-_Data Input_
-
-- [x] Input
-- [x] Label
-- [x] Select
-- [x] Checkbox
 - [x] Slider
 
 _Layout_
@@ -88,10 +46,8 @@ _Loading_
 
 If you want to know more about this design system visit
 
-- [Documentation](https://openui.up.railway.app/docs/getting-started)
+- [Documentation](https://openui-dd0.pages.dev/docs)
 
 ## License
 
-Design System is licensed under either of
-
-- MIT license (LICENSE-MIT or https://opensource.org/licenses/MIT)
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT))

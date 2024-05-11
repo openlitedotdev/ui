@@ -14,45 +14,45 @@ const cards = [
     Icon: KeyIcon,
     title: 'Buttons',
     description: 'Customizable buttons with various styles and sizes.',
-    path: '#',
+    path: '/docs/components/button',
   },
   {
     Icon: FileInputIcon,
     title: 'Inputs',
     description: 'Accessible and stylish form inputs.',
-    path: '#',
+    path: '/docs/components/input',
   },
   {
     Icon: CreditCardIcon,
     title: 'Cards',
     description: 'Versatile card components for displaying content.',
-    path: '#',
+    path: '/docs/components/card',
   },
   {
     Icon: MenuIcon,
     title: 'Dropdowns',
     description: 'Accessible and customizable dropdown menus.',
-    path: '#',
+    path: '/docs/components/dropdown',
   },
   {
     Icon: NavigationIcon,
     title: 'Navigation',
     description: ' Intuitive navigation components for your app.',
-    path: '#',
+    path: '/docs/components/sheet',
   },
   {
     Icon: MinimizeIcon,
     title: 'Modals',
     description: 'Lightweight and responsive modal components.',
-    path: '#',
+    path: '/docs/components/dialog',
   },
 ]
 
 export default function Commons() {
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32 flex flex-col items-center justify-center">
+    <section className="w-full py-12 md:py-24 flex flex-col items-center justify-center">
       <div className="container px-4 md:px-6">
-        <div className="flex flex-col items-center justify-center space-y-4 text-center">
+        <div className="flex flex-col items-center justify-center space-y-8 text-center">
           <div className="space-y-2">
             <Badge>
               Key components

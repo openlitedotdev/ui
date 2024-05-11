@@ -1,8 +1,10 @@
 'use client'
 
-import { Input } from '@openui-org/react'
-import { cn } from '@openui-org/theme'
 import * as React from 'react'
+
+import { cn } from '@openui-org/theme'
+import { Input } from '@openui-org/react'
+import { Search } from 'lucide-react'
 
 interface DocsSearchProps extends React.HTMLAttributes<HTMLFormElement> {}
 
@@ -24,9 +26,10 @@ export function DocsSearch({ className, ...props }: DocsSearchProps) {
     >
       <Input
         type="search"
-        placeholder="Search documentation..."
-        className="h-8 w-full sm:w-64 sm:pr-12 border border-black/80"
+        placeholder="Search..."
+        className="rounded-large py-0 relative border"
       />
+      <Search className="absolute right-0 top-1/2 -translate-x-1/2 -translate-y-1/2 text-black/50" />
     </form>
   )
 }

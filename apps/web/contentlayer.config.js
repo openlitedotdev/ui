@@ -63,10 +63,9 @@ export const Post = defineDocumentType(() => ({
   },
   computedFields,
 }))
-
 export default makeSource({
   contentDirPath: './content',
-  documentTypes: [Post, Doc],
+  documentTypes: [Doc],
   mdx: {
     remarkPlugins: [remarkGfm],
     rehypePlugins: [
