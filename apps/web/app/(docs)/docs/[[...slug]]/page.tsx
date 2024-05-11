@@ -15,7 +15,7 @@ interface DocPageProps {
   }
 }
 
-// export const runtime = 'edge'
+export const runtime = 'edge'
 
 // eslint-disable-next-line ts/ban-ts-comment
 // @ts-expect-error
