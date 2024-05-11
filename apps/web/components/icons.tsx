@@ -1,4 +1,4 @@
-// eslint-disable-next-line ts/consistent-type-imports
+import type { LucideProps } from 'lucide-react'
 import {
   AlertTriangle,
   ArrowRight,
@@ -13,8 +13,6 @@ import {
   Image,
   Laptop,
   Loader2,
-  type Icon as LucideIcon,
-  LucideProps,
   Moon,
   MoreVertical,
   Pizza,
@@ -26,8 +24,6 @@ import {
   User,
   X,
 } from 'lucide-react'
-
-export type Icon = LucideIcon
 
 export const Icons = {
   logo: Command,
