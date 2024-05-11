@@ -17,116 +17,148 @@ export const docsConfig = {
           title: 'Introduction',
           href: '/docs',
         },
-      ],
-    },
-    {
-      title: 'Documentation',
-      items: [
         {
-          title: 'Introduction',
-          href: '/docs/documentation',
-        },
-        {
-          title: 'Contentlayer',
-          href: '/docs/in-progress',
-          disabled: true,
-        },
-        {
-          title: 'Components',
-          href: '/docs/documentation/components',
-        },
-        {
-          title: 'Code Blocks',
-          href: '/docs/documentation/code-blocks',
-        },
-        {
-          title: 'Style Guide',
-          href: '/docs/documentation/style-guide',
-        },
-        {
-          title: 'Search',
-          href: '/docs/in-progress',
-          disabled: true,
-        },
-      ],
-    },
-    {
-      title: 'Blog',
-      items: [
-        {
-          title: 'Introduction',
-          href: '/docs/in-progress',
-          disabled: true,
-        },
-        {
-          title: 'Build your own',
-          href: '/docs/in-progress',
-          disabled: true,
-        },
-        {
-          title: 'Writing Posts',
-          href: '/docs/in-progress',
-          disabled: true,
-        },
-      ],
-    },
-    {
-      title: 'Dashboard',
-      items: [
-        {
-          title: 'Introduction',
-          href: '/docs/in-progress',
-          disabled: true,
-        },
-        {
-          title: 'Layouts',
-          href: '/docs/in-progress',
-          disabled: true,
-        },
-        {
-          title: 'Server Components',
-          href: '/docs/in-progress',
-          disabled: true,
-        },
-        {
-          title: 'Authentication',
-          href: '/docs/in-progress',
-          disabled: true,
-        },
-        {
-          title: 'Database with Prisma',
-          href: '/docs/in-progress',
-          disabled: true,
-        },
-        {
-          title: 'API Routes',
-          href: '/docs/in-progress',
-          disabled: true,
-        },
-      ],
-    },
-    {
-      title: 'Marketing Site',
-      items: [
-        {
-          title: 'Introduction',
-          href: '/docs/in-progress',
-          disabled: true,
-        },
-        {
-          title: 'File Structure',
-          href: '/docs/in-progress',
-          disabled: true,
-        },
-        {
-          title: 'Tailwind CSS',
-          href: '/docs/in-progress',
-          disabled: true,
+          title: 'Installation',
+          href: '/docs/installation',
         },
         {
           title: 'Typography',
-          href: '/docs/in-progress',
-          disabled: true,
+          href: '/docs/typography',
+        },
+        {
+          title: 'Figma',
+          href: '/docs/figma',
+        },
+      ],
+    },
+    {
+      title: 'Frameworks',
+      items: [
+        {
+          title: 'Vite',
+          href: '/docs/frameworks/vite',
+        },
+        {
+          title: 'Next.js',
+          href: '/docs/frameworks/nextjs',
+        },
+        {
+          title: 'Astro',
+          href: '/docs/frameworks/astro',
+        },
+        {
+          title: 'Remix',
+          href: '/docs/frameworks/remix',
+        },
+      ],
+    },
+    {
+      title: 'Components',
+      items: [
+        {
+          title: 'Accordion',
+          href: '/docs/components/accordion',
+        },
+        {
+          title: 'Alert',
+          href: '/docs/components/alert',
+        },
+        {
+          title: 'Aspect Ratio',
+          href: '/docs/components/aspect-ratio',
+        },
+        {
+          title: 'Avatar',
+          href: '/docs/components/avatar',
+        },
+        {
+          title: 'Badge',
+          href: '/docs/components/badge',
+        },
+        {
+          title: 'Breadcrumb',
+          href: '/docs/components/breadcrumb',
+        },
+        {
+          title: 'Button',
+          href: '/docs/components/button',
+        },
+        {
+          title: 'Card',
+          href: '/docs/components/card',
+        },
+        {
+          title: 'Checkbox',
+          href: '/docs/components/checkbox',
+        },
+        {
+          title: 'Chip',
+          href: '/docs/components/chip',
+        },
+        {
+          title: 'Dialog',
+          href: '/docs/components/dialog',
+        },
+        {
+          title: 'Separator',
+          href: '/docs/components/separator',
+        },
+        {
+          title: 'Dropdown',
+          href: '/docs/components/dropdown',
+        },
+        {
+          title: 'Input',
+          href: '/docs/components/input',
+        },
+        {
+          title: 'Label',
+          href: '/docs/components/label',
+        },
+        {
+          title: 'Popover',
+          href: '/docs/components/popover',
+        },
+        {
+          title: 'Progress',
+          href: '/docs/components/progress',
+        },
+        {
+          title: 'Scroll Area',
+          href: '/docs/components/scroll-area',
+        },
+        {
+          title: 'Select',
+          href: '/docs/components/select',
+        },
+        {
+          title: 'Sheet',
+          href: '/docs/components/sheet',
+        },
+        {
+          title: 'Skeleton',
+          href: '/docs/components/skeleton',
+        },
+        {
+          title: 'Slider',
+          href: '/docs/components/slider',
+        },
+
+        {
+          title: 'Switch',
+          href: '/docs/components/switch',
+        },
+        {
+          title: 'Table',
+          href: '/docs/components/table',
+        },
+        {
+          title: 'Tabs',
+          href: '/docs/components/tabs',
+        },
+        {
+          title: 'Tooltip',
+          href: '/docs/components/tooltip',
         },
       ],
     },
