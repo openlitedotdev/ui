@@ -1,27 +1,24 @@
-import { Button } from '@openui-org/react'
+import { Badge, Button } from '@openui-org/react'
 import Link from 'next/link'
 
 export default function Home() {
   return (
-    <section className="w-full pt-12 md:pt-20 flex flex-col items-center justify-center">
-      <div className="container px-4 md:px-6">
-        <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 xl:gap-16">
-          <div className="space-y-4 md:space-y-6 lg:space-y-8">
-            <h1 className="text-3xl font-bold tracking-tighter">Open UI. A modern design system built with Shadcn UI and Tailwind CSS</h1>
-            <p className="max-w-[600px] text-sm">Open UI is an open source design system with a completely cutting-edge system.  Fully customizable and modifiable you will make UI development much faster with fully stylized components.</p>
-            <div className="flex flex-col gap-2 min-[400px]:flex-row">
-              <Button asChild>
-                <Link href="/">Explore Documentation</Link>
-              </Button>
-            </div>
-          </div>
-          <img
-            alt="Hero"
-            className="mx-auto aspect-video overflow-hidden rounded-xl object-cover sm:w-full"
-            height="550"
-            src="https://i.postimg.cc/X7yfn8hW/logo.png"
-            width="550"
-          />
+    <section className="space-y-6 pb-8 pt-6 md:pb-12 md:pt-10 lg:py-32">
+      <div className="container flex max-w-[64rem] flex-col items-center gap-4 text-center">
+        <Badge>Open UI is available 🎉</Badge>
+        <h1 className="font-bold text-3xl sm:text-5xl md:text-6xl">
+          Open UI. A modern design system built with Shadcn UI and Tailwind CSS.
+        </h1>
+        <p className="max-w-[42rem] text-small">
+          Open UI is an open source design system with a completely cutting-edge system. Fully customizable and modifiable you will make UI development much faster with fully stylized components.
+        </p>
+        <div className="space-x-4 mt-4">
+          <Button asChild variant="primary" size="lg" className="bg-black hover:bg-black/80" rippleColor="light">
+            <Link href="/docs">Get Started</Link>
+          </Button>
+          <Button asChild variant="ghost" size="lg" className="border">
+            <Link href="/https://github.com/OpenLab-dev" target="_blank">Github</Link>
+          </Button>
         </div>
       </div>
     </section>

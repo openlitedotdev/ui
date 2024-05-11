@@ -20,7 +20,9 @@ export default function FAQ() {
               placeholder="Send your feedback"
               type="text"
             />
-            <Button type="submit">Send</Button>
+            <Button className="bg-black hover:bg-black/80">
+              Send
+            </Button>
           </form>
           <p className="text-xs text-gray-500 dark:text-gray-400">
             Send us your ideas to build a better design system.

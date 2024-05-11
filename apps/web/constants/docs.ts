@@ -92,10 +92,6 @@ export const docsConfig = {
           href: '/docs/components/checkbox',
         },
         {
-          title: 'Chip',
-          href: '/docs/components/chip',
-        },
-        {
           title: 'Dialog',
           href: '/docs/components/dialog',
         },
@@ -142,11 +138,6 @@ export const docsConfig = {
         {
           title: 'Slider',
           href: '/docs/components/slider',
-        },
-
-        {
-          title: 'Switch',
-          href: '/docs/components/switch',
         },
         {
           title: 'Table',

@@ -14,8 +14,8 @@ export default function ExploreDocs() {
           </p>
         </div>
         <div className="flex flex-col gap-2 min-[400px]:flex-row lg:justify-end">
-          <Button asChild>
-            <Link href="#">Explore Documentation</Link>
+          <Button asChild className="bg-black hover:bg-black/80">
+            <Link href="/docs">Explore Documentation</Link>
           </Button>
         </div>
       </div>

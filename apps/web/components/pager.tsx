@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import type { Doc } from 'contentlayer/generated'
-import { button, cn } from '@openui-org/theme'
+import { ArrowLeft, ArrowRight } from 'lucide-react'
+import { Button } from '@openui-org/react'
 import { docsConfig } from '@/constants/docs'
 
 interface DocsPagerProps {
@@ -16,20 +17,24 @@ export function DocsPager({ doc }: DocsPagerProps) {
   return (
     <div className="flex flex-row items-center justify-between">
       {pager?.prev && (
-        <Link
-          href={pager.prev.href}
-          className={cn(button({ variant: 'ghost' }))}
-        >
-          {pager.prev.title}
-        </Link>
+        <Button asChild variant="ghost">
+          <Link
+            href={pager.prev.href}
+          >
+            <ArrowLeft size={20} />
+            {pager.prev.title}
+          </Link>
+        </Button>
       )}
       {pager?.next && (
-        <Link
-          href={pager.next.href}
-          className={cn(button({ variant: 'ghost' }), 'ml-auto')}
-        >
-          {pager.next.title}
-        </Link>
+        <Button asChild variant="ghost">
+          <Link
+            href={pager.next.href}
+          >
+            {pager.next.title}
+            <ArrowRight size={20} />
+          </Link>
+        </Button>
       )}
     </div>
   )
