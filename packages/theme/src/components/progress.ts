@@ -14,13 +14,13 @@ import { cva } from 'class-variance-authority'
 export const progress = cva('relative bg-foreground/10 w-full overflow-hidden rounded-full', {
   variants: {
     size: {
-      small: 'h-2',
-      medium: 'h-4',
-      large: 'h-6',
+      sm: 'h-2',
+      md: 'h-4',
+      lg: 'h-6',
     },
   },
   defaultVariants: {
-    size: 'medium',
+    size: 'md',
   },
 
 })
