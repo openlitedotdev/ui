@@ -3,7 +3,7 @@ title: Installation
 description: Installation instructions for the Open UI.
 ---
 
-import { Button } from '@openui-org/react'
+import { Button } from "@openui-org/react"
 
 Requirements:
 
@@ -20,13 +20,13 @@ Open UI is built on top of Tailwind CSS, so you need to install Tailwind CSS fir
 
 ```js
 // tailwind.config.js
-import { openui } from '@openui-org/theme'
+import { openui } from "@openui-org/theme"
 
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
     //...
-    './node_modules/@openui-org/react/dist/**/*.{js,ts,jsx,tsx}',
+    "./node_modules/@openui-org/react/dist/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {},
@@ -44,8 +44,8 @@ Now, you can use the component you installed in your application:
 <Button>Press me</Button>
 
 ```jsx
-import * as React from 'react'
-import { Button } from '@openui-org/react'
+import * as React from "react"
+import { Button } from "@openui-org/react"
 
 function App() {
   return <Button>Press me</Button>
