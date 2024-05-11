@@ -11,3 +11,28 @@ Requirements:
 ```sh
 npm install @openui-org/theme @openui-org/react
 ```
+
+## Tailwind CSS Setup
+
+Open UI is built on top of Tailwind CSS, so you need to install Tailwind CSS first. You can follow the official installation guide to install Tailwind CSS. Then you need to add the following code to your `tailwind.config.js` file:
+
+```js
+// tailwind.config.js
+import { openui } from "@openui-org/theme"
+
+/** @type {import("tailwindcss").Config} */
+export default {
+  content: [
+    //...
+    "./node_modules/@openui-org/react/dist/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [openui()]
+}
+```
+
+## Example
+
+Now, you can use the component you installed in your application 🎉
