@@ -9,6 +9,7 @@ import Image from 'next/image'
 import { useMDXComponent } from 'next-contentlayer/hooks'
 
 import { cn } from '@openui-org/theme'
+import { PackageManagers } from './package-manager'
 import { Callout } from '@/components/callout'
 import { MdxCard } from '@/components/mdx-card'
 
@@ -155,6 +156,7 @@ const components = {
   Image,
   Callout,
   Card: MdxCard,
+  PackageManagers,
 }
 
 interface MdxProps {
