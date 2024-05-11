@@ -9,7 +9,7 @@ export interface Props extends React.ComponentPropsWithoutRef<typeof ProgressPri
   VariantProps<typeof progress> {
   labelText?: boolean
   value: number
-  background?: 'primary' | 'secondary' | 'success' | 'warn' | 'error' | undefined
+  background?: 'error' | 'primary' | 'success' | 'warn' | null | undefined
 }
 
 const Progress = React.forwardRef<Comp, Props>(({ className, labelText = false, size, background, value, ...props }, ref) => (
