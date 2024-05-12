@@ -11,11 +11,23 @@ Open UI is a powerful design system created with Shadcn UI and Tailwind CSS. It 
 
 ## Components
 
+_General_
+
+- [x] Button
+- [x] Aspect Ratio
+- [x] Carousel
+
+_Data Input_
+
+- [x] Input
+- [x] Label
+- [x] Select
+- [x] Checkbox
 - [x] Slider
 
 _Layout_
 
-- [x] Divider
+- [x] Separator
 
 _Display_
 
@@ -23,7 +35,6 @@ _Display_
 - [x] Avatar
 - [x] Accordion
 - [x] Alert
-- [x] Alert Dialog
 - [x] Badge
 - [x] Tooltips
 - [x] Tables
@@ -50,4 +61,4 @@ If you want to know more about this design system visit
 
 ## License
 
-[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT))
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
