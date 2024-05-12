@@ -17,10 +17,8 @@ interface DocPageProps {
 
 export const runtime = 'edge'
 
-// eslint-disable-next-line ts/ban-ts-comment
-// @ts-expect-error
-async function getDocFromParams(params) {
-  const slug = params.slug?.join('/') || ''
+async function getDocFromParams({ params }: DocPageProps) {
+  const slug = params.slug.join('/') || ''
   const doc = allDocs.find((doc: { slugAsParams: any }) => doc.slugAsParams === slug)
 
   if (!doc)
@@ -30,7 +28,7 @@ async function getDocFromParams(params) {
 }
 
 export async function generateMetadata({ params }: DocPageProps): Promise<Metadata> {
-  const doc = await getDocFromParams(params)
+  const doc = await getDocFromParams({ params })
 
   if (!doc)
     return {}
@@ -42,7 +40,13 @@ export async function generateMetadata({ params }: DocPageProps): Promise<Metada
       title: doc.title,
       description: doc.description,
       type: 'article',
-      url: doc.slug,
+      url: 'https://openui-dd0.pages.dev/',
+
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: doc.title,
+      description: doc.description,
     },
   }
 }
@@ -54,7 +58,7 @@ export async function generateStaticParams(): Promise<DocPageProps['params'][]> 
 }
 
 export default async function DocPage({ params }: DocPageProps) {
-  const doc = await getDocFromParams(params)
+  const doc = await getDocFromParams({ params })
 
   if (!doc)
     notFound()
