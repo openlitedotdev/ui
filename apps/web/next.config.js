@@ -1,7 +1,8 @@
-import { withContentlayer } from 'next-contentlayer'
+const withContentlayer = require('next-contentlayer').withContentlayer
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  transpilePackages: ['@openui-org/react', '@openui-org/theme'],
   swcMinify: true,
   eslint: {
     ignoreDuringBuilds: true,
@@ -27,4 +28,4 @@ const nextConfig = {
   },
 }
 
-export default withContentlayer(nextConfig)
+module.exports = withContentlayer(nextConfig)

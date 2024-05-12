@@ -1,7 +1,9 @@
 'use client'
 
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 import { Button } from '@openui-org/react'
+import { cn } from '@openui-org/theme'
 import type { NavItem } from './main-nav'
 
 export type SidebarNavItem = {
@@ -47,11 +49,12 @@ interface DocsSidebarNavItemsProps {
 }
 
 export function DocsSidebarNavItems({ items }: DocsSidebarNavItemsProps) {
+  const path = usePathname()
   return items?.length
     ? (
       <div className="flex flex-col justify-start items-start text-small">
         {items.map((item, index) => (
-          <Button key={index} asChild variant="ghost" className="w-full flex justify-start items-start">
+          <Button key={index} asChild variant="ghost" className={cn('w-full flex justify-start items-start', path === item.href ? 'bg-black/10' : 'bg-transparent')}>
             <Link
               href={item.href!}
               className="!font-light"

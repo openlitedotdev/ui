@@ -1,6 +1,5 @@
 import '../../../mdx.css'
 
-import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import { allDocs } from 'contentlayer/generated'
 import { getTableOfContents } from '@/lib/toc'
@@ -27,29 +26,6 @@ async function getDocFromParams(params) {
     return null
 
   return doc
-}
-
-export async function generateMetadata({ params }: DocPageProps): Promise<Metadata> {
-  const doc = await getDocFromParams(params)
-
-  if (!doc)
-    return {}
-
-  return {
-    title: doc.title,
-    description: doc.description,
-    openGraph: {
-      title: doc.title,
-      description: doc.description,
-      type: 'article',
-      url: doc.slug,
-    },
-    twitter: {
-      card: 'summary_large_image',
-      title: doc.title,
-      description: doc.description,
-    },
-  }
 }
 
 export async function generateStaticParams(): Promise<DocPageProps['params'][]> {
