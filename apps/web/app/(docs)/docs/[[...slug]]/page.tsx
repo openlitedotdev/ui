@@ -1,7 +1,6 @@
-import '../../../mdx.css'
-
 import { notFound } from 'next/navigation'
 import { allDocs } from 'contentlayer/generated'
+
 import type { Metadata } from 'next'
 import { getTableOfContents } from '@/lib/toc'
 import { Mdx } from '@/components/mdx-components'
@@ -9,26 +8,29 @@ import { DocsPageHeader } from '@/components/page-header'
 import { DocsPager } from '@/components/pager'
 import { DashboardTableOfContents } from '@/components/toc'
 
+import '@/app/mdx.css'
+
 interface DocPageProps {
   params: {
     slug: string[]
   }
 }
 
-export const runtime = 'edge'
-
-async function getDocFromParams({ params }: DocPageProps) {
-  const slug = params.slug.join('/') || ''
-  const doc = allDocs.find((doc: { slugAsParams: any }) => doc.slugAsParams === slug)
+async function getDocFromParams(params: { slug?: any, params?: { slug: string[] } }) {
+  const slug = params.slug?.join('/') || ''
+  const doc = allDocs.find(doc => doc.slugAsParams === slug)
 
   if (!doc)
-    return null
+    // eslint-disable-next-line no-unused-expressions
+    null
 
   return doc
 }
 
-export async function generateMetadata({ params }: DocPageProps): Promise<Metadata> {
-  const doc = await getDocFromParams({ params })
+export async function generateMetadata({
+  params,
+}: DocPageProps): Promise<Metadata> {
+  const doc = await getDocFromParams(params)
 
   if (!doc)
     return {}
@@ -40,19 +42,19 @@ export async function generateMetadata({ params }: DocPageProps): Promise<Metada
       title: doc.title,
       description: doc.description,
       type: 'article',
-      url: 'https://openui-dd0.pages.dev/',
 
     },
     twitter: {
       card: 'summary_large_image',
       title: doc.title,
       description: doc.description,
+
     },
   }
 }
 
 export async function generateStaticParams(): Promise<DocPageProps['params'][]> {
-  return allDocs.map((doc: { slugAsParams: string }) => ({
+  return allDocs.map(doc => ({
     slug: doc.slugAsParams.split('/'),
   }))
 }
