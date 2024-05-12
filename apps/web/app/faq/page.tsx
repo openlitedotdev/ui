@@ -1,7 +1,7 @@
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@openui-org/react'
 import { FAQs } from '@/constants/faqs'
 
-export default function Page() {
+export default function PageFAQ() {
   return (
     <>
       <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-100">
