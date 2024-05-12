@@ -2,6 +2,7 @@ import '../../../mdx.css'
 
 import { notFound } from 'next/navigation'
 import { allDocs } from 'contentlayer/generated'
+import type { Metadata } from 'next'
 import { getTableOfContents } from '@/lib/toc'
 import { Mdx } from '@/components/mdx-components'
 import { DocsPageHeader } from '@/components/page-header'
@@ -26,6 +27,24 @@ async function getDocFromParams(params) {
     return null
 
   return doc
+}
+
+export async function generateMetadata({ params }: DocPageProps): Promise<Metadata> {
+  const doc = await getDocFromParams(params)
+
+  if (!doc)
+    return {}
+
+  return {
+    title: doc.title,
+    description: doc.description,
+    openGraph: {
+      title: doc.title,
+      description: doc.description,
+      type: 'article',
+      url: doc.slug,
+    },
+  }
 }
 
 export async function generateStaticParams(): Promise<DocPageProps['params'][]> {
