@@ -11,6 +11,7 @@
   "dependencies": {
     "@openui-org/react": "workspace:*",
     "@openui-org/theme": "workspace:*",
+    "class-variance-authority": "^0.7.0",
     "concurrently": "^8.2.2",
     "contentlayer": "^0.3.1",
     "geist": "^1.3.0",

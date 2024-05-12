@@ -13,8 +13,8 @@ const Label = React.forwardRef<Comp, Props>(
     const Comp = asChild ? Slot : 'label'
     return (
       <Comp
-        className={cn(label({ size, className }))}
         ref={ref}
+        className={cn(label({ size, className }))}
         {...props}
       />
     )

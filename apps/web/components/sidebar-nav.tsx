@@ -54,7 +54,7 @@ export function DocsSidebarNavItems({ items }: DocsSidebarNavItemsProps) {
           <Button key={index} asChild variant="ghost" className="w-full flex justify-start items-start">
             <Link
               href={item.href!}
-              className="font-light"
+              className="!font-light"
               target={item.external ? '_blank' : ''}
               rel={item.external ? 'noreferrer' : ''}
             >

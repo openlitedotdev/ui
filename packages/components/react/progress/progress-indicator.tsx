@@ -9,8 +9,9 @@ export interface Props extends React.ComponentPropsWithoutRef<typeof ProgressPri
   value: number
 }
 
-const ProgressIndicator = React.forwardRef<Comp, Props>(({ className, value, background }) => (
+const ProgressIndicator = React.forwardRef<Comp, Props>(({ className, value, background }, ref) => (
   <ProgressPrimitive.Indicator
+    ref={ref}
     className={cn(progressIndicator({ background }), className)}
     style={{ transform: `translateX(-${100 - (value || 0)}%)` }}
   />
