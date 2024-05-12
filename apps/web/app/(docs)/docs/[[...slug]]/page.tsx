@@ -16,6 +16,8 @@ interface DocPageProps {
   }
 }
 
+export const runtime = 'edge'
+
 async function getDocFromParams(params: { slug?: any, params?: { slug: string[] } }) {
   const slug = params.slug?.join('/') || ''
   const doc = allDocs.find(doc => doc.slugAsParams === slug)
