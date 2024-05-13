@@ -4,10 +4,6 @@ export const docsConfig = {
       title: 'Documentation',
       href: '/docs',
     },
-    {
-      title: 'Guides',
-      href: '/guides',
-    },
   ],
   sidebarNav: [
     {
@@ -15,19 +11,19 @@ export const docsConfig = {
       items: [
         {
           title: 'Introduction',
-          href: '/docs',
+          href: '/docs/getting-started',
         },
         {
           title: 'Installation',
-          href: '/docs/installation',
+          href: '/docs/getting-started/installation',
         },
         {
           title: 'Typography',
-          href: '/docs/typography',
+          href: '/docs/getting-started/typography',
         },
         {
           title: 'Figma',
-          href: '/docs/figma',
+          href: '/docs/getting-started/figma',
         },
       ],
     },
