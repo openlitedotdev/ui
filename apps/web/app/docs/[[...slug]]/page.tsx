@@ -16,8 +16,6 @@ interface DocPageProps {
   }
 }
 
-export const runtime = 'edge'
-
 async function getDocFromParams(params: { slug?: any, params?: { slug: string[] } }) {
   const slug = params.slug?.join('/') || ''
   const doc = allDocs.find(doc => doc.slugAsParams === slug)
@@ -29,9 +27,7 @@ async function getDocFromParams(params: { slug?: any, params?: { slug: string[] 
   return doc
 }
 
-export async function generateMetadata({
-  params,
-}: DocPageProps): Promise<Metadata> {
+export async function generateMetadata({ params }: DocPageProps): Promise<Metadata> {
   const doc = await getDocFromParams(params)
 
   if (!doc)
