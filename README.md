@@ -57,7 +57,7 @@ _Loading_
 
 If you want to know more about this design system visit
 
-- [Documentation](https://openui-dd0.pages.dev/docs)
+- [Documentation](https://openui-org.vercel.app)
 
 ## License
 
