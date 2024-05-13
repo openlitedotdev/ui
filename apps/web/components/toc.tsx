@@ -88,12 +88,9 @@ function Tree({ tree, level = 1, activeItem }: TreeProps) {
             <li key={index} className={cn('mt-0 pt-2')}>
               <a
                 href={item.url}
-                className={cn(
-                  'inline-block no-underline',
-                  item.url === `#${activeItem}`
-                    ? 'font-medium text-primary'
-                    : 'text-sm text-muted-foreground',
-                )}
+                className={cn('inline-block no-underline', item.url === `#${activeItem}`
+                  ? 'font-medium text-primary'
+                  : 'text-small text-black')}
               >
                 {item.title}
               </a>
