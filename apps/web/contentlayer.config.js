@@ -22,17 +22,9 @@ export const Doc = defineDocumentType(() => ({
   filePathPattern: `docs/**/*.mdx`,
   contentType: 'mdx',
   fields: {
-    title: {
-      type: 'string',
-      required: true,
-    },
-    description: {
-      type: 'string',
-    },
-    published: {
-      type: 'boolean',
-      default: true,
-    },
+    title: { type: 'string', required: true },
+    description: { type: 'string', required: false },
+    date: { type: 'date', required: false },
   },
   computedFields,
 }))
