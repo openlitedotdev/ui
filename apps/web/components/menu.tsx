@@ -4,8 +4,7 @@ import { DocsSearch } from './docs-search'
 import { Icons } from './icons'
 
 const links = [
-  { name: 'Documentation', path: '/docs' },
-  { name: 'Components', path: '/docs/components/accordion' },
+  { name: 'Documentation', path: '/docs/getting-started/introduction' },
   { name: 'FAQ', path: '/faq' },
 ]
 
@@ -37,11 +36,6 @@ export default function Menu() {
 
             <DocsSearch />
             <div className="flex items-center gap-x-1">
-              <Button asChild variant="ghost" size="icon">
-                <Link href="https://github.com/Open-Lab-dev/openui">
-                  <Icons.Twitter className="size-6" />
-                </Link>
-              </Button>
               <Button asChild variant="ghost" size="icon">
                 <Link href="https://github.com/Open-Lab-dev/openui">
                   <Icons.GitHub className="size-6" />

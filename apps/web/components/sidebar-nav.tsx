@@ -59,7 +59,6 @@ export function DocsSidebarNavItems({ items }: DocsSidebarNavItemsProps) {
               href={item.href!}
               className="!font-light"
               target={item.external ? '_blank' : ''}
-              rel={item.external ? 'noreferrer' : ''}
             >
               {item.title}
             </Link>

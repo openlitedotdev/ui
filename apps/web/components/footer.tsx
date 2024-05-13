@@ -1,8 +1,7 @@
 import Link from 'next/link'
 
 const links = [
-  { name: 'Docs', path: '/' },
-  { name: 'Components', path: '/' },
+  { name: 'Docs', path: '/docs/getting-started/introduction' },
   { name: 'FAQ', path: '/' },
 ]
 
