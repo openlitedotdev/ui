@@ -43,6 +43,7 @@ export async function generateMetadata({ params }: DocPageProps): Promise<Metada
     return {}
 
   return {
+    metadataBase: new URL('https://openui-org.vercel.app'),
     title: doc.title,
     description: doc.description,
     openGraph: {
@@ -52,7 +53,7 @@ export async function generateMetadata({ params }: DocPageProps): Promise<Metada
       url: doc.url,
       images: [
         {
-          url: 'https://nextui.org/twitter-cards/next.svg',
+          url: 'https://openui-org.vercel.app/next.svg',
           width: 1200,
           height: 630,
           alt: 'open ui design system',
