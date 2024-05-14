@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { Button } from '@openui-org/react'
+import type { Dispatch, SetStateAction } from 'react'
 import { cn } from '@openui-org/theme'
 import type { NavItem } from './main-nav'
 
@@ -23,9 +24,10 @@ export type SidebarNavItem = {
 
 export interface DocsSidebarNavProps {
   items: SidebarNavItem[]
+  setOpen?: Dispatch<SetStateAction<boolean>>
 }
 
-export function DocsSidebarNav({ items }: DocsSidebarNavProps) {
+export function DocsSidebarNav({ items, setOpen }: DocsSidebarNavProps) {
   return items.length
     ? (
       <div className="w-full pr-2">
@@ -35,7 +37,12 @@ export function DocsSidebarNav({ items }: DocsSidebarNavProps) {
               {item.title}
             </h4>
             {item.items
-              ? (<DocsSidebarNavItems items={item.items} />)
+              ? (
+                <DocsSidebarNavItems
+                  items={item.items}
+                  setOpen={setOpen}
+                />
+                )
               : null}
           </div>
         ))}
@@ -46,9 +53,10 @@ export function DocsSidebarNav({ items }: DocsSidebarNavProps) {
 
 interface DocsSidebarNavItemsProps {
   items: SidebarNavItem[]
+  setOpen?: Dispatch<SetStateAction<boolean>>
 }
 
-export function DocsSidebarNavItems({ items }: DocsSidebarNavItemsProps) {
+export function DocsSidebarNavItems({ items, setOpen }: DocsSidebarNavItemsProps) {
   const path = usePathname()
   return items?.length
     ? (
@@ -59,6 +67,7 @@ export function DocsSidebarNavItems({ items }: DocsSidebarNavItemsProps) {
               href={item.href!}
               className="!font-light"
               target={item.external ? '_blank' : ''}
+              onClick={() => setOpen?.(false)}
             >
               {item.title}
             </Link>

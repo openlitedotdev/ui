@@ -1,7 +1,9 @@
+'use client'
 import { Button } from '@openui-org/react'
 import Link from 'next/link'
 import { DocsSearch } from './docs-search'
 import { Icons } from './icons'
+import MovilSidebar from './movil-sidebar-nav'
 
 const links = [
   { name: 'Documentation', path: '/docs/getting-started/introduction' },
@@ -42,24 +44,7 @@ export default function Menu() {
                 </Link>
               </Button>
             </div>
-            <Button variant="ghost" size="icon" className="relative lg:hidden ml-auto">
-              <span className=" absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="size-6"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth={2}
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M4 6h16M4 12h16M4 18h16"
-                  />
-                </svg>
-              </span>
-            </Button>
-
+            <MovilSidebar />
           </div>
         </div>
       </div>
