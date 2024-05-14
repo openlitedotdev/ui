@@ -68,6 +68,9 @@ const components = {
       {...props}
     />
   ),
+  div: ({ className, ...props }) => (
+    <div className={cn('mt-6', className)} {...props} />
+  ),
   a: ({ className, ...props }) => (
     <a
       className={cn('font-medium underline underline-offset-4', className)}
