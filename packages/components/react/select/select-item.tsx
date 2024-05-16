@@ -12,7 +12,8 @@ const SelectItem = React.forwardRef<Comp, Props>(({ className, children, ...prop
     <SelectPrimitive.Item
       ref={ref}
       className={cn(
-        selectItem({ className }),
+        selectItem(),
+        className,
       )}
       {...props}
     >
