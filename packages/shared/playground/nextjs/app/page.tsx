@@ -1,10 +1,24 @@
-import { Button, Slider } from '@openui-org/react'
+import { Button, Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrigger, Slider } from '@openui-org/react'
 
 export default function Home() {
   return (
     <>
+      <div className="w-72 p-20 m-auto">
+        <Select>
+          <SelectTrigger placeholder="Fruit" />
+          <SelectContent>
+            <SelectGroup>
+              <SelectItem value="apple">Apple</SelectItem>
+              <SelectItem value="banana">Banana</SelectItem>
+              <SelectItem value="blueberry">Blueberry</SelectItem>
+              <SelectItem value="grapes">Grapes</SelectItem>
+              <SelectItem value="pineapple">Pineapple</SelectItem>
+            </SelectGroup>
+          </SelectContent>
+        </Select>
+      </div>
       <div className="p-44 flex flex-col gap-3 items-center">
-        <button className="py-2 px-6 rounded-small shadow-large bg-primary text-primary-foreground">
+        <button className="py-2 px-6 rounded-small shadow-large bg-neutral text-primary-foreground">
           Example
         </button>
         <Slider defaultValue={[33]} max={90} step={1} />
