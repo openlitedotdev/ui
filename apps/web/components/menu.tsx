@@ -23,8 +23,8 @@ export default function Menu() {
             {' '}
             <b>UI</b>
           </Link>
-          <div className="hidden mr-4 lg:block">
-            <nav className="flex flex-col gap-2 mt-2 mb-4 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center">
+          <div className="hidden mr-4 md:block">
+            <nav className="flex gap-2 mt-2 mb-4 lg:mb-0 lg:mt-0 items-center">
               {links.map((link, i) => (
                 <Link key={i} href={link.path} className="p-1 text-small hover:text-black/80">
                   {link.name}
@@ -35,7 +35,6 @@ export default function Menu() {
         </div>
         <div className="flex items-center">
           <div className="flex items-center gap-4">
-
             <DocsSearch />
             <div className="flex items-center gap-x-1">
               <Button asChild variant="ghost" size="icon">
