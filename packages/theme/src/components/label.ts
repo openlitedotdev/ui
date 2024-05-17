@@ -15,13 +15,21 @@ export const label = cva(
   {
     variants: {
       size: {
-        small: 'text-small',
-        medium: 'text-medium',
-        large: 'text-large',
+        sm: 'text-small',
+        md: 'text-medium',
+        lg: 'text-large',
       },
-      defaultVariants: {
-        size: 'medium',
+      textColor: {
+        none: 'text-foreground/70',
+        primary: 'text-primary/80',
+        success: 'text-success/80',
+        warn: 'text-warn/80',
+        error: 'text-error/80',
       },
+    },
+    defaultVariants: {
+      size: 'md',
+      textColor: 'none',
     },
   },
 )
