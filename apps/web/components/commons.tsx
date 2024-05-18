@@ -55,7 +55,7 @@ export default function Commons() {
         <div className="flex flex-col items-center justify-center space-y-8 text-center">
           <div className="space-y-2">
             <Badge color="none" outline="primary">
-              Key components
+              Key components 👋
             </Badge>
             <h2 className="text-3xl font-bold pt-4 pb-2 tracking-tighter sm:text-4xl md:text-5xl">
               Beautifully Designed Components
