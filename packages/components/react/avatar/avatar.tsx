@@ -1,14 +1,15 @@
 import React from 'react'
 import * as AvatarPrimitive from '@radix-ui/react-avatar'
+import type { VariantProps } from '@openui-org/theme'
 import { avatar, cn } from '@openui-org/theme'
 
 export interface Comp extends React.ElementRef<typeof AvatarPrimitive.Root> {}
-export interface Props extends React.ComponentPropsWithoutRef<typeof AvatarPrimitive.Root> {}
+export interface Props extends React.ComponentPropsWithoutRef<typeof AvatarPrimitive.Root>, VariantProps<typeof avatar> {}
 
-const Avatar = React.forwardRef<Comp, Props>(({ className, ...props }, ref) => (
+const Avatar = React.forwardRef<Comp, Props>(({ className, size, ...props }, ref) => (
   <AvatarPrimitive.Root
     ref={ref}
-    className={cn(avatar(), className)}
+    className={cn(avatar({ size }), className)}
     {...props}
   />
 ))
