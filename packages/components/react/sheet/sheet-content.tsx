@@ -1,22 +1,23 @@
 import React from 'react'
 import * as SheetPrimitive from '@radix-ui/react-dialog'
 import { cn, sheetContent } from '@openui-org/theme'
+import type { VariantProps } from '@openui-org/theme'
 import SheetOverlay from './sheet-overlay'
 import SheetPortal from './sheet-portal'
 
 export interface Props extends React.ComponentPropsWithoutRef<typeof SheetPrimitive.Content>,
-  React.ComponentPropsWithoutRef<'div'> {
+  VariantProps<typeof sheetContent> {
   side?: 'left' | 'right'
 }
 
 export interface Comp extends React.ElementRef<typeof SheetPrimitive.Content> {}
 
-const SheetContent = React.forwardRef<Comp, Props>(({ side = 'right', className, children, ...props }, ref) => (
+const SheetContent = React.forwardRef<Comp, Props>(({ side = 'right', shadow, className, children, ...props }, ref) => (
   <SheetPortal>
     <SheetOverlay />
     <SheetPrimitive.Content
       ref={ref}
-      className={cn(sheetContent({ side }), className)}
+      className={cn(sheetContent({ side, shadow }), className)}
       {...props}
     >
       <div className="relative">
