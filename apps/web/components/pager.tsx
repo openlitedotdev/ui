@@ -17,7 +17,7 @@ export function DocsPager({ doc }: DocsPagerProps) {
   return (
     <div className="flex flex-row items-center justify-between">
       {pager?.prev && (
-        <Button asChild variant="ghost">
+        <Button asChild color="ghost">
           <Link
             href={pager.prev.href}
           >
@@ -27,7 +27,7 @@ export function DocsPager({ doc }: DocsPagerProps) {
         </Button>
       )}
       {pager?.next && (
-        <Button asChild variant="ghost">
+        <Button asChild color="ghost">
           <Link
             href={pager.next.href}
           >

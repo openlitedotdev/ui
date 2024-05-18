@@ -3,13 +3,13 @@ import type { VariantProps } from '@openui-org/theme'
 import { badge, cn } from '@openui-org/theme'
 
 export interface Comp extends HTMLDivElement {}
-export interface Props extends React.HTMLAttributes<HTMLDivElement>, VariantProps<typeof badge> {}
+export type Props = React.HTMLAttributes<HTMLDivElement> & VariantProps<typeof badge>
 
-const Badge = React.forwardRef<Comp, Props>(({ className, variant, ...props }, ref) => (
+const Badge = React.forwardRef<Comp, Props>(({ className, color, shadow, outline, rounded, ...props }, ref) => (
   <div
     ref={ref}
     role="alert"
-    className={cn(badge({ variant }), className)}
+    className={cn(badge({ color, shadow, outline, rounded }), className)}
     {...props}
   />
 ))
