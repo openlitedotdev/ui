@@ -68,7 +68,7 @@ To start developing with Open UI, follow these steps:
 1. Start the development to docs:
 
    ```
-   pnpm dev-web
+   pnpm dev
    ```
 
    Happy coding!
