@@ -7,7 +7,7 @@ import TableHeader from './table-header'
 import TableFooter from './table-footer'
 import TableCaption from './table-caption'
 
-export type { Comp as TableComponent, Props as TableProps } from './table'
+export type { Props as TableProps } from './table'
 export type { Comp as TableBodyComponent, Props as TableBodyProps } from './table-body'
 export type { Comp as TableCellComponent, Props as TableCellProps } from './table-cell'
 export type { Comp as TableHeadComponent, Props as TableHeadProps } from './table-Head'

@@ -1,18 +1,29 @@
 import * as React from 'react'
 import { cn, table } from '@openui-org/theme'
+import type { VariantProps } from '@openui-org/theme'
+import { Slot } from '@radix-ui/react-slot'
 
-export interface Props extends React.HTMLAttributes<HTMLTableElement> {}
-export interface Comp extends HTMLTableElement {}
+export interface Props extends React.HTMLAttributes<HTMLTableElement>,
+  VariantProps<typeof table> {
+  asChild?: boolean
+  children?: React.ReactNode
+}
+interface Comp extends HTMLTableElement {}
 
-const Table = React.forwardRef<Comp, Props>(({ className, ...props }, ref) => (
-  <div className="relative w-full overflow-auto">
-    <table
-      ref={ref}
-      className={cn(table(), className)}
-      {...props}
-    />
-  </div>
-))
+const Table = React.forwardRef<Comp, Props>(({ className, children, asChild = false, ...props }, ref) => {
+  const Comp = asChild ? Slot : 'table'
+  return (
+    <div className="relative w-full overflow-auto p-4">
+      <Comp
+        ref={ref}
+        className={cn(table(), className)}
+        {...props}
+      >
+        {children}
+      </Comp>
+    </div>
+  )
+})
 
 Table.displayName = 'Table'
 
