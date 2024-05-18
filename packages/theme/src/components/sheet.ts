@@ -70,7 +70,7 @@ export const sheetOverlay = cva('fixed inset-0 z-50 bg-black/80  data-[state=ope
  *   // SheetContent elements
  * </SheetContent>
  */
-export const sheetContent = cva('fixed z-50 gap-4 bg-background p-6 shadow-large transition ease-in-out data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:duration-300 data-[state=open]:duration-500', {
+export const sheetContent = cva('fixed z-50 bg-background border-foreground/20 gap-4 p-6 transition ease-in-out data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:duration-300 data-[state=open]:duration-500', {
   variants: {
     side: {
       top: 'inset-x-0 top-0 border-b data-[state=closed]:slide-out-to-top data-[state=open]:slide-in-from-top',
@@ -80,9 +80,16 @@ export const sheetContent = cva('fixed z-50 gap-4 bg-background p-6 shadow-large
       right:
         'inset-y-0 right-0 h-full w-3/4  border-l data-[state=closed]:slide-out-to-right data-[state=open]:slide-in-from-right sm:max-w-sm',
     },
+    shadow: {
+      none: 'shadow-none',
+      sm: 'shadow-small',
+      md: 'shadow-medium',
+      lg: 'shadow-large',
+    },
   },
   defaultVariants: {
     side: 'right',
+    shadow: 'none',
   },
 })
 
@@ -132,4 +139,4 @@ export const sheetTitle = cva('text-lg font-semibold text-foreground')
  *   // SheetDescription elements
  * </SheetDescription>
  */
-export const sheetDescription = cva('text-small text-muted-foreground')
+export const sheetDescription = cva('text-small text-foreground')
