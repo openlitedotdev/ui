@@ -10,7 +10,35 @@ import { cva } from 'class-variance-authority'
  *   // accordion elements
  * </Card>
  */
-export const card = cva('rounded-large border shadow-small')
+export const card = cva('cursor-pointer', {
+  variants: {
+    rounded: {
+      none: 'rounded-none',
+      sm: 'rounded-small',
+      md: 'rounded-medium',
+      lg: 'rounded-large',
+    },
+
+    shadow: {
+      none: 'shadow-none',
+      sm: 'shadow-small',
+      md: 'shadow-medium',
+      lg: 'shadow-large',
+    },
+
+    border: {
+      none: 'border-none',
+      sm: 'border-small',
+      md: 'border-medium',
+      lg: 'border-large',
+    },
+  },
+  defaultVariants: {
+    rounded: 'sm',
+    shadow: 'sm',
+    border: 'none',
+  },
+})
 
 /**
  * Card wrapper **Class Variants** component
@@ -22,7 +50,20 @@ export const card = cva('rounded-large border shadow-small')
  *   // accordion elements
  * </CardHeader>
  */
-export const cardHeader = cva('flex flex-col space-y-1.5 p-6')
+export const cardHeader = cva('flex flex-col space-y-1.5 py-3', {
+  variants: {
+    padded: {
+      none: 'p-0',
+      sm: 'p-3',
+      md: 'p-6',
+      lg: 'p-9',
+    },
+  },
+
+  defaultVariants: {
+    padded: 'sm',
+  },
+})
 
 /**
  * Card wrapper **Class Variants** component
@@ -34,7 +75,18 @@ export const cardHeader = cva('flex flex-col space-y-1.5 p-6')
  *   // accordion elements
  * </CardTitle>
  */
-export const cardTitle = cva('font-semibold leading-none tracking-tight')
+export const cardTitle = cva('leading-none tracking-tight pt-3', {
+  variants: {
+    size: {
+      sm: 'text-small font-medium',
+      md: 'text-medium font-semibold',
+      lg: 'text-large font-bold',
+    },
+  },
+  defaultVariants: {
+    size: 'md',
+  },
+})
 
 /**
  * Card wrapper **Class Variants** component
@@ -46,7 +98,7 @@ export const cardTitle = cva('font-semibold leading-none tracking-tight')
  *   // accordion elements
  * </CardDescription>
  */
-export const cardDescription = cva('text-small')
+export const cardDescription = cva('text-small text-pretty py-3')
 
 /**
  * Card wrapper **Class Variants** component
@@ -58,7 +110,20 @@ export const cardDescription = cva('text-small')
  *   // accordion elements
  * </CardContent>
  */
-export const cardContent = cva('p-6 pt-0')
+export const cardContent = cva('py-2', {
+  variants: {
+    padded: {
+      none: 'p-0',
+      sm: 'p-3',
+      md: 'p-6',
+      lg: 'p-9',
+    },
+  },
+
+  defaultVariants: {
+    padded: 'sm',
+  },
+})
 
 /**
  * Card wrapper **Class Variants** component
@@ -70,4 +135,17 @@ export const cardContent = cva('p-6 pt-0')
  *   // accordion elements
  * </cardFooter>
  */
-export const cardFooter = cva('flex items-center p-6 pt-0')
+export const cardFooter = cva('flex items-center gap-2', {
+  variants: {
+    padded: {
+      none: 'p-0',
+      sm: 'p-3 pt-0',
+      md: 'p-6 pt-0',
+      lg: 'p-9 pt-0',
+    },
+  },
+
+  defaultVariants: {
+    padded: 'sm',
+  },
+})
