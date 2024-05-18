@@ -10,7 +10,18 @@ import { cva } from 'class-variance-authority'
  *   // alert elements
  * </Avatar>
  */
-export const avatar = cva('relative flex size-10 shrink-0 overflow-hidden rounded-full')
+export const avatar = cva('relative flex shrink-0 overflow-hidden rounded-full', {
+  variants: {
+    size: {
+      sm: 'size-8',
+      md: 'size-10',
+      lg: 'size-12',
+    },
+  },
+  defaultVariants: {
+    size: 'sm',
+  },
+})
 
 /**
  * Avatar wrapper **Class Variants** component
