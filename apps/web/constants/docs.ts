@@ -149,5 +149,34 @@ export const docsConfig = {
         },
       ],
     },
+    {
+      title: 'API',
+      items: [
+        {
+          title: 'Theme',
+          href: '/docs/api/theme',
+        },
+        {
+          title: 'Layout',
+          href: '/docs/api/layout',
+        },
+        {
+          title: 'Colors',
+          href: '/docs/api/colors',
+        },
+        {
+          title: 'Customization',
+          href: '/docs/api/customization',
+        },
+        {
+          title: 'Dark Mode',
+          href: '/docs/api/dark-mode',
+        },
+        {
+          title: 'Custom Variants',
+          href: '/docs/api/custom-variants',
+        },
+      ],
+    },
   ],
 }
