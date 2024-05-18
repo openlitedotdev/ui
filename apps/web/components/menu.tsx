@@ -37,7 +37,7 @@ export default function Menu() {
           <div className="flex items-center gap-4">
             <DocsSearch />
             <div className="flex items-center gap-x-1">
-              <Button asChild variant="ghost" size="icon">
+              <Button asChild color="ghost" size="icon" className="p-2">
                 <Link href="https://github.com/Open-Lab-dev/openui">
                   <Icons.GitHub className="size-6" />
                 </Link>

@@ -10,16 +10,42 @@ import { cva } from 'class-variance-authority'
  *   // alert elements
  * </Badge>
  */
-export const badge = cva('inline-flex items-center rounded-full border px-2.5 py-0.5 text-small font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2', {
+export const badge = cva('inline-flex gap-2 items-center px-2.5 py-0.5 text-small font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2', {
   variants: {
-    variant: {
-      default: 'border-transparent bg-primary hover:bg-primary/80',
-      secondary: 'border-transparent bg-secondary  hover:bg-secondary/80',
-      error: 'border-transparent bg-error hover:bg-error/80',
-      outline: 'text-foreground',
+    color: {
+      none: 'bg-transparent',
+      primary: 'bg-primary/90 text-primary-foreground hover:bg-primary/90',
+      error: 'bg-error text-error-foreground hover:bg-error/80',
+      success: 'bg-success text-success-foreground hover:bg-success/80',
+      warn: 'bg-warn text-warn-foreground hover:bg-warn/80',
     },
-    defaultVariants: {
-      variant: 'default',
+
+    shadow: {
+      none: 'shadow-none',
+      sm: 'shadow-small',
+      md: 'shadow-medium',
+      lg: 'shadow-large',
     },
+
+    outline: {
+      none: 'border-none',
+      primary: 'border border-primary text-primary/80',
+      error: 'border border-error text-error/80',
+      success: 'border border-success text-success/80',
+      warn: 'border border-warn text-warn/80',
+    },
+
+    rounded: {
+      none: 'rounded-none',
+      sm: 'rounded-small',
+      md: 'rounded-medium',
+      lg: 'rounded-large',
+    },
+  },
+  defaultVariants: {
+    color: 'primary',
+    shadow: 'none',
+    outline: 'none',
+    rounded: 'sm',
   },
 })

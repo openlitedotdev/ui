@@ -13,10 +13,10 @@ export default function Home() {
           Open UI is an open source design system with a completely cutting-edge system. Fully customizable and modifiable you will make UI development much faster with fully stylized components.
         </p>
         <div className="space-x-4 mt-4">
-          <Button asChild variant="primary" size="lg" className="bg-black hover:bg-black/80" rippleColor="light">
+          <Button asChild color="primary" size="lg" className="bg-black hover:bg-black/80" rippleColor="light">
             <Link href="/docs">Get Started</Link>
           </Button>
-          <Button asChild variant="ghost" size="lg" className="border">
+          <Button asChild color="ghost" size="lg" className="border">
             <Link href="/https://github.com/OpenLab-dev" target="_blank">Github</Link>
           </Button>
         </div>

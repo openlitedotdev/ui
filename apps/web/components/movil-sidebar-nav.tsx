@@ -8,7 +8,7 @@ export default function MovilSidebar() {
   return (
     <Sheet open={open} onOpenChange={setOpen}>
       <SheetTrigger asChild>
-        <Button variant="ghost" size="icon" className="relative md:hidden ml-auto">
+        <Button color="ghost" size="icon" className="relative md:hidden ml-auto">
           <span className=" absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
