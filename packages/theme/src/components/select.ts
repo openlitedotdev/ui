@@ -93,7 +93,7 @@ export const selectScrollDownButton = cva('flex cursor-default items-center just
  *   // SelectContent elements
  * </SelectContent>
  */
-export const selectContent = cva('relative top-1 w-64 bg-background dark:bg-white/10 left-0 z-50 overflow-hidden rounded-medium shadow-medium data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2')
+export const selectContent = cva('relative top-1 w-64 bg-background dark:bg-white/10 left-0 z-50 overflow-hidden rounded-medium shadow-medium data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2')
 
 /**
  * Select wrapper **Class Variants** component
@@ -117,7 +117,7 @@ export const selectLabel = cva('py-1.5 px-8 text-small font-semibold')
  *   // SelectItem elements
  * </SelectItem>
  */
-export const selectItem = cva('relative flex w-full cursor-default select-none items-center rounded-small py-1.5 px-8 text-small outline-none hover:bg-neutral data-[disabled]:pointer-events-none data-[disabled]:opacity-50 focus-within:bg-neutral')
+export const selectItem = cva('relative flex w-full cursor-default select-none items-center rounded-small py-1.5 px-8 text-small outline-none hover:bg-foreground/10 data-[disabled]:pointer-events-none data-[disabled]:opacity-50 focus-within:bg-foreground/10')
 
 /**
  * Select wrapper **Class Variants** component
@@ -127,4 +127,4 @@ export const selectItem = cva('relative flex w-full cursor-default select-none i
  * @example
  * <SelectSeparator role="group" className={styles())} />
  */
-export const selectSeparator = cva('-mx-1 my-1 h-px bg-neutral')
+export const selectSeparator = cva('-mx-1 my-1 h-px bg-foreground/10')
