@@ -5,14 +5,14 @@ import { cn, popoverContent } from '@openui-org/theme'
 export interface Props extends React.ComponentPropsWithoutRef<typeof PopoverPrimitive.Content> {}
 export interface Comp extends React.ElementRef<typeof PopoverPrimitive.Content> {}
 
-const PopoverContent = React.forwardRef<Comp, Props>(({ className, align = 'center', sideOffset = 4, ...props }, ref) => (
+const PopoverContent = React.forwardRef<Comp, Props>(({ className, shadow, align = 'center', sideOffset = 4, ...props }, ref) => (
   <PopoverPrimitive.Portal>
     <PopoverPrimitive.Content
       ref={ref}
       align={align}
       sideOffset={sideOffset}
       className={cn(
-        popoverContent(),
+        popoverContent({ shadow }),
         className,
       )}
       {...props}
