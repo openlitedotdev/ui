@@ -22,7 +22,6 @@ const DialogContent = React.forwardRef<Comp, Props>(({ className, children, ...p
           <path d="M18 6 6 18" />
           <path d="m6 6 12 12" />
         </svg>
-        <span className="sr-only">Close</span>
       </DialogClose>
     </DialogPrimitive.Content>
   </DialogPortal>

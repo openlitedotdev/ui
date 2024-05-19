@@ -8,8 +8,8 @@ export const colors: BaseColors = {
     foreground: {
       DEFAULT: '#000000',
     },
-    error: {
-      DEFAULT: '#ff4757',
+    default: {
+      DEFAULT: '#d4d4d4',
       foreground: '#ffffff',
     },
     primary: {
@@ -22,6 +22,10 @@ export const colors: BaseColors = {
     },
     warn: {
       DEFAULT: '#FFBA00',
+      foreground: '#ffffff',
+    },
+    error: {
+      DEFAULT: '#ff4757',
       foreground: '#ffffff',
     },
   },
@@ -32,8 +36,8 @@ export const colors: BaseColors = {
     foreground: {
       DEFAULT: '#ffffff',
     },
-    error: {
-      DEFAULT: '#ff4757',
+    default: {
+      DEFAULT: '#262626',
       foreground: '#ffffff',
     },
     primary: {
@@ -46,6 +50,10 @@ export const colors: BaseColors = {
     },
     warn: {
       DEFAULT: '#FFBA00',
+      foreground: '#ffffff',
+    },
+    error: {
+      DEFAULT: '#ff4757',
       foreground: '#ffffff',
     },
   },

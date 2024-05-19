@@ -2,7 +2,9 @@ export const animations = {
   animation: {
     'pulse': 'pulse 1s ease-in-out',
     'pop': 'pop 0.6s ease-out',
-    'pulse-fade-in': 'pulse-fade-in 0.6s ease-out',
+    'pulse-fade-in': 'pulse-fade-in 0.3s ease-out',
+    'dialog-in': 'dialog-in 0.3s ease-out',
+    'dialog-out': 'dialog-out 0.3s ease-out',
   },
   keyframes: {
     'pulse': {
@@ -39,6 +41,26 @@ export const animations = {
       '100%': {
         transform: 'scale(1)',
         opacity: '1',
+      },
+    },
+    'dialog-in': {
+      '0%': {
+        transform: 'translate(-50%, -50%) scale(0.9)',
+        opacity: '0',
+      },
+      '100%': {
+        transform: 'translate(-50%, -50%) scale(1)',
+        opacity: '1',
+      },
+    },
+    'dialog-out': {
+      '0%': {
+        transform: 'translate(-50%, -50%) scale(1)',
+        opacity: '1',
+      },
+      '100%': {
+        transform: 'translate(-50%, -50%) scale(0.9)',
+        opacity: '0',
       },
     },
   },

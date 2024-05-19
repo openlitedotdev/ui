@@ -4,6 +4,7 @@ export type Color = | Partial<{ foreground: string, DEFAULT: string }> | string
 export interface Colors {
   background: Color
   foreground: Color
+  default: Color
   primary: Color
   success: Color
   warn: Color
