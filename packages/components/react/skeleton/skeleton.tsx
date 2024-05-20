@@ -8,13 +8,12 @@ export interface Props extends React.HTMLAttributes<HTMLDivElement>,
 function Skeleton({
   className,
   rounded,
-  icons,
   children,
   ...props
 }: Props) {
   return (
     <div
-      className={cn(skeleton({ rounded, icons }), className)}
+      className={cn(skeleton({ rounded }), className)}
       {...props}
     >
       {children}
