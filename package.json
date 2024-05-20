@@ -2,7 +2,6 @@
   "name": "@openui-org/monorepo",
   "type": "module",
   "private": true,
-  "packageManager": "pnpm@9.1.1",
   "scripts": {
     "dev": "pnpm web",
     "lint": "eslint . --fix",

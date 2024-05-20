@@ -1,4 +1,3 @@
-import { Button, Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@openui-org/react'
 import Playground from '@/components/playground'
 
 export default function Home() {
