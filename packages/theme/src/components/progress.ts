@@ -11,7 +11,7 @@ import { cva } from 'class-variance-authority'
  * </Progress>
  */
 
-export const progress = cva('relative bg-foreground/10 w-full overflow-hidden rounded-full', {
+export const progress = cva('relative bg-default w-full overflow-hidden rounded-full', {
   variants: {
     size: {
       sm: 'h-2',
