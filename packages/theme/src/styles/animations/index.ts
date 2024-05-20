@@ -5,6 +5,8 @@ export const animations = {
     'pulse-fade-in': 'pulse-fade-in 0.3s ease-out',
     'dialog-in': 'dialog-in 0.3s ease-out',
     'dialog-out': 'dialog-out 0.3s ease-out',
+    'pulse-infinite': 'pulse-infinite 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+
   },
   keyframes: {
     'pulse': {
@@ -16,6 +18,17 @@ export const animations = {
       },
       '100%': {
         transform: 'scale(1)',
+      },
+    },
+    'pulse-infinite': {
+      '0%': {
+        opacity: 1,
+      },
+      '50%': {
+        opacity: 0.5,
+      },
+      '100%': {
+        opacity: 1,
       },
     },
     'pop': {
