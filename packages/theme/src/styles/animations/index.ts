@@ -6,7 +6,8 @@ export const animations = {
     'dialog-in': 'dialog-in 0.3s ease-out',
     'dialog-out': 'dialog-out 0.3s ease-out',
     'pulse-infinite': 'pulse-infinite 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-
+    'dropdown-in': 'dropdown-in 0.3s ease-out',
+    'dropdown-out': 'dropdown-out 0.3s ease-out',
   },
   keyframes: {
     'pulse': {
@@ -73,6 +74,26 @@ export const animations = {
       },
       '100%': {
         transform: 'translate(-50%, -50%) scale(0.9)',
+        opacity: '0',
+      },
+    },
+    'dropdown-in': {
+      '0%': {
+        transform: 'scale(0.9)',
+        opacity: '0',
+      },
+      '100%': {
+        transform: 'scale(1)',
+        opacity: '1',
+      },
+    },
+    'dropdown-out': {
+      '0%': {
+        transform: 'scale(1)',
+        opacity: '1',
+      },
+      '100%': {
+        transform: 'scale(.9)',
         opacity: '0',
       },
     },
