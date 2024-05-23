@@ -11,13 +11,13 @@ import { cva } from 'class-variance-authority'
  * </Label>
  */
 export const label = cva(
-  'text-small font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70',
+  'font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70',
   {
     variants: {
       size: {
-        sm: 'text-small',
-        md: 'text-medium',
-        lg: 'text-large',
+        sm: 'text-sm',
+        md: 'text-md',
+        lg: 'text-lg',
       },
       textColor: {
         none: 'text-foreground/70',
