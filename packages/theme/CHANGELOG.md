@@ -1,5 +1,11 @@
 # @openui-org/theme
 
+## 2.1.0
+
+### Minor Changes
+
+- 3d4c1c7: New styles for components
+
 ## 2.0.0
 
 ### Major Changes
