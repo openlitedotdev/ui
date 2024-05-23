@@ -1,5 +1,11 @@
 # @openui-org/theme
 
+## 2.1.2
+
+### Patch Changes
+
+- Update @openui-org/theme
+
 ## 2.1.1
 
 ### Patch Changes
