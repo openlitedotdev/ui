@@ -1,5 +1,18 @@
 # @openui-org/vue
 
+## 0.0.4
+
+### Patch Changes
+
+- Update version vue
+
+## 0.2.3
+
+### Patch Changes
+
+- Updated dependencies
+  - @openui-org/theme@2.1.2
+
 ## 0.2.2
 
 ### Patch Changes
