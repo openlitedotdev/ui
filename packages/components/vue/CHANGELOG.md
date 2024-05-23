@@ -1,5 +1,12 @@
 # @openui-org/vue
 
+## 0.2.2
+
+### Patch Changes
+
+- Updated dependencies [4986da1]
+  - @openui-org/theme@2.1.1
+
 ## 0.2.1
 
 ### Patch Changes
