@@ -1,5 +1,13 @@
 # @openui-org/react
 
+## 2.1.1
+
+### Patch Changes
+
+- 4986da1: Fix publish packages
+- Updated dependencies [4986da1]
+  - @openui-org/theme@2.1.1
+
 ## 2.1.0
 
 ### Minor Changes

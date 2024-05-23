@@ -1,7 +1,7 @@
 {
   "name": "@openui-org/vue",
   "type": "module",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Open UI. OpenLand's official framework design system 🎨",
   "author": "Open Lab",
   "license": "MIT",
