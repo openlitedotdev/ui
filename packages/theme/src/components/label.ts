@@ -15,9 +15,9 @@ export const label = cva(
   {
     variants: {
       size: {
-        sm: 'text-sm',
-        md: 'text-md',
-        lg: 'text-lg',
+        sm: 'text-small',
+        md: 'text-medium',
+        lg: 'text-large',
       },
       textColor: {
         none: 'text-foreground/70',

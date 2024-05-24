@@ -3,24 +3,14 @@ import { Label } from 'radix-vue'
 import { cn, label } from '@openui-org/theme'
 
 interface Props {
-    size?: NonNullable<Parameters<typeof label>[0]>['size']
-    textColor?: NonNullable<Parameters<typeof label>[0]>['textColor']
-    as?: string
+  size?: NonNullable<Parameters<typeof label>[0]>['size']
+  textColor?: NonNullable<Parameters<typeof label>[0]>['textColor']
 }
-
-withDefaults(defineProps<Props>(), {
-  as: 'label',
-})
-
+withDefaults(defineProps<Props>(), {})
 </script>
 
 <template>
-  <Label
-    :class="
-      cn(
-        label({ size, textColor }, $attrs.class ?? ''))
-    "
-    >
+  <Label :class="cn(label({ size, textColor }, $attrs.class ?? ''))">
     <slot />
   </Label>
 </template>
