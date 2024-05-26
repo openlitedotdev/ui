@@ -1,10 +1,9 @@
-name: Deployed on Deno Deploy
-
+name: Deploy
 on:
   push:
-    branches: master
+    branches: main
   pull_request:
-    branches: master
+    branches: main
 
 jobs:
   deploy:
@@ -24,26 +23,20 @@ jobs:
         with:
           deno-version: v1.x
 
-      - name: Install pnpm
-        uses: pnpm/action-setup@v3
-
       - name: Install Node.js
         uses: actions/setup-node@v4
         with:
           node-version: lts/*
-          cache: pnpm
-
-      - run: corepack enable
 
       - name: Install step
-        run: pnpm install
+        run: "pnpm install"
 
       - name: Build step
-        run: pnpm build
+        run: "pnpm build"
 
       - name: Upload to Deno Deploy
         uses: denoland/deployctl@v1
         with:
-          project: openui
-          entrypoint: apps/web/out
-          root: https://deno.land/std@0.217.0/http/file_server.ts
+          project: "openui"
+          entrypoint: "apps/web/out"
+          root: "https://deno.land/std@0.217.0/http/file_server.ts"
