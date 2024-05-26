@@ -28,9 +28,9 @@ export const card = cva('cursor-pointer', {
 
     border: {
       none: 'border-none',
-      sm: 'border-small',
-      md: 'border-medium',
-      lg: 'border-large',
+      sm: 'border border-default',
+      md: 'border-2 boder-default',
+      lg: 'border-4 boder-default',
     },
   },
   defaultVariants: {

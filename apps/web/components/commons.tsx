@@ -1,4 +1,4 @@
-import { Badge, Card, CardContent, CardHeader } from '@openui-org/react'
+import { Badge, Card, CardContent, CardDescription, CardHeader, CardTitle } from '@openui-org/react'
 import {
   CreditCardIcon,
   FileInputIcon,
@@ -8,6 +8,7 @@ import {
   NavigationIcon,
 } from 'lucide-react'
 import Link from 'next/link'
+import Title from './title'
 
 const cards = [
   {
@@ -57,9 +58,9 @@ export default function Commons() {
             <Badge color="none" outline="primary">
               Key components 👋
             </Badge>
-            <h2 className="text-3xl font-bold pt-4 pb-2 tracking-tighter sm:text-4xl md:text-5xl">
+            <Title>
               Beautifully Designed Components
-            </h2>
+            </Title>
             <p className="max-w-[900px] text-gray-500 text-base">
               Explore our collection of carefully crafted components that you can use to build your next web application.
             </p>
@@ -67,13 +68,15 @@ export default function Commons() {
           <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:gap-8">
             {cards.map((card, i) => (
               <Link key={i} href={card.path}>
-                <Card className="border-none shadow-medium cursor-pointer hover:scale-105 transition-transform h-full">
+                <Card className="cursor-pointer hover:scale-105 transition-all h-full hover:bg-default hover:shadow-md" shadow="none" border="sm" ripple>
                   <CardHeader>
                     <card.Icon className="size-8" />
                   </CardHeader>
                   <CardContent>
-                    <h3 className="text-lg font-semibold">{card.title}</h3>
-                    <p className="text-sm">{card.description}</p>
+                    <CardTitle>{card.title}</CardTitle>
+                    <CardDescription>
+                      {card.description}
+                    </CardDescription>
                   </CardContent>
                 </Card>
               </Link>

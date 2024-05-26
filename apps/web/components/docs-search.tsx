@@ -29,7 +29,7 @@ export function DocsSearch({ className, ...props }: DocsSearchProps) {
         placeholder="Search..."
         className="rounded-large py-0 relative border"
       />
-      <Search className="absolute right-0 top-1/2 -translate-x-1/2 -translate-y-1/2 text-black/50" />
+      <Search className="absolute right-0 top-1/2 -translate-x-1/2 -translate-y-1/2 text-foreground" />
     </form>
   )
 }
