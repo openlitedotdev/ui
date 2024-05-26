@@ -41,5 +41,5 @@ jobs:
         uses: denoland/deployctl@v1
         with:
           project: "openui"
-          entrypoint: "apps/web/out"
+          entrypoint: "apps/web/.next/standalone"
           root: "https://deno.land/std@0.217.0/http/file_server.ts"
