@@ -15,7 +15,7 @@
     "clean-lock": "rimraf ./pnpm-lock.yaml",
     "compile": "turbo compile --filter=!@openui-org/docs --filter=!@openui-org/storybook",
     "build": "turbo build --filter=!@openui-org/docs --filter=!@openui-org/storybook --filter=!@openui-org/playground-next --filter=!@openui-org/playground-vue --filter=!@openui-org/web",
-    "build-web": "turbo build --filter=@openui-org/web --filter=!@openui-org/storybook --filter=!@openui-org/playground-next --filter=!@openui-org/playground-vue",
+    "build-web": "pnpm -r --filter @openui-org/web build",
     "postinstall": "esno ./.github/prepare.ts && pnpm --filter @openui-org/theme build",
     "release": "pnpm build && pnpm changeset version && pnpm changeset publish"
   },
