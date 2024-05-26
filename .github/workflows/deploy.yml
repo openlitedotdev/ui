@@ -35,7 +35,7 @@ jobs:
         run: "pnpm install"
 
       - name: Build step
-        run: "pnpm build"
+        run: "pnpm build-web"
 
       - name: Upload to Deno Deploy
         uses: denoland/deployctl@v1
