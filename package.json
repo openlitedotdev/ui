@@ -6,7 +6,6 @@
   "scripts": {
     "dev": "pnpm web",
     "lint": "eslint . --fix",
-    "prepare": "husky",
     "dev-playground-next": "turbo dev --filter=@openui-org/playground-next",
     "dev-playground-vue": "turbo dev --filter=@openui-org/playground-vue",
     "web": "turbo dev --filter=@openui-org/web",
@@ -17,7 +16,7 @@
     "compile": "turbo compile --filter=!@openui-org/docs --filter=!@openui-org/storybook",
     "build": "turbo build --filter=!@openui-org/docs --filter=!@openui-org/storybook --filter=!@openui-org/playground-next --filter=!@openui-org/playground-vue --filter=!@openui-org/web",
     "build-web": "turbo build --filter=@openui-org/web --filter=!@openui-org/storybook --filter=!@openui-org/playground-next --filter=!@openui-org/playground-vue",
-    "postinstall": "husky install && pnpm --filter @openui-org/theme build",
+    "postinstall": "esno ./.github/prepare.ts && pnpm --filter @openui-org/theme build",
     "release": "pnpm build && pnpm changeset version && pnpm changeset publish"
   },
   "devDependencies": {
@@ -26,10 +25,20 @@
     "@types/node": "^20.11.28",
     "eslint": "^8.57.0",
     "eslint-plugin-format": "^0.1.0",
-    "husky": "^9.0.11",
+    "esno": "^4.7.0",
+    "execa": "^9.1.0",
     "lint-staged": "^15.2.2",
     "rimraf": "^5.0.5",
+    "simple-git-hooks": "^2.11.1",
     "turbo": "^1.13.3"
+  },
+  "pnpm": {
+    "allowedDeprecatedVersions": {
+      "querystring": "0.2.1"
+    }
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged"
   },
   "lint-staged": {
     "*": "eslint . --fix"

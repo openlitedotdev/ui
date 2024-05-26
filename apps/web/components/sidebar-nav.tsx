@@ -62,10 +62,10 @@ export function DocsSidebarNavItems({ items, setOpen }: DocsSidebarNavItemsProps
     ? (
       <div className="flex flex-col justify-start items-start text-small">
         {items.map((item, index) => (
-          <Button key={index} asChild color="ghost" className={cn('w-full flex justify-start items-start', path === item.href ? 'bg-black/10' : 'bg-transparent')}>
+          <Button key={index} asChild color="ghost" className={cn('w-full flex justify-start items-start', path === item.href ? 'bg-default hover:bg-default/80' : 'bg-transparent')} rippleColor="light">
             <Link
               href={item.href!}
-              className="!font-light"
+              className="!font-normal"
               target={item.external ? '_blank' : ''}
               onClick={() => setOpen?.(false)}
             >

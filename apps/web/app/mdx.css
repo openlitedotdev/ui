@@ -51,7 +51,7 @@
 }
 
 [data-rehype-pretty-code-fragment] .word--highlighted {
-  @apply rounded-md bg-zinc-700/50 border-zinc-700/70 p-1;
+  @apply rounded-md bg-zinc-700/50 border-default p-1;
 }
 
 .dark [data-rehype-pretty-code-fragment] .word--highlighted {
