@@ -4,6 +4,7 @@ const withContentlayer = require('next-contentlayer').withContentlayer
 const nextConfig = {
   transpilePackages: ['@openui-org/react', '@openui-org/theme'],
   swcMinify: true,
+  output: 'standalone',
   eslint: {
     ignoreDuringBuilds: true,
   },
