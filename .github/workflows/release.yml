@@ -10,19 +10,25 @@ permissions: write-all
 
 jobs:
   release:
-    name: Release
-    runs-on: ubuntu-latest
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v3
-      - uses: pnpm/action-setup@v3
-        with:
-          version: 9.1.1
 
-      - uses: actions/setup-node@v3
+      - name: Install pnpm
+        uses: pnpm/action-setup@v3
+
+      - name: Set node  ${{ matrix.node_version }}
+        uses: actions/setup-node@v3
         with:
-          node-version: 20.x
+          node-version: ${{ matrix.node_version }}
           cache: pnpm
+
+      - run: corepack enable
 
       - name: Install Dependencies
         run: pnpm install
