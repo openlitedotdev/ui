@@ -1,5 +1,3 @@
-import { Button } from '@openui-org/react'
-import Link from 'next/link'
 import Title from './title'
 
 export default function FAQ() {
