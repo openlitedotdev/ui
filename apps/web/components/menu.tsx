@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { DocsSearch } from './docs-search'
 import { Icons } from './icons'
-import MovilSidebar from './movil-sidebar-nav'
+import MovilSidebar from './mobile-sidebar'
 import { DarkMode } from './dark-mode'
 
 const links = [
