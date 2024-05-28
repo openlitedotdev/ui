@@ -13,7 +13,7 @@ export default function FAQ() {
           </p>
         </div>
         <div className="mx-auto w-full max-w-sm space-y-2">
-          <a className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-default px-6 font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 focus:ring-offset-gray-50 w-full hover:bg-default/10" href="mailto:castrogarcia.mjs@gmail.com">
+          <a className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-default px-6 font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 focus:ring-offset-gray-50 w-full bg-default hover:bg-default/80 shadow" href="mailto:castrogarcia.mjs@gmail.com">
             <div className="flex items-center gap-3">
               <p className="text-lg">Say Hello</p>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="currentColor" fill="none">

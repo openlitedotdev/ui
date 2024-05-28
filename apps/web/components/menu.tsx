@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { DocsSearch } from './docs-search'
 import { Icons } from './icons'
-import MovilSidebar from './mobile-sidebar'
+import MobileSidebar from './mobile-sidebar'
 import { DarkMode } from './dark-mode'
 
 const links = [
@@ -23,7 +23,7 @@ export default function Menu() {
           </small>
         </aside>
       )}
-      <nav className="block w-full max-w-full px-4 py-2 rounded-none shadow-md h-max bg-background lg:px-8 lg:py-4 dark:border dark:border-default">
+      <nav className="block w-full max-w-full px-4 py-2 z-50 backdrop-blur-lg bg-opacity-50 sticky top-0 shadow-medium h-max bg-background lg:px-6 lg:py-4 backdrop-saturate-150 inset-x-0">
         <div className="flex items-center gap-x-6 justify-between">
           <div className="flex items-center gap-x-8">
             <Link
@@ -37,25 +37,23 @@ export default function Menu() {
             <div className="hidden mr-4 md:block">
               <nav className="flex gap-2 mt-2 mb-4 lg:mb-0 lg:mt-0 items-center">
                 {links.map((link, i) => (
-                  <Link key={i} href={link.path} className="p-1 text-small hover:underline">
+                  <Link key={i} href={link.path} className="p-1 text-small hover:text-foreground/80">
                     {link.name}
                   </Link>
                 ))}
               </nav>
             </div>
           </div>
-          <div className="flex items-center">
-            <div className="flex items-center gap-4">
-              <DocsSearch className="hidden md:flex" />
-              <div className="flex items-center gap-x-1">
-                <Button asChild color="ghost" size="icon">
-                  <Link href="https://github.com/Open-Lab-dev/openui">
-                    <Icons.GitHub className="size-6" />
-                  </Link>
-                </Button>
-                <DarkMode />
-              </div>
-              <MovilSidebar />
+          <div className="flex items-center gap-4">
+            <DocsSearch className="hidden md:flex" />
+            <div className="flex items-center gap-x-1">
+              <Button asChild color="ghost" size="icon">
+                <Link href="https://github.com/Open-Lab-dev/openui">
+                  <Icons.GitHub className="size-6" />
+                </Link>
+              </Button>
+              <DarkMode />
+              <MobileSidebar />
             </div>
           </div>
         </div>
