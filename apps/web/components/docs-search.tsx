@@ -27,7 +27,7 @@ export function DocsSearch({ className, ...props }: DocsSearchProps) {
       <Input
         type="search"
         placeholder="Search..."
-        className="rounded-large py-0 relative border"
+        className="rounded-large py-0 relative bg-default shadow border-0"
       />
       <Search className="absolute right-0 top-1/2 -translate-x-1/2 -translate-y-1/2 text-foreground" />
     </form>

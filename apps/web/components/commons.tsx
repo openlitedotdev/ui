@@ -55,7 +55,7 @@ export default function Commons() {
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-8 text-center">
           <div className="space-y-2">
-            <Badge color="none" outline="primary">
+            <Badge color="none" outline="success">
               Key components 👋
             </Badge>
             <Title>
@@ -68,7 +68,7 @@ export default function Commons() {
           <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:gap-8">
             {cards.map((card, i) => (
               <Link key={i} href={card.path}>
-                <Card className="cursor-pointer hover:scale-105 transition-all h-full hover:bg-default hover:shadow-md" shadow="none" border="sm" ripple>
+                <Card className="cursor-pointer hover:scale-105 transition-all h-full bg-default shadow" shadow="none" border="sm" ripple>
                   <CardHeader>
                     <card.Icon className="size-8" />
                   </CardHeader>

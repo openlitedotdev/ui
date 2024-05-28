@@ -13,7 +13,7 @@
     "clean": "rimraf .turbo pnpm-lock.yaml node_modules",
     "turbo-graph": "pnpm build --graph=dependency-graph.png",
     "clean-lock": "rimraf ./pnpm-lock.yaml",
-    "compile": "turbo compile --filter=!@openui-org/docs --filter=!@openui-org/storybook",
+    "compile": "turbo compile --filter=!@openui-org/web --filter=!@openui-org/storybook",
     "build": "turbo build --filter=!@openui-org/docs --filter=!@openui-org/storybook --filter=!@openui-org/playground-next --filter=!@openui-org/playground-vue --filter=!@openui-org/web",
     "build-web": "turbo build --filter=@openui-org/web",
     "postinstall": "esno ./.github/prepare.ts && pnpm --filter @openui-org/theme build",

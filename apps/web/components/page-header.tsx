@@ -19,7 +19,7 @@ export function DocsPageHeader({
         </h1>
         {text && <p className="text-large">{text}</p>}
       </div>
-      <hr className="my-4" />
+      <hr className="my-4 border-default" />
     </>
   )
 }

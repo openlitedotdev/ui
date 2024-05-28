@@ -87,7 +87,7 @@ export default async function DocPage({ params }: DocPageProps) {
       <div className="mx-auto w-full min-w-0">
         <DocsPageHeader heading={doc.title} text={doc.description} />
         <Mdx code={doc.body.code} />
-        <hr className="my-4 md:my-6" />
+        <hr className="my-4 md:my-6 border-default" />
         <DocsPager doc={doc} />
         <footer className="mt-10 pl-4 flex justify-end">
           <Link href="https://github.com/OpenLab-dev/openui" target="_blank">

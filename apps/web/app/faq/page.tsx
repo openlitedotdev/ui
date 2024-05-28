@@ -20,7 +20,7 @@ export default function PageFAQ() {
       <section className="w-full py-12 md:py-20 container mx-auto">
         <Accordion type="single" collapsible className="w-full">
           {FAQs.map((faq, index) => (
-            <AccordionItem key={index} value={`item-${index}`} ripple shadow="md" className="mt-6">
+            <AccordionItem key={index} value={`item-${index}`} ripple shadow="sm" className="mt-6">
               <AccordionTrigger text="lg">
                 {faq.question}
               </AccordionTrigger>

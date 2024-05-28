@@ -118,7 +118,7 @@ export const dropdownContent = cva('z-50 min-w-[12rem] overflow-hidden rounded-m
  *   // accordion elements
  * </DropdownItem>
  */
-export const dropdownItem = cva('relative flex gap-2 cursor-default select-none items-center hover:bg-background rounded-medium px-2 py-1.5 text-small outline-none transition-colors focus:bg-accent focus:text-accent-foreground data-[disabled]:pointer-events-none data-[disabled]:opacity-50')
+export const dropdownItem = cva('relative flex gap-2 cursor-default select-none items-center hover:bg-background rounded-medium px-2 py-1.5 text-small outline-none transition-colors hover:cursor-pointer hover:transition-colors data-[disabled]:pointer-events-none data-[disabled]:opacity-50')
 
 /**
  * Dropdown CheckboxItem **Class Variants** component
