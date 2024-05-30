@@ -1,4 +1,4 @@
-import { cn } from '@openlabs/theme'
+import { cn } from '@openui-org/theme'
 import * as React from 'react'
 
 export function SiteFooter({ className }: React.HTMLAttributes<HTMLElement>) {

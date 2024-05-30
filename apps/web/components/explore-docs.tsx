@@ -1,6 +1,6 @@
 import { Button } from '@openui-org/react'
 import Link from 'next/link'
-import { cn } from '@openlabs/theme'
+import { cn } from '@openui-org/theme'
 import Title from './title'
 
 export default function ExploreDocs() {

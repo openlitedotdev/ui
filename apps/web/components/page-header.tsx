@@ -1,4 +1,4 @@
-import { cn } from '@openlabs/theme'
+import { cn } from '@openui-org/theme'
 
 interface DocsPageHeaderProps extends React.HTMLAttributes<HTMLDivElement> {
   heading: string

@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { Button } from '@openui-org/react'
 import type { Dispatch, SetStateAction } from 'react'
-import { cn } from '@openlabs/theme'
+import { cn } from '@openui-org/theme'
 import type { NavItem } from './main-nav'
 
 export type SidebarNavItem = {
