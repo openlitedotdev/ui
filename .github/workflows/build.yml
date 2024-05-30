@@ -1,4 +1,4 @@
-name: Action CI
+name: Action Build
 
 on:
   push:
@@ -30,5 +30,8 @@ jobs:
       - name: Install
         run: pnpm install
 
-      - name: Run linter
-        run: pnpm run lint
+      - name: Run build library
+        run: pnpm run build
+
+      - name: Run build web
+        run: pnpm run build:web
