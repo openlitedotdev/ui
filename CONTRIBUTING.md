@@ -41,6 +41,12 @@ Thank you for your contribution to Open UI! We appreciate your support and look 
 
 To start developing with Open UI, follow these steps:
 
+- Activate corepack
+
+```
+corepack enable pnpm
+```
+
 - Install the necessary dependencies by running the following command in your terminal:
 
   ```

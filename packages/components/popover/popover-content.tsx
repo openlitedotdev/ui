@@ -1,0 +1,25 @@
+import React from 'react'
+import * as PopoverPrimitive from '@radix-ui/react-popover'
+import type { VariantProps } from '@openlabs/theme'
+import { cn, popoverContent } from '@openlabs/theme'
+
+export interface Props extends React.ComponentPropsWithoutRef<typeof PopoverPrimitive.Content>, VariantProps<typeof popoverContent> {}
+export interface Comp extends React.ElementRef<typeof PopoverPrimitive.Content> {}
+
+const PopoverContent = React.forwardRef<Comp, Props>(({ className, shadow, align = 'center', sideOffset = 4, ...props }, ref) => (
+  <PopoverPrimitive.Portal>
+    <PopoverPrimitive.Content
+      ref={ref}
+      align={align}
+      sideOffset={sideOffset}
+      className={cn(
+        popoverContent({ shadow }),
+        className,
+      )}
+      {...props}
+    />
+  </PopoverPrimitive.Portal>
+))
+PopoverContent.displayName = 'PopoverContent'
+
+export default PopoverContent

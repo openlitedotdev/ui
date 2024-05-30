@@ -2,7 +2,7 @@
 
 import * as React from 'react'
 
-import { cn } from '@openui-org/theme'
+import { cn } from '@openlabs/theme'
 import { Input } from '@openui-org/react'
 import { Search } from 'lucide-react'
 

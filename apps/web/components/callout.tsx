@@ -1,4 +1,4 @@
-import { cn } from '@openui-org/theme'
+import { cn } from '@openlabs/theme'
 
 interface CalloutProps {
   icon?: string

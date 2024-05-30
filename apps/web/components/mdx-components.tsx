@@ -4,7 +4,7 @@ import * as React from 'react'
 import Image from 'next/image'
 import { useMDXComponent } from 'next-contentlayer/hooks'
 
-import { cn } from '@openui-org/theme'
+import { cn } from '@openlabs/theme'
 import { PackageManagers } from './package-manager'
 import { Callout } from '@/components/callout'
 import { MdxCard } from '@/components/mdx-card'

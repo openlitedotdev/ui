@@ -1,5 +1,5 @@
 {
-  "name": "@openui-org/theme",
+  "name": "@openlabs/theme",
   "version": "2.1.2",
   "description": "Open UI. OpenLand's official framework design system 🎨",
   "author": "Open Land",
@@ -45,7 +45,7 @@
     "tailwind-merge": "^2.2.2"
   },
   "devDependencies": {
-    "@openui-org/tsconfig": "workspace:*",
+    "@openlabs/tsconfig": "workspace:*",
     "@types/color": "^3.0.6",
     "@types/flat": "^5.0.5",
     "@types/lodash": "^4.17.0",
