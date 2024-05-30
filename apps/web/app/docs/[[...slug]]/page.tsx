@@ -90,7 +90,7 @@ export default async function DocPage({ params }: DocPageProps) {
         <hr className="my-4 md:my-6 border-default" />
         <DocsPager doc={doc} />
         <footer className="mt-10 pl-4 flex justify-end">
-          <Link href="https://github.com/OpenLab-dev/openui" target="_blank">
+          <Link href="https://github.com/OpenLabs-dev/openui" target="_blank">
             Edit this page on GitHub
           </Link>
         </footer>

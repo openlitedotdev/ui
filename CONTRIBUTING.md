@@ -7,7 +7,7 @@ To contribute to Open UI, follow these steps:
 2. Clone your forked repository to your local machine:
 
    ```
-   git clone https://github.com/OpenLab-dev/openui.git
+   git clone https://github.com/OpenLabs-dev/openui.git
    ```
 
 3. Create a new branch for your changes:
@@ -40,6 +40,12 @@ Thank you for your contribution to Open UI! We appreciate your support and look 
 ## Development
 
 To start developing with Open UI, follow these steps:
+
+- Activate corepack
+
+```
+corepack enable pnpm
+```
 
 - Install the necessary dependencies by running the following command in your terminal:
 

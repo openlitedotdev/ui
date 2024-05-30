@@ -1,22 +1,22 @@
 {
-  "name": "@openui-org/monorepo",
+  "name": "@openlabs/monorepo",
   "type": "module",
   "private": true,
   "packageManager": "pnpm@9.1.1",
   "scripts": {
     "dev": "pnpm web",
     "lint": "eslint . --fix",
-    "dev-playground-next": "turbo dev --filter=@openui-org/playground-next",
-    "dev-playground-vue": "turbo dev --filter=@openui-org/playground-vue",
-    "web": "turbo dev --filter=@openui-org/web",
-    "sb": "pnpm --filter @openui-org/storybook dev --filter @openui-org/web",
+    "dev:playground": "turbo dev --filter=@openlabs/playground",
+    "dev:web": "turbo dev --filter=@openlabs/web",
+    "sb": "pnpm --filter @openlabs/storybook dev --filter @openlabs/web",
     "clean": "rimraf .turbo pnpm-lock.yaml node_modules",
-    "turbo-graph": "pnpm build --graph=dependency-graph.png",
-    "clean-lock": "rimraf ./pnpm-lock.yaml",
-    "compile": "turbo compile --filter=!@openui-org/web --filter=!@openui-org/storybook",
-    "build": "turbo build --filter=!@openui-org/docs --filter=!@openui-org/storybook --filter=!@openui-org/playground-next --filter=!@openui-org/playground-vue --filter=!@openui-org/web",
-    "build-web": "turbo build --filter=@openui-org/web",
-    "postinstall": "esno ./.github/prepare.ts && pnpm --filter @openui-org/theme build",
+    "turbo:graph": "pnpm build --graph=dependency-graph.png",
+    "clean:lock": "rimraf ./pnpm-lock.yaml",
+    "compile": "turbo compile --filter=!@openlabs/web --filter=!@openlabs/storybook",
+    "build": "turbo build --filter=!@openlabs/storybook --filter=!@openlabs/playground --filter=!@openlabs/web",
+    "build:components": "turbo build --filter=@openlabs/ui",
+    "build:web": "turbo build --filter=@openlabs/web",
+    "postinstall": "esno ./.github/prepare.ts && pnpm --filter @openlabs/theme build",
     "release": "pnpm build && pnpm changeset version && pnpm changeset publish"
   },
   "devDependencies": {
@@ -34,7 +34,9 @@
   },
   "pnpm": {
     "allowedDeprecatedVersions": {
-      "querystring": "0.2.1"
+      "querystring": "0.2.1",
+      "glob": "7.2.3",
+      "inflight": "1.0.6"
     }
   },
   "simple-git-hooks": {

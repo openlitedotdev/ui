@@ -1,5 +1,5 @@
 {
-  "extends": "@openui-org/tsconfig/base.json",
+  "extends": "@openlabs/tsconfig/base.json",
   "include": ["."],
   "exclude": ["dist", "build", "node_modules"]
 }

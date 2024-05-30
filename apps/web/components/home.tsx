@@ -17,7 +17,7 @@ export default function Home() {
             <Link href="/docs">Get Started</Link>
           </Button>
           <Button asChild color="ghost" size="lg" className="border shadow border-default hover:bg-default/50">
-            <Link href="/https://github.com/OpenLab-dev" target="_blank">Github</Link>
+            <Link href="/https://github.com/OpenLabs-dev" target="_blank">Github</Link>
           </Button>
         </div>
       </div>
