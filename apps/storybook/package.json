@@ -7,11 +7,11 @@
   "homepage": "https://openui.ap.railway.app",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/OpenLab-dev/openui.git",
+    "url": "git+https://github.com/OpenLabs-dev/openui.git",
     "directory": "packages/components/storybook"
   },
   "bugs": {
-    "url": "https://github.com/OpenLab-dev/openui/issues"
+    "url": "https://github.com/OpenLabs-dev/openui/issues"
   },
   "keywords": [
     "storybook"
