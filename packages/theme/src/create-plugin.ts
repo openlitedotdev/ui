@@ -1,5 +1,5 @@
 import plugin from 'tailwindcss/plugin.js'
-import type { DefaultThemeType } from './interfaces/utils'
+import type { DefaultThemeType } from '@theme/types'
 import type { ConfigThemes } from './tailwindcss'
 import { config } from './config'
 import { animations, baseStyles, tailwind, utilities } from './theme'

@@ -1,10 +1,9 @@
 import type plugin from 'tailwindcss/plugin.js'
+import type { ConfigTheme, OpenUIPluginConfig } from '@theme/types'
 import deepMerge from 'deepmerge'
 import get from 'lodash.get'
 import omit from 'lodash.omit'
 import forEach from 'lodash.foreach'
-import type { OpenUIPluginConfig } from './interfaces/config'
-import type { ConfigTheme } from './interfaces/theme'
 import {
   darkTheme,
   defatulTheme,
@@ -27,20 +26,20 @@ export function openui(config: OpenUIPluginConfig = {}): ReturnType<typeof plugi
     prefix: defaultPrefix = DEFAULT_PREFIX,
   } = config
 
-  const userLightColors = get(themeObject, 'light.colors', {})
-  const userDarkColors = get(themeObject, 'dark.colors', {})
+  const customLightColors = get(themeObject, 'light.colors', {})
+  const customDarkColors = get(themeObject, 'dark.colors', {})
 
-  const defaultLayoutObj = userLayout && typeof userLayout === 'object'
+  const mergedLayout = userLayout && typeof userLayout === 'object'
     ? deepMerge(defatulTheme, userLayout)
     : defatulTheme
 
-  const baseLayouts = {
+  const mergedThemeLayouts = {
     light: {
-      ...defaultLayoutObj,
+      ...mergedLayout,
       ...lightTheme,
     },
     dark: {
-      ...defaultLayoutObj,
+      ...mergedLayout,
       ...darkTheme,
     },
   }
@@ -48,23 +47,23 @@ export function openui(config: OpenUIPluginConfig = {}): ReturnType<typeof plugi
   const otherThemes = omit(themeObject, ['light', 'dark']) || {}
 
   forEach(otherThemes, ({ extend, colors, layout }, themeName) => {
-    const baseTheme = extend && isBaseTheme(extend) ? extend : defaultExtendTheme
+    const defaultExtensionTheme = extend && isBaseTheme(extend) ? extend : defaultExtendTheme
 
     if (colors && typeof colors === 'object')
-      otherThemes[themeName].colors = deepMerge(semanticColors[baseTheme], colors)
+      otherThemes[themeName].colors = deepMerge(semanticColors[defaultExtensionTheme], colors)
 
     if (layout && typeof layout === 'object')
-      otherThemes[themeName].layout = deepMerge(extend ? baseLayouts[extend] : defaultLayoutObj, layout)
+      otherThemes[themeName].layout = deepMerge(extend ? mergedThemeLayouts[extend] : mergedLayout, layout)
   })
 
   const light: ConfigTheme = {
-    layout: deepMerge(baseLayouts.light, get(themeObject, 'light.layout', {})),
-    colors: deepMerge(semanticColors.light, userLightColors),
+    layout: deepMerge(mergedThemeLayouts.light, get(themeObject, 'light.layout', {})),
+    colors: deepMerge(semanticColors.light, customLightColors),
   }
 
-  const dark = {
-    layout: deepMerge(baseLayouts.dark, get(themeObject, 'dark.layout', {})),
-    colors: deepMerge(semanticColors.dark, userDarkColors),
+  const dark: ConfigTheme = {
+    layout: deepMerge(mergedThemeLayouts.dark, get(themeObject, 'dark.layout'), {}),
+    colors: deepMerge(semanticColors.dark, customDarkColors),
   }
 
   const themes = {
