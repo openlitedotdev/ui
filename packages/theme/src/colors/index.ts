@@ -1,4 +1,4 @@
-import type { BaseColors } from '@theme/types'
+import type { BaseColors } from '../types'
 
 export const colors: BaseColors = {
   light: {

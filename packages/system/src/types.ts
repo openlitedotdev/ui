@@ -28,11 +28,7 @@ export type MergeWithAs<
   as?: AsComponent
 }
 
-export interface InternalForwardRefRenderFunction<
-  Component extends As,
-  Props extends object = object,
-  OmitKeys extends keyof any = never,
-> {
+export interface InternalForwardRefRenderFunction<Component extends As, Props extends object = object, OmitKeys extends keyof any = never> {
   <AsComponent extends As = Component>(
     props: MergeWithAs<
       React.ComponentPropsWithoutRef<Component>,

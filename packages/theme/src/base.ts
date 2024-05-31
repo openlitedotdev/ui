@@ -1,6 +1,6 @@
-import type { LayoutTheme } from '@theme/types'
+import type { LayoutTheme } from './types'
 
-export const defatulTheme: LayoutTheme = {
+export const baseTheme: LayoutTheme = {
   fontSize: {
     small: '0.875rem',
     medium: '1rem',

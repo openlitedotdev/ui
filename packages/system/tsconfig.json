@@ -1,11 +1,5 @@
 {
-  "extends": "@openlabs/tsconfig/base.json",
-  "compilerOptions": {
-    "baseUrl": ".",
-    "paths": {
-      "@system/types": ["types/index.d.ts"]
-    }
-  },
+  "extends": "@openlabs/tsconfig/react-lib.json",
   "include": ["."],
   "exclude": ["dist", "build", "node_modules"]
 }
