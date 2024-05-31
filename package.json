@@ -3,6 +3,9 @@
   "type": "module",
   "private": true,
   "packageManager": "pnpm@9.1.1",
+  "description": "A design system built with TailwindCSS and Shadcn.",
+  "author": "openlabs",
+  "license": "MIT",
   "scripts": {
     "dev": "pnpm web",
     "lint": "eslint . --fix",
@@ -16,12 +19,10 @@
     "build": "turbo build --filter=!@openlabs/storybook --filter=!@openlabs/playground --filter=!@openlabs/web",
     "build:components": "turbo build --filter=@openlabs/ui",
     "build:web": "turbo build --filter=@openlabs/web",
-    "postinstall": "esno ./.github/prepare.ts && pnpm --filter @openlabs/theme build",
-    "release": "pnpm build && pnpm changeset version && pnpm changeset publish"
+    "postinstall": "esno ./.github/prepare.ts && pnpm --filter @openlabs/theme build"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.8.3",
-    "@changesets/cli": "^2.27.1",
     "@types/node": "^20.11.28",
     "eslint": "^8.57.0",
     "eslint-plugin-format": "^0.1.0",

@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "description": "Open UI. OpenLand's official framework design system 🎨",
   "author": "Open Land",
+  "publishConfig": {
+    "access": "public"
+  },
   "license": "MIT",
   "homepage": "https://github.com/open-land/ui#readme",
   "repository": {
