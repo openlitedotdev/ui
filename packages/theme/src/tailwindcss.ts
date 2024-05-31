@@ -1,6 +1,8 @@
 import type plugin from 'tailwindcss/plugin.js'
 import deepMerge from 'deepmerge'
-import { forEach, get, omit } from 'lodash'
+import get from 'lodash.get'
+import omit from 'lodash.omit'
+import forEach from 'lodash.foreach'
 import type { OpenUIPluginConfig } from './interfaces/config'
 import type { ConfigTheme } from './interfaces/theme'
 import {
@@ -8,7 +10,7 @@ import {
   defatulTheme,
   lightTheme,
   colors as semanticColors,
-} from './styles'
+} from './theme'
 import { definePlugin } from './create-plugin'
 import { isBaseTheme } from './utils/functions'
 

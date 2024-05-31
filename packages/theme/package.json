@@ -2,18 +2,18 @@
   "name": "@openlabs/theme",
   "version": "0.1.0",
   "description": "Open UI. OpenLand's official framework design system 🎨",
-  "author": "Open Land",
+  "author": "Open Labs",
   "publishConfig": {
     "access": "public"
   },
   "license": "MIT",
-  "homepage": "https://github.com/open-land/ui#readme",
+  "homepage": "https://github.com/OpenLabs-dev/openui#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/open-land/ui.git"
+    "url": "git+https://github.com/OpenLabs-dev/openui.git"
   },
   "bugs": {
-    "url": "https://github.com/open-land/ui/issues"
+    "url": "https://github.com/OpenLabs-dev/openui/issues"
   },
   "keywords": [
     "ui",
@@ -32,7 +32,7 @@
   },
   "scripts": {
     "compile": "tsup --watch",
-    "build": "tsup",
+    "build": "tsup --dts",
     "clean": "rm -rf .turbo node_modules dist"
   },
   "peerDependencies": {
@@ -44,14 +44,22 @@
     "color": "^4.2.3",
     "deepmerge": "^4.3.1",
     "flat": "^5.0.2",
-    "lodash": "^4.17.21",
+    "lodash.foreach": "^4.5.0",
+    "lodash.get": "^4.4.2",
+    "lodash.kebabcase": "^4.1.1",
+    "lodash.mapkeys": "^4.6.0",
+    "lodash.omit": "^4.5.0",
     "tailwind-merge": "^2.2.2"
   },
   "devDependencies": {
     "@openlabs/tsconfig": "workspace:*",
     "@types/color": "^3.0.6",
     "@types/flat": "^5.0.5",
-    "@types/lodash": "^4.17.0",
+    "@types/lodash.foreach": "^4.5.9",
+    "@types/lodash.get": "^4.4.9",
+    "@types/lodash.kebabcase": "^4.1.9",
+    "@types/lodash.mapkeys": "^4.6.9",
+    "@types/lodash.omit": "^4.5.9",
     "tailwindcss": "3.4.1",
     "tsup": "8.0.2",
     "typescript": "5.4.2"

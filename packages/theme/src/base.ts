@@ -1,4 +1,4 @@
-import type { LayoutTheme } from '../../interfaces/theme'
+import type { LayoutTheme } from './interfaces/theme'
 
 export const defatulTheme: LayoutTheme = {
   fontSize: {

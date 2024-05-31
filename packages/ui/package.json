@@ -5,13 +5,13 @@
   "description": "Open UI. OpenLand's official framework design system 🎨",
   "author": "Open Lab",
   "license": "MIT",
-  "homepage": "https://github.com/open-land/openui#readme",
+  "homepage": "https://github.com/OpenLabs-dev/openui#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/open-land/openui.git"
+    "url": "git+https://github.com/OpenLabs-dev/openui.git"
   },
   "bugs": {
-    "url": "https://github.com/open-land/openui/issues"
+    "url": "https://github.com/OpenLabs-dev/openui/issues"
   },
   "keywords": [
     "ui",
