@@ -22,7 +22,7 @@
     "postinstall": "esno ./.github/prepare.ts && pnpm --filter @openlabs/theme build"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^2.8.3",
+    "@antfu/eslint-config": "^2.19.1",
     "@types/node": "^20.11.28",
     "eslint": "^8.57.0",
     "eslint-plugin-format": "^0.1.0",
