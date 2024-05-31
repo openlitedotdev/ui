@@ -1,10 +1,9 @@
 import { defineConfig } from 'tsup'
 
-export default defineConfig(options => ({
+export default defineConfig({
   name: 'theme',
   entryPoints: ['./src/index.ts'],
   format: ['cjs', 'esm'],
   clean: true,
   target: 'es2019',
-  ...options,
-}))
+})

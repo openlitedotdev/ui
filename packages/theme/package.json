@@ -1,7 +1,7 @@
 {
   "name": "@openlabs/theme",
   "version": "0.1.0",
-  "description": "Open UI. OpenLand's official framework design system 🎨",
+  "description": "Open UI. OpenLabs's official framework design system 🎨",
   "author": "Open Labs",
   "publishConfig": {
     "access": "public"
@@ -31,7 +31,7 @@
     "./package.json": "./package.json"
   },
   "scripts": {
-    "compile": "tsup --watch",
+    "compile": "tsup --dts --watch",
     "build": "tsup --dts",
     "clean": "rm -rf .turbo node_modules dist"
   },
