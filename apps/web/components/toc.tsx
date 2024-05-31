@@ -2,7 +2,7 @@
 
 import * as React from 'react'
 
-import { cn } from '@openui-org/theme'
+import { cn } from '@openlabs/theme'
 import type { TableOfContents } from '@/lib/toc'
 import { useMounted } from '@/hooks/use-mounted'
 

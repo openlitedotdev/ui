@@ -1,5 +1,5 @@
 'use client'
-import { Button } from '@openui-org/react'
+import { Button } from '@openlabs/ui'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { DocsSearch } from './docs-search'

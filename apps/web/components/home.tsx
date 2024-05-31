@@ -1,4 +1,4 @@
-import { Badge, Button } from '@openui-org/react'
+import { Badge, Button } from '@openlabs/ui'
 import Link from 'next/link'
 
 export default function Home() {

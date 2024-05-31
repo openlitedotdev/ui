@@ -9,7 +9,7 @@ import {
   DropdownContent,
   DropdownItem,
   DropdownTrigger,
-} from '@openui-org/react'
+} from '@openlabs/ui'
 
 export function DarkMode() {
   const { setTheme } = useTheme()

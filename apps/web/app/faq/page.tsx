@@ -1,4 +1,4 @@
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@openui-org/react'
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@openlabs/ui'
 import { FAQs } from '@/constants/faqs'
 import Title from '@/components/title'
 

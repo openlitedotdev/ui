@@ -13,7 +13,7 @@ importers:
         version: 2.19.1(@vue/compiler-sfc@3.4.27)(eslint-plugin-format@0.1.1(eslint@8.57.0))(eslint@8.57.0)(typescript@5.4.5)
       '@types/node':
         specifier: ^20.11.28
-        version: 20.12.13
+        version: 20.13.0
       eslint:
         specifier: ^8.57.0
         version: 8.57.0
@@ -59,7 +59,7 @@ importers:
     devDependencies:
       '@types/node':
         specifier: ^20
-        version: 20.12.13
+        version: 20.13.0
       '@types/react':
         specifier: ^18
         version: 18.3.3
@@ -78,12 +78,12 @@ importers:
 
   apps/storybook:
     dependencies:
-      '@openui-org/react':
-        specifier: 2.1.2
-        version: 2.1.2(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(tailwindcss@3.4.1)
-      '@openui-org/theme':
-        specifier: 2.1.2
-        version: 2.1.2(tailwindcss@3.4.1)
+      '@openlabs/theme':
+        specifier: workspace:*
+        version: link:../../packages/theme
+      '@openlabs/ui':
+        specifier: workspace:*
+        version: link:../../packages/ui
       react:
         specifier: ^18.0.0
         version: 18.3.1
@@ -117,7 +117,7 @@ importers:
         version: 7.6.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.4.5)
       '@storybook/react-vite':
         specifier: ^7.4.6
-        version: 7.6.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rollup@4.18.0)(typescript@5.4.5)(vite@4.5.3(@types/node@20.12.13))
+        version: 7.6.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rollup@4.18.0)(typescript@5.4.5)(vite@4.5.3(@types/node@20.13.0))
       '@storybook/theming':
         specifier: ^7.4.6
         version: 7.6.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -141,7 +141,7 @@ importers:
         version: 3.4.1
       vite:
         specifier: ^4.4.7
-        version: 4.5.3(@types/node@20.12.13)
+        version: 4.5.3(@types/node@20.13.0)
 
   apps/web:
     dependencies:
@@ -151,12 +151,12 @@ importers:
       '@fontsource-variable/onest':
         specifier: ^5.0.4
         version: 5.0.4
-      '@openui-org/react':
-        specifier: 2.1.2
-        version: 2.1.2(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(tailwindcss@3.4.1)
-      '@openui-org/theme':
-        specifier: 2.1.2
-        version: 2.1.2(tailwindcss@3.4.1)
+      '@openlabs/theme':
+        specifier: workspace:*
+        version: link:../../packages/theme
+      '@openlabs/ui':
+        specifier: workspace:*
+        version: link:../../packages/ui
       class-variance-authority:
         specifier: ^0.7.0
         version: 0.7.0
@@ -247,7 +247,7 @@ importers:
         version: 5.0.2
       '@types/node':
         specifier: ^20
-        version: 20.12.13
+        version: 20.13.0
       '@types/react':
         specifier: ^18.2.69
         version: 18.3.3
@@ -2169,19 +2169,6 @@ packages:
     resolution: {integrity: sha512-VkliWlS4/+GHLLW7J/rVBA00uXus1SWvwFvcUDxDwmFxYfg/2VI6ekwdXS28cjI8Qz2ky2BzG8OUHo+WeYIWqw==}
     engines: {node: '>=14'}
 
-  '@openui-org/react@2.1.2':
-    resolution: {integrity: sha512-zmaDQziZ9ETGhLMBwFLs6ASqQlS7OehU8knFRDYKQTtvBSVgQsp7Rw4z/yqJM4PvzDpU3lBUO6MuKjvmw3cUHw==}
-    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
-    peerDependencies:
-      react: '>=18'
-      react-dom: '>=18'
-
-  '@openui-org/theme@2.1.2':
-    resolution: {integrity: sha512-O1dIq4QU0gCuTeLkC54VxWVANqKybXsPp3U5XgU1QgKi3eHQJiET9rofQAJDCcbo8E6SIRIrmphxZefXaIOwKA==}
-    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
-    peerDependencies:
-      tailwindcss: '>=3.4.0'
-
   '@pkgjs/parseargs@0.11.0':
     resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==}
     engines: {node: '>=14'}
@@ -3334,8 +3321,8 @@ packages:
   '@types/node@18.19.33':
     resolution: {integrity: sha512-NR9+KrpSajr2qBVp/Yt5TU/rp+b5Mayi3+OlMlcg2cVCfRmcG5PWZ7S4+MG9PZ5gWBoc9Pd0BKSRViuBCRPu0A==}
 
-  '@types/node@20.12.13':
-    resolution: {integrity: sha512-gBGeanV41c1L171rR7wjbMiEpEI/l5XFQdLLfhr/REwpgDy/4U8y89+i8kRiLzDyZdOkXh+cRaTetUnCYutoXA==}
+  '@types/node@20.13.0':
+    resolution: {integrity: sha512-FM6AOb3khNkNIXPnHFDYaHerSv8uN22C91z098AnGccVu+Pcdhi+pNUFDi0iLmPIsVE0JBD0KVS7mzUYt4nRzQ==}
 
   '@types/normalize-package-data@2.4.4':
     resolution: {integrity: sha512-37i+OaWTh9qeK4LSHPsyRC7NahnGotNuZvjLSgcPzblpHB3rrCJxAOgI5gCdKm7coonsaX1Of0ILiTcnZjbfxA==}
@@ -9130,17 +9117,17 @@ snapshots:
       '@jest/schemas': 29.6.3
       '@types/istanbul-lib-coverage': 2.0.6
       '@types/istanbul-reports': 3.0.4
-      '@types/node': 20.12.13
+      '@types/node': 20.13.0
       '@types/yargs': 17.0.32
       chalk: 4.1.2
 
-  '@joshwooding/vite-plugin-react-docgen-typescript@0.3.0(typescript@5.4.5)(vite@4.5.3(@types/node@20.12.13))':
+  '@joshwooding/vite-plugin-react-docgen-typescript@0.3.0(typescript@5.4.5)(vite@4.5.3(@types/node@20.13.0))':
     dependencies:
       glob: 7.2.3
       glob-promise: 4.2.2(glob@7.2.3)
       magic-string: 0.27.0
       react-docgen-typescript: 2.2.2(typescript@5.4.5)
-      vite: 4.5.3(@types/node@20.12.13)
+      vite: 4.5.3(@types/node@20.13.0)
     optionalDependencies:
       typescript: 5.4.5
 
@@ -9406,46 +9393,6 @@ snapshots:
   '@opentelemetry/semantic-conventions@1.13.0': {}
 
   '@opentelemetry/semantic-conventions@1.24.1': {}
-
-  '@openui-org/react@2.1.2(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(tailwindcss@3.4.1)':
-    dependencies:
-      '@openui-org/theme': 2.1.2(tailwindcss@3.4.1)
-      '@radix-ui/react-accordion': 1.1.2(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@radix-ui/react-alert-dialog': 1.0.5(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@radix-ui/react-aspect-ratio': 1.0.3(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@radix-ui/react-avatar': 1.0.4(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@radix-ui/react-checkbox': 1.0.4(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@radix-ui/react-dialog': 1.0.5(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@radix-ui/react-dropdown-menu': 2.0.6(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@radix-ui/react-label': 2.0.2(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@radix-ui/react-menubar': 1.0.4(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@radix-ui/react-popover': 1.0.7(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@radix-ui/react-progress': 1.0.3(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@radix-ui/react-scroll-area': 1.0.5(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@radix-ui/react-select': 2.0.0(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@radix-ui/react-separator': 1.0.3(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@radix-ui/react-slider': 1.1.2(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@radix-ui/react-slot': 1.0.2(@types/react@18.3.3)(react@18.3.1)
-      '@radix-ui/react-tabs': 1.0.4(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@radix-ui/react-tooltip': 1.0.7(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      embla-carousel-react: 8.1.3(react@18.3.1)
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
-    transitivePeerDependencies:
-      - '@types/react'
-      - '@types/react-dom'
-      - tailwindcss
-
-  '@openui-org/theme@2.1.2(tailwindcss@3.4.1)':
-    dependencies:
-      class-variance-authority: 0.7.0
-      clsx: 2.1.1
-      color: 4.2.3
-      deepmerge: 4.3.1
-      flat: 5.0.2
-      lodash: 4.17.21
-      tailwind-merge: 2.3.0
-      tailwindcss: 3.4.1
 
   '@pkgjs/parseargs@0.11.0':
     optional: true
@@ -10424,7 +10371,7 @@ snapshots:
       - encoding
       - supports-color
 
-  '@storybook/builder-vite@7.6.19(typescript@5.4.5)(vite@4.5.3(@types/node@20.12.13))':
+  '@storybook/builder-vite@7.6.19(typescript@5.4.5)(vite@4.5.3(@types/node@20.13.0))':
     dependencies:
       '@storybook/channels': 7.6.19
       '@storybook/client-logger': 7.6.19
@@ -10442,7 +10389,7 @@ snapshots:
       fs-extra: 11.2.0
       magic-string: 0.30.10
       rollup: 3.29.4
-      vite: 4.5.3(@types/node@20.12.13)
+      vite: 4.5.3(@types/node@20.13.0)
     optionalDependencies:
       typescript: 5.4.5
     transitivePeerDependencies:
@@ -10784,18 +10731,18 @@ snapshots:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
 
-  '@storybook/react-vite@7.6.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rollup@4.18.0)(typescript@5.4.5)(vite@4.5.3(@types/node@20.12.13))':
+  '@storybook/react-vite@7.6.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rollup@4.18.0)(typescript@5.4.5)(vite@4.5.3(@types/node@20.13.0))':
     dependencies:
-      '@joshwooding/vite-plugin-react-docgen-typescript': 0.3.0(typescript@5.4.5)(vite@4.5.3(@types/node@20.12.13))
+      '@joshwooding/vite-plugin-react-docgen-typescript': 0.3.0(typescript@5.4.5)(vite@4.5.3(@types/node@20.13.0))
       '@rollup/pluginutils': 5.1.0(rollup@4.18.0)
-      '@storybook/builder-vite': 7.6.19(typescript@5.4.5)(vite@4.5.3(@types/node@20.12.13))
+      '@storybook/builder-vite': 7.6.19(typescript@5.4.5)(vite@4.5.3(@types/node@20.13.0))
       '@storybook/react': 7.6.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.4.5)
-      '@vitejs/plugin-react': 3.1.0(vite@4.5.3(@types/node@20.12.13))
+      '@vitejs/plugin-react': 3.1.0(vite@4.5.3(@types/node@20.13.0))
       magic-string: 0.30.10
       react: 18.3.1
       react-docgen: 7.0.3
       react-dom: 18.3.1(react@18.3.1)
-      vite: 4.5.3(@types/node@20.12.13)
+      vite: 4.5.3(@types/node@20.13.0)
     transitivePeerDependencies:
       - '@preact/preset-vite'
       - encoding
@@ -10979,7 +10926,7 @@ snapshots:
   '@types/body-parser@1.19.5':
     dependencies:
       '@types/connect': 3.4.38
-      '@types/node': 20.12.13
+      '@types/node': 20.13.0
 
   '@types/color-convert@2.0.3':
     dependencies:
@@ -10993,11 +10940,11 @@ snapshots:
 
   '@types/connect@3.4.38':
     dependencies:
-      '@types/node': 20.12.13
+      '@types/node': 20.13.0
 
   '@types/cross-spawn@6.0.6':
     dependencies:
-      '@types/node': 20.12.13
+      '@types/node': 20.13.0
 
   '@types/debug@4.1.12':
     dependencies:
@@ -11030,7 +10977,7 @@ snapshots:
 
   '@types/express-serve-static-core@4.19.3':
     dependencies:
-      '@types/node': 20.12.13
+      '@types/node': 20.13.0
       '@types/qs': 6.9.15
       '@types/range-parser': 1.2.7
       '@types/send': 0.17.4
@@ -11051,11 +10998,11 @@ snapshots:
   '@types/glob@7.2.0':
     dependencies:
       '@types/minimatch': 5.1.2
-      '@types/node': 20.12.13
+      '@types/node': 20.13.0
 
   '@types/graceful-fs@4.1.9':
     dependencies:
-      '@types/node': 20.12.13
+      '@types/node': 20.13.0
 
   '@types/hast@2.3.10':
     dependencies:
@@ -11119,14 +11066,14 @@ snapshots:
 
   '@types/node-fetch@2.6.11':
     dependencies:
-      '@types/node': 20.12.13
+      '@types/node': 20.13.0
       form-data: 4.0.0
 
   '@types/node@18.19.33':
     dependencies:
       undici-types: 5.26.5
 
-  '@types/node@20.12.13':
+  '@types/node@20.13.0':
     dependencies:
       undici-types: 5.26.5
 
@@ -11160,12 +11107,12 @@ snapshots:
   '@types/send@0.17.4':
     dependencies:
       '@types/mime': 1.3.5
-      '@types/node': 20.12.13
+      '@types/node': 20.13.0
 
   '@types/serve-static@1.15.7':
     dependencies:
       '@types/http-errors': 2.0.4
-      '@types/node': 20.12.13
+      '@types/node': 20.13.0
       '@types/send': 0.17.4
 
   '@types/unist@2.0.10': {}
@@ -11263,14 +11210,14 @@ snapshots:
 
   '@ungap/structured-clone@1.2.0': {}
 
-  '@vitejs/plugin-react@3.1.0(vite@4.5.3(@types/node@20.12.13))':
+  '@vitejs/plugin-react@3.1.0(vite@4.5.3(@types/node@20.13.0))':
     dependencies:
       '@babel/core': 7.24.6
       '@babel/plugin-transform-react-jsx-self': 7.24.6(@babel/core@7.24.6)
       '@babel/plugin-transform-react-jsx-source': 7.24.6(@babel/core@7.24.6)
       magic-string: 0.27.0
       react-refresh: 0.14.2
-      vite: 4.5.3(@types/node@20.12.13)
+      vite: 4.5.3(@types/node@20.13.0)
     transitivePeerDependencies:
       - supports-color
 
@@ -13260,7 +13207,7 @@ snapshots:
     dependencies:
       '@jest/types': 29.6.3
       '@types/graceful-fs': 4.1.9
-      '@types/node': 20.12.13
+      '@types/node': 20.13.0
       anymatch: 3.1.3
       fb-watchman: 2.0.2
       graceful-fs: 4.2.11
@@ -13277,7 +13224,7 @@ snapshots:
   jest-util@29.7.0:
     dependencies:
       '@jest/types': 29.6.3
-      '@types/node': 20.12.13
+      '@types/node': 20.13.0
       chalk: 4.1.2
       ci-info: 3.9.0
       graceful-fs: 4.2.11
@@ -13285,7 +13232,7 @@ snapshots:
 
   jest-worker@29.7.0:
     dependencies:
-      '@types/node': 20.12.13
+      '@types/node': 20.13.0
       jest-util: 29.7.0
       merge-stream: 2.0.0
       supports-color: 8.1.1
@@ -14870,7 +14817,7 @@ snapshots:
       '@protobufjs/path': 1.1.2
       '@protobufjs/pool': 1.1.0
       '@protobufjs/utf8': 1.1.0
-      '@types/node': 20.12.13
+      '@types/node': 20.13.0
       long: 5.2.3
 
   proxy-addr@2.0.7:
@@ -16174,13 +16121,13 @@ snapshots:
       unist-util-stringify-position: 4.0.0
       vfile-message: 4.0.2
 
-  vite@4.5.3(@types/node@20.12.13):
+  vite@4.5.3(@types/node@20.13.0):
     dependencies:
       esbuild: 0.18.20
       postcss: 8.4.38
       rollup: 3.29.4
     optionalDependencies:
-      '@types/node': 20.12.13
+      '@types/node': 20.13.0
       fsevents: 2.3.3
 
   vscode-oniguruma@1.7.0: {}

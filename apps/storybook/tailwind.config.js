@@ -1,10 +1,10 @@
-import { openui } from '@openui-org/theme'
+import { openui } from '@openlabs/theme'
 
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
     './.storybook/welcome.stories.mdx',
-    './node_modules/@openui-org/theme/dist/**/*.{js,ts,jsx,tsx}',
+    './node_modules/@openlabs/theme/dist/**/*.{js,ts,jsx,tsx}',
     './stories/**/*.{js,ts,jsx,tsx}',
   ],
   plugins: [openui()],

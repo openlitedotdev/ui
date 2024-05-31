@@ -1,4 +1,4 @@
-import { Badge, Card, CardContent, CardDescription, CardHeader, CardTitle } from '@openui-org/react'
+import { Badge, Card, CardContent, CardDescription, CardHeader, CardTitle } from '@openlabs/ui'
 import {
   CreditCardIcon,
   FileInputIcon,

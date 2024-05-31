@@ -2,8 +2,8 @@
 
 import * as React from 'react'
 
-import { cn } from '@openui-org/theme'
-import { Input } from '@openui-org/react'
+import { cn } from '@openlabs/theme'
+import { Input } from '@openlabs/ui'
 import { Search } from 'lucide-react'
 
 interface DocsSearchProps extends React.HTMLAttributes<HTMLFormElement> {}

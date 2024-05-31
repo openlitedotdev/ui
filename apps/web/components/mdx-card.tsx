@@ -1,4 +1,4 @@
-import { cn } from '@openui-org/theme'
+import { cn } from '@openlabs/theme'
 import Link from 'next/link'
 
 interface CardProps extends React.HTMLAttributes<HTMLDivElement> {

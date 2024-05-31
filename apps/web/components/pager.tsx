@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import type { Doc } from 'contentlayer/generated'
 import { ArrowLeft, ArrowRight } from 'lucide-react'
-import { Button } from '@openui-org/react'
+import { Button } from '@openlabs/ui'
 import { docsConfig } from '@/constants/docs'
 
 interface DocsPagerProps {
