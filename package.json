@@ -9,14 +9,14 @@
   "scripts": {
     "dev": "pnpm web",
     "lint": "eslint . --fix",
-    "dev:playground": "turbo dev --filter=@openlabs/playground",
+    "dev:playground": "turbo dev --filter=playground",
     "dev:web": "turbo dev --filter=@openlabs/web",
     "sb": "pnpm --filter @openlabs/storybook dev --filter @openlabs/web",
     "clean": "rimraf .turbo pnpm-lock.yaml node_modules",
     "turbo:graph": "pnpm build --graph=dependency-graph.png",
     "clean:lock": "rimraf ./pnpm-lock.yaml",
     "compile": "turbo compile --filter=!@openlabs/web --filter=!@openlabs/storybook",
-    "build": "turbo build --filter=!@openlabs/storybook --filter=!@openlabs/playground --filter=!@openlabs/web",
+    "build": "turbo build --filter=!@openlabs/storybook --filter=!playground --filter=!@openlabs/web",
     "build:components": "turbo build --filter=@openlabs/ui",
     "build:web": "turbo build --filter=@openlabs/web",
     "postinstall": "esno ./.github/prepare.ts && pnpm --filter @openlabs/theme build"

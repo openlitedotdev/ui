@@ -7,7 +7,7 @@
 import Color from 'color'
 import kebabCase from 'lodash.kebabcase'
 import mapKeys from 'lodash.mapkeys'
-import type { ConfigTheme, DefaultThemeType, Resolved } from '@theme/types'
+import type { ConfigTheme, DefaultThemeType, Resolved } from './types'
 import { flattenThemeObject } from './utils/functions'
 
 const parsedColorsCache: Record<string, number[]> = {}
