@@ -1,6 +1,6 @@
-export * from './tailwind'
+export * from './tailwindcss'
 export * from './components'
-export * from './styles'
+export * from './theme'
 
 export { cn } from './cn'
 export type { ClassValue } from 'clsx'

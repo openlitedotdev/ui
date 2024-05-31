@@ -1,5 +1,12 @@
+// ! Colors Generate
+// ! [`openui`](https://github.com/open-ss-lab/ui).
+// !
+// ! This loop generate color scheme
+// ! Inspired by [`nextui`](https://github.com/nextui-org/nextui)
+
 import Color from 'color'
-import { kebabCase, mapKeys } from 'lodash'
+import kebabCase from 'lodash.kebabcase'
+import mapKeys from 'lodash.mapkeys'
 import type { ConfigTheme } from './interfaces/theme'
 import type { DefaultThemeType, Resolved } from './interfaces/utils'
 import { flattenThemeObject } from './utils/functions'
@@ -13,11 +20,6 @@ export function config(themes: ConfigTheme = {}, defaultTheme: DefaultThemeType,
     colors: {},
   }
 
-  // ! Colors Generate
-  // ! [`openui`](https://github.com/open-ss-lab/ui).
-  // !
-  // ! This loop generate color scheme
-  // ! Inspired by [`nextui`](https://github.com/nextui-org/nextui)
   for (const [themeName, { extend, layout, colors }] of Object.entries(themes)) {
     let selector = `.${themeName},[data-theme="${themeName}"]`
     const scheme = themeName === 'light' || themeName === 'dark' ? themeName : extend
@@ -69,11 +71,6 @@ export function config(themes: ConfigTheme = {}, defaultTheme: DefaultThemeType,
       }
     }
 
-    // ! Layout Generate
-    // ! [`openui`](https://github.com/open-ss-lab/ui).
-    // !
-    // ! This loop generate layout standard
-    // ! Inspired by [`nextui`](https://github.com/nextui-org/nextui)
     for (const [key, value] of Object.entries(flatLayout)) {
       if (!value)
         return

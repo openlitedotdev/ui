@@ -1,8 +1,8 @@
 import plugin from 'tailwindcss/plugin.js'
 import type { DefaultThemeType } from './interfaces/utils'
-import type { ConfigThemes } from './tailwind'
+import type { ConfigThemes } from './tailwindcss'
 import { config } from './config'
-import { animations, baseStyles, tailwind, utilities } from './styles'
+import { animations, baseStyles, tailwind, utilities } from './theme'
 
 export function definePlugin(themes: ConfigThemes = {}, defaultTheme: DefaultThemeType, prefix: string) {
   const resolved = config(themes, defaultTheme, prefix)
