@@ -1,64 +1,19 @@
-# Open UI
+## Getting Started
 
-Open UI is a powerful design system created with Shadcn UI and Tailwind CSS. It is designed to make it easy to use and facilitate the development of new projects. Our team has put in a lot of effort to create this design system, and we welcome contributions and ideas for improvement. We value your feedback and would love to hear from you.
-
-## Features
-
-- Built with [Shadcn UI](https://https://ui.shadcn.com/) and [Tailwind CSS](https://tailwindcss.com/)
-- Customizable
-- Dark mode support
-- [Figma Kit](https://www.figma.com/community/file/1354464067434498042)
-
-## Components
-
-_General_
-
-- [x] Button
-- [x] Aspect Ratio
-- [x] Carousel
-
-_Data Input_
-
-- [x] Input
-- [x] Label
-- [x] Select
-- [x] Checkbox
-- [x] Slider
-
-_Layout_
-
-- [x] Separator
-
-_Display_
-
-- [x] Card
-- [x] Avatar
-- [x] Accordion
-- [x] Alert
-- [x] Badge
-- [x] Tooltips
-- [x] Tables
-
-_Navigation_
-
-- [x] Tabs
-- [x] Breadcrumb
-- [x] Dropdown
-- [x] Sheet
-
-_Loading_
-
-- [x] Dialog
-- [x] Progress
-- [x] Skeleton
-- [x] Popover
+Visit <a aria-label="openui learn" href="https://openui-org.vercel.app/docs/getting-started/installation">https://openui-org.vercel.app/docs/getting-started/installation</a> to get started with Open UI.
 
 ## Documentation
 
-If you want to know more about this design system visit
+Visit [https://openui-org.vercel.app/docs](https://openui-org.vercel.app/docs) to view the full documentation.
 
-- [Documentation](https://openui-org.vercel.app)
+## Contributing
+
+Contributions are always welcome!
+
+See [CONTRIBUTING.md](https://github.com/OpenLabs-dev/openui/blob/main/CONTRIBUTING.md) for ways to get started.
+
+Please adhere to this project's [CODE_OF_CONDUCT](https://github.com/OpenLabs-dev/openui/blob/main/CODE_OF_CONDUCT.md).
 
 ## License
 
-[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+[MIT](https://choosealicense.com/licenses/mit/)
