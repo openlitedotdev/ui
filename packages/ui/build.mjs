@@ -1,7 +1,7 @@
 /* eslint-disable no-console */
 import fs from 'node:fs'
 
-const filePath = './index.ts'
+const filePath = './src/index.ts'
 const backupFilePath = `${filePath}.backup.ts`
 
 fs.copyFile(filePath, backupFilePath, (err) => {
