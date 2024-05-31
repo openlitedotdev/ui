@@ -1,5 +1,6 @@
 'use client'
 
+export * from '@openlabs/system'
 export * from '@openlabs/theme'
 export * from './components/accordion'
 export * from './components/alert'

@@ -1,0 +1,11 @@
+{
+  "extends": "@openlabs/tsconfig/base.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@system/types": ["types/index.d.ts"]
+    }
+  },
+  "include": ["."],
+  "exclude": ["dist", "build", "node_modules"]
+}
