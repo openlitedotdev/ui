@@ -1,5 +1,5 @@
 import type { Config } from 'tailwindcss'
-import { openui } from '@openlabs/ui'
+import { openui } from '@openlabs/theme'
 
 const config: Config = {
   content: [

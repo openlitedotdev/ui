@@ -1,5 +1,5 @@
-export * from '@openlabs/theme'
-export * from '@openlabs/system'
+'use client'
+
 export * from './components/accordion'
 export * from './components/alert'
 export * from './components/aspect-ratio'
