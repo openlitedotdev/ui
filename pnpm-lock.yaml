@@ -365,6 +365,9 @@ importers:
 
   packages/ui:
     dependencies:
+      '@openlabs/system':
+        specifier: workspace:*
+        version: link:../system
       '@openlabs/theme':
         specifier: workspace:*
         version: link:../theme
