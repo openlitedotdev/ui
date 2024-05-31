@@ -1,5 +1,5 @@
 import type { Config } from 'tailwindcss'
-import { openui } from '@openui-org/theme'
+import { openui } from '@openlabs/theme'
 
 const config: Config = {
   darkMode: 'class',
@@ -7,7 +7,7 @@ const config: Config = {
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
-    './node_modules/@openui-org/theme/dist/**/*.{js,ts,jsx,tsx}',
+    './node_modules/@openlabs/theme/dist/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
     extend: {},

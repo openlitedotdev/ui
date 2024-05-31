@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Button, ScrollArea, Sheet, SheetContent, SheetTrigger } from '@openui-org/react'
+import { Button, ScrollArea, Sheet, SheetContent, SheetTrigger } from '@openlabs/ui'
 import { DocsSidebarNav } from './sidebar-nav'
 import { docsConfig } from '@/constants/docs'
 

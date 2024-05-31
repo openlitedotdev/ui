@@ -1,4 +1,4 @@
-import { ScrollArea } from '@openui-org/react'
+import { ScrollArea } from '@openlabs/ui'
 import { DocsSidebarNav } from '@/components/sidebar-nav'
 import { docsConfig } from '@/constants/docs'
 

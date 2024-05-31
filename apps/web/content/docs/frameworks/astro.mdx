@@ -20,13 +20,13 @@ In your Astro project, run one of the following command to install Open UI:
 ### npm
 
 ```sh
-npm install @openui-org/theme @openui-org/react
+npm install @openlabs/theme @openlabs/ui
 ```
 
 ### pnpm
 
 ```sh
-pnpm add @openui-org/theme @openui-org/react
+pnpm add @openlabs/theme @openlabs/ui
 ```
 
 ### Tailwind CSS Setup
@@ -37,12 +37,12 @@ the following code to your `tailwind.config.mjs` file:
 
 ```js
 // tailwind.config.mjs
-import { openui } from "@openui-org/theme"
+import { openui } from "@openlabs/theme"
 
 export default {
   content: [
     //...
-    "./node_modules/@openui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
+    "./node_modules/@openlabs/theme/dist/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {},
@@ -58,7 +58,7 @@ Now you can import Open UI components and use them in your Astro project:
 ```markdown
 ---
 import Layout from '../layouts/Layout.astro';
-import { Button } from '@openui-org/react';
+import { Button } from '@openlabs/ui';
 ---
 
 <Layout title="Welcome to Astro.">

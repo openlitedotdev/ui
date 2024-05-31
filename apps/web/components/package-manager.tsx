@@ -1,4 +1,4 @@
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@openui-org/react'
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@openlabs/ui'
 
 // create array packages managers
 

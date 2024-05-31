@@ -2,9 +2,9 @@
 
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { Button } from '@openui-org/react'
+import { Button } from '@openlabs/ui'
 import type { Dispatch, SetStateAction } from 'react'
-import { cn } from '@openui-org/theme'
+import { cn } from '@openlabs/theme'
 import type { NavItem } from './main-nav'
 
 export type SidebarNavItem = {
