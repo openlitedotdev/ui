@@ -1,3 +1,3 @@
-# @openui-org/theme
+# @openlabs/theme
 
 The theme official of Open UI
