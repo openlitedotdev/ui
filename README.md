@@ -4,7 +4,7 @@ Visit <a aria-label="openui learn" href="https://openui-org.vercel.app/docs/gett
 
 ## Documentation
 
-Visit [https://openui-org.vercel.app/docs](https://openui-org.vercel.app/docs) to view the full documentation.
+Visit [https://openlabs.online/docs](https://openlabs.online/docs) to view the full documentation.
 
 ## Contributing
 
