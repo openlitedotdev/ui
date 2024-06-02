@@ -1,10 +1,10 @@
 ## Getting Started
 
-Visit <a aria-label="openui learn" href="https://openui-org.vercel.app/docs/getting-started/installation">https://openui-org.vercel.app/docs/getting-started/installation</a> to get started with Open UI.
+Visit <a aria-label="openui learn" href="https://openlabs.online/docs/ui">https://openlabs.online/docs/ui</a> to get started with Open UI.
 
 ## Documentation
 
-Visit [https://openlabs.online/docs](https://openlabs.online/docs) to view the full documentation.
+Visit [https://openlabs.online/docs/ui]([https://openlabs.online/docs](https://openlabs.online/docs/ui)) to view the full documentation.
 
 ## Contributing
 
