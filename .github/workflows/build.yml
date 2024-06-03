@@ -32,6 +32,3 @@ jobs:
 
       - name: Run build library
         run: pnpm run build
-
-      - name: Run build web
-        run: pnpm run build:web

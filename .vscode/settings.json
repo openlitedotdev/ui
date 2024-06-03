@@ -25,6 +25,7 @@
   "editor.quickSuggestions": {
     "strings": true
   },
+  "cSpell.files": ["../pnpm-lock.yaml"],
   "cSpell.words": [
     "changelogithub",
     "corepack",
