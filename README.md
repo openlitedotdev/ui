@@ -4,7 +4,7 @@ Visit <a aria-label="openui learn" href="https://openlabs.online/docs/ui">https:
 
 ## Documentation
 
-Visit [https://openlabs.online/docs/ui]([https://openlabs.online/docs](https://openlabs.online/docs/ui)) to view the full documentation.
+Visit [https://openlabs.online/docs/ui](<[https://openlabs.online/docs](https://openlabs.online/docs/ui)>) to view the full documentation.
 
 ## Contributing
 
