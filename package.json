@@ -1,5 +1,6 @@
 {
   "name": "@openlabs/ui",
+  "version": "0.2.0",
   "packageManager": "pnpm@9.1.4",
   "description": "A design system built with TailwindCSS and Shadcn.",
   "author": "openlabs",
@@ -22,12 +23,11 @@
     "./package.json": "./package.json"
   },
   "files": [
-    "!CHANGELOG.md",
-    "!LICENSE",
-    "!README.md",
-    "!dist/**/*",
-    "!package.json",
-    "*"
+    "CHANGELOG.md",
+    "LICENSE",
+    "README.md",
+    "dist",
+    "package.json"
   ],
   "scripts": {
     "dev": "pnpm dev:playground",
