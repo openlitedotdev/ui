@@ -106,14 +106,33 @@ export interface LayoutTheme {
 export type DefaultThemeType = 'light' | 'dark'
 export type Color = | Partial<{ foreground: string, DEFAULT: string }> | string
 
+interface ColorValue {
+  50: string
+  100: string
+  200: string
+  300: string
+  400: string
+  500: string
+  600: string
+  700: string
+  800: string
+  900: string
+  1000: string
+  DEFAULT: string
+}
+
 export interface Colors {
   background: Color
   foreground: Color
-  default: Color
-  primary: Color
-  success: Color
-  warn: Color
-  error: Color
+  azure: ColorValue
+  cider: ColorValue
+  cloud: ColorValue
+  crimson: ColorValue
+  emerald: ColorValue
+  forest: ColorValue
+  neutral: ColorValue
+  sapphire: ColorValue
+  sea: ColorValue
 }
 
 export interface OpacityValue { opacityValue: string, opacityVariable: string }
