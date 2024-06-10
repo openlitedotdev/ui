@@ -37,7 +37,7 @@
     "clean:lock": "rimraf ./pnpm-lock.yaml",
     "compile": "tsup --dts --watch",
     "build": "tsup --dts",
-    "postinstall": "esno ./scripts/prepare.ts && pnpm build"
+    "prepare": "esno ./scripts/prepare.ts && pnpm build"
   },
   "peerDependencies": {
     "react": ">=18",
@@ -97,13 +97,6 @@
     "tailwindcss": "3.4.1",
     "tsup": "8.0.2",
     "typescript": "5.4.2"
-  },
-  "pnpm": {
-    "allowedDeprecatedVersions": {
-      "querystring": "0.2.1",
-      "glob": "7.2.3",
-      "inflight": "1.0.6"
-    }
   },
   "tsup": {
     "entry": ["./src/index.ts", "./src/tailwind.ts"],
