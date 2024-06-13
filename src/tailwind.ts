@@ -1,7 +1,7 @@
-export * from './runtime/plugins/plugin'
-export * from './runtime/plugins/components'
-export * from './runtime/plugins/ui'
+export * from './plugins/plugin'
+export * from './plugins/components'
+export * from './plugins/ui'
 
-export { cn } from './runtime/plugins/cn'
+export { cn } from './plugins/cn'
 export type { ClassValue } from 'clsx'
 export type { VariantProps } from 'class-variance-authority'
