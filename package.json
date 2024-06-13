@@ -30,7 +30,7 @@
     "package.json"
   ],
   "scripts": {
-    "dev": "pnpm dev:playground",
+    "dev": "pnpm build && pnpm install && pnpm dev:playground",
     "lint": "eslint . --fix",
     "dev:playground": "pnpm -r --filter playground dev",
     "clean": "pnpx rimraf dist pnpm-lock.yaml node_modules",
@@ -62,6 +62,7 @@
     "class-variance-authority": "0.7.0",
     "clsx": "2.1.0",
     "color": "4.2.3",
+    "color2k": "2.0.3",
     "deepmerge": "4.3.1",
     "embla-carousel-react": "8.0.0",
     "flat": "5.0.2",
@@ -97,8 +98,14 @@
     "typescript": "5.4.2"
   },
   "tsup": {
-    "entry": ["./src/index.ts", "./src/tailwind.ts"],
-    "format": ["esm", "cjs"],
+    "entry": [
+      "./src/index.ts",
+      "./src/tailwind.ts"
+    ],
+    "format": [
+      "esm",
+      "cjs"
+    ],
     "clean": true,
     "target": "es2019"
   },

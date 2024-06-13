@@ -2,37 +2,31 @@ import type { LayoutTheme } from '@typings/theme'
 
 export const baseTheme: LayoutTheme = {
   fontSize: {
-    small: '0.875rem',
-    medium: '1rem',
-    large: '1.125rem',
+    small: '12px',
+    medium: '16px',
+    large: '20px',
   },
   radius: {
-    small: 'calc(0.5rem - 2px)',
-    medium: 'calc(0.5rem - 4px)',
-    large: ' 0.5rem',
+    small: '2px',
+    medium: '4px',
+    large: '8px',
   },
   lineHeight: {
-    small: '1.25rem',
-    medium: '1.5rem',
-    large: '1.75rem',
+    small: '16px',
+    medium: '20px',
+    large: '24px',
   },
   borderWidth: {
-    small: '0.063rem',
-    medium: '0.125rem',
-    large: '0.188rem',
+    small: '1px',
+    medium: '2px',
+    large: '3px',
   },
   boxShadow: {
-    small: '0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24)',
-    medium: '0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0,0.23)',
-    large: ' 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23)',
+    small: '0px 2px 16px 0px rgba(0, 0, 0, 0.12)',
+    medium: '0px 8px 24px 0px rgba(0, 0, 0, 0.16)',
+    large: ' 0px 16px 48px -4px rgba(0, 0, 0, 0.24)',
   },
 }
 
 export const lightTheme: LayoutTheme = {}
-export const darkTheme: LayoutTheme = {
-  boxShadow: {
-    small: '0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24)',
-    medium: '0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23)',
-    large: ' 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23)',
-  },
-}
+export const darkTheme: LayoutTheme = {}

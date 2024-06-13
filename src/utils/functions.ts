@@ -1,5 +1,33 @@
 import { flatten } from 'flat'
 
+export function swapColorValues<T extends object>(colors: T) {
+  const swappedColors = {}
+  const keys = Object.keys(colors)
+  const length = keys.length
+
+  for (let i = 0; i < length / 2; i++) {
+    const key1 = keys[i]
+    const key2 = keys[length - 1 - i]
+
+    // eslint-disable-next-line ts/ban-ts-comment
+    // @ts-expect-error
+    swappedColors[key1] = colors[key2]
+
+    // eslint-disable-next-line ts/ban-ts-comment
+    // @ts-expect-error
+    swappedColors[key2] = colors[key1]
+  }
+  if (length % 2 !== 0) {
+    const middleKey = keys[Math.floor(length / 2)]
+
+    // eslint-disable-next-line ts/ban-ts-comment
+    // @ts-expect-error
+    swappedColors[middleKey] = colors[middleKey]
+  }
+
+  return swappedColors
+}
+
 export function removeDefaultKeys<T extends object>(obj: T) {
   const newObj = {}
 
