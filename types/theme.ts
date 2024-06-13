@@ -1,12 +1,9 @@
+import type { ThemeColors } from './color'
+
 export interface ConfigTheme {
   extend?: 'light' | 'dark'
   layout?: LayoutTheme
-  colors?: Partial<Colors>
-}
-
-export interface BaseColors {
-  light: Colors
-  dark: Colors
+  colors?: Partial<ThemeColors>
 }
 
 export interface BaseUnit {
@@ -27,6 +24,11 @@ export interface OpenUIPluginConfig {
    * Common layout definitions. These definitions are applied to all themes.
    */
   layout?: LayoutTheme
+  /**
+   * If true, the common nextui colors (e.g. "blue", "green", "purple") will not be extended on the theme.
+   * @default false
+   */
+  addCommonColors?: boolean
   /**
    * The theme definitions.
    */
@@ -105,16 +107,6 @@ export interface LayoutTheme {
 
 export type DefaultThemeType = 'light' | 'dark'
 export type Color = | Partial<{ foreground: string, DEFAULT: string }> | string
-
-export interface Colors {
-  background: Color
-  foreground: Color
-  default: Color
-  primary: Color
-  success: Color
-  warn: Color
-  error: Color
-}
 
 export interface OpacityValue { opacityValue: string, opacityVariable: string }
 

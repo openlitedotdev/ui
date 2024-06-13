@@ -46,55 +46,55 @@ export const animations = {
     'pulse-fade-in': {
       '0%': {
         transform: 'scale(0.9)',
-        opacity: '0',
+        opacity: 0,
       },
       '50%': {
         transform: 'scale(1.05)',
-        opacity: '0.5',
+        opacity: 0.5,
       },
       '100%': {
         transform: 'scale(1)',
-        opacity: '1',
+        opacity: 1,
       },
     },
     'dialog-in': {
       '0%': {
         transform: 'translate(-50%, -50%) scale(0.9)',
-        opacity: '0',
+        opacity: 0,
       },
       '100%': {
         transform: 'translate(-50%, -50%) scale(1)',
-        opacity: '1',
+        opacity: 1,
       },
     },
     'dialog-out': {
       '0%': {
         transform: 'translate(-50%, -50%) scale(1)',
-        opacity: '1',
+        opacity: 1,
       },
       '100%': {
         transform: 'translate(-50%, -50%) scale(0.9)',
-        opacity: '0',
+        opacity: 0,
       },
     },
     'dropdown-in': {
       '0%': {
         transform: 'scale(0.9)',
-        opacity: '0',
+        opacity: 0,
       },
       '100%': {
         transform: 'scale(1)',
-        opacity: '1',
+        opacity: 1,
       },
     },
     'dropdown-out': {
       '0%': {
         transform: 'scale(1)',
-        opacity: '1',
+        opacity: 1,
       },
       '100%': {
         transform: 'scale(.9)',
-        opacity: '0',
+        opacity: 0,
       },
     },
   },

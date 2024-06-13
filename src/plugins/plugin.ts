@@ -24,6 +24,7 @@ export function openui(config: OpenUIPluginConfig = {}): ReturnType<typeof plugi
     layout: userLayout,
     defaultExtendTheme = 'light',
     prefix: defaultPrefix = DEFAULT_PREFIX,
+    addCommonColors = false,
   } = config
 
   const userLightColors = get(themeObject, 'light.colors', {})
@@ -72,5 +73,5 @@ export function openui(config: OpenUIPluginConfig = {}): ReturnType<typeof plugi
     ...otherThemes,
   }
 
-  return definePlugin(themes, defaultTheme, defaultPrefix)
+  return definePlugin(themes, defaultTheme, defaultPrefix, addCommonColors)
 }
