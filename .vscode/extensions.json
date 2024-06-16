@@ -1,7 +1,3 @@
 {
-  "recommendations": [
-    "dbaeumer.vscode-eslint",
-    "unifiedjs.vscode-mdx",
-    "bradlc.vscode-tailwindcss"
-  ]
+  "recommendations": ["dbaeumer.vscode-eslint", "bradlc.vscode-tailwindcss"]
 }
