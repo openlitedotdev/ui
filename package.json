@@ -36,7 +36,7 @@
     "clean": "pnpx rimraf dist pnpm-lock.yaml node_modules",
     "compile": "tsup --dts --watch",
     "build": "tsup --dts",
-    "prepare": "esno ./scripts/prepare.ts && pnpm build"
+    "prepare": "npx simple-git-hooks && pnpm build"
   },
   "peerDependencies": {
     "react": ">=18",
@@ -87,8 +87,6 @@
     "@types/react-dom": "18.2.22",
     "eslint": "8.57.0",
     "eslint-plugin-format": "0.1.0",
-    "esno": "4.7.0",
-    "execa": "9.1.0",
     "lint-staged": "15.2.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
@@ -110,7 +108,7 @@
     "target": "es2019"
   },
   "simple-git-hooks": {
-    "pre-commit": "pnpm lint-staged"
+    "pre-commit": "pnpx lint-staged"
   },
   "lint-staged": {
     "*": "eslint . --fix"

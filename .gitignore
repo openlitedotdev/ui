@@ -134,3 +134,8 @@ dist
 .pnp.*
 *storybook.log
 storybook-static
+
+# End of https://www.toptal.com/developers/gitignore/api/react
+# Ignore all .env files in the root of a repository
+# This is useful for multiple .env files for different environments
+.env*
