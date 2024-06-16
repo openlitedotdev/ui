@@ -1,6 +1,6 @@
-import type { SemanticBaseColors, ThemeColors } from '@typings/color'
 import { readableColor } from 'color2k'
 import { commonColors as common } from './commons'
+import type { SemanticBaseColors, ThemeColors } from '@/types/color'
 import { swapColorValues } from '@/utils/functions'
 
 export const base: SemanticBaseColors = {

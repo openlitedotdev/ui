@@ -3,7 +3,6 @@ import deepMerge from 'deepmerge'
 import get from 'lodash.get'
 import omit from 'lodash.omit'
 import forEach from 'lodash.foreach'
-import type { ConfigTheme, OpenUIPluginConfig } from '@typings/theme'
 import { baseTheme } from './base'
 import {
   darkTheme,
@@ -11,6 +10,7 @@ import {
   colors as semanticColors,
 } from './ui'
 import { definePlugin } from './create-plugin'
+import type { ConfigTheme, OpenUIPluginConfig } from '@/types/theme'
 import { isBaseTheme } from '@/utils/functions'
 
 const DEFAULT_PREFIX = 'openui'
