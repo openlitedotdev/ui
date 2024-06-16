@@ -1,4 +1,4 @@
-import type { Color, Event, Rect } from '@typings/ripple'
+import type { Color, Event, Rect } from '@/types/ripple'
 
 export class Ripple {
   private x: number

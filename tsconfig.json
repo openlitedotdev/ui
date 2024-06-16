@@ -10,8 +10,7 @@
     "module": "ESNext",
     "moduleResolution": "Bundler",
     "paths": {
-      "@/*": ["./src/*"],
-      "@typings/*": ["./types/*"]
+      "@/*": ["./src/*"]
     },
     "strict": true,
     "noUnusedLocals": false,

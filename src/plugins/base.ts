@@ -1,4 +1,4 @@
-import type { LayoutTheme } from '@typings/theme'
+import type { LayoutTheme } from '@/types/theme'
 
 export const baseTheme: LayoutTheme = {
   fontSize: {
