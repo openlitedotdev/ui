@@ -21,6 +21,7 @@ export * from './components/forms/label'
 export * from './components/forms/select'
 
 export * from './components/data/table'
+export * from './components/data/scroll-area'
 
 export * from './components/overlays/dialog'
 export * from './components/overlays/popover'
