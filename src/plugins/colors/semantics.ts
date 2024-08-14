@@ -74,13 +74,13 @@ export const themeColorsLight: ThemeColors = {
     DEFAULT: common.emerald[500],
   },
   warn: {
-    ...common.cider,
-    foreground: readableColor(common.cider[500]),
-    DEFAULT: common.cider[500],
+    ...common.amber,
+    foreground: readableColor(common.amber[500]),
+    DEFAULT: common.amber[500],
   },
   error: {
     ...common.crimson,
-    foreground: common.white,
+    foreground: readableColor(common.crimson[500]),
     DEFAULT: common.crimson[500],
   },
 }
@@ -97,20 +97,19 @@ export const themeColorsDark: ThemeColors = {
     foreground: readableColor(common.azure[500]),
     DEFAULT: common.azure[500],
   },
-
   success: {
     ...swapColorValues(common.emerald),
     foreground: readableColor(common.emerald[500]),
     DEFAULT: common.emerald[500],
   },
   warn: {
-    ...swapColorValues(common.cider),
-    foreground: readableColor(common.cider[500]),
-    DEFAULT: common.cider[500],
+    ...swapColorValues(common.amber),
+    foreground: readableColor(common.amber[500]),
+    DEFAULT: common.amber[500],
   },
   error: {
     ...swapColorValues(common.crimson),
-    foreground: common.white,
+    foreground: readableColor(common.crimson[500]),
     DEFAULT: common.crimson[500],
   },
 }

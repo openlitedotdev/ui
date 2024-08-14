@@ -6,16 +6,14 @@ export interface Props extends React.HTMLAttributes<HTMLDivElement>, VariantProp
 
 const Alert = React.forwardRef<Comp, Props>(({
   className,
-  background,
-  shadow,
-  outline,
+  variant,
   rounded,
   ...props
 }, ref) => (
   <div
     ref={ref}
     role="alert"
-    className={cn(alert({ background, shadow, rounded, outline }), className)}
+    className={cn(alert({ variant, rounded }), className)}
     {...props}
   />
 ))

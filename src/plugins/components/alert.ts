@@ -10,28 +10,14 @@ import { cva } from 'class-variance-authority'
  *   // alert elements
  * </Alert>
  */
-export const alert = cva('relative w-full p-4 [&>svg~*]:pl-8 [&>svg+div]:translate-y-[-3px] [&>svg]:absolute [&>svg]:left-4 [&>svg]:top-4 [&>svg]:text-foreground', {
+export const alert = cva('relative w-full p-4 [&>svg~*]:pl-8 [&>svg+div]:translate-y-[-3px] [&>svg]:absolute [&>svg]:left-4 [&>svg]:top-4 shadow-small', {
   variants: {
-    outline: {
-      primary: 'border border-primary/30 dark:border-primary [&>svg]:text-primary text-primary/80',
-      error: 'border border-error/30 dark:border-error [&>svg]:text-error text-error/80',
-      warn: 'border border-warn/30 dark:border-warn [&>svg]:text-warn text-warn/80',
-      success: 'border border-success/30 dark:border-success [&>svg]:text-success text-success/80',
-      none: 'border border-transparent',
-    },
-    background: {
-      none: 'bg-transparent dark:bg-transparent',
-      primary: 'bg-primary/20 dark:bg-primary [&>svg]:text-primary text-primary/80 dark:text-primary-foreground dark:[&>svg]:text-white',
-      error: 'bg-error/20 [&>svg]:text-error text-error/80 dark:text-error-foreground dark:bg-error',
-      warn: 'bg-warn/20 [&>svg]:text-warn text-warn/80 dark:text-warn-foreground dark:bg-warn',
-      success: 'bg-success/20 [&>svg]:text-success text-success/80 dark:text-success-foreground dark:bg-success',
-    },
-
-    shadow: {
-      none: 'shadow-none',
-      sm: 'shadow-small',
-      md: 'shadow-medium',
-      lg: 'shadow-large',
+    variant: {
+      default: 'bg-default text-default-foreground',
+      primary: 'bg-primary text-primary-foreground',
+      error: 'bg-error text-error-foreground',
+      warn: 'bg-warn text-warn-foreground',
+      success: 'bg-success text-success-foreground',
     },
 
     rounded: {
@@ -43,10 +29,8 @@ export const alert = cva('relative w-full p-4 [&>svg~*]:pl-8 [&>svg+div]:transla
 
   },
   defaultVariants: {
-    background: 'primary',
-    shadow: 'sm',
+    variant: 'default',
     rounded: 'sm',
-    outline: 'none',
   },
 })
 
