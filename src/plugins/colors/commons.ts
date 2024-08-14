@@ -1,5 +1,5 @@
 import { azure } from './azure'
-import { cider } from './cider'
+import { amber } from './amber'
 import { cloud } from './cloud'
 import { crimson } from './crimson'
 import { emerald } from './emerald'
@@ -11,7 +11,7 @@ export const commonColors = {
   white: '#ffffff',
   black: '#000000',
   azure,
-  cider,
+  amber,
   cloud,
   crimson,
   emerald,
