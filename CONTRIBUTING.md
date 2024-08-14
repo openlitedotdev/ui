@@ -13,7 +13,7 @@ To contribute to Open UI, follow these steps:
 3. Create a new branch for your changes:
 
    ```
-   git switch -c my-feature
+   git switch -c feat/my-feature
    ```
 
 4. Make the necessary changes and improvements to the codebase.
@@ -26,7 +26,7 @@ To contribute to Open UI, follow these steps:
 6. Push your changes to your forked repository:
 
    ```
-   git push origin my-feature
+   git push origin feat/my-feature
    ```
 
 7. Open a pull request (PR) on the original repository's GitHub page.
@@ -66,7 +66,7 @@ corepack enable pnpm
 2. Start playground
 
    ```
-   pnpm dev-playground-next
+   pnpm dev:playground
    ```
 
 ## Development documentation
