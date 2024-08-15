@@ -10,7 +10,7 @@ import { cva } from 'class-variance-authority'
  */
 export const checkbox = cva('peer size-4 shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50', {
   variants: {
-    color: {
+    variant: {
       default: 'data-[state=checked]:bg-default data-[state=checked]:text-default-foreground border border-default',
       primary: 'data-[state=checked]:bg-primary data-[state=checked]:text-primary-foreground border border-primary',
       success: 'data-[state=checked]:bg-success data-[state=checked]:text-success-foreground border border-success',
@@ -23,9 +23,15 @@ export const checkbox = cva('peer size-4 shrink-0 focus-visible:outline-none foc
       md: 'rounded-medium',
       lg: 'rounded-large',
     },
+    size: {
+      sm: 'size-4',
+      md: 'size-5',
+      lg: 'size-6',
+    },
   },
   defaultVariants: {
-    color: 'default',
+    variant: 'default',
     rounded: 'sm',
+    size: 'sm',
   },
 })

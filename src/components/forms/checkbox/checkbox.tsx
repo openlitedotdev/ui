@@ -6,10 +6,10 @@ import { checkbox, cn } from '@/tailwind'
 export interface Comp extends React.ElementRef<typeof CheckboxPrimitive.Root> {}
 export type Props = React.ComponentPropsWithoutRef<typeof CheckboxPrimitive.Root> & VariantProps<typeof checkbox>
 
-const Checkbox = React.forwardRef<Comp, Props>(({ className, color, rounded, ...props }, ref) => (
+const Checkbox = React.forwardRef<Comp, Props>(({ className, variant, rounded, ...props }, ref) => (
   <CheckboxPrimitive.Root
     ref={ref}
-    className={cn(checkbox({ color, rounded }), className)}
+    className={cn(checkbox({ variant, rounded }), className)}
     {...props}
   >
     <CheckboxPrimitive.Indicator>
