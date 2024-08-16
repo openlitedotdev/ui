@@ -12,7 +12,7 @@ const Card = React.forwardRef<Comp, Props>(({
   className,
   rounded,
   shadow,
-  border,
+  orientation ,
   ripple = false,
   rippleColor = 'dark',
   ...props
@@ -30,7 +30,7 @@ const Card = React.forwardRef<Comp, Props>(({
   return (
     <div
       ref={ref}
-      className={cn(card({ rounded, shadow, border }), className)}
+      className={cn(card({ rounded, shadow, orientation }), className)}
       onMouseDown={handleMouseDown}
       {...props}
     />
