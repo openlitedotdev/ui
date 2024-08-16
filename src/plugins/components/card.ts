@@ -24,10 +24,10 @@ export const card = cva('cursor-pointer flex border-[1px] border-default justify
       md: 'shadow-medium',
       lg: 'shadow-large',
     },
-    orientation : {
+    orientation: {
       horizontal: 'flex-row',
       vertical: 'flex-col',
-    }
+    },
   },
   defaultVariants: {
     rounded: 'sm',
