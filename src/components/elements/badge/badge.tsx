@@ -5,11 +5,11 @@ import { badge, cn } from '@/tailwind'
 export interface Comp extends HTMLDivElement {}
 export type Props = React.HTMLAttributes<HTMLDivElement> & VariantProps<typeof badge>
 
-const Badge = React.forwardRef<Comp, Props>(({ className, color, shadow, outline, rounded, ...props }, ref) => (
+const Badge = React.forwardRef<Comp, Props>(({ className, variant, rounded, ...props }, ref) => (
   <div
     ref={ref}
     role="alert"
-    className={cn(badge({ color, shadow, outline, rounded }), className)}
+    className={cn(badge({ variant, rounded }), className)}
     {...props}
   />
 ))
