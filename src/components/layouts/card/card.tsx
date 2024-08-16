@@ -12,7 +12,7 @@ const Card = React.forwardRef<Comp, Props>(({
   className,
   rounded,
   shadow,
-  orientation ,
+  orientation,
   ripple = false,
   rippleColor = 'dark',
   ...props

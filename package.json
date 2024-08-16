@@ -30,11 +30,13 @@
     "package.json"
   ],
   "scripts": {
-    "dev": "pnpm build && pnpm install && pnpm dev:playground",
-    "lint": "eslint . --fix",
-    "dev:playground": "pnpm -r --filter playground dev",
+    "dev": "tsup --dts --watch",
+    "docs": "pnpm -r --filter docs dev",
+    "docs:build": "pnpm -r --filter docs build",
+    "playground": "pnpm -r --filter playground dev",
+    "playground:build": "pnpm -r --filter playground build",
     "clean": "pnpx rimraf dist pnpm-lock.yaml node_modules",
-    "compile": "tsup --dts --watch",
+    "lint": "eslint . --fix",
     "build": "tsup --dts",
     "prepare": "npx simple-git-hooks && pnpm build"
   },
