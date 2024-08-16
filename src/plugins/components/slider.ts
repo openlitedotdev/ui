@@ -18,7 +18,7 @@ export const slider = cva('relative flex w-full touch-none select-none items-cen
  * @example
  * <Track className={styles()} />
  */
-export const sliderTrack = cva('relative h-2 w-full grow overflow-hidden rounded-full bg-default')
+export const sliderTrack = cva('relative h-1 w-full grow overflow-hidden rounded-full bg-default')
 
 /**
  * Range wrapper **Class Variants** component
@@ -28,9 +28,9 @@ export const sliderTrack = cva('relative h-2 w-full grow overflow-hidden rounded
  * @example
  * <Range className={styles()} />
  */
-export const sliderRange = cva('absolute h-full', {
+export const sliderRange = cva('absolute h-1', {
   variants: {
-    background: {
+    variant: {
       primary: 'bg-primary',
       success: 'bg-success',
       warn: 'bg-warn',
@@ -38,7 +38,7 @@ export const sliderRange = cva('absolute h-full', {
     },
   },
   defaultVariants: {
-    background: 'primary',
+    variant: 'primary',
   },
 })
 
@@ -50,4 +50,4 @@ export const sliderRange = cva('absolute h-full', {
  * @example
  * <Thumb className={styles()} />
  */
-export const sliderThumb = cva('block h-5 w-5 rounded-full border-2 border-primary bg-background ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50')
+export const sliderThumb = cva('block size-5 rounded-full border-2 border-primary bg-background ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50')
