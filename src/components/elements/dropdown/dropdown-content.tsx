@@ -15,7 +15,7 @@ const DropdownMenuContent = React.forwardRef<Comp, Props>(({ className, sideOffs
       className={cn(dropdownContent(), className)}
       {...props}
     >
-      <ScrollArea className="w-full h-72">
+      <ScrollArea className="w-full max-h-72">
         {props.children}
       </ScrollArea>
     </DropdownPrimitive.Content>
