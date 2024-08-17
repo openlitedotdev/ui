@@ -15,10 +15,11 @@ interface Comp extends HTMLButtonElement {}
 const Button = React.forwardRef<Comp, Props>(
   ({
     className,
-    color,
+    variant,
     ripple = true,
     rippleColor = 'dark',
     size,
+    outline,
     rounded,
     shadow,
     asChild = false,
@@ -37,7 +38,7 @@ const Button = React.forwardRef<Comp, Props>(
     }
     return (
       <Comp
-        className={cn(button({ color, size, rounded, shadow }), className)}
+        className={cn(button({ variant, outline, size, rounded, shadow }), className)}
         ref={ref}
         onMouseDown={handleMouseDown}
         {...props}
