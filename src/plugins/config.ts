@@ -1,8 +1,4 @@
-// ! Colors Generate
-// ! [`openui`](https://github.com/open-ss-lab/ui).
-// !
-// ! This loop generate color scheme
-// ! Inspired by [`nextui`](https://github.com/nextui-org/nextui)
+// ! Copyright (c) 2024 [`nextui`](https://github.com/nextui-org/nextui)
 
 import Color from 'color'
 import kebabCase from 'lodash.kebabcase'

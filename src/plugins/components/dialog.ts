@@ -34,7 +34,7 @@ export const dialogPortal = cva('')
  *   // button elements
  * </DialogOverlay>
  */
-export const dialogOverlay = cva('fixed inset-0 z-50 bg-black/50')
+export const dialogOverlay = cva('fixed inset-0 z-50 bg-black/80  data-[state=open]:dialog-in data-[state=closed]:dialog-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0')
 
 /**
  * DialogClose wrapper **Class Variants** component
@@ -70,7 +70,7 @@ export const dialogTrigger = cva('')
  *   // button elements
  * </DialogContent>
  */
-export const dialogContent = cva('fixed left-[50%] top-[50%] z-50 translate-x-[-50%] translate-y-[-50%] w-full max-w-lg p-6 shadow-medium rounded-medium bg-default duration-200 data-[state=open]:animate-dialog-in')
+export const dialogContent = cva('fixed left-[50%] top-[50%] z-50 translate-x-[-50%] translate-y-[-50%] w-full max-w-lg p-6 shadow-medium rounded-medium bg-default duration-200')
 
 /**
  * DialogHeader wrapper **Class Variants** component
@@ -106,7 +106,7 @@ export const dialogFooter = cva('flex flex-col-reverse sm:flex-row sm:justify-en
  *   // button elements
  * </DialogTitle>
  */
-export const dialogTitle = cva('text-large font-semibold leading-none tracking-tight')
+export const dialogTitle = cva('text-large font-medium leading-none tracking-tight')
 
 /**
  * DialogDescription wrapper **Class Variants** component
