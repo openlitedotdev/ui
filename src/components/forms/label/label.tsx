@@ -9,12 +9,12 @@ export interface Props extends React.LabelHTMLAttributes<HTMLLabelElement>, Vari
 }
 
 const Label = React.forwardRef<Comp, Props>(
-  ({ className, size, textColor, asChild = false, ...props }, ref) => {
+  ({ className, size, variant, asChild = false, ...props }, ref) => {
     const Comp = asChild ? Slot : 'label'
     return (
       <Comp
         ref={ref}
-        className={cn(label({ size, textColor }), className)}
+        className={cn(label({ size, variant }), className)}
         {...props}
       />
     )

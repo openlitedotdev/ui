@@ -19,8 +19,9 @@ export const label = cva(
         md: 'text-medium',
         lg: 'text-large',
       },
-      textColor: {
+      variant: {
         none: 'text-foreground/70',
+        default: 'text-default/80',
         primary: 'text-primary/80',
         success: 'text-success/80',
         warn: 'text-warn/80',
@@ -29,7 +30,7 @@ export const label = cva(
     },
     defaultVariants: {
       size: 'md',
-      textColor: 'none',
+      variant: 'none',
     },
   },
 )
