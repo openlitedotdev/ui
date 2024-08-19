@@ -7,12 +7,13 @@ export interface Comp extends React.ElementRef<typeof ProgressPrimitive.Indicato
 export interface Props extends React.ComponentPropsWithoutRef<typeof ProgressPrimitive.Indicator>,
   VariantProps<typeof progressIndicator> {
   value: number
+  variant?: 'error' | 'primary' | 'success' | 'warn' | null | undefined
 }
 
-const ProgressIndicator = React.forwardRef<Comp, Props>(({ className, value, background }, ref) => (
+const ProgressIndicator = React.forwardRef<Comp, Props>(({ className, value, variant }, ref) => (
   <ProgressPrimitive.Indicator
     ref={ref}
-    className={cn(progressIndicator({ background }), className)}
+    className={cn(progressIndicator({ variant }), className)}
     style={{ transform: `translateX(-${100 - (value || 0)}%)` }}
   />
 ))
