@@ -7,11 +7,11 @@ export interface Props extends React.ComponentPropsWithoutRef<typeof SelectPrimi
   VariantProps<typeof selectTrigger> {}
 export interface Comp extends React.ElementRef<typeof SelectPrimitive.Trigger> {}
 
-const SelectTrigger = React.forwardRef<Comp, Props>(({ className, shadow, children, ...props }, ref) => {
+const SelectTrigger = React.forwardRef<Comp, Props>(({ className, shadow, variant, children, ...props }, ref) => {
   return (
     <SelectPrimitive.Trigger
       ref={ref}
-      className={cn(selectTrigger({ shadow }), className)}
+      className={cn(selectTrigger({ shadow, variant }), className)}
       {...props}
     >
       {children}
