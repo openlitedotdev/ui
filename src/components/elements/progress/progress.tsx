@@ -9,10 +9,10 @@ export interface Props extends React.ComponentPropsWithoutRef<typeof ProgressPri
   VariantProps<typeof progress> {
   labelText?: boolean
   value: number
-  background?: 'error' | 'primary' | 'success' | 'warn' | null | undefined
+  variant?: 'error' | 'primary' | 'success' | 'warn' | null | undefined
 }
 
-const Progress = React.forwardRef<Comp, Props>(({ className, labelText = false, size, background, value, ...props }, ref) => (
+const Progress = React.forwardRef<Comp, Props>(({ className, labelText = false, size, variant, value, ...props }, ref) => (
   <div className="flex flex-col gap-1">
     {labelText && (
       <label className="flex justify-between w-full">
@@ -28,7 +28,7 @@ const Progress = React.forwardRef<Comp, Props>(({ className, labelText = false, 
       className={cn(progress({ size }), className)}
       {...props}
     >
-      <ProgressIndicator value={value} background={background} />
+      <ProgressIndicator value={value} variant={variant} />
     </ProgressPrimitive.Root>
   </div>
 ))
