@@ -22,19 +22,7 @@ export const tooltip = cva('')
  *   // Tooltip elements
  * </TooltipTrigger>
  */
-export const tooltipTrigger = cva('px-2 py-1 rounded-large text-white hover:animate-pop', {
-  variants: {
-    variant: {
-      primary: 'bg-primary/70 animation-pulse hover:bg-primary',
-      success: 'bg-success/70 animation-pulse hover:bg-success',
-      error: 'bg-error/70 animation-pulse hover:bg-error',
-      warn: 'bg-warn/70 animation-pulse hover:bg-warn',
-    },
-  },
-  defaultVariants: {
-    variant: 'primary',
-  },
-})
+export const tooltipTrigger = cva('px-2 py-1 text-white hover:animate-pop')
 
 /**
  * Tooltip wrapper **Class Variants** component
@@ -57,4 +45,4 @@ export const tooltipProvider = cva('')
  *   // Tooltip elements
  * </TooltipContent>
  */
-export const tooltipContent = cva('z-50 max-w-72 px-2 py-1 !text-white bg-slate-900 overflow-hidden rounded-large text-small shadow-large animate-in fade-in-0 zoom-in-95 data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=closed]:zoom-out-95 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2')
+export const tooltipContent = cva('z-50 max-w-72 px-2 py-1 !text-white bg-slate-900 overflow-hidden rounded-large text-small shadow-small animate-in fade-in-0 zoom-in-95 data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=closed]:zoom-out-95 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2')
