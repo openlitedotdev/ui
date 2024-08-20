@@ -10,7 +10,7 @@ export interface Props extends React.ComponentPropsWithoutRef<typeof TabsPrimiti
   rippleColor?: 'dark' | 'light'
 }
 
-const TabsTrigger = React.forwardRef<Comp, Props>(({ className, ripple = true, rippleColor = 'light', background, ...props }, ref) => {
+const TabsTrigger = React.forwardRef<Comp, Props>(({ className, ripple = true, rippleColor = 'light', varinat, ...props }, ref) => {
   const rippleEffect = ripple !== undefined && new Ripple()
 
   const handleMouseDown = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
@@ -24,7 +24,7 @@ const TabsTrigger = React.forwardRef<Comp, Props>(({ className, ripple = true, r
   return (
     <TabsPrimitive.Trigger
       ref={ref}
-      className={cn(tabsTrigger({ background }), className)}
+      className={cn(tabsTrigger({ varinat }), className)}
       onMouseDown={handleMouseDown}
       {...props}
     />
