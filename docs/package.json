@@ -8,6 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@openlite/ui": "^0.4.0",
     "fumadocs-core": "13.2.2",
     "fumadocs-mdx": "9.0.2",
     "fumadocs-ui": "13.2.2",
