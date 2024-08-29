@@ -1,0 +1,90 @@
+---
+title: Astro
+description: How to use Open UI with Astro
+---
+
+Requirements:
+
+- [React 18](https://reactjs.org/) or later
+- [Tailwind CSS 3.4](https://tailwindcss.com/docs/guides/astro) or later
+
+<Callout>
+Open UI is built on top of React, so you need to install React first. You can follow the official
+[integration guide](https://docs.astro.build/en/guides/integrations-guide/react/) to install React.
+</Callout>
+
+## Installation
+
+In your Astro project, run one of the following command to install Open UI:
+
+<InstallTabs items={['npm', 'pnpm', 'yarn', 'bun']}>
+    <Tab value='npm'>
+
+```bash
+npm install @openlabs/ui
+```
+
+    </Tab>
+    <Tab value="pnpm">
+
+```bash
+pnpm add @openlabs/ui
+```
+
+    </Tab>
+    <Tab value='yarn'>
+
+```bash
+yarn add @openlabs/ui
+```
+
+    </Tab>
+    <Tab value='bun'>
+
+```bash
+bun add @openlabs/ui
+```
+
+    </Tab>
+
+</InstallTabs>
+
+
+### Tailwind CSS Setup
+
+Open UI is built on top of Tailwind CSS, so you need to install Tailwind CSS first. You can follow the official [installation guide](https://tailwindcss.com/docs/guides/astro) to install Tailwind CSS. Then you need to add
+
+the following code to your `tailwind.config.mjs` file:
+
+```js
+// tailwind.config.mjs
+import { openui } from "@openlabs/theme"
+
+export default {
+  content: [
+    //...
+    "./node_modules/@openlabs/theme/dist/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [openui()]
+}
+```
+
+### Ready 🎉
+
+Now you can import Open UI components and use them in your Astro project:
+
+```markdown
+---
+import Layout from '../layouts/Layout.astro';
+import { Button } from '@openlabs/ui';
+---
+
+<Layout title="Welcome to Astro.">
+  <main>
+      <Button client:visible>My button</Button>
+  </main>
+</Layout>
+```

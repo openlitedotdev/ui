@@ -1,0 +1,99 @@
+---
+title: Vite
+description: How to use Open UI with Vite
+---
+
+Requirements:
+
+- [Vite 4](https://vitejs.dev/) or later
+- [React 18](https://reactjs.org/) or later
+- [Tailwind CSS 3.4](https://tailwindcss.com/docs/guides/vite#react) or later
+
+## Installation
+
+In your Vite React project, run one of the following command to install Open UI:
+
+<InstallTabs items={['npm', 'pnpm', 'yarn', 'bun']}>
+    <Tab value='npm'>
+
+```bash
+npm install @openlabs/ui
+```
+
+    </Tab>
+    <Tab value="pnpm">
+
+```bash
+pnpm add @openlabs/ui
+```
+
+    </Tab>
+    <Tab value='yarn'>
+
+```bash
+yarn add @openlabs/ui
+```
+
+    </Tab>
+    <Tab value='bun'>
+
+```bash
+bun add @openlabs/ui
+```
+
+    </Tab>
+
+</InstallTabs>
+
+### Tailwind CSS Setup
+
+Open UI is built on top of Tailwind CSS, so you need to install Tailwind CSS first. You can follow the official
+[installation guide](https://tailwindcss.com/docs/guides/vite#react) to install Tailwind CSS. Then you need to add 
+the following code to your `tailwind.config.js` file:
+
+```js
+// tailwind.config.js
+import { openui } from "@openlabs/theme"
+
+/** @type {import("tailwindcss").Config} */
+export default {
+  content: [
+    //...
+    "./node_modules/@openlabs/theme/dist/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [openui()]
+}
+```
+
+### Ready 🎉
+
+Now, you can use the component you installed in your application 🎉.
+
+```jsx
+// src/components/ButtonExample.jsx
+import { Button } from "@openlabs/ui"
+
+export default function ButtonExample() {
+  return <Button>Press me</Button>
+}
+```
+
+_Import the component in your `App.jsx` file:_
+
+```jsx
+// src/App.jsx
+
+import ButtonExample from "./components/ButtonExample"
+
+export default function App() {
+  return (
+    <>
+     {/* Your components */}
+     <ButtonExample />    
+    </>
+   )
+}
+```

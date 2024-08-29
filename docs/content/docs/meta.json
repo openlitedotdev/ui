@@ -1,0 +1,15 @@
+{
+  "title": "ui",
+  "root": true,
+  "pages": [
+    "---Guide---",
+    "index",
+    "installation",
+    "typography",
+    "figma",
+    "---frameworks---",
+    "...frameworks",
+    "---Components---",
+    "...components"
+  ]
+}
