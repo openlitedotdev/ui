@@ -13,8 +13,6 @@ import type { ReactNode } from 'react'
 import { Popup, PopupContent, PopupTrigger } from 'fumadocs-ui/twoslash/popup'
 import { cn } from '@openlite/ui/tailwind'
 
-const openlite = await import('@openlite/ui')
-
 export function useMDXComponents(components: MDXComponents): MDXComponents {
   return {
     ...defaultComponents,
@@ -45,6 +43,6 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     ),
     blockquote: props => <Callout>{props.children}</Callout>,
     ...components,
-    ...openlite,
+
   }
 }
