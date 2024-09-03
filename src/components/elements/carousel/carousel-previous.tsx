@@ -6,13 +6,18 @@ import { carouselPrevious, cn } from '@/tailwind'
 export interface Comp extends HTMLButtonElement {}
 export interface Props extends React.ComponentProps<typeof Button> {}
 
-const CarouselPrevious = React.forwardRef<Comp, Props>(({ className, color = 'ghost', size = 'icon', ...props }, ref) => {
+const CarouselPrevious = React.forwardRef<Comp, Props>(({
+  className,
+  variant = 'ghost',
+  size = 'icon',
+  ...props
+}, ref) => {
   const { orientation, scrollPrev, canScrollPrev } = useCarousel()
 
   return (
     <Button
       ref={ref}
-      color={color}
+      variant={variant}
       size={size}
       className={cn(
         carouselPrevious(),
