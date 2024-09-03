@@ -10,6 +10,7 @@ const CarouselPrevious = React.forwardRef<Comp, Props>(({
   className,
   variant = 'ghost',
   size = 'icon',
+  ripple = false,
   ...props
 }, ref) => {
   const { orientation, scrollPrev, canScrollPrev } = useCarousel()
@@ -19,6 +20,7 @@ const CarouselPrevious = React.forwardRef<Comp, Props>(({
       ref={ref}
       variant={variant}
       size={size}
+      ripple={ripple}
       className={cn(
         carouselPrevious(),
         orientation === 'horizontal'
