@@ -28,8 +28,9 @@ jobs:
 
       - run: npx changelogithub
         env:
-          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+      - run: echo "//registry.npmjs.org/:_authToken=${{ secrets.OPEN_LITE_UI }}" > ~/.npmrc
       - run: corepack enable
 
       - name: Install Dependencies
@@ -41,5 +42,5 @@ jobs:
       - name: Publish to NPM
         run: pnpm publish --access public --no-git-checks
         env:
-          NPM_TOKEN: ${{secrets.OPEN_LITE_UI}}
+          NPM_TOKEN: ${{ secrets.OPEN_LITE_UI }}
           NPM_CONFIG_PROVENANCE: true
