@@ -1,9 +1,9 @@
 import './global.css'
 import { RootProvider } from 'fumadocs-ui/provider'
-import { Inter } from 'next/font/google'
+import { DM_Sans } from 'next/font/google'
 import type { ReactNode } from 'react'
 
-const inter = Inter({
+const inter = DM_Sans({
   subsets: ['latin'],
 })
 
