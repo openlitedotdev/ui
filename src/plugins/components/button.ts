@@ -44,19 +44,14 @@ export const button = cva(
         lg: 'rounded-large',
         full: 'rounded-full',
       },
-      shadow: {
-        none: 'shadow-none',
-        sm: 'shadow-small',
-        md: 'shadow-medium',
-        lg: 'shadow-large',
-      },
+
     },
     defaultVariants: {
       variant: 'default',
       outline: 'none',
       size: 'sm',
-      rounded: 'sm',
-      shadow: 'none',
+      rounded: 'md',
+
     },
   },
 )

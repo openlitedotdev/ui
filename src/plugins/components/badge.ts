@@ -29,6 +29,6 @@ export const badge = cva('inline-flex gap-2 items-center px-2.5 py-0.5 text-smal
   },
   defaultVariants: {
     variant: 'default',
-    rounded: 'sm',
+    rounded: 'md',
   },
 })

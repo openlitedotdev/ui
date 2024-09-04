@@ -17,11 +17,10 @@ const Button = React.forwardRef<Comp, Props>(
     className,
     variant,
     ripple = true,
-    rippleColor = 'dark',
+    rippleColor = 'light',
     size,
     outline,
     rounded,
-    shadow,
     asChild = false,
     ...props
   }, ref) => {
@@ -38,7 +37,7 @@ const Button = React.forwardRef<Comp, Props>(
     }
     return (
       <Comp
-        className={cn(button({ variant, outline, size, rounded, shadow }), className)}
+        className={cn(button({ variant, outline, size, rounded }), className)}
         ref={ref}
         onMouseDown={handleMouseDown}
         {...props}

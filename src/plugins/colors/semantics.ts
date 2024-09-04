@@ -12,22 +12,6 @@ export const base: SemanticBaseColors = {
       ...common.neutral,
       DEFAULT: '#11181C',
     },
-    content1: {
-      DEFAULT: '#FFFFFF',
-      foreground: '#11181C',
-    },
-    content2: {
-      DEFAULT: common.neutral[100],
-      foreground: common.neutral[800],
-    },
-    content3: {
-      DEFAULT: common.neutral[200],
-      foreground: common.neutral[700],
-    },
-    content4: {
-      DEFAULT: common.neutral[300],
-      foreground: common.neutral[600],
-    },
   },
   dark: {
     background: {
@@ -37,22 +21,6 @@ export const base: SemanticBaseColors = {
       ...swapColorValues(common.neutral),
       DEFAULT: '#ECEDEE',
     },
-    content1: {
-      DEFAULT: common.neutral[900],
-      foreground: common.neutral[50],
-    },
-    content2: {
-      DEFAULT: common.neutral[800],
-      foreground: common.neutral[100],
-    },
-    content3: {
-      DEFAULT: common.neutral[700],
-      foreground: common.neutral[200],
-    },
-    content4: {
-      DEFAULT: common.neutral[600],
-      foreground: common.neutral[300],
-    },
   },
 }
 
@@ -60,8 +28,8 @@ export const themeColorsLight: ThemeColors = {
   ...base.light,
   default: {
     ...common.neutral,
-    foreground: readableColor(common.neutral[300]),
-    DEFAULT: common.neutral[300],
+    foreground: '#FFFFFF',
+    DEFAULT: '#000000',
   },
   primary: {
     ...common.azure,
@@ -88,9 +56,9 @@ export const themeColorsLight: ThemeColors = {
 export const themeColorsDark: ThemeColors = {
   ...base.dark,
   default: {
-    ...swapColorValues(common.neutral),
-    foreground: readableColor(common.neutral[700]),
-    DEFAULT: common.neutral[700],
+    ...common.neutral,
+    foreground: '#000000',
+    DEFAULT: '#FFFFFF',
   },
   primary: {
     ...swapColorValues(common.azure),
