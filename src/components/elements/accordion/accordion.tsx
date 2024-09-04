@@ -6,10 +6,10 @@ import { accordion, cn } from '@/tailwind'
 export interface Comp extends React.ElementRef<typeof AccordionPrimitive.Root> {}
 export type Props = React.ComponentPropsWithoutRef<typeof AccordionPrimitive.Root> & VariantProps<typeof accordion>
 
-const Accordion = React.forwardRef<Comp, Props>(({ className, shadow, radius, bordered, ...props }, ref) => (
+const Accordion = React.forwardRef<Comp, Props>(({ className, radius, bordered, ...props }, ref) => (
   <AccordionPrimitive.Root
     ref={ref}
-    className={cn(accordion({ shadow, radius, bordered }), className)}
+    className={cn(accordion({ radius, bordered }), className)}
     {...props}
   />
 ))

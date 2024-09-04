@@ -48,14 +48,9 @@ export const selectValue = cva('')
  */
 export const selectTrigger = cva('flex relative h-10 w-64 items-center justify-between rounded-medium px-3 py-2 text-small ring-offset-transparent focus:outline-none focus:ring-2 focus:ring-transparent focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 [&>span]:line-clamp-1', {
   variants: {
-    shadow: {
-      sm: 'shadow-small',
-      md: 'shadow-medium',
-      lg: 'shadow-large',
-    },
     variant: {
       none: 'border-none',
-      default: 'border border-default',
+      default: 'border border-default-300',
       primary: 'border border-primary',
       success: 'border border-success',
       warn: 'border border-warn',
@@ -64,7 +59,7 @@ export const selectTrigger = cva('flex relative h-10 w-64 items-center justify-b
   },
   defaultVariants: {
     variant: 'default',
-    shadow: 'sm',
+
   },
 })
 

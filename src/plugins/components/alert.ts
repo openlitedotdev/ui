@@ -13,24 +13,22 @@ import { cva } from 'class-variance-authority'
 export const alert = cva('relative w-full p-4 [&>svg~*]:pl-8 [&>svg+div]:translate-y-[-3px] [&>svg]:absolute [&>svg]:left-4 [&>svg]:top-4 shadow-small', {
   variants: {
     variant: {
-      default: 'bg-default text-default-foreground',
+      default: 'border border-default-300 dark:bg-border-default-700 text-foreground',
       primary: 'bg-primary text-primary-foreground',
       error: 'bg-error text-error-foreground',
       warn: 'bg-warn text-warn-foreground',
       success: 'bg-success text-success-foreground',
     },
-
     rounded: {
       none: 'rounded-none',
       sm: 'rounded-small',
       md: 'rounded-medium',
       lg: 'rounded-large',
     },
-
   },
   defaultVariants: {
     variant: 'default',
-    rounded: 'sm',
+    rounded: 'md',
   },
 })
 

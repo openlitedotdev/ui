@@ -16,10 +16,6 @@ export type ColorScale = | Partial<{
 export interface BaseColors {
   background: ColorScale
   foreground: ColorScale
-  content1: ColorScale
-  content2: ColorScale
-  content3: ColorScale
-  content4: ColorScale
 }
 
 export interface SemanticBaseColors {

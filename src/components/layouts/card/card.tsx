@@ -11,7 +11,6 @@ export interface Props extends React.HTMLAttributes<HTMLDivElement>, VariantProp
 const Card = React.forwardRef<Comp, Props>(({
   className,
   rounded,
-  shadow,
   orientation,
   ripple = false,
   rippleColor = 'dark',
@@ -30,7 +29,7 @@ const Card = React.forwardRef<Comp, Props>(({
   return (
     <div
       ref={ref}
-      className={cn(card({ rounded, shadow, orientation }), className)}
+      className={cn(card({ rounded, orientation }), className)}
       onMouseDown={handleMouseDown}
       {...props}
     />

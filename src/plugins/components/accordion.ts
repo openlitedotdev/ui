@@ -12,12 +12,7 @@ import { cva } from 'class-variance-authority'
  */
 export const accordion = cva('mt-2 p-3', {
   variants: {
-    shadow: {
-      sm: 'shadow-small',
-      md: 'shadow-medium',
-      lg: 'shadow-large',
-      none: 'shadow-none',
-    },
+
     radius: {
       sm: 'rounded-small',
       md: 'rounded-medium',
@@ -32,8 +27,8 @@ export const accordion = cva('mt-2 p-3', {
     },
   },
   defaultVariants: {
-    shadow: 'none',
-    radius: 'sm',
+
+    radius: 'md',
     bordered: 'none',
   },
 })
@@ -48,7 +43,7 @@ export const accordion = cva('mt-2 p-3', {
  *   // accordion elements
  * </AccordionContent>
  */
-export const accordionContent = cva('overflow-hidden text-small transition-all data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down')
+export const accordionContent = cva('overflow-hidden text-small transition-all dropdown-out data-[state=open]:accordion-in')
 
 /**
  * Accordion wrapper **Class Variants** component
@@ -60,41 +55,7 @@ export const accordionContent = cva('overflow-hidden text-small transition-all d
  *   // accordion elements
  * </AccordionItem>
  */
-export const accordionItem = cva('px-4 py-2 my-3', {
-  variants: {
-    color: {
-      primary: 'bg-primary text-primary-foreground hover:bg-primary/90',
-      warn: 'bg-warn text-warn-foreground hover:bg-warn/90',
-      success: 'bg-success text-success-foreground hover:bg-success/90',
-      error: 'bg-error text-error-foreground hover:bg-error/90',
-      none: 'bg-transparent',
-    },
-    shadow: {
-      sm: 'shadow-small',
-      md: 'shadow-medium',
-      lg: 'shadow-large',
-      none: 'shadow-none',
-    },
-    radius: {
-      sm: 'rounded-small',
-      md: 'rounded-medium',
-      lg: 'rounded-large',
-      none: 'rounded-none',
-    },
-    separator: {
-      sm: 'border-b-small',
-      md: 'border-b-medium',
-      lg: 'border-b-large',
-      none: 'border-b-none',
-    },
-  },
-  defaultVariants: {
-    shadow: 'none',
-    radius: 'none',
-    color: 'none',
-    separator: 'none',
-  },
-})
+export const accordionItem = cva('px-4 py-2 my-3 border-b border-default-300')
 
 /**
  * Accordion wrapper **Class Variants** component
