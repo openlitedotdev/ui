@@ -15,17 +15,17 @@ export const button = cva(
   {
     variants: {
       variant: {
-        default: 'bg-default text-default-foreground hover:bg-default/90',
-        primary: 'bg-primary text-primary-foreground hover:bg-primary/90',
-        error: 'bg-error text-error-foreground hover:bg-error/80',
-        success: 'bg-success text-success-foreground hover:bg-success/80',
-        warn: 'bg-warn text-warn-foreground hover:bg-warn/80',
-        ghost: 'bg-transparent !shadow-none hover:bg-black/10',
+        default: 'bg-default text-default-foreground',
+        primary: 'bg-primary text-primary-foreground',
+        error: 'bg-error text-error-foreground',
+        success: 'bg-success text-success-foreground',
+        warn: 'bg-warn text-warn-foreground',
+        ghost: 'bg-transparent !shadow-none',
         link: 'underline-offset-4 hover:underline bg-transparent !shadow-none',
       },
       outline: {
         none: 'border-0',
-        default: 'border border-default-300 bg-transparent text-foreground hover:bg-default-200',
+        default: 'border dark:border-default-700 bg-transparent text-foreground',
         primary: 'border border-primary bg-transparent text-foreground hover:text-primary-foreground hover:bg-primary',
         error: 'border border-error bg-transparent text-foreground hover:text-error-foreground hover:bg-error',
         success: 'border border-success bg-transparent text-foreground hover:text-success-foreground hover:bg-success',

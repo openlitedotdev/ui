@@ -10,7 +10,7 @@ const inter = DM_Sans({
 export default function Layout({ children }: { children: ReactNode }) {
   return (
     <html lang="en" className={inter.className} suppressHydrationWarning>
-      <body className="bg-gradient-to-tl from-white via-default-100 to-default-200">
+      <body>
         <RootProvider>{children}</RootProvider>
       </body>
     </html>
