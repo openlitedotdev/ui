@@ -12,5 +12,5 @@ export default {
     './node_modules/@openlite/ui/dist/**/*.{js,ts,tsx,mdx}',
   ],
   presets: [createPreset()],
-  plugins: [openui()],
+  plugins: [openui({ defaultTheme: 'light' })],
 }

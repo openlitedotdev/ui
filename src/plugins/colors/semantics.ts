@@ -28,8 +28,8 @@ export const themeColorsLight: ThemeColors = {
   ...base.light,
   default: {
     ...common.neutral,
-    foreground: '#FFFFFF',
-    DEFAULT: '#000000',
+    foreground: readableColor(common.neutral[300]),
+    DEFAULT: common.neutral[300],
   },
   primary: {
     ...common.azure,
@@ -56,9 +56,9 @@ export const themeColorsLight: ThemeColors = {
 export const themeColorsDark: ThemeColors = {
   ...base.dark,
   default: {
-    ...common.neutral,
-    foreground: '#000000',
-    DEFAULT: '#FFFFFF',
+    ...swapColorValues(common.neutral),
+    foreground: readableColor(common.neutral[700]),
+    DEFAULT: common.neutral[700],
   },
   primary: {
     ...swapColorValues(common.azure),
