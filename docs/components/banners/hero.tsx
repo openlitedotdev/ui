@@ -1,6 +1,7 @@
 import { Button } from '@openlite/ui'
 import Link from 'next/link'
 import InstallCommand from '../install-command'
+import { Arrow } from '../icons/arrow'
 
 export function Hero() {
   return (
@@ -23,6 +24,7 @@ export function Hero() {
             <Button asChild>
               <Link href="/docs">
                 Getting started
+                <Arrow />
               </Link>
             </Button>
             <InstallCommand />

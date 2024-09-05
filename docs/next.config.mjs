@@ -6,6 +6,7 @@ const withMDX = createMDX()
 const config = {
   reactStrictMode: true,
   eslint: { ignoreDuringBuilds: true },
+  images: { remotePatterns: [{ protocol: 'https', hostname: 'picsum.photos' }] },
 }
 
 export default withMDX(config)
