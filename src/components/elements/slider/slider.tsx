@@ -8,12 +8,12 @@ import { cn, slider } from '@/tailwind'
 export interface Comp extends React.ElementRef<typeof SliderPrimitive.Root> {}
 export interface Props extends React.ComponentPropsWithoutRef<typeof SliderPrimitive.Root>,
   VariantProps<typeof slider> {
-  variant?: 'error' | 'primary' | 'success' | 'warn' | null | undefined
+  variant?: 'default' | 'error' | 'primary' | 'success' | 'warn' | null | undefined
   styles?: string
   values?: boolean
 }
 
-const Slider = React.forwardRef<Comp, Props>(({ className, styles, values = false, variant = 'primary', ...props }, ref) => {
+const Slider = React.forwardRef<Comp, Props>(({ className, styles, values = false, variant = 'default', ...props }, ref) => {
   const [value, setValue] = React.useState<number[]>(props.defaultValue || [0])
 
   return (

@@ -1,4 +1,5 @@
 import { Button } from '@openlite/ui'
+import Link from 'next/link'
 import InstallCommand from '../install-command'
 
 export function Hero() {
@@ -19,7 +20,11 @@ export function Hero() {
             </p>
           </div>
           <div className="flex items-center gap-4 flex-wrap justify-center">
-            <Button>Getting started</Button>
+            <Button asChild>
+              <Link href="/docs">
+                Getting started
+              </Link>
+            </Button>
             <InstallCommand />
           </div>
         </div>

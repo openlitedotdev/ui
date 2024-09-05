@@ -15,7 +15,7 @@ function SubMenu({ classes }: { classes: string }) {
   return (
     <nav className={classes}>
       {links.map((link, key) => (
-        <Link href={link.href} key={key}>{link.label}</Link>
+        <Link href={link.href} key={key} className="hover:text-neutral-700">{link.label}</Link>
       ))}
     </nav>
   )
