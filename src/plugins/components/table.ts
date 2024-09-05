@@ -22,7 +22,7 @@ export const table = cva('w-full caption-bottom text-small rounded-lg overflow-h
  *   // TableHeader elements
  * </tableHeader>
  */
-export const tableHeader = cva('[&_tr]:border-b [&_tr]:border-default')
+export const tableHeader = cva('[&_tr]:border-b')
 
 /**
  * Table wrapper **Class Variants** component
@@ -46,7 +46,7 @@ export const tableBody = cva('&_tr:last-child]:border-0')
  *   // TableFooter elements
  * </TableFooter>
  */
-export const tableFooter = cva('border-t bg-default/50 font-medium [&>tr]:last:border-b-0')
+export const tableFooter = cva('border-t font-medium [&>tr]:last:border-b-0')
 
 /**
  * Table wrapper **Class Variants** component
@@ -58,7 +58,7 @@ export const tableFooter = cva('border-t bg-default/50 font-medium [&>tr]:last:b
  *   // TableRow elements
  * </TableRow>
  */
-export const tableRow = cva('border-b transition-colors hover:bg-default/30 border-b-default')
+export const tableRow = cva('border-b transition-colors hover:bg-default-100')
 
 /**
  * Table wrapper **Class Variants** component
@@ -70,7 +70,7 @@ export const tableRow = cva('border-b transition-colors hover:bg-default/30 bord
  *   // TableHead elements
  * </TableHead>
  */
-export const tableHead = cva('h-12 px-4 text-left align-middle font-medium text-default-foreground [&:has([role=checkbox])]:pr-0')
+export const tableHead = cva('h-12 px-4 text-left align-middle font-medium [&:has([role=checkbox])]:pr-0')
 
 /**
  * Table wrapper **Class Variants** component
@@ -94,4 +94,4 @@ export const tableCell = cva('p-4 align-middle [&:has([role=checkbox])]:pr-0')
  *   // TableCaption elements
  * </TableCaption>
  */
-export const tableCaption = cva('mt-4 text-sm text-default-foreground')
+export const tableCaption = cva('mt-4 text-small text-default-foreground')

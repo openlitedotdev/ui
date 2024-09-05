@@ -1,7 +1,7 @@
 export const animations = {
   animation: {
     'pulse': 'pulse 1s ease-in-out',
-    'pop': 'pop 0.6s ease-out',
+    'pop-in': 'pop 0.6s ease-out',
     'pulse-fade-in': 'pulse-fade-in 0.3s ease-out',
     'dialog-in': 'dialog-in 0.3s ease-out',
     'dialog-out': 'dialog-out 0.3s ease-out',

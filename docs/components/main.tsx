@@ -1,11 +1,11 @@
 import { Hero } from './banners/hero'
-import Examples from './examples'
+import Demos from './demo'
 
 export default function Main() {
   return (
     <main className="min-h-screen">
       <Hero />
-      <Examples />
+      <Demos />
     </main>
   )
 }

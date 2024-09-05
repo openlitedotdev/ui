@@ -46,7 +46,7 @@ export const selectValue = cva('')
  *   // SelectTrigger elements
  * </SelectTrigger>
  */
-export const selectTrigger = cva('flex relative h-10 w-64 items-center justify-between rounded-medium px-3 py-2 text-small ring-offset-transparent focus:outline-none focus:ring-2 focus:ring-transparent focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 [&>span]:line-clamp-1', {
+export const selectTrigger = cva('flex relative w-96 items-center justify-between rounded-medium px-3 py-2 text-small ring-offset-transparent focus:outline-none focus:ring-2 focus:ring-transparent focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 [&>span]:line-clamp-1', {
   variants: {
     variant: {
       none: 'border-none',

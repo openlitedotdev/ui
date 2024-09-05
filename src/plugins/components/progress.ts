@@ -11,7 +11,7 @@ import { cva } from 'class-variance-authority'
  * </Progress>
  */
 
-export const progress = cva('relative bg-default w-96 overflow-hidden rounded-full', {
+export const progress = cva('relative bg-default-300 md:min-w-96 overflow-hidden rounded-full', {
   variants: {
     size: {
       sm: 'h-2',
@@ -37,6 +37,7 @@ export const progress = cva('relative bg-default w-96 overflow-hidden rounded-fu
 export const progressIndicator = cva('h-full relative w-full flex-1 transition-all rounded-full', {
   variants: {
     variant: {
+      default: 'bg-default',
       primary: 'bg-primary',
       success: 'bg-success',
       warn: 'bg-warn',
@@ -44,6 +45,6 @@ export const progressIndicator = cva('h-full relative w-full flex-1 transition-a
     },
   },
   defaultVariants: {
-    variant: 'primary',
+    variant: 'default',
   },
 })

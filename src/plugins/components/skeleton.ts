@@ -10,7 +10,7 @@ import { cva } from 'class-variance-authority'
  *   // Skeleton elements
  * </Skeleton>
  */
-export const skeleton = cva('animate-pulse-infinite bg-default', {
+export const skeleton = cva('animate-pulse bg-default-300', {
   variants: {
     rounded: {
       none: 'rounded-none',

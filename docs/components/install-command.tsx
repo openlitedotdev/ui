@@ -1,8 +1,10 @@
 'use client'
 
 import { useState } from 'react'
-import { Check, Copy, Terminal } from 'lucide-react'
 import { Button } from '@openlite/ui'
+import { Terminal } from './icons/terminal'
+import { Copy } from './icons/copy'
+import { Check } from './icons/check'
 
 export default function InstallCommand() {
   const [copied, setCopied] = useState(false)
@@ -17,7 +19,7 @@ export default function InstallCommand() {
   return (
     <div className="flex items-center space-x-2 border rounded-medium p-1 max-w-md">
       <pre className="flex items-center gap-2 flex-grow px-3 py-2">
-        <Terminal className="size-4 text-neutral-500" />
+        <Terminal className="text-neutral-500" />
         <code className="text-xs sm:text-sm text-neutral-500 dark:text-white">
           {installCommand}
         </code>
@@ -30,10 +32,10 @@ export default function InstallCommand() {
       >
         {copied
           ? (
-              <Check className="size-4 text-green-500" />
+              <Check className="text-green-500" />
             )
           : (
-              <Copy className="size-4" />
+              <Copy />
             )}
       </Button>
     </div>
