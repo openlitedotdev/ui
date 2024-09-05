@@ -1,7 +1,7 @@
 import { Button } from '@openlite/ui'
 import InstallCommand from '../install-command'
 
-export function Presentation() {
+export function Hero() {
   return (
     <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48">
       <div className="container px-4 md:px-6">
@@ -18,7 +18,7 @@ export function Presentation() {
               Our design system provides a complete set of guidelines, components, and tools to help you create cohesive and stunning user interfaces. Take a look at our documentation and use the established layouts.
             </p>
           </div>
-          <div className="flex items-center gap-x-5 flex-wrap">
+          <div className="flex items-center gap-4 flex-wrap justify-center">
             <Button>Getting started</Button>
             <InstallCommand />
           </div>

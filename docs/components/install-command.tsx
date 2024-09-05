@@ -15,11 +15,13 @@ export default function InstallCommand() {
   }
 
   return (
-    <div className="flex items-center space-x-2 border-neutral-300 border rounded-medium p-1 max-w-md">
-      <code className="flex items-center gap-2 flex-grow px-3 py-2 text-sm text-neutral-500">
-        <Terminal className="size-4" />
-        {installCommand}
-      </code>
+    <div className="flex items-center space-x-2 border rounded-medium p-1 max-w-md">
+      <pre className="flex items-center gap-2 flex-grow px-3 py-2">
+        <Terminal className="size-4 text-neutral-500" />
+        <code className="text-xs sm:text-sm text-neutral-500 dark:text-white">
+          {installCommand}
+        </code>
+      </pre>
       <Button
         onClick={copyToClipboard}
         variant="ghost"
