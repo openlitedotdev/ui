@@ -25,7 +25,7 @@ export const button = cva(
       },
       outline: {
         none: 'border-0',
-        default: 'border dark:border-default-700 bg-transparent text-foreground',
+        default: 'border border-default-300 bg-transparent text-foreground',
         primary: 'border border-primary bg-transparent text-foreground hover:text-primary-foreground hover:bg-primary',
         error: 'border border-error bg-transparent text-foreground hover:text-error-foreground hover:bg-error',
         success: 'border border-success bg-transparent text-foreground hover:text-success-foreground hover:bg-success',

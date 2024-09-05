@@ -20,7 +20,7 @@ export const progress = cva('relative bg-default-300 md:min-w-96 overflow-hidden
     },
   },
   defaultVariants: {
-    size: 'md',
+    size: 'sm',
   },
 
 })
@@ -45,6 +45,6 @@ export const progressIndicator = cva('h-full relative w-full flex-1 transition-a
     },
   },
   defaultVariants: {
-    variant: 'default',
+    variant: 'primary',
   },
 })

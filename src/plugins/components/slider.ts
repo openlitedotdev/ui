@@ -39,7 +39,7 @@ export const sliderRange = cva('absolute h-2', {
     },
   },
   defaultVariants: {
-    variant: 'default',
+    variant: 'primary',
   },
 })
 

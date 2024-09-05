@@ -69,7 +69,7 @@ export function MultipleComponentDemo() {
           </div>
 
           <Badge>Badge</Badge>
-          <div className="w-full relative border rounded-medium">
+          <div className="w-full relative border border-default-300 rounded-medium">
             <Input type="search" placeholder="Search..." border="none" />
             <Search className="absolute top-2.5 right-4" />
           </div>

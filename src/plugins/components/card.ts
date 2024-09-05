@@ -10,7 +10,7 @@ import { cva } from 'class-variance-authority'
  *   // accordion elements
  * </Card>
  */
-export const card = cva('cursor-pointer flex border justify-between items-center', {
+export const card = cva('cursor-pointer flex border border-default-300 justify-between items-center', {
   variants: {
     rounded: {
       none: 'rounded-none',

@@ -17,7 +17,7 @@ export default function InstallCommand() {
   }
 
   return (
-    <div className="flex items-center space-x-2 border dark:border-default-300 rounded-medium p-1 max-w-md">
+    <div className="flex items-center space-x-2 border border-default-300 rounded-medium p-1 max-w-md">
       <pre className="flex items-center gap-2 flex-grow px-3 py-2">
         <Terminal className="text-neutral-500" />
         <code className="text-xs sm:text-sm text-neutral-500">

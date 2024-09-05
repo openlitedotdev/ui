@@ -46,7 +46,7 @@ export const tableBody = cva('&_tr:last-child]:border-0')
  *   // TableFooter elements
  * </TableFooter>
  */
-export const tableFooter = cva('border-t font-medium [&>tr]:last:border-b-0')
+export const tableFooter = cva('border-t border-default-300 font-medium [&>tr]:last:border-b-0')
 
 /**
  * Table wrapper **Class Variants** component
@@ -58,7 +58,7 @@ export const tableFooter = cva('border-t font-medium [&>tr]:last:border-b-0')
  *   // TableRow elements
  * </TableRow>
  */
-export const tableRow = cva('border-b transition-colors hover:bg-default-100')
+export const tableRow = cva('border-b border-default-300 transition-colors hover:bg-default-100')
 
 /**
  * Table wrapper **Class Variants** component

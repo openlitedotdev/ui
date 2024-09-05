@@ -26,7 +26,7 @@ export default function Component() {
         <Card>
           <CardContent>
             <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
-              <TabsList className="w-full justify-start rounded-none border-b">
+              <TabsList className="w-full justify-start rounded-none">
                 <TabsTrigger value="account" className="rounded-none">Account</TabsTrigger>
                 <TabsTrigger value="password" className="rounded-none">Password</TabsTrigger>
               </TabsList>

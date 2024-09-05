@@ -13,7 +13,7 @@ export interface Props extends React.ComponentPropsWithoutRef<typeof SliderPrimi
   values?: boolean
 }
 
-const Slider = React.forwardRef<Comp, Props>(({ className, styles, values = false, variant = 'default', ...props }, ref) => {
+const Slider = React.forwardRef<Comp, Props>(({ className, styles, values = false, variant = 'primary', ...props }, ref) => {
   const [value, setValue] = React.useState<number[]>(props.defaultValue || [0])
 
   return (

@@ -19,9 +19,9 @@ export const input = cva('h-10 w-full transition-colors bg-transparent px-4 py-2
 
     border: {
       none: 'border-none',
-      sm: 'border',
-      md: 'border-2',
-      lg: 'border-4',
+      sm: 'border border-default-300',
+      md: 'border-2 border-default-300',
+      lg: 'border-4 border-default-300',
     },
   },
   defaultVariants: {
