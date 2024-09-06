@@ -30,7 +30,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - run: echo "//registry.npmjs.org/:_authToken=${{ secrets.OPEN_LITE_UI }}" > ~/.npmrc
       - run: corepack enable
 
       - name: Install Dependencies
