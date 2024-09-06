@@ -17,7 +17,7 @@ const Button = React.forwardRef<Comp, Props>(
     className,
     variant,
     ripple = true,
-    rippleColor = 'light',
+    rippleColor = 'dark',
     size,
     outline,
     rounded,
