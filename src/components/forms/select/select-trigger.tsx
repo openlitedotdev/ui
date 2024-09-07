@@ -6,7 +6,7 @@ import type { VariantProps } from '@/tailwind'
 export interface Comp extends React.ElementRef<typeof SelectPrimitive.Trigger> {}
 export interface Props extends React.ComponentPropsWithoutRef<typeof SelectPrimitive.Trigger>,
   VariantProps<typeof selectTrigger> {
-  hiddenIcon: boolean
+  hiddenIcon?: boolean
 }
 
 const SelectTrigger = React.forwardRef<Comp, Props>(({ className, variant, children, size, hiddenIcon = false, ...props }, ref) => {

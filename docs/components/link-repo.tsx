@@ -12,7 +12,7 @@ export function LinkRepo({ classes }: { classes: string }) {
   return (
     <div className={classes}>
       <Select value={currentTheme} onValueChange={(e: Variant) => setTheme(e)}>
-        <SelectTrigger hiddenIcon={true} size="icon">
+        <SelectTrigger hiddenIcon size="icon">
           <ColorPicker />
         </SelectTrigger>
         <SelectContent>
