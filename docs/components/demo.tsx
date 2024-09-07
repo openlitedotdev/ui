@@ -14,10 +14,11 @@ import {
 import { AlertDemo } from './examples/alert'
 import { MultipleComponentDemo } from './examples/multiple-components'
 import { TableDemo } from './examples/table'
+import useThemeStore from '@/stores/color-picker'
 
 export default function Component() {
   const [activeTab, setActiveTab] = useState('account')
-
+  const { currentTheme } = useThemeStore()
   return (
     <div className="w-full max-w-6xl mx-auto p-4 space-y-4">
 
@@ -42,7 +43,7 @@ export default function Component() {
                     <label htmlFor="password" className="block text-sm font-medium text-gray-700">Password</label>
                     <Input type="password" id="username" defaultValue="*******" />
                   </div>
-                  <Button>Login</Button>
+                  <Button variant={currentTheme}>Login</Button>
                 </div>
               </TabsContent>
               <TabsContent value="password" className="p-4">
@@ -57,7 +58,7 @@ export default function Component() {
                     <label htmlFor="password" className="block text-sm font-medium text-gray-700">Password</label>
                     <Input type="password" id="username" defaultValue="*******" />
                   </div>
-                  <Button>Save account</Button>
+                  <Button variant={currentTheme}>Save account</Button>
                 </div>
               </TabsContent>
             </Tabs>

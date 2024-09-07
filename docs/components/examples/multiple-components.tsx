@@ -33,6 +33,7 @@ import { ArrowRight } from '../icons/arrow-right'
 import { Search } from '../icons/search'
 import { DialogDemo } from './dialog'
 import { ProgressDemo } from './progress'
+import useThemeStore from '@/stores/color-picker'
 
 const items = [
   'https://picsum.photos/100/100?random=1',
@@ -44,6 +45,7 @@ const items = [
 ]
 
 export function MultipleComponentDemo() {
+  const { currentTheme } = useThemeStore()
   return (
     <Card>
       <CardContent>
@@ -68,7 +70,7 @@ export function MultipleComponentDemo() {
             </Avatar>
           </div>
 
-          <Badge>Badge</Badge>
+          <Badge variant={currentTheme}>Badge</Badge>
           <div className="w-full relative border border-default-300 rounded-medium">
             <Input type="search" placeholder="Search..." border="none" />
             <Search className="absolute top-2.5 right-4" />
@@ -90,10 +92,10 @@ export function MultipleComponentDemo() {
             </Tooltip>
           </TooltipProvider>
           <DialogDemo />
-          <Button className="">Read more</Button>
+          <Button variant={currentTheme}>Read more</Button>
         </div>
         <header className="py-5 flex flex-col gap-4">
-          <Slider defaultValue={[50]} max={100} step={1} />
+          <Slider variant={currentTheme} defaultValue={[50]} max={100} step={1} />
           <ProgressDemo />
         </header>
         <div className="pt-5 md:flex items-center justify-center hidden">
