@@ -22,7 +22,7 @@ export const tabs = cva('')
  *   // TabsList elements
  * </TabsList>
  */
-export const tabsList = cva('inline-flex rounded-md w-full p-2 h-fit items-center justify-center bg-default-100')
+export const tabsList = cva('inline-flex rounded-medium w-full p-2 h-fit items-center justify-center bg-default-100')
 
 /**
  * Tabs wrapper **Class Variants** component
@@ -34,20 +34,7 @@ export const tabsList = cva('inline-flex rounded-md w-full p-2 h-fit items-cente
  *   // TabsTrigger elements
  * </TabsTrigger>
  */
-export const tabsTrigger = cva('inline-flex w-full items-center justify-center whitespace-nowrap rounded-medium p-3 text-medium font-medium ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:shadow-sm data-[state=active]:rounded-md', {
-  variants: {
-    variant: {
-      default: 'data-[state=active]:bg-default',
-      primary: 'data-[state=active]:bg-primary',
-      success: 'data-[state=active]:bg-success',
-      error: 'data-[state=active]:bg-error',
-      warn: 'data-[state=active]:bg-warn',
-    },
-  },
-  defaultVariants: {
-    variant: 'default',
-  },
-})
+export const tabsTrigger = cva('inline-flex w-full items-center justify-center whitespace-nowrap rounded-medium p-3 text-medium font-medium ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:shadow-sm data-[state=active]:rounded-medium data-[state=active]:bg-background data-[state=active]:text-foreground')
 
 /**
  * Tabs wrapper **Class Variants** component

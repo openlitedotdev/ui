@@ -45,6 +45,6 @@ export const progressIndicator = cva('h-full relative w-full flex-1 transition-a
     },
   },
   defaultVariants: {
-    variant: 'primary',
+    variant: 'default',
   },
 })

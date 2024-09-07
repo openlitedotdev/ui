@@ -10,7 +10,7 @@ import { cva } from 'class-variance-authority'
  *   // alert elements
  * </Alert>
  */
-export const alert = cva('relative w-full p-4 [&>svg~*]:pl-8 [&>svg+div]:translate-y-[-3px] [&>svg]:absolute [&>svg]:left-4 [&>svg]:top-4 shadow-small', {
+export const alert = cva('relative w-full p-4 [&>svg~*]:pl-8 [&>svg+div]:translate-y-[-3px] [&>svg]:absolute [&>svg]:left-4 [&>svg]:top-4 shadow-small transition-colors', {
   variants: {
     variant: {
       default: 'border border-default-300 dark:bg-border-default-700 text-foreground',

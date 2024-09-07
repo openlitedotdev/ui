@@ -46,7 +46,7 @@ export const selectValue = cva('')
  *   // SelectTrigger elements
  * </SelectTrigger>
  */
-export const selectTrigger = cva('flex relative w-96 items-center justify-between rounded-medium px-3 py-2 text-small ring-offset-transparent focus:outline-none focus:ring-2 focus:ring-transparent focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 [&>span]:line-clamp-1', {
+export const selectTrigger = cva('flex relative items-center justify-between rounded-medium py-2 text-small ring-offset-transparent focus:outline-none focus:ring-2 focus:ring-transparent focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 [&>span]:line-clamp-1', {
   variants: {
     variant: {
       none: 'border-none',
@@ -56,10 +56,17 @@ export const selectTrigger = cva('flex relative w-96 items-center justify-betwee
       warn: 'border border-warn',
       error: 'border border-error',
     },
+
+    size: {
+      sm: 'px-3 ',
+      md: 'px-6',
+      lg: 'px-8',
+      icon: 'size-8 p-0 !justify-center',
+    },
   },
   defaultVariants: {
     variant: 'default',
-
+    size: 'sm',
   },
 })
 
@@ -97,7 +104,7 @@ export const selectScrollDownButton = cva('flex cursor-default items-center just
  *   // SelectContent elements
  * </SelectContent>
  */
-export const selectContent = cva('relative top-1 bg-default-50 shadow-small w-64 left-0 z-50 overflow-hidden rounded-medium data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2 data-[side=top]:-top-1')
+export const selectContent = cva('relative top-1 bg-default-50 shadow-small left-0 z-50 overflow-hidden rounded-medium data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2 data-[side=top]:-top-1')
 
 /**
  * Select wrapper **Class Variants** component

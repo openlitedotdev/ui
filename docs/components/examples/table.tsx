@@ -9,8 +9,10 @@ import {
   TableHeader,
   TableRow,
 } from '@openlite/ui'
+import useThemeStore from '@/stores/color-picker'
 
 export function TableDemo() {
+  const { currentTheme } = useThemeStore()
   return (
     <Card>
       <CardContent className="w-full">
@@ -34,7 +36,7 @@ export function TableDemo() {
               { id: 5, name: 'Leonard Krasner', title: 'Senior Designer', email: 'leonard.krasner@example.com', role: 'Owner' },
             ].map(person => (
               <TableRow key={person.id}>
-                <TableCell><Checkbox checked={person.id === 2} /></TableCell>
+                <TableCell><Checkbox variant={currentTheme} checked={person.id === 2} /></TableCell>
                 <TableCell>{person.id}</TableCell>
                 <TableCell>{person.name}</TableCell>
                 <TableCell>{person.title}</TableCell>

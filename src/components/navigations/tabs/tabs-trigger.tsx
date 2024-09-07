@@ -7,11 +7,11 @@ export interface Comp extends React.ElementRef<typeof TabsPrimitive.Trigger> {}
 export interface Props extends React.ComponentPropsWithoutRef<typeof TabsPrimitive.Trigger>,
   VariantProps<typeof tabsTrigger> {}
 
-const TabsTrigger = React.forwardRef<Comp, Props>(({ className, variant, ...props }, ref) => {
+const TabsTrigger = React.forwardRef<Comp, Props>(({ className, ...props }, ref) => {
   return (
     <TabsPrimitive.Trigger
       ref={ref}
-      className={cn(tabsTrigger({ variant }), className)}
+      className={cn(tabsTrigger(), className)}
 
       {...props}
     />
