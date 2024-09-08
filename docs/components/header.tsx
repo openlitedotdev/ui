@@ -1,12 +1,11 @@
 import Link from 'next/link'
 import { Sheet, SheetContent, SheetTrigger } from '@openlite/ui'
-
-import { MenuIcon } from 'lucide-react'
 import { LinkRepo } from './link-repo'
+import { Menu } from './icons/menu'
 
 const links = [
-  { label: 'Documentation', href: 'https://ui.openlabs.online/docs/' },
-  { label: 'Components', href: 'https://ui.openlabs.online/docs/components/accordion' },
+  { label: 'Documentation', href: '/docs' },
+  { label: 'Components', href: '/docs/components/accordion' },
   { label: 'Templates', href: '#' },
   { label: 'Blog', href: '#' },
   { label: 'Releases', href: '#' },
@@ -27,7 +26,7 @@ function SidebarMenuMobile() {
     <nav className="block md:hidden ml-auto">
       <Sheet>
         <SheetTrigger asChild>
-          <MenuIcon />
+          <Menu />
         </SheetTrigger>
         <SheetContent>
           <div className="space-y-4 py-4">

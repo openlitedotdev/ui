@@ -37,7 +37,7 @@ export default function Component() {
                 <div className="space-y-4">
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium text-gray-700">Name</label>
-                    <Input id="name" defaultValue="Benjamin" />
+                    <Input id="name" defaultValue="Sebastian" />
                   </div>
                   <div>
                     <label htmlFor="password" className="block text-sm font-medium text-gray-700">Password</label>
@@ -52,7 +52,7 @@ export default function Component() {
                 <div className="space-y-4">
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium text-gray-700">Name</label>
-                    <Input id="name" defaultValue="Benjamin" />
+                    <Input id="name" defaultValue="Gerzon" />
                   </div>
                   <div>
                     <label htmlFor="password" className="block text-sm font-medium text-gray-700">Password</label>

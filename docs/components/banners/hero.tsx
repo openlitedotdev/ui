@@ -1,9 +1,13 @@
+'use client'
+
 import { Button } from '@openlite/ui'
 import Link from 'next/link'
 import InstallCommand from '../install-command'
 import { Arrow } from '../icons/arrow'
+import useThemeStore from '@/stores/color-picker'
 
 export function Hero() {
+  const { currentTheme } = useThemeStore()
   return (
     <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48">
       <div className="container px-4 md:px-6">
@@ -21,7 +25,7 @@ export function Hero() {
             </p>
           </div>
           <div className="flex items-center gap-4 flex-wrap justify-center">
-            <Button asChild>
+            <Button variant={currentTheme} asChild>
               <Link href="/docs">
                 Getting started
                 <Arrow />
