@@ -3,7 +3,7 @@
   "version": "0.4.5",
   "packageManager": "pnpm@9.7.0",
   "description": "A design system built with TailwindCSS and Radix UI.",
-  "author": "openlabs",
+  "author": "openlite",
   "license": "MIT",
   "sideEffects": false,
   "publishConfig": {
@@ -31,10 +31,10 @@
   ],
   "scripts": {
     "dev": "tsup --dts --watch",
-    "docs": "pnpm -r --filter docs dev",
-    "docs:build": "pnpm -r --filter docs build",
-    "playground": "pnpm -r --filter playground dev",
-    "playground:build": "pnpm -r --filter playground build",
+    "dev:docs": "pnpm -r --filter docs dev",
+    "build:docs": "pnpm -r --filter docs build",
+    "playground:next-js": "pnpm -r --filter @openlite/next-js dev",
+    "playground:astro": "pnpm -r --filter @openlite/astro dev",
     "clean": "pnpx rimraf dist pnpm-lock.yaml node_modules",
     "lint": "eslint . --fix",
     "build": "tsup --dts",
@@ -67,14 +67,13 @@
     "color2k": "2.0.3",
     "deepmerge": "4.3.1",
     "embla-carousel-react": "8.0.0",
-    "flat": "5.0.2",
+    "flat": "^5.0.2",
     "lodash.foreach": "4.5.0",
     "lodash.get": "4.4.2",
     "lodash.kebabcase": "4.1.1",
     "lodash.mapkeys": "4.6.0",
     "lodash.omit": "4.5.0",
-    "tailwind-merge": "2.2.2",
-    "zustand": "^4.5.5"
+    "tailwind-merge": "2.2.2"
   },
   "devDependencies": {
     "@antfu/eslint-config": "2.19.1",

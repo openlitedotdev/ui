@@ -1,0 +1,11 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Button } from '@openlite/ui';
+---
+ 
+<Layout title="Welcome to Astro.">
+  <main class="p-44">
+      <h2 class="text-2xl font-bold">Welcome Open UI with Astro</h2>
+      <Button variant="success" client:visible>My button</Button>
+  </main>
+</Layout>
