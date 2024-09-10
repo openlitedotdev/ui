@@ -1,10 +1,6 @@
 ## Getting Started
 
-Visit <a aria-label="openui learn" href="https://ui.openlabs.online/docs">https://ui.openlabs.online/docs</a> to get started with Open UI.
-
 ## Documentation
-
-Visit [https://ui.openlabs.online/docs](<[https://ui.openlabs.online/docs](https://ui.openlabs.online/docs)>) to view the full documentation.
 
 ## Contributing
 
