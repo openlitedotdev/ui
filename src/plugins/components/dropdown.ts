@@ -82,7 +82,7 @@ export const dropdownRadioGroup = cva('')
  *   // accordion elements
  * </DropdownSubTrigger>
  */
-export const dropdownSubTrigger = cva('flex hover:bg-background cursor-default select-none items-center rounded-small px-2 py-1.5 text-small outline-none')
+export const dropdownSubTrigger = cva('flex cursor-default select-none items-center rounded-small px-2 py-1.5 text-small outline-none focus:bg-default/20 data-[state=open]:bg-default/20')
 
 /**
  * Dropdown SubContent **Class Variants** component
@@ -94,7 +94,7 @@ export const dropdownSubTrigger = cva('flex hover:bg-background cursor-default s
  *   // accordion elements
  * </DropdownSubContent>
  */
-export const dropdownSubContent = cva('z-50 min-w-[8rem] overflow-hidden rounded-medium shadow-large bg-background border py-3 pl-3 border-default data-[state=open]:animate-dropdown-in data-[state=closed]:animate-dropdown-out')
+export const dropdownSubContent = cva('z-50 min-w-[8rem] overflow-hidden rounded-medium shadow-md py-3 pl-3 bg-background data-[state=open]:animate-dropdown-in data-[state=closed]:animate-dropdown-out border border-default-300')
 
 /**
  * Dropdown Content **Class Variants** component
@@ -106,7 +106,7 @@ export const dropdownSubContent = cva('z-50 min-w-[8rem] overflow-hidden rounded
  *   // accordion elements
  * </DropdownContent>
  */
-export const dropdownContent = cva('z-50 min-w-[12rem] p-3 overflow-hidden rounded-medium shadow-small border border-default bg-background data-[state=open]:animate-dropdown-in data-[state=closed]:animate-dropdown-out')
+export const dropdownContent = cva('z-50 min-w-[8rem] border border-default-300 p-3 overflow-hidden rounded-medium data-[state=open]:animate-dropdown-in data-[state=closed]:animate-dropdown-out shadow-md data-[side=top]:slide-in-from-bottom-2 data-[side=right]:slide-in-from-left-2 data-[side=bottom]:slide-in-from-top-2')
 
 /**
  * Dropdown Item **Class Variants** component
@@ -118,7 +118,7 @@ export const dropdownContent = cva('z-50 min-w-[12rem] p-3 overflow-hidden round
  *   // accordion elements
  * </DropdownItem>
  */
-export const dropdownItem = cva('relative flex gap-2 cursor-default select-none items-center hover:bg-default rounded-medium px-2 py-1.5 mr-3 text-small outline-none transition-colors hover:cursor-pointer hover:transition-colors data-[disabled]:pointer-events-none data-[disabled]:opacity-50')
+export const dropdownItem = cva('relative flex gap-2 cursor-default select-none items-center hover:bg-default/20 rounded-medium px-2 py-1.5 mr-3 text-small outline-none transition-colors hover:cursor-pointer hover:transition-colors data-[disabled]:pointer-events-none data-[disabled]:opacity-50')
 
 /**
  * Dropdown CheckboxItem **Class Variants** component
@@ -154,7 +154,7 @@ export const dropdownRadioItem = cva('relative flex gap-2 cursor-default select-
  *   // accordion elements
  * </DropdownSeparator>
  */
-export const dropdownSeparator = cva('-mx-1 my-1 h-px mr-3 bg-default border-b border-default')
+export const dropdownSeparator = cva('-mx-1 my-1 h-px mr-3 bg-default border-b border-default-300')
 
 /**
  * Dropdown Label **Class Variants** component
