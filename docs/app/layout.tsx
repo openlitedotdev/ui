@@ -1,11 +1,17 @@
 import './global.css'
 import { RootProvider } from 'fumadocs-ui/provider'
+import type { Metadata } from 'next'
 import { DM_Sans } from 'next/font/google'
 import type { ReactNode } from 'react'
 
 const inter = DM_Sans({
   subsets: ['latin'],
 })
+
+export const metadata: Metadata = {
+  title: 'Open UI',
+  description: 'A design system built with TailwindCSS and Radix UI.',
+}
 
 export default function Layout({ children }: { children: ReactNode }) {
   return (
