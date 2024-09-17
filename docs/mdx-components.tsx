@@ -12,10 +12,12 @@ import {
 import type { ReactNode } from 'react'
 import { Popup, PopupContent, PopupTrigger } from 'fumadocs-ui/twoslash/popup'
 import { cn } from '@openlite/ui/tailwind'
+import { Button } from '@openlite/ui'
 
 export function useMDXComponents(components: MDXComponents): MDXComponents {
   return {
     ...defaultComponents,
+    Button,
     Popup,
     PopupContent,
     PopupTrigger,
