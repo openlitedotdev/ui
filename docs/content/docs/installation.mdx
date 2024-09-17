@@ -14,28 +14,28 @@ Requirements:
     <Tab value='npm'>
 
 ```bash
-npm install @openlabs/ui
+npm install @openlite/ui
 ```
 
     </Tab>
     <Tab value="pnpm">
 
 ```bash
-pnpm add @openlabs/ui
+pnpm add @openlite/ui
 ```
 
     </Tab>
     <Tab value='yarn'>
 
 ```bash
-yarn add @openlabs/ui
+yarn add @openlite/ui
 ```
 
     </Tab>
     <Tab value='bun'>
 
 ```bash
-bun add @openlabs/ui
+bun add @openlite/ui
 ```
 
     </Tab>
@@ -48,13 +48,13 @@ Open UI is built on top of Tailwind CSS, so you need to install Tailwind CSS fir
 
 ```js
 // tailwind.config.js
-import { openui } from "@openlabs/theme"
+import { openui } from "@openlite/ui/tailwind"
 
 /** @type {import("tailwindcss").Config} */
 export default {
   content: [
     //...
-    "./node_modules/@openlabs/theme/dist/**/*.{js,ts,jsx,tsx}",
+    './node_modules/@openlite/ui/dist/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
     extend: {},
@@ -67,8 +67,10 @@ export default {
 
 Now, you can use the component you installed in your application 🎉.
 
+<Button>Press me</Button>
+
 ```jsx
-import { Button } from "@openlabs/ui"
+import { Button } from "@openlite/ui"
 
 export default function App() {
   return <Button>Press me</Button>

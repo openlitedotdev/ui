@@ -21,28 +21,28 @@ directly in your React Server Components (RSC).
     <Tab value='npm'>
 
 ```bash
-npm install @openlabs/ui
+npm install @openlite/ui
 ```
 
     </Tab>
     <Tab value="pnpm">
 
 ```bash
-pnpm add @openlabs/ui
+pnpm add @openlite/ui
 ```
 
     </Tab>
     <Tab value='yarn'>
 
 ```bash
-yarn add @openlabs/ui
+yarn add @openlite/ui
 ```
 
     </Tab>
     <Tab value='bun'>
 
 ```bash
-bun add @openlabs/ui
+bun add @openlite/ui
 ```
 
     </Tab>
@@ -57,13 +57,13 @@ the following code to your `tailwind.config.js` file:
 
 ```js
 // tailwind.config.js
-import { openui } from "@openlabs/theme"
+import { openui } from "@openlite/ui/tailwind"
 
 /** @type {import("tailwindcss").Config} */
 export default {
   content: [
     //...
-    "./node_modules/@openlabs/theme/dist/**/*.{js,ts,jsx,tsx}",
+    "./node_modules/@openlite/ui/dist/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {},
@@ -75,6 +75,8 @@ export default {
 ## Ready 🎉
 
 Now, you can use the component you installed in your application 🎉.
+
+<Button>My button in Next.js </Button>
 
 ```jsx
 // src/components/ButtonExample.jsx
