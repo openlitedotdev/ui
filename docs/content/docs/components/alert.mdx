@@ -2,3 +2,193 @@
 title: Alert
 description: Displays a callout for user attention.
 ---
+
+## Imports
+
+- **Alert**: The main component to display a list of accordion items.
+- **AlertTitle**: The title component to display the title of the accordion item.
+- **AlertDescription**: The content component to show the hidden content of the accordion.
+
+## Usage
+
+<Alert>
+<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" color="currentColor"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12s4.477 10 10 10s10-4.477 10-10"/><path d="M12.242 17v-5c0-.471 0-.707-.146-.854c-.147-.146-.382-.146-.854-.146m.75-3h.009"/></g></svg>
+  <AlertTitle>Alert default</AlertTitle> 
+  <AlertDescription className="[&>p]:m-0">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
+    voluptatum?
+  </AlertDescription>
+</Alert>
+
+```jsx
+import * as React from 'react'
+import { Alert, AlertTitle, AlertDescription } from '@openlite/ui'
+
+function App() {
+  return (
+    <Alert>
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" color="currentColor"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12s4.477 10 10 10s10-4.477 10-10"/><path d="M12.242 17v-5c0-.471 0-.707-.146-.854c-.147-.146-.382-.146-.854-.146m.75-3h.009"/></g></svg>
+      <AlertTitle>Success</AlertTitle> 
+      <AlertDescription>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
+        voluptatum?
+      </AlertDescription>
+    </Alert>
+  )
+}
+```
+
+## Examples
+
+### Primary
+
+<Alert variant="primary">
+<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" color="currentColor"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12s4.477 10 10 10s10-4.477 10-10"/><path d="M12.242 17v-5c0-.471 0-.707-.146-.854c-.147-.146-.382-.146-.854-.146m.75-3h.009"/></g></svg>
+  <AlertTitle>Primary</AlertTitle> 
+  <AlertDescription className="[&>p]:m-0">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
+    voluptatum?
+  </AlertDescription>
+</Alert>
+
+```jsx
+import * as React from 'react'
+import { Alert, AlertTitle, AlertDescription } from '@openlite/ui'
+
+function App() {
+  return (
+    <Alert variant="primary">
+<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" color="currentColor"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12s4.477 10 10 10s10-4.477 10-10"/><path d="M12.242 17v-5c0-.471 0-.707-.146-.854c-.147-.146-.382-.146-.854-.146m.75-3h.009"/></g></svg>
+      <AlertTitle>Primary</AlertTitle> 
+      <AlertDescription>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
+        voluptatum?
+      </AlertDescription>
+    </Alert>
+  )
+}
+```
+
+### Success
+
+<Alert variant="success">
+<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" color="currentColor"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12s4.477 10 10 10s10-4.477 10-10"/><path d="M12.242 17v-5c0-.471 0-.707-.146-.854c-.147-.146-.382-.146-.854-.146m.75-3h.009"/></g></svg>
+  <AlertTitle>Success</AlertTitle> 
+  <AlertDescription className="[&>p]:m-0">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
+    voluptatum?
+  </AlertDescription>
+</Alert>
+
+```jsx
+import * as React from 'react'
+import { Alert, AlertTitle, AlertDescription } from '@openlite/ui'
+
+function App() {
+  return (
+    <Alert variant="success">
+<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" color="currentColor"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12s4.477 10 10 10s10-4.477 10-10"/><path d="M12.242 17v-5c0-.471 0-.707-.146-.854c-.147-.146-.382-.146-.854-.146m.75-3h.009"/></g></svg>
+      <AlertTitle>Success</AlertTitle> 
+      <AlertDescription>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
+        voluptatum?
+      </AlertDescription>
+    </Alert>
+  )
+}
+```
+
+### Warn
+
+<Alert variant="warn">
+<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" color="currentColor"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12s4.477 10 10 10s10-4.477 10-10"/><path d="M12.242 17v-5c0-.471 0-.707-.146-.854c-.147-.146-.382-.146-.854-.146m.75-3h.009"/></g></svg>
+  <AlertTitle>Warning</AlertTitle> 
+  <AlertDescription className="[&>p]:m-0">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
+    voluptatum?
+  </AlertDescription>
+</Alert>
+
+```jsx
+import * as React from 'react'
+import { Alert, AlertTitle, AlertDescription } from '@openlite/ui'
+
+function App() {
+  return (
+    <Alert variant="warn">
+<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" color="currentColor"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12s4.477 10 10 10s10-4.477 10-10"/><path d="M12.242 17v-5c0-.471 0-.707-.146-.854c-.147-.146-.382-.146-.854-.146m.75-3h.009"/></g></svg>
+      <AlertTitle>Warning</AlertTitle> 
+      <AlertDescription>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
+        voluptatum?
+      </AlertDescription>
+    </Alert>
+  )
+}
+```
+
+### Error
+
+<Alert variant="error">
+<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" color="currentColor"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12s4.477 10 10 10s10-4.477 10-10"/><path d="M12.242 17v-5c0-.471 0-.707-.146-.854c-.147-.146-.382-.146-.854-.146m.75-3h.009"/></g></svg>
+  <AlertTitle>Error</AlertTitle> 
+  <AlertDescription className="[&>p]:m-0">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
+    voluptatum?
+  </AlertDescription>
+</Alert>
+
+```jsx
+import * as React from 'react'
+import { Alert, AlertTitle, AlertDescription } from '@openlite/ui'
+
+function App() {
+  return (
+    <Alert variant="error">
+<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" color="currentColor"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12s4.477 10 10 10s10-4.477 10-10"/><path d="M12.242 17v-5c0-.471 0-.707-.146-.854c-.147-.146-.382-.146-.854-.146m.75-3h.009"/></g></svg>
+      <AlertTitle>Error</AlertTitle> 
+      <AlertDescription>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
+        voluptatum?
+      </AlertDescription>
+    </Alert>
+  )
+}
+```
+
+### Rounded
+
+<Alert rounded="none">
+<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" color="currentColor"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12s4.477 10 10 10s10-4.477 10-10"/><path d="M12.242 17v-5c0-.471 0-.707-.146-.854c-.147-.146-.382-.146-.854-.146m.75-3h.009"/></g></svg>
+  <AlertTitle>Primary</AlertTitle> 
+  <AlertDescription className="[&>p]:m-0">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
+    voluptatum?
+  </AlertDescription>
+</Alert>
+
+```jsx
+import * as React from 'react'
+import { Alert, AlertTitle, AlertDescription } from '@openlite/ui'
+
+function App() {
+  return (
+    <Alert rounded="none">
+      <AlertTitle>Primary</AlertTitle> 
+      <AlertDescription>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
+        voluptatum?
+      </AlertDescription>
+    </Alert>
+  )
+}
+```
+
+## API
+
+### Alert Props
+
+| Props | Type | Description |
+| --- | --- | --- |
+| `variant` | `'default' \| 'primary' \| 'success' \| 'warn' \| 'error'` | The variant of the alert. |
+| `rounded` | `'none' \| 'sm' \| 'md' \| 'lg'` | The rounded of the alert. |

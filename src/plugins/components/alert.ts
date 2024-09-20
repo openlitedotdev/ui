@@ -42,18 +42,7 @@ export const alert = cva('relative w-full p-4 [&>svg~*]:pl-8 [&>svg+div]:transla
  *   // alert title elements
  * </AvatarTitle>
  */
-export const alertTitle = cva('mb-2 font-semibold leading-none tracking-tight', {
-  variants: {
-    size: {
-      sm: 'text-small',
-      md: 'text-medium',
-      lg: 'text-large',
-    },
-  },
-  defaultVariants: {
-    size: 'md',
-  },
-})
+export const alertTitle = cva('mb-2 font-semibold leading-none tracking-tight')
 
 /**
  * Alert wrapper **Class Variants** component
@@ -65,15 +54,4 @@ export const alertTitle = cva('mb-2 font-semibold leading-none tracking-tight', 
  *   // alert description elements
  * </AlertDescription>
  */
-export const alertDescription = cva('[&_p]:leading-relaxed', {
-  variants: {
-    size: {
-      sm: 'text-small',
-      md: 'text-medium',
-      lg: 'text-large',
-    },
-  },
-  defaultVariants: {
-    size: 'sm',
-  },
-})
+export const alertDescription = cva('[&_p]:leading-relaxed')
