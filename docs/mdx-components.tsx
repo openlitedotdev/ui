@@ -12,7 +12,7 @@ import {
 import type { ReactNode } from 'react'
 import { Popup, PopupContent, PopupTrigger } from 'fumadocs-ui/twoslash/popup'
 import { cn } from '@openlite/ui/tailwind'
-import { Button } from '@openlite/ui'
+import { AccordionContent, AccordionItem, AccordionTrigger, Accordion as AccordionUi, Button } from '@openlite/ui'
 
 export function useMDXComponents(components: MDXComponents): MDXComponents {
   return {
@@ -21,6 +21,10 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     Popup,
     PopupContent,
     PopupTrigger,
+    AccordionUi,
+    AccordionItem,
+    AccordionTrigger,
+    AccordionContent,
     pre: ({ title, className, icon, allowCopy, ...props }: CodeBlockProps) => (
       <CodeBlock title={title} icon={icon} allowCopy={allowCopy}>
         <Pre className={cn('max-h-[400px]', className)} {...props} />

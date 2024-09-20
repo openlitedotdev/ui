@@ -11,6 +11,30 @@ description: A vertically stacked set of interactive headings that each reveal a
 
 ## Usage
 
+<AccordionUi type="single" collapsible className="w-full">
+  <AccordionItem value="example" className="[&>h3]:m-0 m-0 p-0">
+    <AccordionTrigger>¿Usar Acordeón?</AccordionTrigger>
+    <AccordionContent className="m-0 [&>p]:m-0">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
+      voluptatum?
+    </AccordionContent>
+  </AccordionItem>
+  <AccordionItem value="example2" className="[&>h3]:m-0 m-0 p-0">
+    <AccordionTrigger>¿Usar Acordeón?</AccordionTrigger>
+    <AccordionContent className="m-0 [&>p]:m-0">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
+      voluptatum?
+    </AccordionContent>
+  </AccordionItem>
+  <AccordionItem value="example3" className="[&>h3]:m-0 m-0 p-0">
+    <AccordionTrigger>¿Usar Acordeón?</AccordionTrigger>
+    <AccordionContent className="m-0 [&>p]:m-0">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
+      voluptatum?
+    </AccordionContent>
+  </AccordionItem>
+</AccordionUi>
+
 ```jsx
 import * as React from 'react'
 import {
@@ -30,14 +54,14 @@ function App() {
           voluptatum?
         </AccordionContent>
       </AccordionItem>
-      <AccordionItem value="example">
+      <AccordionItem value="example2">
         <AccordionTrigger>¿Usar Acordeón?</AccordionTrigger>
         <AccordionContent>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
           voluptatum?
         </AccordionContent>
       </AccordionItem>
-      <AccordionItem value="example">
+      <AccordionItem value="example3">
         <AccordionTrigger>¿Usar Acordeón?</AccordionTrigger>
         <AccordionContent>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
@@ -49,9 +73,35 @@ function App() {
 }
 ```
 
-## Expand Multiple Items
+## Example
+
+### Expand Multiple Items
 
 If the type is set to `multiple`, the accordion will allow several elements to expand at the same time. 
+
+<AccordionUi type="multiple" collapsible className="w-full">
+  <AccordionItem value="example" className="[&>h3]:m-0 m-0 p-0">
+    <AccordionTrigger>¿Usar Acordeón?</AccordionTrigger>
+    <AccordionContent className="m-0 [&>p]:m-0">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
+      voluptatum?
+    </AccordionContent>
+  </AccordionItem>
+  <AccordionItem value="example" className="[&>h3]:m-0 m-0 p-0">
+    <AccordionTrigger>¿Usar Acordeón?</AccordionTrigger>
+    <AccordionContent className="m-0 [&>p]:m-0">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
+      voluptatum?
+    </AccordionContent>
+  </AccordionItem>
+  <AccordionItem value="example" className="[&>h3]:m-0 m-0 p-0">
+    <AccordionTrigger>¿Usar Acordeón?</AccordionTrigger>
+    <AccordionContent className="m-0 [&>p]:m-0">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
+      voluptatum?
+    </AccordionContent>
+  </AccordionItem>
+</AccordionUi>
 
 ```jsx
 import * as React from 'react'
@@ -91,10 +141,31 @@ function App() {
 }
 ```
 
-## With Size Title
+### Rounded
 
-you can change the size of the title using the `size` attribute for `AccordionTrigger`
-
+<AccordionUi radius="md" type="single" collapsible className="w-full bg-default-50">
+  <AccordionItem value="example" className="[&>h3]:m-0 m-0 p-0">
+    <AccordionTrigger>¿Usar Acordeón?</AccordionTrigger>
+    <AccordionContent className="m-0 [&>p]:m-0">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
+      voluptatum?
+    </AccordionContent>
+  </AccordionItem>
+  <AccordionItem value="example2" className="[&>h3]:m-0 m-0 p-0">
+    <AccordionTrigger>¿Usar Acordeón?</AccordionTrigger>
+    <AccordionContent className="m-0 [&>p]:m-0">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
+      voluptatum?
+    </AccordionContent>
+  </AccordionItem>
+  <AccordionItem value="example3" className="[&>h3]:m-0 m-0 p-0">
+    <AccordionTrigger>¿Usar Acordeón?</AccordionTrigger>
+    <AccordionContent className="m-0 [&>p]:m-0">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
+      voluptatum?
+    </AccordionContent>
+  </AccordionItem>
+</AccordionUi>
 
 ```jsx
 import * as React from 'react'
@@ -107,23 +178,23 @@ import {
 
 function App() {
   return (
-    <Accordion type="single" collapsible className="w-full">
+    <Accordion radius="sm" type="single" collapsible className="w-full">
       <AccordionItem value="example">
-        <AccordionTrigger text="sm">¿Usar Acordeón?</AccordionTrigger>
+        <AccordionTrigger>¿Usar Acordeón?</AccordionTrigger>
         <AccordionContent>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
           voluptatum?
         </AccordionContent>
       </AccordionItem>
-      <AccordionItem value="example">
-        <AccordionTrigger text="md">¿Usar Acordeón?</AccordionTrigger>
+      <AccordionItem value="example2">
+        <AccordionTrigger>¿Usar Acordeón?</AccordionTrigger>
         <AccordionContent>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
           voluptatum?
         </AccordionContent>
       </AccordionItem>
-      <AccordionItem value="example">
-        <AccordionTrigger text="lg">¿Usar Acordeón?</AccordionTrigger>
+      <AccordionItem value="example3">
+        <AccordionTrigger>¿Usar Acordeón?</AccordionTrigger>
         <AccordionContent>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
           voluptatum?
@@ -134,56 +205,31 @@ function App() {
 }
 ```
 
-## Varaints
+### bordered
 
-- Accordion has 3 variants: `shadow`, `radius` and `bordered`.
-- AccordionItem has 4 variants: `color`, `shadow`, `radius` and `separator`.
-
-### Shadow varaint
-
-It is variant used for `Accordion` and `AccordionItem` to add shadow to the component.
-
-```jsx
-import * as React from 'react'
-import {
-  Accordion,
-  AccordionItem,
-  AccordionTrigger,
-  AccordionContent,
-} from '@openlabs/ui'
-
-function App() {
-  return (
-    <Accordion shadow="md" type="single" collapsible className="w-full">
-      <AccordionItem shadow='sm' value="example">
-      <AccordionTrigger >¿Usar Acordeón?</AccordionTrigger>
-      <AccordionContent>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
-        voluptatum?
-      </AccordionContent>
-    </AccordionItem>
-    <AccordionItem shadow='ms' value="example">
-      <AccordionTrigger>¿Usar Acordeón?</AccordionTrigger>
-      <AccordionContent>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
-        voluptatum?
-      </AccordionContent>
-    </AccordionItem>
-    <AccordionItem shadow='lg' value="example">
-      <AccordionTrigger>¿Usar Acordeón?</AccordionTrigger>
-      <AccordionContent>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
-        voluptatum?
-      </AccordionContent>
-    </AccordionItem>
-    </Accordion>
-  )
-}
-```
-
-### Radius variant
-
-It is variant used for `Accordion` and `AccordionItem` to add radius to the component.
+<AccordionUi bordered="sm" type="single" collapsible className="w-full">
+  <AccordionItem value="example" className="[&>h3]:m-0 m-0 p-0">
+    <AccordionTrigger>¿Usar Acordeón?</AccordionTrigger>
+    <AccordionContent className="m-0 [&>p]:m-0">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
+      voluptatum?
+    </AccordionContent>
+  </AccordionItem>
+  <AccordionItem value="example2" className="[&>h3]:m-0 m-0 p-0">
+    <AccordionTrigger>¿Usar Acordeón?</AccordionTrigger>
+    <AccordionContent className="m-0 [&>p]:m-0">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
+      voluptatum?
+    </AccordionContent>
+  </AccordionItem>
+  <AccordionItem value="example3" className="[&>h3]:m-0 m-0 p-0">
+    <AccordionTrigger>¿Usar Acordeón?</AccordionTrigger>
+    <AccordionContent className="m-0 [&>p]:m-0">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
+      voluptatum?
+    </AccordionContent>
+  </AccordionItem>
+</AccordionUi>
 
 ```jsx
 import * as React from 'react'
@@ -196,155 +242,38 @@ import {
 
 function App() {
   return (
-    <Accordion radius="md" type="single" collapsible className="w-full">
-      <AccordionItem radius='sm' value="example">
-      <AccordionTrigger>¿Usar Acordeón?</AccordionTrigger>
-      <AccordionContent>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
-        voluptatum?
-      </AccordionContent>
-    </AccordionItem>
-    <AccordionItem radius='ms' value="example">
-      <AccordionTrigger>¿Usar Acordeón?</AccordionTrigger>
-      <AccordionContent>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
-        voluptatum?
-      </AccordionContent>
-    </AccordionItem>
-    <AccordionItem radius='lg' value="example">
-      <AccordionTrigger>¿Usar Acordeón?</AccordionTrigger>
-      <AccordionContent>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
-        voluptatum?
-      </AccordionContent>
-    </AccordionItem>
-    </Accordion>
-  )
-}
-```
-
-### Bordered variant
-
-It is variant used for `Accordion` to add border to the component.
-
-```jsx
-import * as React from 'react'
-import {
-  Accordion,
-  AccordionItem,
-  AccordionTrigger,
-  AccordionContent,
-} from '@openlabs/ui'
-
-function App() {
-  return (
-    <Accordion bordered="md" type="single" collapsible className="w-full">
+    <Accordion bordered="sm" type="single" collapsible className="w-full">
       <AccordionItem value="example">
-      <AccordionTrigger>¿Usar Acordeón?</AccordionTrigger>
-      <AccordionContent>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
-        voluptatum?
-      </AccordionContent>
-    </AccordionItem>
-    <AccordionItem value="example">
-      <AccordionTrigger>¿Usar Acordeón?</AccordionTrigger>
-      <AccordionContent>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
-        voluptatum?
-      </AccordionContent>
-    </AccordionItem>
-    <AccordionItemvalue="example">
-      <AccordionTrigger>¿Usar Acordeón?</AccordionTrigger>
-      <AccordionContent>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
-        voluptatum?
-      </AccordionContent>
-    </AccordionItem>
+        <AccordionTrigger>¿Usar Acordeón?</AccordionTrigger>
+        <AccordionContent>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
+          voluptatum?
+        </AccordionContent>
+      </AccordionItem>
+      <AccordionItem value="example2">
+        <AccordionTrigger>¿Usar Acordeón?</AccordionTrigger>
+        <AccordionContent>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
+          voluptatum?
+        </AccordionContent>
+      </AccordionItem>
+      <AccordionItem value="example3">
+        <AccordionTrigger>¿Usar Acordeón?</AccordionTrigger>
+        <AccordionContent>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
+          voluptatum?
+        </AccordionContent>
+      </AccordionItem>
     </Accordion>
   )
 }
 ```
 
-### Color variant
+## Api
 
-It is variant used for `AccordionItem` to add color to the component.
+### AccordionItem Props
 
-```jsx
-import * as React from 'react'
-import {
-  Accordion,
-  AccordionItem,
-  AccordionTrigger,
-  AccordionContent,
-} from '@openlabs/ui'
-
-function App() {
-  return (
-    <Accordion type="single" collapsible className="w-full">
-      <AccordionItem color="primary" value="example">
-      <AccordionTrigger>¿Usar Acordeón?</AccordionTrigger>
-      <AccordionContent>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
-        voluptatum?
-      </AccordionContent>
-    </AccordionItem>
-    <AccordionItem color="warn" value="example">
-      <AccordionTrigger>¿Usar Acordeón?</AccordionTrigger>
-      <AccordionContent>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
-        voluptatum?
-      </AccordionContent>
-    </AccordionItem>
-    <AccordionItem color="success" value="example">
-      <AccordionTrigger>¿Usar Acordeón?</AccordionTrigger>
-      <AccordionContent>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
-        voluptatum?
-      </AccordionContent>
-    </AccordionItem>
-    </Accordion>
-  )
-}
-```
-
-### Separator variant
-
-It is variant used for `AccordionItem` to add separator to the component.
-
-```jsx
-import * as React from 'react'
-import {
-  Accordion,
-  AccordionItem,
-  AccordionTrigger,
-  AccordionContent,
-} from '@openlabs/ui'
-
-function App() {
-  return (
-    <Accordion type="single" collapsible className="w-full">
-      <AccordionItem separator="sm" value="example">
-      <AccordionTrigger>¿Usar Acordeón?</AccordionTrigger>
-      <AccordionContent>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
-        voluptatum?
-      </AccordionContent>
-    </AccordionItem>
-    <AccordionItem separator="md" value="example">
-      <AccordionTrigger>¿Usar Acordeón?</AccordionTrigger>
-      <AccordionContent>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
-        voluptatum?
-      </AccordionContent>
-    </AccordionItem>
-    <AccordionItem separator="lg" value="example">
-      <AccordionTrigger>¿Usar Acordeón?</AccordionTrigger>
-      <AccordionContent>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
-        voluptatum?
-      </AccordionContent>
-    </AccordionItem>
-    </Accordion>
-  )
-}
-```
+| Props | Type | Description |
+| --- | --- | --- |
+| `radius` | `'none' \| 'sm' \| 'md' \| 'lg'` | The radius of the Accordion. |
+| `bordered` | `'none' \| 'sm' \| 'md' \| 'lg'` | The border of the Accordion. |
