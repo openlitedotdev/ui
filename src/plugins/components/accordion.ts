@@ -12,7 +12,6 @@ import { cva } from 'class-variance-authority'
  */
 export const accordion = cva('mt-2 p-3', {
   variants: {
-
     radius: {
       sm: 'rounded-small',
       md: 'rounded-medium',
@@ -20,9 +19,9 @@ export const accordion = cva('mt-2 p-3', {
       none: 'rounded-none',
     },
     bordered: {
-      sm: 'border-small',
-      md: 'border-medium',
-      lg: 'border-large',
+      sm: 'border',
+      md: 'border-2',
+      lg: 'border-4',
       none: 'border-none',
     },
   },
@@ -67,15 +66,4 @@ export const accordionItem = cva('px-4 py-2 my-3 border-b border-default-300')
  *   // accordion elements
  * </AccordionTrigger>
  */
-export const accordionTrigger = cva('flex flex-1 items-center justify-between py-2 font-medium transition-all hover:opacity-80 [&[data-state=open]>svg]:rotate-180', {
-  variants: {
-    text: {
-      sm: 'text-small',
-      md: 'text-medium',
-      lg: 'text-large',
-    },
-  },
-  defaultVariants: {
-    text: 'md',
-  },
-})
+export const accordionTrigger = cva('flex flex-1 items-center justify-between py-2 font-medium transition-all hover:opacity-80 [&[data-state=open]>svg]:rotate-180')
