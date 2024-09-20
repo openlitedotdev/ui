@@ -20,18 +20,11 @@ export const checkbox = cva('peer size-4 shrink-0 focus-visible:outline-none foc
     rounded: {
       none: 'rounded-none',
       sm: 'rounded-small',
-      md: 'rounded-medium',
       lg: 'rounded-large',
-    },
-    size: {
-      sm: 'size-4',
-      md: 'size-5',
-      lg: 'size-6',
     },
   },
   defaultVariants: {
     variant: 'default',
     rounded: 'sm',
-    size: 'sm',
   },
 })

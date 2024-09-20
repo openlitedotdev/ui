@@ -2,3 +2,72 @@
 title: Checkbox
 description: A checkbox is a user interface element that allows users to select one or more options from a set of options.
 ---
+
+# Imports
+
+- **Checkbox**: The main component to display a list of accordion items.
+
+## Usage
+
+<Checkbox />
+
+```jsx	
+import {Checkbox} from '@openlite/ui'
+
+function App() {
+  return(
+    <Checkbox />
+  )
+}
+```
+
+## Examples
+
+### Variants
+
+<Checkbox />
+<Checkbox variant="primary" />
+<Checkbox variant="success" />
+<Checkbox variant="error" />
+<Checkbox variant="warn" />
+
+```jsx
+import {Checkbox} from '@openlite/ui'
+
+function App() {
+  return(
+    <Checkbox />
+    <Checkbox variant="primary" />
+    <Checkbox variant="success" />
+    <Checkbox variant="error" />
+    <Checkbox variant="warn" />
+  )
+}
+```
+
+### Rounded
+
+<Checkbox rounded="none" />
+<Checkbox rounded="sm" />
+<Checkbox rounded="lg" variant="primary" />
+
+```jsx
+import {Checkbox} from '@openlite/ui'
+
+function App() {
+  return(
+    <Checkbox rounded="none" />
+    <Checkbox rounded="sm" />
+    <Checkbox rounded="lg" variant="primary" />
+  )
+}
+```
+
+## API
+
+### Checkbox Props
+
+| Props | Type | Description |
+| ----- | ---- | ----------- |
+| variant | `'default' \| 'primary' \| 'success' \| 'warn' \| 'error'` | The variant of the checkbox. |
+| rounded | `'none' \| 'sm' \| 'lg'` | The rounded of the checkbox. |
