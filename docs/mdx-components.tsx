@@ -12,7 +12,7 @@ import {
 import type { ReactNode } from 'react'
 import { Popup, PopupContent, PopupTrigger } from 'fumadocs-ui/twoslash/popup'
 import { cn } from '@openlite/ui/tailwind'
-import { Alert, AlertDescription, AlertTitle, AspectRatio, Avatar, AvatarFallback, AvatarImage, Badge, Breadcrumb, BreadcrumbEllipsis, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator, AccordionContent, AccordionItem, AccordionTrigger, Accordion as AccordionUi, Button } from '@openlite/ui'
+import { AccordionContent, AccordionItem, AccordionTrigger, Accordion as AccordionUi, Alert, AlertDescription, AlertTitle, AspectRatio, Avatar, AvatarFallback, AvatarImage, Badge, Breadcrumb, BreadcrumbEllipsis, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator, Button, Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@openlite/ui'
 
 export function useMDXComponents(components: MDXComponents): MDXComponents {
   return {
@@ -47,6 +47,12 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     BreadcrumbPage,
     BreadcrumbSeparator,
     BreadcrumbEllipsis,
+    Card,
+    CardHeader,
+    CardTitle,
+    CardContent,
+    CardDescription,
+    CardFooter,
     Callout,
     TypeTable,
     Accordion,
