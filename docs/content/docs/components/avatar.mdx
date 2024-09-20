@@ -12,8 +12,8 @@ description: An avatar is a graphical representation of a user or the user's cha
 ## Usage
 
 
-<Avatar className="relative overflow-visible">
-  <AvatarImage src="/example-gerzon.jpeg" />
+<Avatar>
+  <AvatarImage className="m-0" src="/example-gerzon.jpeg" />
   <AvatarFallback>CN</AvatarFallback>
 </Avatar>
 
@@ -35,10 +35,20 @@ function App() {
 
 ### Size
 
-<Avatar size="sm">
-  <AvatarImage src="/example-gerzon.jpeg" alt="Avatar" className="h-full w-full rounded-md object-cover" />
-  <AvatarFallback>GE</AvatarFallback>
-</Avatar>
+<div className='flex items-center gap-3'>
+  <Avatar size="lg">
+    <AvatarImage className="m-0" src="/example-gerzon.jpeg" />
+    <AvatarFallback>CN</AvatarFallback>
+  </Avatar>
+  <Avatar size="md">
+    <AvatarImage className="m-0" src="/example-gerzon.jpeg" />
+    <AvatarFallback>CN</AvatarFallback>
+  </Avatar>
+  <Avatar size="sm">
+    <AvatarImage className="m-0" src="/example-gerzon.jpeg" />
+    <AvatarFallback>CN</AvatarFallback>
+  </Avatar>
+</div>
 
 ```jsx
 import * as React from 'react'
@@ -46,10 +56,20 @@ import { Avatar, AvatarImage, AvatarFallback } from '@openlite/ui'
 
 function App() {
   return (
-    <Avatar size="sm">
-      <AvatarImage src="/example-gerzon.jpeg" alt="Avatar" className="h-full w-full rounded-md object-cover" />
-      <AvatarFallback>GE</AvatarFallback>
-    </Avatar>
+    <>
+      <Avatar size="lg">
+        <AvatarImage src="/example-gerzon.jpeg" alt="Avatar" className="h-full w-full rounded-md object-cover" />
+        <AvatarFallback>GE</AvatarFallback>
+      </Avatar>
+      <Avatar size="md">
+        <AvatarImage src="/example-gerzon.jpeg" alt="Avatar" className="h-full w-full rounded-md object-cover" />
+        <AvatarFallback>GE</AvatarFallback>
+      </Avatar>
+      <Avatar size="sm">
+        <AvatarImage src="/example-gerzon.jpeg" alt="Avatar" className="h-full w-full rounded-md object-cover" />
+        <AvatarFallback>GE</AvatarFallback>
+      </Avatar>
+    </>
   )
 }
 ```
