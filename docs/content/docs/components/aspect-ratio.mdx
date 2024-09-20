@@ -2,3 +2,36 @@
 title: Aspect Ratio
 description: Maintain the aspect ratio of an element.
 ---
+
+## Imports
+
+- **AspectRatio**: The main component to display a list of accordion items.
+
+## Usage
+<div className="mb-10">
+<AspectRatio ratio={16 / 9}>
+    <img src="/example-gerzon.jpeg" alt="Aspect Ratio" className="h-full w-full rounded-md object-cover"
+ />
+</AspectRatio>
+</div>
+
+```jsx
+import * as React from 'react'
+import { AspectRatio } from '@openlite/ui'
+
+function App() {
+  return (
+    <AspectRatio ratio={16 / 9}>
+      <img src="/example-gerzon.jpeg" alt="Aspect Ratio" className="h-full w-full rounded-md object-cover" />
+    </AspectRatio>
+  )
+}
+```
+
+## API
+
+### AspectRatio Props
+
+| Props | Type | Description |
+| --- | --- | --- |
+| `ratio` | `string` \| `number` \| `AspectRatioObject` | The ratio of the aspect ratio. |

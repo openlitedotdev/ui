@@ -2,3 +2,62 @@
 title: Avatar
 description: An avatar is a graphical representation of a user or the user's character.
 ---
+
+## Imports
+
+- **Avatar**: The main component to display a list of accordion items.
+- **AvatarImage**: The image component to display the image of the avatar.
+- **AvatarFallback**: The fallback component to display the fallback of the avatar.
+
+## Usage
+
+
+<Avatar className="relative overflow-visible">
+  <AvatarImage src="/example-gerzon.jpeg" />
+  <AvatarFallback>CN</AvatarFallback>
+</Avatar>
+
+```jsx
+import * as React from 'react'
+import { Avatar, AvatarImage, AvatarFallback } from '@openlite/ui'
+
+function App() {
+  return (
+    <Avatar>
+      <AvatarImage src="/example-gerzon.jpeg" alt="Avatar" className="h-full w-full rounded-md object-cover" />
+      <AvatarFallback>GE</AvatarFallback>
+    </Avatar>
+  )
+}
+```
+
+## Examples
+
+### Size
+
+<Avatar size="sm">
+  <AvatarImage src="/example-gerzon.jpeg" alt="Avatar" className="h-full w-full rounded-md object-cover" />
+  <AvatarFallback>GE</AvatarFallback>
+</Avatar>
+
+```jsx
+import * as React from 'react'
+import { Avatar, AvatarImage, AvatarFallback } from '@openlite/ui'
+
+function App() {
+  return (
+    <Avatar size="sm">
+      <AvatarImage src="/example-gerzon.jpeg" alt="Avatar" className="h-full w-full rounded-md object-cover" />
+      <AvatarFallback>GE</AvatarFallback>
+    </Avatar>
+  )
+}
+```
+
+## API
+
+### Avatar Props
+
+| Props | Type | Description |
+| --- | --- | --- |
+| `size` | `'xs' \| 'sm' \| 'md' \| 'lg' \| 'xl'` | The size of the avatar. |

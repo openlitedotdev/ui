@@ -2,3 +2,132 @@
 title: Badge
 description: A small status descriptor for UI elements.
 ---
+
+## Imports
+
+- **Badge**: The main component to display a list of accordion items.
+
+## Usage
+
+<Badge className="[&>p]:m-0">
+  Default
+</Badge>
+
+```jsx
+import * as React from 'react'
+import { Badge } from '@openlite/ui'
+
+function App() {
+  return (
+    <Badge>
+      Default
+    </Badge>
+  )
+}
+```
+
+## Examples
+
+### Primary
+
+<Badge variant="primary" className="[&>p]:m-0">
+  Primary
+</Badge>
+
+```jsx
+import * as React from 'react'
+import { Badge } from '@openlite/ui'
+
+function App() {
+  return (
+    <Badge variant="primary">
+      Primary
+    </Badge>
+  )
+}
+```
+
+### Success
+
+<Badge variant="success" className="[&>p]:m-0">
+  Success
+</Badge>
+
+```jsx
+import * as React from 'react'
+import { Badge } from '@openlite/ui'
+
+function App() {
+  return (
+    <Badge variant="success" className="[&>p]:m-0">
+      Success
+    </Badge>
+  )
+}
+```
+
+### Warn
+
+<Badge variant="warn" className="[&>p]:m-0">
+  Warn
+</Badge>
+
+```jsx
+import * as React from 'react'
+import { Badge } from '@openlite/ui'
+
+function App() {
+  return (
+    <Badge variant="warn">
+      Warn
+    </Badge>
+  )
+}
+```
+
+### Error
+
+<Badge variant="error" className="[&>p]:m-0">
+  Error
+</Badge>
+
+```jsx
+import * as React from 'react'
+import { Badge } from '@openlite/ui'
+
+function App() {
+  return (
+    <Badge variant="error">
+      Error
+    </Badge>
+  )
+}
+```
+
+### Rounded
+
+<Badge rounded="none" className="[&>p]:m-0">
+  Rounded
+</Badge>
+
+```jsx
+import * as React from 'react'
+import { Badge } from '@openlite/ui'
+
+function App() {
+  return (
+    <Badge rounded="none">
+      Rounded
+    </Badge>
+  )
+}
+```
+
+## API
+
+### Badge Props
+
+| Props | Type | Description |
+| --- | --- | --- |
+| `variant` | `'default' \| 'primary' \| 'success' \| 'warn' \| 'error'` | The variant of the badge. |
+| `rounded` | `'none' \| 'sm' \| 'md' \| 'lg'` | The rounded of the badge. |

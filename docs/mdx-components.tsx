@@ -12,26 +12,41 @@ import {
 import type { ReactNode } from 'react'
 import { Popup, PopupContent, PopupTrigger } from 'fumadocs-ui/twoslash/popup'
 import { cn } from '@openlite/ui/tailwind'
-import { AccordionContent, AccordionItem, AccordionTrigger, Accordion as AccordionUi, Button } from '@openlite/ui'
+import { Alert, AlertDescription, AlertTitle, AspectRatio, Avatar, AvatarFallback, AvatarImage, Badge, Breadcrumb, BreadcrumbEllipsis, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator, AccordionContent, AccordionItem, AccordionTrigger, Accordion as AccordionUi, Button } from '@openlite/ui'
 
 export function useMDXComponents(components: MDXComponents): MDXComponents {
   return {
     ...defaultComponents,
     Button,
+    AspectRatio,
     Popup,
     PopupContent,
     PopupTrigger,
-    AccordionUi,
-    AccordionItem,
-    AccordionTrigger,
-    AccordionContent,
     pre: ({ title, className, icon, allowCopy, ...props }: CodeBlockProps) => (
       <CodeBlock title={title} icon={icon} allowCopy={allowCopy}>
         <Pre className={cn('max-h-[400px]', className)} {...props} />
       </CodeBlock>
     ),
     Tabs,
+    AccordionUi,
+    AccordionItem,
+    AccordionTrigger,
+    AccordionContent,
+    Alert,
+    Avatar,
+    AvatarImage,
+    AvatarFallback,
+    AlertDescription,
+    AlertTitle,
     Tab,
+    Badge,
+    Breadcrumb,
+    BreadcrumbList,
+    BreadcrumbItem,
+    BreadcrumbLink,
+    BreadcrumbPage,
+    BreadcrumbSeparator,
+    BreadcrumbEllipsis,
     Callout,
     TypeTable,
     Accordion,

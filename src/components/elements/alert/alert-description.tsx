@@ -5,10 +5,10 @@ import { alertDescription, cn } from '@/tailwind'
 export interface Comp extends HTMLParagraphElement {}
 export interface Props extends React.HTMLAttributes<HTMLParagraphElement>, VariantProps<typeof alert> {}
 
-const AlertDescription = React.forwardRef<Comp, Props>(({ className, size, ...props }, ref) => (
+const AlertDescription = React.forwardRef<Comp, Props>(({ className, ...props }, ref) => (
   <div
     ref={ref}
-    className={cn(alertDescription({ size }), className)}
+    className={cn(alertDescription(), className)}
     {...props}
   />
 ))
