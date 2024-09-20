@@ -12,12 +12,13 @@ import {
 import type { ReactNode } from 'react'
 import { Popup, PopupContent, PopupTrigger } from 'fumadocs-ui/twoslash/popup'
 import { cn } from '@openlite/ui/tailwind'
-import { Button } from '@openlite/ui'
+import { Alert, AlertDescription, AlertTitle, AspectRatio, Avatar, AvatarFallback, AvatarImage, Badge, Breadcrumb, BreadcrumbEllipsis, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator, Button } from '@openlite/ui'
 
 export function useMDXComponents(components: MDXComponents): MDXComponents {
   return {
     ...defaultComponents,
     Button,
+    AspectRatio,
     Popup,
     PopupContent,
     PopupTrigger,
@@ -27,7 +28,21 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
       </CodeBlock>
     ),
     Tabs,
+    Alert,
+    Avatar,
+    AvatarImage,
+    AvatarFallback,
+    AlertDescription,
+    AlertTitle,
     Tab,
+    Badge,
+    Breadcrumb,
+    BreadcrumbList,
+    BreadcrumbItem,
+    BreadcrumbLink,
+    BreadcrumbPage,
+    BreadcrumbSeparator,
+    BreadcrumbEllipsis,
     Callout,
     TypeTable,
     Accordion,

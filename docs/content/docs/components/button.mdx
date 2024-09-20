@@ -2,3 +2,244 @@
 title: Button
 description: A button is a user interface element that provides a way for users to interact with an application or a website.
 ---
+
+## Imports
+
+- **Button**: The main component to display a list of accordion items.
+
+## Usage
+
+<Button className="[&>p]:m-0" rippleColor="ligth">
+  Default
+</Button>
+
+```jsx
+import * as React from 'react'
+import { Button } from '@openlite/ui'
+
+function App() {
+  return (
+    <Button rippleColor="ligth">
+      Default
+    </Button>
+  )
+}
+```
+
+## Examples
+
+### Primary
+
+<Button variant="primary" className="[&>p]:m-0">
+  Primary
+</Button>
+
+```jsx
+import * as React from 'react'
+import { Button } from '@openlite/ui'
+
+function App() {
+  return (
+    <Button variant="primary">
+      Primary
+    </Button>
+  )
+}
+```
+
+### Success
+
+<Button variant="success" className="[&>p]:m-0">
+  Success
+</Button>
+
+```jsx
+import * as React from 'react'
+import { Button } from '@openlite/ui'
+
+function App() {
+  return (
+    <Button variant="success">
+      Success
+    </Button>
+  )
+}
+```
+
+### Warn
+
+<Button variant="warn" className="[&>p]:m-0">
+  Warn
+</Button>
+
+```jsx
+import * as React from 'react'
+import { Button } from '@openlite/ui'
+
+function App() {
+  return (
+    <Button variant="warn">
+      Warn
+    </Button>
+  )
+}
+```
+
+### Error
+
+<Button variant="error" className="[&>p]:m-0">
+  Error
+</Button>
+
+```jsx
+import * as React from 'react'
+import { Button } from '@openlite/ui'
+
+function App() {
+  return (
+    <Button variant="error">
+      Error
+    </Button>
+  )
+}
+```
+
+
+### Ghost
+
+<Button variant="ghost" className="[&>p]:m-0">
+  Ghost
+</Button>
+
+```jsx
+import * as React from 'react'
+import { Button } from '@openlite/ui'
+
+function App() {
+  return (
+    <Button variant="ghost">
+      Ghost
+    </Button>
+  )
+}
+```
+
+### Outline
+
+<div className="flex items-center gap-2">
+  <Button outline="default" className="[&>p]:m-0">
+    Outline default
+  </Button>
+  <Button outline="primary" className="[&>p]:m-0">
+    Outline primary
+  </Button>
+  <Button outline="success" className="[&>p]:m-0">
+    Outline success
+  </Button>
+  <Button outline="warn" className="[&>p]:m-0">
+    Outline warn
+  </Button>
+  <Button outline="error" className="[&>p]:m-0">
+    Outline error
+  </Button>
+</div>
+
+```jsx
+import * as React from 'react'
+import { Button } from '@openlite/ui'
+
+function App() {
+  return (
+    <div className="flex flex-col gap-2">
+      <Button outline="default">
+        Outline default
+      </Button>
+      <Button outline="primary">
+        Outline primary
+      </Button>
+      <Button outline="success">
+        Outline success
+      </Button>
+      <Button outline="warn">
+        Outline warn
+      </Button>
+      <Button outline="error">
+        Outline error
+      </Button>
+    </div>
+  )
+}
+```
+
+### Size
+
+<div className="flex items-center gap-2">
+  <Button size="sm" className="[&>p]:m-0" rippleColor="ligth">
+    Size sm
+  </Button>
+  <Button size="md" className="[&>p]:m-0" rippleColor="ligth">
+    Size md
+  </Button>
+  <Button size="lg" className="[&>p]:m-0" rippleColor="ligth">
+    Size lg
+  </Button>
+  <Button size="icon" outline="default">
+    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10 18h4M2.351 13.214c-.353-2.298-.53-3.446-.095-4.465c.434-1.018 1.398-1.715 3.325-3.108L7.021 4.6C9.418 2.867 10.617 2 12 2s2.582.867 4.979 2.6l1.44 1.041c1.927 1.393 2.89 2.09 3.325 3.108c.434 1.019.258 2.167-.095 4.464l-.301 1.96c-.5 3.256-.751 4.884-1.919 5.856s-2.875.971-6.29.971H10.86c-3.415 0-5.122 0-6.29-.971c-1.168-.972-1.418-2.6-1.919-5.857z" color="currentColor"/></svg>
+  </Button>
+</div>
+
+```jsx
+import * as React from 'react'
+import { Button } from '@openlite/ui'
+
+function App() {
+  return (
+    <div className="flex flex-col gap-2">
+      <Button size="sm" rippleColor="ligth">
+        Size sm
+      </Button>
+      <Button size="md" rippleColor="ligth">
+        Size md
+      </Button>
+      <Button size="lg" rippleColor="ligth">
+        Size lg
+      </Button>
+    <Button size="icon" outline="default">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10 18h4M2.351 13.214c-.353-2.298-.53-3.446-.095-4.465c.434-1.018 1.398-1.715 3.325-3.108L7.021 4.6C9.418 2.867 10.617 2 12 2s2.582.867 4.979 2.6l1.44 1.041c1.927 1.393 2.89 2.09 3.325 3.108c.434 1.019.258 2.167-.095 4.464l-.301 1.96c-.5 3.256-.751 4.884-1.919 5.856s-2.875.971-6.29.971H10.86c-3.415 0-5.122 0-6.29-.971c-1.168-.972-1.418-2.6-1.919-5.857z" color="currentColor"/></svg>
+    </Button>
+    </div>
+  )
+} 
+```
+
+### Rounded
+
+<Button rounded="none" className="[&>p]:m-0" rippleColor="ligth">
+  Rounded
+</Button>
+
+```jsx
+import * as React from 'react'
+import { Button } from '@openlite/ui'
+
+function App() {
+  return (
+    <Button rounded="none" rippleColor="ligth">
+      Rounded
+    </Button>
+  )
+}
+```
+
+## API
+
+### Button Props
+
+| Props | Type | Description |
+| --- | --- | --- |
+| `variant` | `'default' \| 'primary' \| 'success' \| 'warn' \| 'error'` | The variant of the button. | 
+| `rounded` | `'none' \| 'sm' \| 'md' \| 'lg'` | The rounded of the button. |
+| `outline` | `'default' \| 'primary' \| 'success' \| 'warn' \| 'error'` | The outline of the button. |
+| `size` | `'sm' \| 'md' \| 'lg' \| 'icon'` | The size of the button. |
+| `ripple` | `boolean` | The ripple of the button. |
+| `rippleColor` | `'ligth' \| 'dark'` | The ripple color of the button. |
