@@ -2,3 +2,80 @@
 title: Input
 description: An input is a field used to elicit a response from a user.
 ---
+
+# Import
+
+- **Input**: The main component to display an input.
+
+## Usage
+
+<Input placeholder="Email" />
+
+```jsx
+import {Input} from '@openlite/ui'
+
+function App() {
+  return(
+    <Input placeholder="Email" />
+  )
+}
+```
+
+## Examples
+
+### Rounded
+
+<div className='grid grid-cols-2 gap-4'>
+  <Input rounded="none" placeholder="Email" />
+  <Input rounded="sm" placeholder="Email" />
+  <Input rounded="md" placeholder="Email" />
+  <Input rounded="lg" placeholder="Email" />
+</div>
+
+```jsx
+import {Input} from '@openlite/ui'
+
+function App() {
+  return(
+    <>
+      <Input rounded="none" placeholder="Email" />
+      <Input rounded="sm" placeholder="Email" />
+      <Input rounded="md" placeholder="Email" />
+      <Input rounded="lg" placeholder="Email" />
+    </>
+  )
+}
+```
+
+### Border
+
+<div className='grid grid-cols-2 gap-4'>
+  <Input border="none" placeholder="Email" />
+  <Input border="sm" placeholder="Email" />
+  <Input border="md" placeholder="Email" />
+  <Input border="lg" placeholder="Email" />
+</div>
+
+```jsx
+import {Input} from '@openlite/ui'
+
+function App() {
+  return(
+    <>
+      <Input border="none" placeholder="Email" />
+      <Input border="sm" placeholder="Email" />
+      <Input border="md" placeholder="Email" />
+      <Input border="lg" placeholder="Email" />
+    </>
+  )
+}
+```
+
+## API
+
+### Input Props
+
+| Props | Type | Description |
+| ----- | ---- | ----------- |
+| rounded | `'none' \| 'sm' \| 'md' \| 'lg' ` | The rounded of the input. |
+| border | `'none' \| 'sm' \| 'md' \| 'lg' ` | The border of the input. |

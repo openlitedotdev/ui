@@ -2,3 +2,82 @@
 title: Label
 description: A label is a small piece of UI that communicates the status of an element.
 ---
+
+# Import
+
+- **Label**: The main component to display a label.
+
+## Usage
+
+<Label>Label</Label>
+
+```jsx
+import {Label} from '@openlite/ui'
+
+function App() {
+  return(
+    <Label>Label</Label>
+  )
+}
+```
+
+## Examples
+
+### Variants
+
+<div className='flex gap-4 flex-wrap'>
+  <Label variant="none">Label none</Label>
+  <Label variant="default">Label default</Label>
+  <Label variant="primary">Label primary</Label>
+  <Label variant="success">Label success</Label>
+  <Label variant="warn">Label warn</Label>
+  <Label variant="error">Label error</Label>
+</div>
+
+```jsx
+import {Label} from '@openlite/ui'
+
+function App() {
+  return(
+    <>
+      <Label variant="none">Label none</Label>
+      <Label variant="default">Label default</Label>
+      <Label variant="primary">Label primary</Label>
+      <Label variant="success">Label success</Label>
+      <Label variant="warn">Label warn</Label>
+      <Label variant="error">Label error</Label>
+    </>
+  )
+}
+```
+
+### Size
+
+<div className='flex gap-4'>
+  <Label size="sm">Label</Label>
+  <Label size="md">Label</Label>
+  <Label size="lg">Label</Label>
+</div>
+
+```jsx
+import {Label} from '@openlite/ui'
+
+function App() {
+  return(
+    <>
+      <Label size="sm">Label</Label>
+      <Label size="md">Label</Label>
+      <Label size="lg">Label</Label>
+    </>
+  )
+}
+```
+
+## API
+
+### Label Props
+
+| Props | Type | Description |
+| ----- | ---- | ----------- |
+| variant | `'none' \| 'default' \| 'primary' \| 'success' \| 'warn' \| 'error'` | The variant of the label. |
+| size | `'sm' \| 'md' \| 'lg'` | The size of the label. |
