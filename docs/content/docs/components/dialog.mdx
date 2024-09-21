@@ -2,3 +2,102 @@
 title: Dialog
 description: A dialog is a type of modal window that appears in front of app content to provide critical information or ask for a decision.
 ---
+
+# Imports
+
+- **Dialog**: The main component to display a dialog.
+- **DialogOverlay**: The overlay component to display a dialog.
+- **DialogPortal**: The portal component to display a dialog.
+- **DialogClose**: The close button component to close a dialog.
+- **DialogDescription**: The description component to display a dialog.
+- **DialogTitle**: The title component to display a dialog.
+- **DialogTrigger**: The trigger component to display a dialog.
+- **DialogHeader**: The header component to display a dialog.
+- **DialogContent**: The content component to display a dialog.
+- **DialogFooter**: The footer component to display a dialog.
+
+## Usage
+
+<Dialog>
+  <div className='flex justify-center'>
+    <DialogTrigger asChild>
+      <Button outline="default" >Edit Profile</Button>
+    </DialogTrigger>
+  </div>
+  <DialogContent className="sm:max-w-[425px]">
+    <DialogHeader>
+      <DialogTitle className="font-bold text-3xl">Lorem ipsum </DialogTitle>
+      <DialogDescription className="font-light">
+        say somethingsay somethingsay somethingsay somethingsay somethingsay somethingsay somethingsay something
+      </DialogDescription>
+    </DialogHeader>
+      <div className='flex flex-col gap-1'>
+        <Label htmlFor="name">
+          Name
+        </Label>
+        <Input
+          id="name"
+          defaultValue="Sebastian Garcias"
+          className="col-span-3"
+        />
+      </div>
+      <div className='flex flex-col gap-1'>
+        <Label htmlFor="username">
+          Username
+        </Label>
+        <Input
+          id="username"
+          defaultValue="@Sebasjs"
+          className="col-span-3"
+        />
+      </div>
+    <DialogFooter>
+      <Button type="submit">Confirm</Button>
+    </DialogFooter>
+  </DialogContent>
+</Dialog>
+
+```jsx
+import {  Dialog, DialogOverlay, DialogPortal, DialogClose, DialogDescription, DialogTitle, DialogTrigger, DialogHeader, DialogContent, DialogFooter,} from '@openlite/ui'
+
+function App() {
+  return(
+    <Dialog>
+      <DialogTrigger asChild>
+        <Button outline="default" >Edit Profile</Button>
+      </DialogTrigger>
+      <DialogContent className="sm:max-w-[425px]">
+        <DialogHeader>
+          <DialogTitle className="font-bold text-3xl">Lorem ipsum </DialogTitle>
+          <DialogDescription className="font-light">
+          say somethingsay somethingsay somethingsay somethingsay somethingsay somethingsay somethingsay something
+          </DialogDescription>
+        </DialogHeader>
+        <div className='flex flex-col gap-1'>
+          <Label htmlFor="name">
+            Name
+          </Label>
+          <Input
+            id="name"
+            defaultValue="Sebastian Garcias"
+            className="col-span-3"
+          />
+        </div>
+        <div className='flex flex-col gap-1'>
+          <Label htmlFor="username">
+            Username
+          </Label>
+          <Input
+            id="username"
+            defaultValue="@Sebasjs"
+            className="col-span-3"
+          />
+        </div>
+        <DialogFooter>
+          <Button type="submit">Confirm</Button>
+        </DialogFooter>
+      </DialogContent>
+    </Dialog>
+  )
+}
+```
