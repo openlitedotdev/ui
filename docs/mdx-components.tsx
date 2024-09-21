@@ -54,7 +54,6 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     CardContent,
     CardDescription,
     CardFooter,
-    avatar,
     Checkbox,
     Callout,
     TypeTable,
