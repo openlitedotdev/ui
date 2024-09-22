@@ -16,7 +16,7 @@ description: A card is a flexible and extensible content container.
 
 <Card className="max-w-sm">
   <div className="w-full flex justify-center items-center bg-default-50 rounded-t-lg h-64 overflow-hidden">
-   <img src="/example-sebastian.jpeg" className='object-cover' />
+   <img src="/example-sebastian.jpeg" className='object-cover m-0' />
   </div>
   <CardHeader>
     <CardTitle className="[&>p]:m-0 p-0 m-0 !text-4xl">
@@ -69,10 +69,13 @@ function App() {
 ### Card with horizontal orientation
 
 <Card orientation="horizontal">
-  <div className="max-w-sm w-2/5 flex justify-center items-center rounded-l-lg h-64 overflow-hidden">
-   <img src="/example-sebastian.jpeg" className='object-cover h-full' />
+  <div className="max-w-sm hidden md:w-2/5 md:flex justify-center items-center rounded-l-lg h-64 overflow-hidden">
+   <img src="/example-sebastian.jpeg" className='object-cover h-full w-full m-0' />
   </div>
-  <div className='w-3/5'>
+  <div className='w-full md:w-3/5'>
+    <div className="max-w-sm md:w-2/5 md:hidden justify-center items-center rounded-t-lg h-60 overflow-hidden">
+      <img src="/example-sebastian.jpeg" className='object-cover h-full w-full m-0' />
+    </div>
     <CardHeader>
     <CardTitle className="[&>p]:m-0 p-0 m-0 !text-4xl">
       Card Title
@@ -97,10 +100,13 @@ import {Card, CardHeader, CardTitle, CardContent, CardDescription, CardFooter} f
 function App() {
   return(
   <Card orientation="horizontal">
-    <div className="max-w-sm w-2/5 flex justify-center items-center bg-default-50 rounded-l-lg h-64">
+    <div className="max-w-sm hidden w-2/5 md:flex justify-center items-center bg-default-50 rounded-l-lg h-64">
       <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" color="currentColor"><circle cx="7.5" cy="7.5" r="1.5"/><path d="M2.5 12c0-4.478 0-6.718 1.391-8.109S7.521 2.5 12 2.5c4.478 0 6.718 0 8.109 1.391S21.5 7.521 21.5 12c0 4.478 0 6.718-1.391 8.109S16.479 21.5 12 21.5c-4.478 0-6.718 0-8.109-1.391S2.5 16.479 2.5 12"/><path d="M5 21c4.372-5.225 9.274-12.116 16.498-7.458"/></g></svg>
     </div>
-    <div className='w-3/5'>
+    <div className='w-full md:w-3/5'>
+      <div className="max-w-sm w-2/5 md:hidden justify-center items-center bg-default-50 rounded-t-lg h-60">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" color="currentColor"><circle cx="7.5" cy="7.5" r="1.5"/><path d="M2.5 12c0-4.478 0-6.718 1.391-8.109S7.521 2.5 12 2.5c4.478 0 6.718 0 8.109 1.391S21.5 7.521 21.5 12c0 4.478 0 6.718-1.391 8.109S16.479 21.5 12 21.5c-4.478 0-6.718 0-8.109-1.391S2.5 16.479 2.5 12"/><path d="M5 21c4.372-5.225 9.274-12.116 16.498-7.458"/></g></svg>
+      </div>
       <CardHeader>
         <CardTitle className="text-4xl">
           Card Title
