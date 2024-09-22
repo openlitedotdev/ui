@@ -1,6 +1,6 @@
 {
   "name": "@openlite/ui",
-  "version": "0.5.2",
+  "version": "0.5.3",
   "packageManager": "pnpm@9.7.0",
   "description": "A design system built with TailwindCSS and Radix UI.",
   "author": "openlabs",
