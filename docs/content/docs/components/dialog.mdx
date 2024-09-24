@@ -101,3 +101,55 @@ function App() {
   )
 }
 ```
+
+## Examples
+
+<Dialog>
+  <div className='flex justify-center'>
+    <DialogTrigger asChild>
+      <Button outline="default" >Delete</Button>
+    </DialogTrigger>
+  </div>
+  <DialogContent className="sm:max-w-[425px] p-0">
+    <DialogHeader className="border-b px-4 py-3">
+      <DialogTitle className="font-bold text-xl">Delete folder?</DialogTitle>
+    </DialogHeader>
+      <div className='flex flex-col gap-1 p-4'>
+        <DialogDescription>
+          This action cannot be undone. This will permanently delete the folder and all its contents.
+        </DialogDescription>
+      </div>
+    <DialogFooter className="border-t px-4 py-3">
+      <Button outline="default">Cancel</Button>
+      <Button type="submit">Delete</Button>
+    </DialogFooter>
+  </DialogContent>
+</Dialog>
+
+```jsx
+import {  Dialog, DialogOverlay, DialogPortal, DialogClose, DialogDescription, DialogTitle, DialogTrigger, DialogHeader, DialogContent, DialogFooter,} from '@openlite/ui'
+
+function App() {
+  return(
+    <Dialog>
+      <DialogTrigger asChild>
+        <Button outline="default" >Delete</Button>
+      </DialogTrigger>
+      <DialogContent className="sm:max-w-[425px] p-0">
+        <DialogHeader className="border-b px-4 py-3">
+          <DialogTitle className="font-bold text-xl">Delete folder?</DialogTitle>
+        </DialogHeader>
+        <div className='flex flex-col gap-1 p-4'>
+          <DialogDescription>
+            This action cannot be undone. This will permanently delete the folder and all its contents.
+          </DialogDescription>
+        </div>
+        <DialogFooter className="border-t px-4 py-3">
+          <Button outline="default">Cancel</Button>
+          <Button>Confirm</Button>
+        </DialogFooter>
+      </DialogContent>
+    </Dialog>
+  )
+}
+```
