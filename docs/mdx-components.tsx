@@ -13,7 +13,7 @@ import type { ReactNode } from 'react'
 import { Popup, PopupContent, PopupTrigger } from 'fumadocs-ui/twoslash/popup'
 import { cn } from '@openlite/ui/tailwind'
 
-import { AccordionContent, AccordionItem, AccordionTrigger, Accordion as AccordionUi, Alert, AlertDescription, AlertTitle, AspectRatio, Avatar, AvatarFallback, AvatarImage, Badge, Breadcrumb, BreadcrumbEllipsis, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator, Button, Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle, Checkbox, Dialog, DialogClose, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogOverlay, DialogPortal, DialogTitle, DialogTrigger, Input, Label } from '@openlite/ui'
+import { AccordionContent, AccordionItem, AccordionTrigger, Accordion as AccordionUi, Alert, AlertDescription, AlertTitle, AspectRatio, Avatar, AvatarFallback, AvatarImage, Badge, Breadcrumb, BreadcrumbEllipsis, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator, Button, Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle, Checkbox, Dialog, DialogClose, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogOverlay, DialogPortal, DialogTitle, DialogTrigger, Input, Label, Progress, Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrigger, SelectValue, Separator } from '@openlite/ui'
 
 export function useMDXComponents(components: MDXComponents): MDXComponents {
   return {
@@ -67,6 +67,15 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     DialogFooter,
     Input,
     Label,
+    Progress,
+    Select,
+    SelectContent,
+    SelectItem,
+    SelectTrigger,
+    SelectValue,
+    SelectLabel,
+    SelectGroup,
+    Separator,
     Callout,
     TypeTable,
     Accordion,
