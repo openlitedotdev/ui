@@ -2,3 +2,101 @@
 title: Separator
 description: A separator is a thin line that groups content in lists and layouts.
 ---
+
+## Import
+
+- **Separator**: The main component to display an separator.
+
+## Usage
+
+ <div className="w-96">
+      <div className="space-y-1">
+        <h4 className="text-sm font-medium leading-none">Johan Sebastiàn</h4>
+        <p className="text-sm text-muted-foreground">
+          A programmer for fun
+        </p>
+      </div>
+      <Separator className="my-4" />
+      <div className="flex h-5 items-center space-x-4 text-sm">
+        <div>Github</div>
+        <Separator orientation="vertical" />
+        <div>X</div>
+        <Separator orientation="vertical" />
+        <div>Linkedin</div>
+      </div>
+    </div>
+
+```tsx
+import { Separator } from "@openlite/ui"
+
+export function SeparatorDemo() {
+  return (
+  
+ <div className="w-96">
+      <div className="space-y-1">
+        <h4 className="text-sm font-medium leading-none">Johan Sebastiàn</h4>
+        <p className="text-sm text-muted-foreground">
+          A programmer for fun
+        </p>
+      </div>
+      <Separator className="my-4" />
+      <div className="flex h-5 items-center space-x-4 text-sm">
+        <div>Github</div>
+        <Separator orientation="vertical" />
+        <div>X</div>
+        <Separator orientation="vertical" />
+        <div>Linkedin</div>
+      </div>
+    </div>
+  )
+}
+
+```
+
+## Examples
+
+### Orietation
+
+<div className="mb-2">
+<h2>Hola Mundo</h2>
+<Separator />
+</div>
+ <div className="flex h-5 items-center space-x-4 text-sm">
+        <div>Github</div>
+        <Separator orientation="vertical" />
+        <div>X</div>
+        <Separator orientation="vertical" />
+        <div>Linkedin</div>
+</div>
+
+
+```tsx
+import { Separator } from "@openlite/ui"
+
+export function SeparatorDemo() {
+  return (  
+ <>
+    <div className="mb-2">
+        <h2>Hola Mundo</h2>
+        <Separator />
+    </div>
+    <div className="flex h-5 items-center space-x-4 text-sm">
+        <div>Github</div>
+        <Separator orientation="vertical" />
+        <div>X</div>
+        <Separator orientation="vertical" />
+        <div>Linkedin</div>
+    </div>
+ </>
+  )
+}
+```
+
+## API
+
+### Separator Props
+
+
+| Props | Type | Description |
+| ----- | ---- | ----------- |
+| orientation | `'vertical' \| 'horizontal'` | The orientation of the separator. |

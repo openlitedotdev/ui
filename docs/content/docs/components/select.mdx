@@ -2,3 +2,249 @@
 title: Select
 description: A select is a form control that provides a list of options.
 ---
+
+
+## Import
+
+- **Select**: The main component to display an select.
+- **SelectContent**: The component that contains a group of select items.
+- **SelectItem**: The component that represents a select item.
+- **SelectTrigger**: The component active event Select.
+- **SelectValue**: The component contains a value of select items.
+- **SelectGroup**: The component can group a group of Select items.
+- **SelectLabel**: The component can add a title to each group of Select items.
+- **SelectSeparator**: The component can separate the Select groups.
+
+## Usage
+
+<Select>
+    <SelectTrigger className="w-max">
+        <SelectValue placeholder="Select a value" />
+    </SelectTrigger>
+    <SelectContent>
+        <SelectItem value="option1">Option 1</SelectItem>
+        <SelectItem value="option2">Option 2</SelectItem>
+    </SelectContent>
+</Select>
+
+```tsx
+import * as React from "react"
+
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@openlite/ui"
+
+export function SelectDemo() {
+  return (
+    <Select>
+        <SelectTrigger className="w-max">
+            <SelectValue placeholder="Select a value" />
+        </SelectTrigger>
+        <SelectContent>
+            <SelectItem value="option1">Option 1</SelectItem>
+            <SelectItem value="option2">Option 2</SelectItem>
+        </SelectContent>
+    </Select>
+  )
+}
+```
+
+ <Select>
+    <SelectTrigger className="w-[180px]">
+        <SelectValue placeholder="Select a city" />
+    </SelectTrigger>
+    <SelectContent>
+    <SelectGroup>
+          <SelectLabel>South America</SelectLabel>
+          <SelectItem value="apple">Bogotá</SelectItem>
+          <SelectItem value="banana">Quito</SelectItem>
+          <SelectItem value="blueberry">Lima</SelectItem>
+          <SelectItem value="grapes">Caracas</SelectItem>
+          <SelectItem value="pineapple">Ciudad de panama</SelectItem>
+        </SelectGroup>
+    </SelectContent>
+</Select>
+
+
+```tsx
+import * as React from "react"
+
+import {
+  Select,
+  SelectContent,
+  SelectGroup,
+  SelectItem,
+  SelectLabel,
+  SelectTrigger,
+  SelectValue,
+} from "@openlite/ui"
+
+export function SelectDemo() {
+  return (   
+    <Select>
+        <SelectTrigger className="w-[180px]">
+            <SelectValue placeholder="Select a city" />
+        </SelectTrigger>
+        <SelectContent>
+        <SelectGroup>
+            <SelectLabel>South America</SelectLabel>
+            <SelectItem value="Bogotá">Bogotá</SelectItem>
+            <SelectItem value="Quito">Quito</SelectItem>
+            <SelectItem value="Lima">Lima</SelectItem>
+            <SelectItem value="Caracas">Caracas</SelectItem>
+            <SelectItem value="Ciudad de panama">Ciudad de panama</SelectItem>
+            </SelectGroup>
+        </SelectContent>
+    </Select>
+  )
+}
+```
+
+## Examples
+
+### Scrollable
+
+  <Select>
+      <SelectTrigger className="w-[280px]">
+        <SelectValue placeholder="Select a timezone" />
+      </SelectTrigger>
+      <SelectContent>
+        <SelectGroup>
+          <SelectLabel>North America</SelectLabel>
+          <SelectItem value="est">Eastern Standard Time (EST)</SelectItem>
+          <SelectItem value="cst">Central Standard Time (CST)</SelectItem>
+          <SelectItem value="mst">Mountain Standard Time (MST)</SelectItem>
+          <SelectItem value="pst">Pacific Standard Time (PST)</SelectItem>
+          <SelectItem value="akst">Alaska Standard Time (AKST)</SelectItem>
+          <SelectItem value="hst">Hawaii Standard Time (HST)</SelectItem>
+        </SelectGroup>
+        <SelectGroup>
+          <SelectLabel>Europe & Africa</SelectLabel>
+          <SelectItem value="gmt">Greenwich Mean Time (GMT)</SelectItem>
+          <SelectItem value="cet">Central European Time (CET)</SelectItem>
+          <SelectItem value="eet">Eastern European Time (EET)</SelectItem>
+          <SelectItem value="west">
+            Western European Summer Time (WEST)
+          </SelectItem>
+          <SelectItem value="cat">Central Africa Time (CAT)</SelectItem>
+          <SelectItem value="eat">East Africa Time (EAT)</SelectItem>
+        </SelectGroup>
+        <SelectGroup>
+          <SelectLabel>Asia</SelectLabel>
+          <SelectItem value="msk">Moscow Time (MSK)</SelectItem>
+          <SelectItem value="ist">India Standard Time (IST)</SelectItem>
+          <SelectItem value="cst_china">China Standard Time (CST)</SelectItem>
+          <SelectItem value="jst">Japan Standard Time (JST)</SelectItem>
+          <SelectItem value="kst">Korea Standard Time (KST)</SelectItem>
+          <SelectItem value="ist_indonesia">
+            Indonesia Central Standard Time (WITA)
+          </SelectItem>
+        </SelectGroup>
+        <SelectGroup>
+          <SelectLabel>Australia & Pacific</SelectLabel>
+          <SelectItem value="awst">
+            Australian Western Standard Time (AWST)
+          </SelectItem>
+          <SelectItem value="acst">
+            Australian Central Standard Time (ACST)
+          </SelectItem>
+          <SelectItem value="aest">
+            Australian Eastern Standard Time (AEST)
+          </SelectItem>
+          <SelectItem value="nzst">New Zealand Standard Time (NZST)</SelectItem>
+          <SelectItem value="fjt">Fiji Time (FJT)</SelectItem>
+        </SelectGroup>
+        <SelectGroup>
+          <SelectLabel>South America</SelectLabel>
+          <SelectItem value="art">Argentina Time (ART)</SelectItem>
+          <SelectItem value="bot">Bolivia Time (BOT)</SelectItem>
+          <SelectItem value="brt">Brasilia Time (BRT)</SelectItem>
+          <SelectItem value="clt">Chile Standard Time (CLT)</SelectItem>
+        </SelectGroup>
+      </SelectContent>
+    </Select>
+
+
+```tsx
+import * as React from "react"
+
+import {
+  Select,
+  SelectContent,
+  SelectGroup,
+  SelectItem,
+  SelectLabel,
+  SelectTrigger,
+  SelectValue,
+} from "@openlite/ui"
+
+export function SelectScrollable() {
+  return (
+    <Select>
+      <SelectTrigger className="w-[280px]">
+        <SelectValue placeholder="Select a timezone" />
+      </SelectTrigger>
+      <SelectContent>
+        <SelectGroup>
+          <SelectLabel>North America</SelectLabel>
+          <SelectItem value="est">Eastern Standard Time (EST)</SelectItem>
+          <SelectItem value="cst">Central Standard Time (CST)</SelectItem>
+          <SelectItem value="mst">Mountain Standard Time (MST)</SelectItem>
+          <SelectItem value="pst">Pacific Standard Time (PST)</SelectItem>
+          <SelectItem value="akst">Alaska Standard Time (AKST)</SelectItem>
+          <SelectItem value="hst">Hawaii Standard Time (HST)</SelectItem>
+        </SelectGroup>
+        <SelectGroup>
+          <SelectLabel>Europe & Africa</SelectLabel>
+          <SelectItem value="gmt">Greenwich Mean Time (GMT)</SelectItem>
+          <SelectItem value="cet">Central European Time (CET)</SelectItem>
+          <SelectItem value="eet">Eastern European Time (EET)</SelectItem>
+          <SelectItem value="west">
+            Western European Summer Time (WEST)
+          </SelectItem>
+          <SelectItem value="cat">Central Africa Time (CAT)</SelectItem>
+          <SelectItem value="eat">East Africa Time (EAT)</SelectItem>
+        </SelectGroup>
+        <SelectGroup>
+          <SelectLabel>Asia</SelectLabel>
+          <SelectItem value="msk">Moscow Time (MSK)</SelectItem>
+          <SelectItem value="ist">India Standard Time (IST)</SelectItem>
+          <SelectItem value="cst_china">China Standard Time (CST)</SelectItem>
+          <SelectItem value="jst">Japan Standard Time (JST)</SelectItem>
+          <SelectItem value="kst">Korea Standard Time (KST)</SelectItem>
+          <SelectItem value="ist_indonesia">
+            Indonesia Central Standard Time (WITA)
+          </SelectItem>
+        </SelectGroup>
+        <SelectGroup>
+          <SelectLabel>Australia & Pacific</SelectLabel>
+          <SelectItem value="awst">
+            Australian Western Standard Time (AWST)
+          </SelectItem>
+          <SelectItem value="acst">
+            Australian Central Standard Time (ACST)
+          </SelectItem>
+          <SelectItem value="aest">
+            Australian Eastern Standard Time (AEST)
+          </SelectItem>
+          <SelectItem value="nzst">New Zealand Standard Time (NZST)</SelectItem>
+          <SelectItem value="fjt">Fiji Time (FJT)</SelectItem>
+        </SelectGroup>
+        <SelectGroup>
+          <SelectLabel>South America</SelectLabel>
+          <SelectItem value="art">Argentina Time (ART)</SelectItem>
+          <SelectItem value="bot">Bolivia Time (BOT)</SelectItem>
+          <SelectItem value="brt">Brasilia Time (BRT)</SelectItem>
+          <SelectItem value="clt">Chile Standard Time (CLT)</SelectItem>
+        </SelectGroup>
+      </SelectContent>
+    </Select>
+  )
+}
+```
+
+## API

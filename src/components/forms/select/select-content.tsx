@@ -15,7 +15,7 @@ const SelectContent = React.forwardRef<Comp, Props>(({ className, children, posi
       ref={ref}
       className={cn(
         selectContent(),
-        position === 'item-aligned'
+        position === 'popper'
         && 'data-[side=bottom]:translate-y-1 data-[side=left]:-translate-x-1 data-[side=right]:translate-x-1 data-[side=top]:-translate-y-1',
         className,
       )}
