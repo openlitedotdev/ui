@@ -2,3 +2,41 @@
 title: Tooltip
 description: A tooltip is a brief, informative message that appears when a user interacts with an element.
 ---
+
+## Import
+
+- **Tooltip**: The main component to display a tooltip.
+
+## Usage
+
+<div className='w-full flex justify-center'>
+  <TooltipProvider>
+    <Tooltip>
+      <TooltipTrigger asChild>
+        <Button>Hover</Button>
+      </TooltipTrigger>
+      <TooltipContent>
+        <p className='m-0'>Add to library</p>
+      </TooltipContent>
+    </Tooltip>
+  </TooltipProvider>
+</div>
+
+```jsx
+import { TooltipProvider, Tooltip, TooltipTrigger, TooltipContent } from '@openlite/ui'
+
+export function TooltipDemo() {
+  return (
+    <TooltipProvider>
+      <Tooltip>
+        <TooltipTrigger asChild>
+          <Button>Hover</Button>
+        </TooltipTrigger>
+        <TooltipContent>
+          <p>hover in the tooltip</p>
+        </TooltipContent>
+      </Tooltip>
+    </TooltipProvider>
+  )
+}
+```

@@ -1,4 +1,110 @@
 ---
 title: Dropdown
-description: A dropdown is a toggleable menu that allows the user to choose one value from a predefined list.
+description: A dropdown is a toggleable  that allows the user to choose one value from a predefined list.
 ---
+
+# Imports
+
+- *Dropdown*: The main component to display a dropdown.
+- *DropdownTrigger*: The trigger component to display a dropdown.
+- *DropdownGroup*: The group component to display a dropdown.
+- *DropdownPortal*: The portal component to display a dropdown.
+- *DropdownSub*: The sub component to display a dropdown.
+- *DropdownRadioGroup*: The radio group component to display a dropdown.
+- *DropdownSubTrigger*: The sub trigger component to display a dropdown.
+- *DropdownContent*: The content component to display a dropdown.
+- *DropdownSubContent*: The sub content component to display a dropdown.
+- *DropdownItem*: The item component to display a dropdown.
+- *DropdownCheckboxItem*: The checkbox item component to display a dropdown.
+- *DropdownRadioItem*: The radio item component to display a dropdown.
+- *DropdownSeparator*: The separator component to display a dropdown.
+- *DropdownLabel*: The label component to display a dropdown.
+- *DropdownShorcut*: The shortcut component to display a dropdown.
+
+## Usage
+
+<Dropdown className="w-96" >
+  <DropdownTrigger asChild>
+    <Button variant="outline">Open</Button>
+  </DropdownTrigger>
+  <DropdownContent className="max-h-72">
+    <DropdownLabel>My Account</DropdownLabel>
+    <DropdownSeparator />
+    <DropdownGroup>
+      <DropdownItem>
+        {/* <User className="mr-2 h-4 w-4" /> */}
+        <span>Profile</span>
+        <DropdownShorcut>⇧⌘P</DropdownShorcut>
+      </DropdownItem>
+      <DropdownItem>
+        {/* <CreditCard className="mr-2 h-4 w-4" /> */}
+        <span>Billing</span>
+        <DropdownShorcut>⌘B</DropdownShorcut>
+      </DropdownItem>
+      <DropdownItem>
+        {/* <Settings className="mr-2 h-4 w-4" /> */}
+        <span>Settings</span>
+        <DropdownShorcut>⌘S</DropdownShorcut>
+      </DropdownItem>
+      <DropdownItem>
+        {/* <Keyboard className="mr-2 h-4 w-4" /> */}
+        <span>Keyboard shortcuts</span>
+        <DropdownShorcut>⌘K</DropdownShorcut>
+      </DropdownItem>
+    </DropdownGroup>
+    <DropdownSeparator />
+    <DropdownGroup>
+      <DropdownItem>
+        {/* <Users className="mr-2 h-4 w-4" /> */}
+        <span>Team</span>
+      </DropdownItem>
+      <DropdownSub>
+        <DropdownSubTrigger>
+          {/* <UserPlus className="mr-2 h-4 w-4" /> */}
+          <span>Invite users</span>
+        </DropdownSubTrigger>
+        <DropdownPortal>
+          <DropdownSubContent>
+            <DropdownItem>
+              {/* <Mail className="mr-2 h-4 w-4" /> */}
+              <span>Email</span>
+            </DropdownItem>
+            <DropdownItem>
+              {/* <MessageSquare className="mr-2 h-4 w-4" /> */}
+              <span>Message</span>
+            </DropdownItem>
+            <DropdownSeparator />
+            <DropdownItem>
+              {/* <PlusCircle className="mr-2 h-4 w-4" /> */}
+              <span>More...</span>
+            </DropdownItem>
+          </DropdownSubContent>
+        </DropdownPortal>
+      </DropdownSub>
+      <DropdownItem>
+        {/* <Plus className="mr-2 h-4 w-4" /> */}
+        <span>New Team</span>
+        <DropdownShorcut>⌘+T</DropdownShorcut>
+      </DropdownItem>
+    </DropdownGroup>
+    <DropdownSeparator />
+    <DropdownItem>
+      {/* <Github className="mr-2 h-4 w-4" /> */}
+      <span>GitHub</span>
+    </DropdownItem>
+    <DropdownItem>
+      {/* <LifeBuoy className="mr-2 h-4 w-4" /> */}
+      <span>Support</span>
+    </DropdownItem>
+    <DropdownItem disabled>
+      {/* <Cloud className="mr-2 h-4 w-4" /> */}
+      <span>API</span>
+    </DropdownItem>
+    <DropdownSeparator />
+    <DropdownItem>
+      {/* <LogOut className="mr-2 h-4 w-4" /> */}
+      <span>Log out</span>
+      <DropdownShorcut>⇧⌘Q</DropdownShorcut>
+    </DropdownItem>
+  </DropdownContent>
+</Dropdown>
