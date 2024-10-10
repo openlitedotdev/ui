@@ -157,8 +157,8 @@ importers:
   docs:
     dependencies:
       '@openlite/ui':
-        specifier: 0.5.0
-        version: 0.5.0(@types/react-dom@18.3.0)(@types/react@18.3.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(tailwindcss@3.4.11)
+        specifier: 0.5.4
+        version: 0.5.4(@types/react-dom@18.3.0)(@types/react@18.3.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(tailwindcss@3.4.11)
       fumadocs-core:
         specifier: 13.2.2
         version: 13.2.2(@types/react@18.3.5)(next@14.2.11(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -698,8 +698,8 @@ packages:
     resolution: {integrity: sha512-oGB+UxlgWcgQkgwo8GcEGwemoTFt3FIO9ababBmaGwXIoBKZ+GTy0pP185beGg7Llih/NSHSV2XAs1lnznocSg==}
     engines: {node: '>= 8'}
 
-  '@openlite/ui@0.5.0':
-    resolution: {integrity: sha512-acQ/GAv3nzVBuqp7YlGu8gY44QdTsvKg1tmXbpWA0fDrJ+IQk06ApAeUbKz1il652wJQEEDkuaUDhVbEjK28Xw==}
+  '@openlite/ui@0.5.4':
+    resolution: {integrity: sha512-/uBN5dr9vUvLBi2LXt1QDHcZ5DrY8wvCva6mFKt8jMRnkZtmhCOMVw/3HrUszQVwVdxGWNzrfc07V1MIPA1WxA==}
     peerDependencies:
       react: '>=18'
       react-dom: '>=18'
@@ -4538,7 +4538,7 @@ snapshots:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.17.1
 
-  '@openlite/ui@0.5.0(@types/react-dom@18.3.0)(@types/react@18.3.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(tailwindcss@3.4.11)':
+  '@openlite/ui@0.5.4(@types/react-dom@18.3.0)(@types/react@18.3.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(tailwindcss@3.4.11)':
     dependencies:
       '@radix-ui/react-accordion': 1.1.2(@types/react-dom@18.3.0)(@types/react@18.3.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@radix-ui/react-aspect-ratio': 1.0.3(@types/react-dom@18.3.0)(@types/react@18.3.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
