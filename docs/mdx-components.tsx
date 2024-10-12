@@ -80,6 +80,7 @@ import {
   SelectTrigger,
   SelectValue,
   Separator,
+  Skeleton,
   Slider,
   Tooltip,
   TooltipContent,
@@ -175,6 +176,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     Accordion,
     Accordions,
     Slider,
+    Skeleton,
     InstallTabs: ({
       items,
       children,
