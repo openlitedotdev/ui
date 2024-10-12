@@ -46,7 +46,7 @@ export const tableBody = cva('&_tr:last-child]:border-0')
  *   // TableFooter elements
  * </TableFooter>
  */
-export const tableFooter = cva('border-t border-default-300 font-medium [&>tr]:last:border-b-0')
+export const tableFooter = cva('border-t border-default-300 bg-default-100 font-medium [&>tr]:last:border-b-0')
 
 /**
  * Table wrapper **Class Variants** component
@@ -94,4 +94,4 @@ export const tableCell = cva('p-4 align-middle [&:has([role=checkbox])]:pr-0')
  *   // TableCaption elements
  * </TableCaption>
  */
-export const tableCaption = cva('mt-4 text-small text-default-foreground')
+export const tableCaption = cva('mt-2 text-sm text-default')
