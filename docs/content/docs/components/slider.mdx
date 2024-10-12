@@ -2,3 +2,105 @@
 title: Slider
 description: A slider is a form control that lets users select a value from a range of values.
 ---
+
+## Import
+
+- **Slider**: The main component to display a slider.
+
+## Usage
+
+<Slider defaultValue={[50]} max={100} step={1} />
+
+```jsx
+import { Slider } from "@openlite/ui"
+
+export function SliderDemo() {
+  return (
+    <Slider defaultValue={[50]} max={100} step={1} />
+  )
+}
+```
+
+## Examples
+
+### Default
+
+<Slider variant="default" defaultValue={[22]} max={100} step={1} />
+
+```jsx
+import { Slider } from "@openlite/ui"
+
+export function SliderDemo() {
+  return (
+    <Slider  variant="default" defaultValue={[22]} max={100} step={1} />
+  )
+}
+```
+
+### Primary
+
+<Slider  variant="primary" defaultValue={[80]} max={100} step={1} />
+
+```jsx
+import { Slider } from "@openlite/ui"
+
+export function SliderDemo() {
+  return (
+    <Slider  variant="primary" defaultValue={[80]} max={100} step={1} />
+  )
+}
+```
+
+### Success
+
+<Slider  variant="success" defaultValue={[100]} max={100} step={1} />
+
+```jsx
+import { Slider } from "@openlite/ui"
+
+export function SliderDemo() {
+  return (
+    <Slider  variant="success" defaultValue={[100]} max={100} step={1} />
+  )
+}
+```
+
+### Warn
+
+<Slider  variant="warn" defaultValue={[56]} max={100} step={1} />
+
+```jsx
+import { Slider } from "@openlite/ui"
+
+export function SliderDemo() {
+  return (
+    <Slider  variant="warn" defaultValue={[56]} max={100} step={1} />
+  )
+}
+```
+
+### Error
+
+<Slider  variant="error" defaultValue={[10]} max={100} step={1} />
+
+```jsx
+import { Slider } from "@openlite/ui"
+
+export function SliderDemo() {
+  return (
+    <Slider  variant="error" defaultValue={[10]} max={100} step={1} />
+  )
+}
+```
+
+## API
+
+### Slider Props
+
+| Props | Type | Description |
+| ----- | ---- | ----------- |
+| defaultValue | number[] | The default value of the slider. |
+| max | number | The maximum value of the slider. |
+| min | number | The minimum value of the slider. |
+| step | number | The granularity the slider can step through values. |
+| variant | `'default' \| 'primary' \| 'success' \| 'warn' \| 'error'` | The variant of the slider. |
