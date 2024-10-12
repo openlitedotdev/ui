@@ -2,3 +2,290 @@
 title: Table
 description: A table is a set of data elements (values) that is organized using a model of vertical columns and horizontal rows.
 ---
+
+## Import
+
+- **Table**: The main component to display a table.
+- **TableHeader**: The main component to display a table header.
+- **TableBody**: The main component to display a table body.
+- **TableFooter**: The main component to display a table footer.
+- **TableRow**: The main component to display a table row.
+- **TableHead**: The main component to display a table head.
+- **TableCell**: The main component to display a table cell.
+- **TableCaption**: The main component to display a table caption.
+
+## Usage
+
+<Table className="m-0">
+  <TableHeader>
+    <TableRow>
+      <TableHead>Id</TableHead>
+      <TableHead>Name</TableHead>
+      <TableHead>Email</TableHead>
+      <TableHead>Role</TableHead>
+    </TableRow>
+  </TableHeader>
+  <TableBody>
+      <TableRow>
+        <TableCell>1</TableCell>
+        <TableCell>Juan Pérez</TableCell>
+        <TableCell>juan.perez@example.com</TableCell>
+        <TableCell>Admin</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableCell>2</TableCell>
+        <TableCell>María López</TableCell>
+        <TableCell>maria.lopez@example.com</TableCell>
+        <TableCell>Usuario</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableCell>3</TableCell>
+        <TableCell>Carlos Ramírez</TableCell>
+        <TableCell>carlos.ramirez@example.com</TableCell>
+        <TableCell>Editor</TableCell>
+      </TableRow>
+  </TableBody>
+</Table>
+
+```jsx
+import { Table, TableHeader, TableBody, TableFooter, TableRow, TableHead, TableCell, TableCaption } from "@openlite/ui"
+
+export function TableDemo() {
+  return (
+    <Table>
+      <TableHeader>
+        <TableRow>
+          <TableHead>Id</TableHead>
+          <TableHead>Name</TableHead>
+          <TableHead>Email</TableHead>
+          <TableHead>Role</TableHead>
+        </TableRow>
+      </TableHeader>
+      <TableBody>
+          <TableRow>
+            <TableCell>1</TableCell>
+            <TableCell>Juan Pérez</TableCell>
+            <TableCell>juan.perez@example.com</TableCell>
+            <TableCell>Admin</TableCell>
+          </TableRow>
+          <TableRow>
+            <TableCell>2</TableCell>
+            <TableCell>María López</TableCell>
+            <TableCell>maria.lopez@example.com</TableCell>
+            <TableCell>Usuario</TableCell>
+          </TableRow>
+          <TableRow>
+            <TableCell>3</TableCell>
+            <TableCell>Carlos Ramírez</TableCell>
+            <TableCell>carlos.ramirez@example.com</TableCell>
+            <TableCell>Editor</TableCell>
+          </TableRow>
+      </TableBody>
+    </Table>
+  )
+}
+```
+
+## Examples
+
+### Table with caption
+
+<Table className="m-0">
+  <TableCaption>Products</TableCaption>
+  <TableHeader>
+    <TableRow>
+      <TableHead>Id</TableHead>
+      <TableHead>Name</TableHead>
+      <TableHead>Precio</TableHead>
+      <TableHead>Stock</TableHead>
+    </TableRow>
+  </TableHeader>
+  <TableBody>
+      <TableRow>
+        <TableCell>1</TableCell>
+        <TableCell>Mouse</TableCell>
+        <TableCell>25</TableCell>
+        <TableCell>100</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableCell>2</TableCell>
+        <TableCell>Silla Gamer</TableCell>
+        <TableCell>200</TableCell>
+        <TableCell>50</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableCell>3</TableCell>
+        <TableCell>Auriculares</TableCell>
+        <TableCell>75</TableCell>
+        <TableCell>30</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableCell>4</TableCell>
+        <TableCell>Disco Duro Externo</TableCell>
+        <TableCell>100</TableCell>
+        <TableCell>20</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableCell>5</TableCell>
+        <TableCell>Tablet</TableCell>
+        <TableCell>300</TableCell>
+        <TableCell>15</TableCell>
+      </TableRow>
+  </TableBody>
+</Table>
+
+```jsx
+import { Table, TableHeader, TableBody, TableFooter, TableRow, TableHead, TableCell, TableCaption } from "@openlite/ui"
+
+export function TableDemo() {
+  return (
+    <Table>
+      <TableCaption>Products</TableCaption>
+      <TableHeader>
+        <TableRow>
+          <TableHead>Id</TableHead>
+          <TableHead>Name</TableHead>
+          <TableHead>Precio</TableHead>
+          <TableHead>Stock</TableHead>
+        </TableRow>
+      </TableHeader>
+      <TableBody>
+          <TableRow>
+            <TableCell>1</TableCell>
+            <TableCell>Mouse</TableCell>
+            <TableCell>25</TableCell>
+            <TableCell>100</TableCell>
+          </TableRow>
+          <TableRow>
+            <TableCell>2</TableCell>
+            <TableCell>Silla Gamer</TableCell>
+            <TableCell>200</TableCell>
+            <TableCell>50</TableCell>
+          </TableRow>
+          <TableRow>
+            <TableCell>3</TableCell>
+            <TableCell>Auriculares</TableCell>
+            <TableCell>75</TableCell>
+            <TableCell>30</TableCell>
+          </TableRow>
+          <TableRow>
+            <TableCell>4</TableCell>
+            <TableCell>Disco Duro Externo</TableCell>
+            <TableCell>100</TableCell>
+            <TableCell>20</TableCell>
+          </TableRow>
+          <TableRow>
+            <TableCell>5</TableCell>
+            <TableCell>Tablet</TableCell>
+            <TableCell>300</TableCell>
+            <TableCell>15</TableCell>
+          </TableRow>
+      </TableBody>
+    </Table>
+  )
+}
+```
+
+### Table with footer
+
+<Table className="m-0">
+  <TableHeader>
+    <TableRow>
+      <TableHead>{}</TableHead>
+      <TableHead>Id</TableHead>
+      <TableHead>producto</TableHead>
+      <TableHead>Cantidad</TableHead>
+      <TableHead>Total</TableHead>
+      <TableHead>fecha</TableHead>
+    </TableRow>
+  </TableHeader>
+  <TableBody>
+      <TableRow>
+        <TableCell><Checkbox /></TableCell>
+        <TableCell>1</TableCell>
+        <TableCell>Laptop</TableCell>
+        <TableCell>2</TableCell>
+        <TableCell>1500</TableCell>
+        <TableCell>2024-10-01</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableCell><Checkbox /></TableCell>
+        <TableCell>2</TableCell>
+        <TableCell>Monitor</TableCell>
+        <TableCell>1</TableCell>
+        <TableCell>500</TableCell>
+        <TableCell>2024-10-01</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableCell><Checkbox /></TableCell>
+        <TableCell>3</TableCell>
+        <TableCell>Teclado</TableCell>
+        <TableCell>3</TableCell>
+        <TableCell>150</TableCell>
+        <TableCell>2024-10-01</TableCell>
+      </TableRow>
+  </TableBody>
+  <TableFooter>
+    <TableRow>
+      <TableCell colSpan={3}>Total</TableCell>
+      <TableCell>7</TableCell>
+      <TableCell>2150</TableCell>
+      <TableCell>{}</TableCell>
+    </TableRow>
+  </TableFooter>
+</Table>
+
+```jsx
+import { Table, TableHeader, TableBody, TableFooter, TableRow, TableHead, TableCell, TableCaption, Checkbox } from "@openlite/ui"
+
+export function TableDemo() {
+  return (
+    <Table>
+      <TableHeader>
+        <TableRow>
+          <TableHead></TableHead>
+          <TableHead>Id</TableHead>
+          <TableHead>producto</TableHead>
+          <TableHead>Cantidad</TableHead>
+          <TableHead>Total</TableHead>
+          <TableHead>fecha</TableHead>
+        </TableRow>
+      </TableHeader>
+      <TableBody>
+          <TableRow>
+            <TableCell><Checkbox /></TableCell>
+            <TableCell>1</TableCell>
+            <TableCell>Laptop</TableCell>
+            <TableCell>2</TableCell>
+            <TableCell>1500</TableCell>
+            <TableCell>2024-10-01</TableCell>
+          </TableRow>
+          <TableRow>
+            <TableCell><Checkbox /></TableCell>
+            <TableCell>2</TableCell>
+            <TableCell>Monitor</TableCell>
+            <TableCell>1</TableCell>
+            <TableCell>500</TableCell>
+            <TableCell>2024-10-01</TableCell>
+          </TableRow>
+          <TableRow>
+            <TableCell><Checkbox /></TableCell>
+            <TableCell>3</TableCell>
+            <TableCell>Teclado</TableCell>
+            <TableCell>3</TableCell>
+            <TableCell>150</TableCell>
+            <TableCell>2024-10-01</TableCell>
+          </TableRow>
+      </TableBody>
+      <TableFooter>
+        <TableRow>
+          <TableCell colSpan={3}>Total</TableCell>
+          <TableCell>7</TableCell>
+          <TableCell>2150</TableCell>
+          <TableCell></TableCell>
+        </TableRow>
+      </TableFooter>
+    </Table>
+  )
+}
+```
