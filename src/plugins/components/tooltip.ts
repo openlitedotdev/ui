@@ -22,7 +22,7 @@ export const tooltip = cva('')
  *   // Tooltip elements
  * </TooltipTrigger>
  */
-export const tooltipTrigger = cva('px-2 py-1 hover:animate-pop-in text-foreground')
+export const tooltipTrigger = cva()
 
 /**
  * Tooltip wrapper **Class Variants** component
