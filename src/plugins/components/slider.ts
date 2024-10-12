@@ -18,7 +18,7 @@ export const slider = cva('relative flex w-full touch-none select-none items-cen
  * @example
  * <Track className={styles()} />
  */
-export const sliderTrack = cva('relative h-2 w-full grow overflow-hidden rounded-full bg-default-300')
+export const sliderTrack = cva('relative h-2 w-full grow overflow-hidden rounded-full bg-default-100')
 
 /**
  * Range wrapper **Class Variants** component
