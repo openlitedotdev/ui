@@ -2,3 +2,165 @@
 title: Tabs
 description: Tabs make it easy to explore and switch between different views or functional aspects of an app or to browse categorized data sets.
 ---
+
+## Imports
+
+- **Tabs**: The main component to display a tabs.
+- **TabsContent**: The content component to display a tabs.
+- **TabsTrigger**: The wrapper component to display a tabs.
+- **TabsList**: The gruop component to close a tabs.
+
+## Usage
+
+{" "}
+
+<TabsUI className="w-full">
+  <TabsList className="w-full justify-start rounded-none">
+    <TabsTrigger value="account" className="rounded-none">
+      Account
+    </TabsTrigger>
+    <TabsTrigger value="password" className="rounded-none">
+      Password
+    </TabsTrigger>
+  </TabsList>
+  <TabsContent value="account" className="p-4">
+    <h2 className="text-2xl font-bold mb-4">Login</h2>
+    <div className="space-y-4">
+      <div>
+        <label
+          htmlFor="name"
+          className="block text-sm font-medium text-gray-700"
+        >
+          Name
+        </label>
+        <Input id="name" defaultValue="Sebastian" />
+      </div>
+      <div>
+        <label
+          htmlFor="password"
+          className="block text-sm font-medium text-gray-700"
+        >
+          Password
+        </label>
+        <Input type="password" id="username" defaultValue="*******" />
+      </div>
+      <Button>Login</Button>
+    </div>
+  </TabsContent>
+  <TabsContent value="password" className="p-4">
+    <h2 className="text-2xl font-bold mb-4">Create Account</h2>
+    <div className="space-y-4">
+      <div>
+        <label
+          htmlFor="name"
+          className="block text-sm font-medium text-gray-700"
+        >
+          Name
+        </label>
+        <Input id="name" defaultValue="Gerzon" />
+      </div>
+      <div>
+        <label
+          htmlFor="password"
+          className="block text-sm font-medium text-gray-700"
+        >
+          Password
+        </label>
+        <Input type="password" id="username" defaultValue="*******" />
+      </div>
+      <Button>Save account</Button>
+    </div>
+  </TabsContent>
+</TabsUI>
+
+```jsx
+import {
+  Tabs,
+  TabsContent,
+  TabsList,
+  TabsTrigger,
+} from '@openlite/ui'
+
+export default function DemoTabs() {
+  return (
+  <Tabs value="account" className="w-full">
+    <TabsList className="w-full justify-start rounded-none">
+      <TabsTrigger value="account" className="rounded-none">
+        Account
+      </TabsTrigger>
+      <TabsTrigger value="password" className="rounded-none">
+        Password
+      </TabsTrigger>
+    </TabsList>
+    <TabsContent value="account" className="p-4">
+      <h2 className="text-2xl font-bold mb-4">Login</h2>
+      <p className="text-gray-500 mb-4">
+        Make changes to your account here. Click save when you're done.
+      </p>
+      <div className="space-y-4">
+        <div>
+          <label
+            htmlFor="name"
+            className="block text-sm font-medium text-gray-700"
+          >
+            Name
+          </label>
+          <Input id="name" defaultValue="Sebastian" />
+        </div>
+        <div>
+          <label
+            htmlFor="password"
+            className="block text-sm font-medium text-gray-700"
+          >
+            Password
+          </label>
+          <Input type="password" id="username" defaultValue="*******" />
+        </div>
+        <Button>Login</Button>
+      </div>
+    </TabsContent>
+    <TabsContent value="password" className="p-4">
+      <h2 className="text-2xl font-bold mb-4">Create Account</h2>
+      <p className="text-gray-500 mb-4">
+        Make changes to your account here. Click save when you're done.
+      </p>
+      <div className="space-y-4">
+        <div>
+          <label
+            htmlFor="name"
+            className="block text-sm font-medium text-gray-700"
+          >
+            Name
+          </label>
+          <Input id="name" defaultValue="Gerzon" />
+        </div>
+        <div>
+          <label
+            htmlFor="password"
+            className="block text-sm font-medium text-gray-700"
+          >
+            Password
+          </label>
+          <Input type="password" id="username" defaultValue="*******" />
+        </div>
+        <Button>Save account</Button>
+      </div>
+    </TabsContent>
+  </Tabs>
+  )
+}
+```
+
+## API
+
+### Tabs Props
+
+| Props | Type | Description |
+| --- | --- | --- |
+| `value` | `'string'` | The default TabsContent. |
+
+### Tabs Trigger
+
+| Props | Type | Description |
+| --- | --- | --- |
+| `value` | `'string'` | The key of TabsContent. |
