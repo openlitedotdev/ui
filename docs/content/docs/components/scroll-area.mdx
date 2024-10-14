@@ -2,3 +2,155 @@
 title: Scroll Area
 description: A scroll area is a container that allows scrolling of content.
 ---
+
+## Import
+
+- **ScrollArea**: The main component to display an scroll.
+
+## Usage
+
+<ScrollArea className="h-[200px] w-[350px] rounded-md border px-4">
+  <h2>The title </h2>
+  <span>
+    Jokester began sneaking into the castle in the middle of the night and
+    leaving jokes all over the place: under the king's pillow, in his soup, even
+    in the royal toilet. The king was furious, but he couldn't seem to stop
+    Jokester. And then, one day, the people of the kingdom discovered that the
+    jokes left by Jokester were so funny that they couldn't help but laugh. And
+    once they started laughing, they couldn't stop.
+  </span>
+</ScrollArea>
+
+```tsx
+import { ScrollArea } from "@openlite/ui";
+
+export default function Demo() {
+  return (
+    <ScrollArea className="h-[200px] w-[350px] rounded-md border px-4">
+      <h2>The title </h2>
+      <span>
+        Jokester began sneaking into the castle in the middle of the night and
+        leaving jokes all over the place: under the king's pillow, in his soup,
+        even in the royal toilet. The king was furious, but he couldn't seem to
+        stop Jokester. And then, one day, the people of the kingdom discovered
+        that the jokes left by Jokester were so funny that they couldn't help
+        but laugh. And once they started laughing, they couldn't stop.
+      </span>
+    </ScrollArea>
+  );
+}
+```
+
+## Examples
+
+<ScrollArea className="w-96 whitespace-nowrap rounded-md border">
+  <div className="flex w-max space-x-4 p-4">
+    <figure className="shrink-0">
+      <div className="overflow-hidden rounded-md">
+        <img
+          src="https://images.unsplash.com/photo-1465869185982-5a1a7522cbcb?auto=format&fit=crop&w=300&q=80"
+          alt={`Photo by demo`}
+          className="aspect-[3/4] h-fit w-fit object-cover"
+          width={300}
+          height={400}
+        />
+      </div>
+      <figcaption className="pt-2 text-xs text-muted-foreground">
+        Photo by <span className="font-semibold text-foreground">demo</span>
+      </figcaption>
+    </figure>
+    <figure className="shrink-0">
+      <div className="overflow-hidden rounded-md">
+        <img
+          src="https://images.unsplash.com/photo-1465869185982-5a1a7522cbcb?auto=format&fit=crop&w=300&q=80"
+          alt={`Photo by demo`}
+          className="aspect-[3/4] h-fit w-fit object-cover"
+          width={300}
+          height={400}
+        />
+      </div>
+      <figcaption className="pt-2 text-xs text-muted-foreground">
+        Photo by <span className="font-semibold text-foreground">demo</span>
+      </figcaption>
+    </figure>
+    <figure className="shrink-0">
+      <div className="overflow-hidden rounded-md">
+        <img
+          src="https://images.unsplash.com/photo-1465869185982-5a1a7522cbcb?auto=format&fit=crop&w=300&q=80"
+          alt={`Photo by demo`}
+          className="aspect-[3/4] h-fit w-fit object-cover"
+          width={300}
+          height={400}
+        />
+      </div>
+      <figcaption className="pt-2 text-xs text-muted-foreground">
+        Photo by <span className="font-semibold text-foreground">demo</span>
+      </figcaption>
+    </figure>
+  </div>
+  <ScrollBar orientation="horizontal" />
+</ScrollArea>
+
+```tsx
+import { ScrollArea, ScrollBar } from "@openlite/ui";
+
+export default function Demo() {
+  return (
+    <ScrollArea className="w-96 whitespace-nowrap rounded-md border">
+      <div className="flex w-max space-x-4 p-4">
+        <figure className="shrink-0">
+          <div className="overflow-hidden rounded-md">
+            <img
+              src="https://images.unsplash.com/photo-1465869185982-5a1a7522cbcb?auto=format&fit=crop&w=300&q=80"
+              alt={`Photo by demo`}
+              className="aspect-[3/4] h-fit w-fit object-cover"
+              width={300}
+              height={400}
+            />
+          </div>
+          <figcaption className="pt-2 text-xs text-muted-foreground">
+            Photo by <span className="font-semibold text-foreground">demo</span>
+          </figcaption>
+        </figure>
+        <figure className="shrink-0">
+          <div className="overflow-hidden rounded-md">
+            <img
+              src="https://images.unsplash.com/photo-1465869185982-5a1a7522cbcb?auto=format&fit=crop&w=300&q=80"
+              alt={`Photo by demo`}
+              className="aspect-[3/4] h-fit w-fit object-cover"
+              width={300}
+              height={400}
+            />
+          </div>
+          <figcaption className="pt-2 text-xs text-muted-foreground">
+            Photo by <span className="font-semibold text-foreground">demo</span>
+          </figcaption>
+        </figure>
+        <figure className="shrink-0">
+          <div className="overflow-hidden rounded-md">
+            <img
+              src="https://images.unsplash.com/photo-1465869185982-5a1a7522cbcb?auto=format&fit=crop&w=300&q=80"
+              alt={`Photo by demo`}
+              className="aspect-[3/4] h-fit w-fit object-cover"
+              width={300}
+              height={400}
+            />
+          </div>
+          <figcaption className="pt-2 text-xs text-muted-foreground">
+            Photo by <span className="font-semibold text-foreground">demo</span>
+          </figcaption>
+        </figure>
+      </div>
+      <ScrollBar orientation="horizontal" />
+    </ScrollArea>
+  );
+}
+```
+
+## API
+
+### ScrollBar Props
+
+| Props | Type | Description |
+| ----- | ---- | ----------- |
+| orientation | `'vertical' \| 'horizontal'` | The orientation of the scroll. |
