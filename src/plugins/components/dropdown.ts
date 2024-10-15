@@ -106,7 +106,7 @@ export const dropdownSubContent = cva('z-50 min-w-[8rem] rounded-medium shadow-m
  *   // accordion elements
  * </DropdownContent>
  */
-export const dropdownContent = cva('z-50 min-w-[8rem] border border-default-300 p-3 overflow-hidden rounded-medium data-[state=open]:animate-dropdown-in data-[state=closed]:animate-dropdown-out shadow-md data-[side=top]:slide-in-from-bottom-2 data-[side=right]:slide-in-from-left-2 data-[side=bottom]:slide-in-from-top-2')
+export const dropdownContent = cva('z-50 min-w-56 border border-default-300 p-3 bg-background overflow-hidden rounded-medium data-[state=open]:animate-dropdown-in data-[state=closed]:animate-dropdown-out shadow-md data-[side=top]:slide-in-from-bottom-2 data-[side=right]:slide-in-from-left-2 data-[side=bottom]:slide-in-from-top-2')
 
 /**
  * Dropdown Item **Class Variants** component

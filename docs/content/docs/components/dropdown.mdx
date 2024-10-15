@@ -24,10 +24,12 @@ description: A dropdown is a toggleable  that allows the user to choose one valu
 ## Usage
 
 <Dropdown className="w-96" >
-  <DropdownTrigger asChild>
-    <Button variant="outline">Open</Button>
-  </DropdownTrigger>
-  <DropdownContent className="max-h-72">
+  <div className='flex justify-center'>
+    <DropdownTrigger asChild>
+      <Button>Open</Button>
+    </DropdownTrigger>
+  </div>
+  <DropdownContent>
     <DropdownLabel>My Account</DropdownLabel>
     <DropdownSeparator />
     <DropdownGroup>
