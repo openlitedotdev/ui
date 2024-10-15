@@ -11,5 +11,8 @@
   "tailwindCSS.experimental.classRegex": ["cva`(.*?)`", "cva\\('(.*?)'\\)", "cva\\(\\s*('(.*?)'|\"(.*?)\")\\s*\\)"],
   "editor.quickSuggestions": {
     "strings": true
+  },
+  "[mdx]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   }
 }

@@ -2,3 +2,101 @@
 title: Sheet
 description: A sheet is a container that slides in from the edge of the screen.
 ---
+
+- **Sheet**: The main component to display a sheet.
+- **SheetDescription**: The description component to display a sheet.
+- **SheetTitle**: The title component to display a sheet.
+- **SheetClose**: The close button component to close a sheet.
+- **SheetTrigger**: The trigger component to display a sheet.
+- **SheetHeader**: The header component to display a sheet.
+- **SheetContent**: The content component to display a sheet.
+- **SheetFooter**: The footer component to display a sheet.
+
+## Usage
+
+<Sheet>
+  <SheetTrigger asChild>
+    <Button rippleColor="light">example form</Button>
+  </SheetTrigger>
+  <SheetContent>
+    <SheetHeader>
+      <SheetTitle>Edit profile</SheetTitle>
+      <SheetDescription>
+        Make changes to your profile here. Click save when you're done.
+      </SheetDescription>
+    </SheetHeader>
+    <div className="w-full py-4 space-y-4">
+      <div className="grid grid-cols-4 items-center gap-4">
+        <Label htmlFor="name" className="text-right">
+          Username
+        </Label>
+        <Input id="name" value="Pedro Duarte" className="col-span-3 w-44" />
+      </div>
+      <div className="grid grid-cols-4 items-center gap-4">
+        <Label htmlFor="username" className="text-right">
+          Email
+        </Label>
+        <Input id="username" value="@peduarte" className="col-span-3 w-44" />
+      </div>
+    </div>
+    <SheetFooter>
+      <SheetClose asChild>
+        <Button type="submit">Log In</Button>
+      </SheetClose>
+    </SheetFooter>
+  </SheetContent>
+</Sheet>
+
+```jsx
+import {
+  Sheet,
+  SheetClose,
+  SheetContent,
+  SheetDescription,
+  SheetFooter,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@openlite/ui";
+
+export default function DemoSheet() {
+  return (
+    <Sheet>
+      <SheetTrigger asChild>
+        <Button rippleColor="light">example form</Button>
+      </SheetTrigger>
+      <SheetContent>
+        <SheetHeader>
+          <SheetTitle>Edit profile</SheetTitle>
+          <SheetDescription>
+            Make changes to your profile here. Click save when you're done.
+          </SheetDescription>
+        </SheetHeader>
+        <div className="w-full py-4 space-y-4">
+          <div className="grid grid-cols-4 items-center gap-4">
+            <Label htmlFor="name" className="text-right">
+              Username
+            </Label>
+            <Input id="name" value="Pedro Duarte" className="col-span-3 w-44" />
+          </div>
+          <div className="grid grid-cols-4 items-center gap-4">
+            <Label htmlFor="username" className="text-right">
+              Email
+            </Label>
+            <Input
+              id="username"
+              value="@peduarte"
+              className="col-span-3 w-44"
+            />
+          </div>
+        </div>
+        <SheetFooter>
+          <SheetClose asChild>
+            <Button type="submit">Log In</Button>
+          </SheetClose>
+        </SheetFooter>
+      </SheetContent>
+    </Sheet>
+  );
+}
+```
