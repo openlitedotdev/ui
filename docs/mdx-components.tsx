@@ -1,18 +1,5 @@
 import type { MDXComponents } from 'mdx/types'
-import { Accordion, Accordions } from 'fumadocs-ui/components/accordion'
-import { Callout } from 'fumadocs-ui/components/callout'
-import { Tab, Tabs } from 'fumadocs-ui/components/tabs'
-import { TypeTable } from 'fumadocs-ui/components/type-table'
-import defaultComponents from 'fumadocs-ui/mdx'
-import {
-  CodeBlock,
-  type CodeBlockProps,
-  Pre,
-} from 'fumadocs-ui/components/codeblock'
 import type { ReactNode } from 'react'
-import { Popup, PopupContent, PopupTrigger } from 'fumadocs-ui/twoslash/popup'
-import { cn } from '@openlite/ui/tailwind'
-
 import {
   AccordionContent,
   AccordionItem,
@@ -109,6 +96,19 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from '@openlite/ui'
+import { cn } from '@openlite/ui/tailwind'
+import { Accordion, Accordions } from 'fumadocs-ui/components/accordion'
+import { Callout } from 'fumadocs-ui/components/callout'
+import {
+  CodeBlock,
+  type CodeBlockProps,
+  Pre,
+} from 'fumadocs-ui/components/codeblock'
+import { Tab, Tabs } from 'fumadocs-ui/components/tabs'
+import { TypeTable } from 'fumadocs-ui/components/type-table'
+import defaultComponents from 'fumadocs-ui/mdx'
+
+import { Popup, PopupContent, PopupTrigger } from 'fumadocs-ui/twoslash/popup'
 
 export function useMDXComponents(components: MDXComponents): MDXComponents {
   return {

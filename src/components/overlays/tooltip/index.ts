@@ -1,7 +1,7 @@
 import Tooltip from './tooltip'
-import TooltipTrigger from './tooltip-tigger'
 import TooltipContent from './tooltip-content'
 import TooltipProvider from './tooltip-provider'
+import TooltipTrigger from './tooltip-tigger'
 
 export type { Props as TooltipProps } from './tooltip-content'
-export { Tooltip, TooltipTrigger, TooltipContent, TooltipProvider }
+export { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger }

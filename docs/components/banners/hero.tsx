@@ -1,10 +1,10 @@
 'use client'
 
+import useThemeStore from '@/stores/color-picker'
 import { Button } from '@openlite/ui'
 import Link from 'next/link'
-import InstallCommand from '../install-command'
 import { Arrow } from '../icons/arrow'
-import useThemeStore from '@/stores/color-picker'
+import InstallCommand from '../install-command'
 
 export function Hero() {
   const { currentTheme } = useThemeStore()

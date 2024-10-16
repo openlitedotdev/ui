@@ -1,6 +1,6 @@
-import React from 'react'
-import * as TooltipPrimitive from '@radix-ui/react-tooltip'
 import { cn, tooltipContent } from '@/tailwind'
+import * as TooltipPrimitive from '@radix-ui/react-tooltip'
+import React from 'react'
 
 interface Comp extends React.ElementRef<typeof TooltipPrimitive.Content> {}
 export interface Props extends React.ComponentPropsWithoutRef<typeof TooltipPrimitive.Content> {}

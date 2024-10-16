@@ -1,6 +1,6 @@
-import React from 'react'
-import { Slot } from '@radix-ui/react-slot'
 import { breadcrumbLink, cn } from '@/tailwind'
+import { Slot } from '@radix-ui/react-slot'
+import React from 'react'
 
 export interface Comp extends HTMLAnchorElement {}
 export interface Props extends React.ButtonHTMLAttributes<HTMLAnchorElement> {

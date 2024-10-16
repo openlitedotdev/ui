@@ -1,9 +1,9 @@
-import * as React from 'react'
-import * as SelectPrimitive from '@radix-ui/react-select'
-import SelectScrollDownButton from './select-scroll-down'
-import SelectScrollUpButton from './select-scroll-button'
-import { cn, selectContent } from '@/tailwind'
 import type { VariantProps } from '@/tailwind'
+import { cn, selectContent } from '@/tailwind'
+import * as SelectPrimitive from '@radix-ui/react-select'
+import * as React from 'react'
+import SelectScrollUpButton from './select-scroll-button'
+import SelectScrollDownButton from './select-scroll-down'
 
 export interface Props extends React.ComponentPropsWithoutRef<typeof SelectPrimitive.Content>,
   VariantProps<typeof selectContent> {}

@@ -1,5 +1,5 @@
-import React from 'react'
 import { cn, dialogHeader } from '@/tailwind'
+import React from 'react'
 
 export interface Comp extends React.HTMLAttributes<HTMLDivElement> {}
 

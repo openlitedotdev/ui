@@ -1,8 +1,8 @@
 'use client'
 
+import useThemeStore from '@/stores/color-picker'
 import { Alert, AlertDescription, AlertTitle } from '@openlite/ui'
 import { Chat } from '../icons/chat'
-import useThemeStore from '@/stores/color-picker'
 
 export function AlertDemo() {
   const { currentTheme } = useThemeStore()

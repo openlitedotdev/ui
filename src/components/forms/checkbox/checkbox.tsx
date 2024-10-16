@@ -1,7 +1,7 @@
-import * as React from 'react'
-import * as CheckboxPrimitive from '@radix-ui/react-checkbox'
 import type { VariantProps } from '@/tailwind'
 import { checkbox, cn } from '@/tailwind'
+import * as CheckboxPrimitive from '@radix-ui/react-checkbox'
+import * as React from 'react'
 
 export interface Comp extends React.ElementRef<typeof CheckboxPrimitive.Root> {}
 export type Props = React.ComponentPropsWithoutRef<typeof CheckboxPrimitive.Root> & VariantProps<typeof checkbox>

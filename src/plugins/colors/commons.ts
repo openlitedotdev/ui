@@ -1,11 +1,11 @@
-import { azure } from './azure'
 import { amber } from './amber'
+import { azure } from './azure'
 import { cloud } from './cloud'
 import { crimson } from './crimson'
 import { emerald } from './emerald'
+import { neutral } from './neutral'
 import { sapphire } from './sapphire'
 import { sea } from './sea'
-import { neutral } from './neutral'
 
 export const commonColors = {
   white: '#ffffff',

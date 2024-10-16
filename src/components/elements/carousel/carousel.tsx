@@ -1,7 +1,7 @@
-import React from 'react'
-import useEmblaCarousel, { type UseEmblaCarouselType } from 'embla-carousel-react'
-import { CarouselContext } from './use-carousel'
 import { carousel, cn } from '@/tailwind'
+import useEmblaCarousel, { type UseEmblaCarouselType } from 'embla-carousel-react'
+import React from 'react'
+import { CarouselContext } from './use-carousel'
 
 type CarouselApi = UseEmblaCarouselType[1]
 type UseCarouselParameters = Parameters<typeof useEmblaCarousel>

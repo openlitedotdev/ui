@@ -1,6 +1,6 @@
-import * as React from 'react'
-import * as SeparatorPrimitive from '@radix-ui/react-separator'
 import { cn, separator } from '@/tailwind'
+import * as SeparatorPrimitive from '@radix-ui/react-separator'
+import * as React from 'react'
 
 export interface Props extends React.ComponentPropsWithoutRef<typeof SeparatorPrimitive.Root> {}
 export interface Comp extends React.ElementRef<typeof SeparatorPrimitive.Root> {}

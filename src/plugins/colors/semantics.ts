@@ -1,7 +1,7 @@
-import { readableColor } from 'color2k'
-import { commonColors as common } from './commons'
 import type { SemanticBaseColors, ThemeColors } from '@/types/color'
 import { swapColorValues } from '@/utils/functions'
+import { readableColor } from 'color2k'
+import { commonColors as common } from './commons'
 
 export const base: SemanticBaseColors = {
   light: {

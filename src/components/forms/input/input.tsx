@@ -1,6 +1,6 @@
-import * as React from 'react'
-import { cn, input } from '@/tailwind'
 import type { VariantProps } from '@/tailwind'
+import { cn, input } from '@/tailwind'
+import * as React from 'react'
 
 export interface Comp extends HTMLInputElement {}
 export interface Props extends React.InputHTMLAttributes<HTMLInputElement>, VariantProps <typeof input> {}

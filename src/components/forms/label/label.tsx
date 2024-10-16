@@ -1,7 +1,7 @@
-import React from 'react'
-import { Slot } from '@radix-ui/react-slot'
 import type { VariantProps } from '@/tailwind'
 import { cn, label } from '@/tailwind'
+import { Slot } from '@radix-ui/react-slot'
+import React from 'react'
 
 interface Comp extends HTMLLabelElement {}
 export interface Props extends React.LabelHTMLAttributes<HTMLLabelElement>, VariantProps<typeof label> {

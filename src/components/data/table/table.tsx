@@ -1,7 +1,7 @@
-import * as React from 'react'
-import { Slot } from '@radix-ui/react-slot'
-import { cn, table } from '@/tailwind'
 import type { VariantProps } from '@/tailwind'
+import { cn, table } from '@/tailwind'
+import { Slot } from '@radix-ui/react-slot'
+import * as React from 'react'
 
 export interface Props extends React.HTMLAttributes<HTMLTableElement>,
   VariantProps<typeof table> {

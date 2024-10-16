@@ -1,5 +1,5 @@
-import React from 'react'
 import { cn, tableFooter } from '@/tailwind'
+import React from 'react'
 
 export interface Props extends React.HTMLAttributes<HTMLTableSectionElement> {}
 export interface Comp extends HTMLTableSectionElement {}

@@ -1,5 +1,5 @@
-import React from 'react'
 import { cardDescription, cn } from '@/tailwind'
+import React from 'react'
 
 export interface Comp extends HTMLParagraphElement {}
 export interface Props extends React.HTMLAttributes<HTMLParagraphElement> {}

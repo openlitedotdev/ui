@@ -1,5 +1,5 @@
-import React from 'react'
 import { breadcrumbSeparator, cn } from '@/tailwind'
+import React from 'react'
 
 export interface Comp extends React.ComponentProps<'li'> {}
 

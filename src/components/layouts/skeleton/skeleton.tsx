@@ -1,6 +1,6 @@
-import React from 'react'
-import { cn, skeleton } from '@/tailwind'
 import type { VariantProps } from '@/tailwind'
+import { cn, skeleton } from '@/tailwind'
+import React from 'react'
 
 export interface Props extends React.HTMLAttributes<HTMLDivElement>,
   VariantProps<typeof skeleton> {}

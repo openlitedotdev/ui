@@ -1,6 +1,6 @@
-import { useEffect, useState } from 'react'
-import { Progress } from '@openlite/ui'
 import useThemeStore from '@/stores/color-picker'
+import { Progress } from '@openlite/ui'
+import { useEffect, useState } from 'react'
 
 export function ProgressDemo() {
   const [progress, setProgress] = useState(13)

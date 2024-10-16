@@ -1,6 +1,6 @@
-import ScrollBar from './scroll-bar'
 import ScrollArea from './scroll-area'
+import ScrollBar from './scroll-bar'
 
-export type { Props as ScrollBarProps, Comp as ScrollBarComponent } from './scroll-bar'
-export type { Props as ScrollAreaProps, Comp as ScrollAreaComponent } from './scroll-area'
-export { ScrollBar, ScrollArea }
+export type { Comp as ScrollAreaComponent, Props as ScrollAreaProps } from './scroll-area'
+export type { Comp as ScrollBarComponent, Props as ScrollBarProps } from './scroll-bar'
+export { ScrollArea, ScrollBar }

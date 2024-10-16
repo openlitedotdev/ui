@@ -1,9 +1,9 @@
-import * as React from 'react'
-import * as SliderPrimitive from '@radix-ui/react-slider'
-import SliderRange from './slider-range'
-import SliderTrack from './slider-track'
 import type { VariantProps } from '@/tailwind'
 import { cn, slider } from '@/tailwind'
+import * as SliderPrimitive from '@radix-ui/react-slider'
+import * as React from 'react'
+import SliderRange from './slider-range'
+import SliderTrack from './slider-track'
 
 export interface Comp extends React.ElementRef<typeof SliderPrimitive.Root> {}
 export interface Props extends React.ComponentPropsWithoutRef<typeof SliderPrimitive.Root>,

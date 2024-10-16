@@ -1,6 +1,6 @@
-import React from 'react'
 import type { VariantProps } from '@/tailwind'
 import { cardContent, cn } from '@/tailwind'
+import React from 'react'
 
 export interface Comp extends HTMLDivElement {}
 export interface Props extends React.HTMLAttributes<HTMLDivElement>, VariantProps<typeof cardContent> {}

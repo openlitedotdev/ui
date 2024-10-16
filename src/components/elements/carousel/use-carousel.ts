@@ -1,6 +1,6 @@
 import type useEmblaCarousel from 'embla-carousel-react'
-import React from 'react'
 import type { CarouselProps } from './carousel'
+import React from 'react'
 
 type CarouselContextProps = {
   carouselRef: ReturnType<typeof useEmblaCarousel>[0]

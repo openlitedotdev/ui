@@ -1,7 +1,7 @@
-import * as React from 'react'
-import * as SelectPrimitive from '@radix-ui/react-select'
-import { cn, selectItem } from '@/tailwind'
 import type { VariantProps } from '@/tailwind'
+import { cn, selectItem } from '@/tailwind'
+import * as SelectPrimitive from '@radix-ui/react-select'
+import * as React from 'react'
 
 export interface Props extends React.ComponentPropsWithoutRef<typeof SelectPrimitive.Item>,
   VariantProps<typeof selectItem> {}

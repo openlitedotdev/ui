@@ -1,6 +1,6 @@
-import React from 'react'
 import type { VariantProps } from '@/tailwind'
 import { badge, cn } from '@/tailwind'
+import React from 'react'
 
 export interface Comp extends HTMLDivElement {}
 export type Props = React.HTMLAttributes<HTMLDivElement> & VariantProps<typeof badge>

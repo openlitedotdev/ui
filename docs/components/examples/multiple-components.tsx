@@ -1,3 +1,4 @@
+import useThemeStore from '@/stores/color-picker'
 import {
   Avatar,
   AvatarFallback,
@@ -28,12 +29,11 @@ import {
 } from '@openlite/ui'
 import Image from 'next/image'
 import { ArrowLeft } from '../icons/arrow-left'
-import { ArrowRight } from '../icons/arrow-right'
 
+import { ArrowRight } from '../icons/arrow-right'
 import { Search } from '../icons/search'
 import { DialogDemo } from './dialog'
 import { ProgressDemo } from './progress'
-import useThemeStore from '@/stores/color-picker'
 
 const items = [
   'https://picsum.photos/100/100?random=1',

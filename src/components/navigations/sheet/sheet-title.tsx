@@ -1,6 +1,6 @@
-import React from 'react'
-import * as SheetPrimitive from '@radix-ui/react-dialog'
 import { cn, sheetTitle } from '@/tailwind'
+import * as SheetPrimitive from '@radix-ui/react-dialog'
+import React from 'react'
 
 export interface Props extends React.ComponentPropsWithoutRef<typeof SheetPrimitive.Title> {}
 export interface Comp extends React.ElementRef<typeof SheetPrimitive.Title> {}

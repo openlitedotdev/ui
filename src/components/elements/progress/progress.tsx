@@ -1,8 +1,8 @@
-import * as React from 'react'
-import * as ProgressPrimitive from '@radix-ui/react-progress'
-import ProgressIndicator from './progress-indicator'
-import { cn, progress } from '@/tailwind'
 import type { VariantProps } from '@/tailwind'
+import { cn, progress } from '@/tailwind'
+import * as ProgressPrimitive from '@radix-ui/react-progress'
+import * as React from 'react'
+import ProgressIndicator from './progress-indicator'
 
 export interface Comp extends React.ElementRef<typeof ProgressPrimitive.Root> {}
 export interface Props extends React.ComponentPropsWithoutRef<typeof ProgressPrimitive.Root>,

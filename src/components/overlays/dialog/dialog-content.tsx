@@ -1,9 +1,9 @@
-import React from 'react'
-import * as DialogPrimitive from '@radix-ui/react-dialog'
-import DialogOverlay from './dialog-overlay'
-import DialogClose from './dialog-close'
-import DialogPortal from './dialog-portal'
 import { cn, dialogContent } from '@/tailwind'
+import * as DialogPrimitive from '@radix-ui/react-dialog'
+import React from 'react'
+import DialogClose from './dialog-close'
+import DialogOverlay from './dialog-overlay'
+import DialogPortal from './dialog-portal'
 
 export interface Comp extends React.ElementRef<typeof DialogPrimitive.Content> {}
 export interface Props extends React.ComponentPropsWithoutRef<typeof DialogPrimitive.Content> {}

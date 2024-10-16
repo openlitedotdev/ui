@@ -1,3 +1,4 @@
+import useThemeStore from '@/stores/color-picker'
 import {
   Card,
   CardContent,
@@ -9,7 +10,6 @@ import {
   TableHeader,
   TableRow,
 } from '@openlite/ui'
-import useThemeStore from '@/stores/color-picker'
 
 export function TableDemo() {
   const { currentTheme } = useThemeStore()

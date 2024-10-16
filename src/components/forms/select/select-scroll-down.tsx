@@ -1,6 +1,6 @@
-import * as React from 'react'
-import * as SelectPrimitive from '@radix-ui/react-select'
 import { cn, selectScrollDownButton } from '@/tailwind'
+import * as SelectPrimitive from '@radix-ui/react-select'
+import * as React from 'react'
 
 export interface Props extends React.ComponentPropsWithoutRef<typeof SelectPrimitive.ScrollDownButton> {}
 export interface Comp extends React.ElementRef<typeof SelectPrimitive.ScrollDownButton> {}

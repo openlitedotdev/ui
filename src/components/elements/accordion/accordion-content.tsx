@@ -1,6 +1,6 @@
-import * as React from 'react'
-import * as AccordionPrimitive from '@radix-ui/react-accordion'
 import { accordionContent, cn } from '@/tailwind'
+import * as AccordionPrimitive from '@radix-ui/react-accordion'
+import * as React from 'react'
 
 export interface Comp extends React.ElementRef<typeof AccordionPrimitive.Content> {}
 export interface Props extends React.ComponentPropsWithoutRef<typeof AccordionPrimitive.Content> {}

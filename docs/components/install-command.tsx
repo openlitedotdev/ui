@@ -1,10 +1,10 @@
 'use client'
 
-import { useState } from 'react'
 import { Button } from '@openlite/ui'
-import { Terminal } from './icons/terminal'
-import { Copy } from './icons/copy'
+import { useState } from 'react'
 import { Check } from './icons/check'
+import { Copy } from './icons/copy'
+import { Terminal } from './icons/terminal'
 
 export default function InstallCommand() {
   const [copied, setCopied] = useState(false)

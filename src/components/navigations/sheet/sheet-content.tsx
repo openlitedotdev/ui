@@ -1,9 +1,9 @@
-import React from 'react'
+import type { VariantProps } from '@/tailwind'
+import { cn, sheetContent } from '@/tailwind'
 import * as SheetPrimitive from '@radix-ui/react-dialog'
+import React from 'react'
 import SheetOverlay from './sheet-overlay'
 import SheetPortal from './sheet-portal'
-import { cn, sheetContent } from '@/tailwind'
-import type { VariantProps } from '@/tailwind'
 
 export interface Props extends React.ComponentPropsWithoutRef<typeof SheetPrimitive.Content>,
   VariantProps<typeof sheetContent> {

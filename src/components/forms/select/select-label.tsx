@@ -1,6 +1,6 @@
-import * as React from 'react'
-import * as SelectPrimitive from '@radix-ui/react-select'
 import { cn, selectLabel } from '@/tailwind'
+import * as SelectPrimitive from '@radix-ui/react-select'
+import * as React from 'react'
 
 export interface Props extends React.ComponentPropsWithoutRef<typeof SelectPrimitive.Label> {}
 export interface Comp extends React.ElementRef<typeof SelectPrimitive.Label> {}

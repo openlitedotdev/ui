@@ -1,5 +1,5 @@
-import React from 'react'
 import { breadcrumbPage, cn } from '@/tailwind'
+import React from 'react'
 
 export interface Comp extends HTMLSpanElement {}
 export interface Props extends React.ComponentPropsWithoutRef<'span'> {}

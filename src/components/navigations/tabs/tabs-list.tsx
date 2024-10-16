@@ -1,6 +1,6 @@
+import { cn, tabsList } from '@/tailwind'
 import * as TabsPrimitive from '@radix-ui/react-tabs'
 import React from 'react'
-import { cn, tabsList } from '@/tailwind'
 
 export interface Comp extends React.ElementRef<typeof TabsPrimitive.List> {}
 export interface Props extends React.ComponentPropsWithoutRef<typeof TabsPrimitive.List> {}

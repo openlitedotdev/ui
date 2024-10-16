@@ -1,10 +1,10 @@
 // ! Copyright (c) 2024 [`nextui`](https://github.com/nextui-org/nextui)
 
+import type { ConfigTheme, DefaultThemeType, Resolved } from '@/types/theme'
 import Color from 'color'
 import kebabCase from 'lodash.kebabcase'
 import mapKeys from 'lodash.mapkeys'
 import { flattenThemeObject } from '../utils/functions'
-import type { ConfigTheme, DefaultThemeType, Resolved } from '@/types/theme'
 
 const parsedColorsCache: Record<string, number[]> = {}
 

@@ -1,9 +1,9 @@
+import type { ConfigThemes, DefaultThemeType } from '@/types/theme'
 import plugin from 'tailwindcss/plugin.js'
-import { config } from './config'
 import { commonColors } from './colors'
 
-import { DEFAULT_TRANSITION_DURATION, baseStyles, tailwind } from './ui'
-import type { ConfigThemes, DefaultThemeType } from '@/types/theme'
+import { config } from './config'
+import { baseStyles, DEFAULT_TRANSITION_DURATION, tailwind } from './ui'
 
 export function definePlugin(themes: ConfigThemes = {}, defaultTheme: DefaultThemeType, prefix: string, addCommonColors: boolean,
 ) {

@@ -1,6 +1,6 @@
+import { carouselContent, cn } from '@/tailwind'
 import React from 'react'
 import { useCarousel } from './use-carousel'
-import { carouselContent, cn } from '@/tailwind'
 
 export interface Comp extends HTMLDivElement {}
 export interface Props extends React.HTMLAttributes<HTMLDivElement> {}

@@ -1,7 +1,7 @@
-import React from 'react'
-import { Slot } from '@radix-ui/react-slot'
 import type { VariantProps } from '@/tailwind'
-import { Ripple, button, cn } from '@/tailwind'
+import { button, cn, Ripple } from '@/tailwind'
+import { Slot } from '@radix-ui/react-slot'
+import React from 'react'
 
 export type Props = React.ButtonHTMLAttributes<HTMLButtonElement> &
   VariantProps<typeof button> & {

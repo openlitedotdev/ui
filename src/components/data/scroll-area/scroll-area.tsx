@@ -1,7 +1,7 @@
-import React from 'react'
-import * as ScrollAreaPrimitive from '@radix-ui/react-scroll-area'
-import ScrollBar from './scroll-bar'
 import { cn, scrollArea } from '@/tailwind'
+import * as ScrollAreaPrimitive from '@radix-ui/react-scroll-area'
+import React from 'react'
+import ScrollBar from './scroll-bar'
 
 export interface Comp extends React.ElementRef<typeof ScrollAreaPrimitive.Root> {}
 export interface Props extends React.ComponentPropsWithoutRef<typeof ScrollAreaPrimitive.Root> {}

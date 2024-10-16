@@ -1,7 +1,7 @@
+import { carouselNext, cn } from '@/tailwind'
 import React from 'react'
 import { Button } from '../button'
 import { useCarousel } from './use-carousel'
-import { carouselNext, cn } from '@/tailwind'
 
 export interface Comp extends HTMLButtonElement {}
 export interface Props extends React.ComponentProps<typeof Button> {}

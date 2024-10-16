@@ -1,6 +1,6 @@
-import React from 'react'
 import type { VariantProps } from '@/tailwind'
 import { alertDescription, cn } from '@/tailwind'
+import React from 'react'
 
 export interface Comp extends HTMLParagraphElement {}
 export interface Props extends React.HTMLAttributes<HTMLParagraphElement>, VariantProps<typeof alert> {}

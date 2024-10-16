@@ -1,7 +1,7 @@
-import React from 'react'
-import * as TabsPrimitive from '@radix-ui/react-tabs'
 import type { VariantProps } from '@/tailwind'
 import { cn, tabsTrigger } from '@/tailwind'
+import * as TabsPrimitive from '@radix-ui/react-tabs'
+import React from 'react'
 
 export interface Comp extends React.ElementRef<typeof TabsPrimitive.Trigger> {}
 export interface Props extends React.ComponentPropsWithoutRef<typeof TabsPrimitive.Trigger>,

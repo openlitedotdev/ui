@@ -1,7 +1,7 @@
-import React from 'react'
-import * as AccordionPrimitive from '@radix-ui/react-accordion'
 import type { VariantProps } from '@/tailwind'
 import { accordion, cn } from '@/tailwind'
+import * as AccordionPrimitive from '@radix-ui/react-accordion'
+import React from 'react'
 
 export interface Comp extends React.ElementRef<typeof AccordionPrimitive.Root> {}
 export type Props = React.ComponentPropsWithoutRef<typeof AccordionPrimitive.Root> & VariantProps<typeof accordion>

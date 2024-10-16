@@ -1,11 +1,11 @@
 'use client'
 
+import type { Variant } from '@/stores/color-picker'
+import useThemeStore from '@/stores/color-picker'
 import { Button, Select, SelectContent, SelectItem, SelectTrigger } from '@openlite/ui'
 import Link from 'next/link'
 import { ColorPicker } from './icons/color-picker'
 import { Github } from './icons/github'
-import type { Variant } from '@/stores/color-picker'
-import useThemeStore from '@/stores/color-picker'
 
 export function LinkRepo({ classes }: { classes: string }) {
   const { themes, setTheme, currentTheme } = useThemeStore()

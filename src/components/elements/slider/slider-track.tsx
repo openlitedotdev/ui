@@ -1,6 +1,6 @@
-import React from 'react'
-import * as SliderPrimitive from '@radix-ui/react-slider'
 import { cn, sliderTrack } from '@/tailwind'
+import * as SliderPrimitive from '@radix-ui/react-slider'
+import React from 'react'
 
 export interface Comp extends React.ElementRef<typeof SliderPrimitive.Thumb> {}
 export interface Props extends React.ComponentPropsWithoutRef<typeof SliderPrimitive.Thumb> {}

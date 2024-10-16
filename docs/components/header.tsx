@@ -1,7 +1,7 @@
-import Link from 'next/link'
 import { Sheet, SheetContent, SheetTrigger } from '@openlite/ui'
-import { LinkRepo } from './link-repo'
+import Link from 'next/link'
 import { Menu } from './icons/menu'
+import { LinkRepo } from './link-repo'
 
 const links = [
   { label: 'Documentation', href: '/docs' },

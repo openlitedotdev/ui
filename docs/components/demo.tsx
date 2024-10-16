@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import useThemeStore from '@/stores/color-picker'
 import {
   Button,
   Card,
@@ -11,10 +11,10 @@ import {
   TabsList,
   TabsTrigger,
 } from '@openlite/ui'
+import { useState } from 'react'
 import { AlertDemo } from './examples/alert'
 import { MultipleComponentDemo } from './examples/multiple-components'
 import { TableDemo } from './examples/table'
-import useThemeStore from '@/stores/color-picker'
 
 export default function Component() {
   const [activeTab, setActiveTab] = useState('account')

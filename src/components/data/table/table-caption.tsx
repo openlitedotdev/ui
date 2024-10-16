@@ -1,5 +1,5 @@
-import * as React from 'react'
 import { cn, tableCaption } from '@/tailwind'
+import * as React from 'react'
 
 export interface Props extends React.HTMLAttributes<HTMLTableCaptionElement> {}
 export interface Comp extends HTMLTableCaptionElement {}

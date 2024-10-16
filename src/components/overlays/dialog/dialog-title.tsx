@@ -1,6 +1,6 @@
-import * as React from 'react'
-import * as DialogPrimitive from '@radix-ui/react-dialog'
 import { cn, dialogTitle } from '@/tailwind'
+import * as DialogPrimitive from '@radix-ui/react-dialog'
+import * as React from 'react'
 
 export interface Comp extends React.ElementRef<typeof DialogPrimitive.Title> {}
 export interface Props extends React.ComponentPropsWithoutRef<typeof DialogPrimitive.Title> {}

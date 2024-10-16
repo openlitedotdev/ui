@@ -1,5 +1,5 @@
+import { alert, cn, type VariantProps } from '@/tailwind'
 import * as React from 'react'
-import { type VariantProps, alert, cn } from '@/tailwind'
 
 export interface Comp extends HTMLDivElement {}
 export interface Props extends React.HTMLAttributes<HTMLDivElement>, VariantProps<typeof alert> {}

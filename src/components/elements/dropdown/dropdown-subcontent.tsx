@@ -1,6 +1,6 @@
-import React from 'react'
-import * as DropdownPrimitive from '@radix-ui/react-dropdown-menu'
 import { cn, dropdownSubContent } from '@/tailwind'
+import * as DropdownPrimitive from '@radix-ui/react-dropdown-menu'
+import React from 'react'
 
 export interface Comp extends React.ElementRef<typeof DropdownPrimitive.SubContent> {}
 export interface Props extends React.ComponentPropsWithoutRef<typeof DropdownPrimitive.SubContent> {}
