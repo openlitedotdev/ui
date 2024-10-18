@@ -34,22 +34,18 @@ description: A dropdown is a toggleable  that allows the user to choose one valu
     <DropdownSeparator />
     <DropdownGroup>
       <DropdownItem>
-        {/* <User className="mr-2 h-4 w-4" /> */}
         <span>Profile</span>
         <DropdownShorcut>⇧⌘P</DropdownShorcut>
       </DropdownItem>
       <DropdownItem>
-        {/* <CreditCard className="mr-2 h-4 w-4" /> */}
         <span>Billing</span>
         <DropdownShorcut>⌘B</DropdownShorcut>
       </DropdownItem>
       <DropdownItem>
-        {/* <Settings className="mr-2 h-4 w-4" /> */}
         <span>Settings</span>
         <DropdownShorcut>⌘S</DropdownShorcut>
       </DropdownItem>
       <DropdownItem>
-        {/* <Keyboard className="mr-2 h-4 w-4" /> */}
         <span>Keyboard shortcuts</span>
         <DropdownShorcut>⌘K</DropdownShorcut>
       </DropdownItem>
@@ -57,56 +53,129 @@ description: A dropdown is a toggleable  that allows the user to choose one valu
     <DropdownSeparator />
     <DropdownGroup>
       <DropdownItem>
-        {/* <Users className="mr-2 h-4 w-4" /> */}
         <span>Team</span>
       </DropdownItem>
       <DropdownSub>
         <DropdownSubTrigger>
-          {/* <UserPlus className="mr-2 h-4 w-4" /> */}
           <span>Invite users</span>
         </DropdownSubTrigger>
         <DropdownPortal>
           <DropdownSubContent>
             <DropdownItem>
-              {/* <Mail className="mr-2 h-4 w-4" /> */}
               <span>Email</span>
             </DropdownItem>
             <DropdownItem>
-              {/* <MessageSquare className="mr-2 h-4 w-4" /> */}
               <span>Message</span>
             </DropdownItem>
             <DropdownSeparator />
             <DropdownItem>
-              {/* <PlusCircle className="mr-2 h-4 w-4" /> */}
               <span>More...</span>
             </DropdownItem>
           </DropdownSubContent>
         </DropdownPortal>
       </DropdownSub>
       <DropdownItem>
-        {/* <Plus className="mr-2 h-4 w-4" /> */}
         <span>New Team</span>
         <DropdownShorcut>⌘+T</DropdownShorcut>
       </DropdownItem>
     </DropdownGroup>
     <DropdownSeparator />
     <DropdownItem>
-      {/* <Github className="mr-2 h-4 w-4" /> */}
       <span>GitHub</span>
     </DropdownItem>
     <DropdownItem>
-      {/* <LifeBuoy className="mr-2 h-4 w-4" /> */}
       <span>Support</span>
     </DropdownItem>
     <DropdownItem disabled>
-      {/* <Cloud className="mr-2 h-4 w-4" /> */}
       <span>API</span>
     </DropdownItem>
     <DropdownSeparator />
     <DropdownItem>
-      {/* <LogOut className="mr-2 h-4 w-4" /> */}
       <span>Log out</span>
       <DropdownShorcut>⇧⌘Q</DropdownShorcut>
     </DropdownItem>
   </DropdownContent>
 </Dropdown>
+
+```jsx
+import { Dropdown, DropdownTrigger, DropdownContent, DropdownGroup, DropdownItem, DropdownSeparator, DropdownLabel, DropdownShorcut, DropdownSub, DropdownSubTrigger, DropdownSubContent, DropdownPortal } from "@openlite/ui";
+
+function App() {
+  return (
+     <Dropdown className="w-96" >
+      <div className='flex justify-center'>
+        <DropdownTrigger asChild>
+          <Button>Open</Button>
+        </DropdownTrigger>
+      </div>
+      <DropdownContent>
+        <DropdownLabel>My Account</DropdownLabel>
+        <DropdownSeparator />
+        <DropdownGroup>
+          <DropdownItem>
+            <span>Profile</span>
+            <DropdownShorcut>⇧⌘P</DropdownShorcut>
+          </DropdownItem>
+          <DropdownItem>
+            <span>Billing</span>
+            <DropdownShorcut>⌘B</DropdownShorcut>
+          </DropdownItem>
+          <DropdownItem>
+            <span>Settings</span>
+            <DropdownShorcut>⌘S</DropdownShorcut>
+          </DropdownItem>
+          <DropdownItem>
+            <span>Keyboard shortcuts</span>
+            <DropdownShorcut>⌘K</DropdownShorcut>
+          </DropdownItem>
+        </DropdownGroup>
+        <DropdownSeparator />
+        <DropdownGroup>
+          <DropdownItem>
+            <span>Team</span>
+          </DropdownItem>
+          <DropdownSub>
+            <DropdownSubTrigger>
+              <span>Invite users</span>
+            </DropdownSubTrigger>
+            <DropdownPortal>
+              <DropdownSubContent>
+                <DropdownItem>
+                  <span>Email</span>
+                </DropdownItem>
+                <DropdownItem>
+                  <span>Message</span>
+                </DropdownItem>
+                <DropdownSeparator />
+                <DropdownItem>
+                  <span>More...</span>
+                </DropdownItem>
+              </DropdownSubContent>
+            </DropdownPortal>
+          </DropdownSub>
+          <DropdownItem>
+            <span>New Team</span>
+            <DropdownShorcut>⌘+T</DropdownShorcut>
+          </DropdownItem>
+        </DropdownGroup>
+        <DropdownSeparator />
+        <DropdownItem>
+          <span>GitHub</span>
+        </DropdownItem>
+        <DropdownItem>
+          <span>Support</span>
+        </DropdownItem>
+        <DropdownItem disabled>
+          <span>API</span>
+        </DropdownItem>
+        <DropdownSeparator />
+        <DropdownItem>
+          <span>Log out</span>
+          <DropdownShorcut>⇧⌘Q</DropdownShorcut>
+        </DropdownItem>
+      </DropdownContent>
+    </Dropdown>
+  )
+}
+
+```
